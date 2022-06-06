@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: "Nuxt 3 + GITS UI",
+});
+
 const menus = ref([
   {
     text: "Home",
