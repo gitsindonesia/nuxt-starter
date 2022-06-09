@@ -11,6 +11,6 @@
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
-    "@gits-id/ui-nuxt": "0.4.1-alpha.9+af6b3c4"
+    "@gits-id/ui-nuxt": "^0.4.5"
   }
 }
