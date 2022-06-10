@@ -7,7 +7,7 @@ Look at the [GITS UI documentation](https://gits-ui.web.app) and [nuxt 3 documen
 You can easily create new project from this template using `nuxi`:
 
 ```
-npx nuxi init -t gitsindonesia/nuxt3-gits-ui-starter my-app
+npx nuxi init -t gitsindonesia/nuxt-starter my-app
 cd my-app
 yarn
 yarn dev
