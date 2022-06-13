@@ -25,7 +25,7 @@ const auth = useAuthStore();
 </script>
 
 <template>
-  <div class="flex">
+  <div class="flex flex-col sm:flex-row">
     <v-nav-drawer
       v-model:mini="isMini"
       :menus="menus"
@@ -59,7 +59,7 @@ const auth = useAuthStore();
     </v-nav-drawer>
 
     <div
-      class="flex-1 transition-all duration-300"
+      class="sm:flex-1 transition-all duration-300"
       :class="isMini ? 'sm:ml-24' : 'sm:ml-[270px]'"
     >
       <v-app-bar

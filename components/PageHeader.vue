@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<Props>(), {
   <div class="flex justify-between items-start gap-4 mb-5">
     <div>
       <v-breadcrumbs :items="breadcrumbs" class="text-gray-500 text-sm mb-2" />
-      <h1 class="mb-1 font-semibold text-2xl text-gray-800">
+      <h1 class="mb-1 font-semibold text-2xl text-gray-800 truncate">
         <slot name="title">{{ title }}</slot>
       </h1>
     </div>
