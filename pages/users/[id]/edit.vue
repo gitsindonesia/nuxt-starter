@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { VBreadcrumbItem } from '@gits-id/breadcrumbs';
-import UserForm from '~~/components/users/UserForm.vue';
 
 const route = useRoute();
 
@@ -20,6 +19,6 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
   <div>
     <PageHeader title="Edit User" :breadcrumbs="breadcrumbs" />
 
-    <UserForm @cancel="$router.push('/users')" />
+    <UsersForm @cancel="$router.push('/users')" />
   </div>
 </template>
