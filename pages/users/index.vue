@@ -27,6 +27,7 @@ const headers = ref<VDataTableHeader[]>([
 
 const items = ref(
   Array.from({ length: 30 }, (v, k) => ({
+    id: k + 1,
     name: `User ${k + 1}`,
     email: `user-${k + 1}@mail.com`,
   }))
@@ -46,15 +47,11 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
 
 <template>
   <div>
-    <div class="flex justify-between items-start gap-4 mb-5">
-      <div>
-        <v-breadcrumbs :items="breadcrumbs" class="text-gray-500 text-sm" />
-        <h1 class="mb-1 font-semibold text-2xl text-gray-800">
-          User Management
-        </h1>
-      </div>
-      <v-btn color="primary" to="/users/create">Add New User</v-btn>
-    </div>
+    <PageHeader title="User Management" :breadcrumbs="breadcrumbs">
+      <template #button>
+        <v-btn color="primary" to="/users/create">Add New User</v-btn>
+      </template>
+    </PageHeader>
 
     <v-card
       header-class="!px-4 !py-4 text-gray-600"
@@ -79,8 +76,8 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
         dense
         class="!rounded-none !shadow-none !border-t"
       >
-        <template #item.action>
-          <v-btn icon rounded text size="sm">
+        <template #item.action="{ item }">
+          <v-btn icon rounded text size="sm" :to="`/users/${item.id}/edit`">
             <Icon icon="heroicons-outline:pencil" class="w-5 h-5" />
           </v-btn>
           <v-btn color="error" icon rounded text size="sm">

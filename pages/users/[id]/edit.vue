@@ -2,6 +2,8 @@
 import { VBreadcrumbItem } from '@gits-id/breadcrumbs';
 import UserForm from '~~/components/users/UserForm.vue';
 
+const route = useRoute();
+
 const breadcrumbs = ref<VBreadcrumbItem[]>([
   {
     title: 'User Management',
@@ -9,14 +11,14 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
   },
   {
     title: 'Create',
-    to: '/users/create',
+    to: `/users/${route.params.id}/edit`,
   },
 ]);
 </script>
 
 <template>
   <div>
-    <PageHeader title="Add New User" :breadcrumbs="breadcrumbs" />
+    <PageHeader title="Edit User" :breadcrumbs="breadcrumbs" />
 
     <UserForm @cancel="$router.push('/users')" />
   </div>
