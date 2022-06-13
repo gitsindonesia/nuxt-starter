@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { AuthLayout } from '@gits-id/ui';
+import { Auth } from '@gits-id/ui';
 </script>
 
 <template>
-  <AuthLayout>
+  <Auth>
     <slot />
-  </AuthLayout>
+  </Auth>
 </template>
