@@ -34,10 +34,11 @@ const items = ref(
 
 const sortBy = ref('name');
 const sortDirection = ref('asc');
+const search = ref('asc');
 
 const breadcrumbs = ref<VBreadcrumbItem[]>([
   {
-    title: 'User Management',
+    title: 'User',
     to: '/',
   },
   {
@@ -49,24 +50,39 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
 
 <template>
   <div>
-    <!-- <h1 class="mb-3 font-semibold text-2xl">User Management</h1> -->
-
-    <div class="flex justify-between items-center gap-4 mb-5">
-      <v-breadcrumbs class="mb-0" :items="breadcrumbs" />
+    <div class="flex justify-between items-start gap-4 mb-5">
+      <div>
+        <v-breadcrumbs
+          :items="breadcrumbs"
+          class="text-gray-500 text-sm mb-2"
+        />
+        <h1 class="mb-1 font-semibold text-2xl text-gray-800">
+          User Management
+        </h1>
+        <!-- <p class="text-gray-500">{{ items.length }} found</p> -->
+      </div>
       <v-btn color="primary" to="/users/create">Add New User</v-btn>
     </div>
 
     <v-card
-      title="User Management"
       header-class="!px-4 !py-4 text-gray-600"
       body-class="!p-0"
       hide-footer
     >
+      <template #header>
+        <v-input
+          v-model="search"
+          prepend-icon="heroicons-outline:search"
+          placeholder="Search..."
+        />
+      </template>
+
       <v-data-table
         v-model:sortBy="sortBy"
         v-model:sortDirection="sortDirection"
         :headers="headers"
         :items="items"
+        :search="search"
         must-sort
         dense
         class="!rounded-none !shadow-none !border-t"
