@@ -34,16 +34,12 @@ const items = ref(
 
 const sortBy = ref('name');
 const sortDirection = ref('asc');
-const search = ref('asc');
+const search = ref('');
 
 const breadcrumbs = ref<VBreadcrumbItem[]>([
   {
-    title: 'User',
-    to: '/',
-  },
-  {
-    title: 'List',
-    to: '/',
+    title: 'User Management',
+    to: '/users',
   },
 ]);
 </script>
@@ -52,14 +48,10 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
   <div>
     <div class="flex justify-between items-start gap-4 mb-5">
       <div>
-        <v-breadcrumbs
-          :items="breadcrumbs"
-          class="text-gray-500 text-sm mb-2"
-        />
+        <v-breadcrumbs :items="breadcrumbs" class="text-gray-500 text-sm" />
         <h1 class="mb-1 font-semibold text-2xl text-gray-800">
           User Management
         </h1>
-        <!-- <p class="text-gray-500">{{ items.length }} found</p> -->
       </div>
       <v-btn color="primary" to="/users/create">Add New User</v-btn>
     </div>
