@@ -26,16 +26,24 @@ const auth = useAuthStore();
 
 <template>
   <div class="flex">
-    <v-nav-drawer v-model:mini="isMini" :menus="menus" hide-toggle>
+    <v-nav-drawer
+      v-model:mini="isMini"
+      :menus="menus"
+      hide-toggle
+      small
+      :logo-props="{ imgClass: 'mx-auto h-8 mt-2' }"
+    >
       <template #logo.mini>
         <div class="text-center font-semibold p-1">GITS</div>
       </template>
       <template #append>
         <div
           class="w-full flex items-center"
-          :class="isMini ? 'justify-center' : 'justify-between'"
+          :class="
+            isMini ? 'sm:justify-center justify-between' : 'justify-between'
+          "
         >
-          <v-btn v-if="!isMini" size="sm" text>
+          <v-btn :class="{ 'sm:hidden': isMini }" size="sm" text>
             <Icon icon="heroicons-outline:user" />
             <span class="ml-2"> {{ auth.user.name }} </span>
           </v-btn>
@@ -43,11 +51,7 @@ const auth = useAuthStore();
             <Icon
               class="transition duration-300 transform"
               :class="isMini ? 'rotate-180' : ''"
-              :icon="
-                isMini
-                  ? 'heroicons-outline:chevron-right'
-                  : 'heroicons-outline:chevron-left'
-              "
+              icon="heroicons-outline:chevron-left"
             />
           </v-btn>
         </div>
@@ -55,10 +59,17 @@ const auth = useAuthStore();
     </v-nav-drawer>
 
     <div
-      class="flex-1 px-4 py-6 transition-all duration-300"
-      :class="isMini ? 'ml-24' : 'ml-[270px]'"
+      class="flex-1 transition-all duration-300"
+      :class="isMini ? 'sm:ml-24' : 'sm:ml-[270px]'"
     >
-      <slot />
+      <v-app-bar
+        class="px-4 py-2 shadow sm:hidden sticky top-0 w-full inset-x-0"
+        @toggleMenu="isMini = !isMini"
+      />
+
+      <div class="px-4 py-6">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
