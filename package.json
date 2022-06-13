@@ -8,7 +8,8 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.1.2",
-    "nuxt": "3.0.0-rc.3"
+    "nuxt": "3.0.0-rc.3",
+    "@pinia/nuxt": "^0.1.9"
   },
   "dependencies": {
     "@gits-id/ui-nuxt": "0.4.8-alpha.13+3aaebe2"
