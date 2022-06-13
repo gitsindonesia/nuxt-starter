@@ -30,3 +30,9 @@ const isMini = ref(true);
     </div>
   </div>
 </template>
+
+<style scoped>
+:global(body) {
+  @apply bg-gray-100;
+}
+</style>

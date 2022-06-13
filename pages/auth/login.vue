@@ -4,6 +4,7 @@ import { useAuthStore } from '~~/stores/auth';
 
 definePageMeta({
   layout: 'auth',
+  middleware: 'guest',
 });
 
 useHead({
