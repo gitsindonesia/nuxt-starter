@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { VBreadcrumbItem } from '@gits-id/breadcrumbs';
+import { VModalEvent } from '@gits-id/modal';
 import { VDataTableHeader } from '@gits-id/ui';
 import { Icon } from '@iconify/vue';
 
@@ -30,6 +31,7 @@ const items = ref(
     id: k + 1,
     name: `User ${k + 1}`,
     email: `user-${k + 1}@mail.com`,
+    isDelete: false,
   }))
 );
 
@@ -43,6 +45,20 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
     to: '/users',
   },
 ]);
+
+const modalDelete = ref(false);
+const item = ref();
+
+const deleteItem = (_item) => {
+  modalDelete.value = true;
+  item.value = _item;
+};
+
+const removeItem = () => {
+  return useFetch(`/api/users/${item.value.id}`, {
+    method: 'DELETE',
+  });
+};
 </script>
 
 <template>
@@ -80,11 +96,21 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
           <v-btn icon rounded text size="sm" :to="`/users/${item.id}/edit`">
             <Icon icon="heroicons-outline:pencil" class="w-5 h-5" />
           </v-btn>
-          <v-btn color="error" icon rounded text size="sm">
+          <v-btn
+            color="error"
+            icon
+            rounded
+            text
+            size="sm"
+            s
+            @click="deleteItem(item)"
+          >
             <Icon icon="heroicons-outline:trash" class="w-5 h-5" />
           </v-btn>
         </template>
       </v-data-table>
+
+      <ModalDelete v-model="modalDelete" :api="removeItem" />
     </v-card>
   </div>
 </template>
