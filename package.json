@@ -12,6 +12,6 @@
     "@pinia/nuxt": "^0.1.9"
   },
   "dependencies": {
-    "@gits-id/ui-nuxt": "0.4.8-alpha.17+0f74b85"
+    "@gits-id/ui-nuxt": "^0.4.8"
   }
 }
