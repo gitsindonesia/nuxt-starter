@@ -16,7 +16,7 @@ const menus = ref([
   },
 ]);
 
-const isMini = ref(true);
+const isMini = useCookie<boolean>('mini');
 </script>
 <template>
   <div class="flex">
