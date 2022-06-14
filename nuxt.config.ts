@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@gits-id/ui-nuxt',
     '@nuxtjs/tailwindcss',
     ['@pinia/nuxt', { disableVuex: true }],
+    '@vueuse/nuxt',
   ],
   vite: {
     optimizeDeps: {

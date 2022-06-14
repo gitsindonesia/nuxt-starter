@@ -2,6 +2,7 @@
 import { VBreadcrumbItem } from '@gits-id/breadcrumbs';
 import { VDataTableHeader } from '@gits-id/ui';
 import { Icon } from '@iconify/vue';
+import { watchDebounced } from '@vueuse/core';
 
 const headers = ref<VDataTableHeader[]>([
   {
@@ -25,10 +26,14 @@ const headers = ref<VDataTableHeader[]>([
 ]);
 
 const items = ref([]);
-
 const sortBy = ref('name');
 const sortDirection = ref('asc');
 const search = ref('');
+const loading = ref(false);
+const defaultParams = reactive({
+  page: 1,
+  limit: 10,
+});
 
 const breadcrumbs = ref<VBreadcrumbItem[]>([
   {
@@ -41,7 +46,6 @@ const modalDelete = ref(false);
 const item = ref();
 
 const { all, remove } = useUser();
-const { data, pending, refresh: getUsers } = all();
 
 const deleteItem = (_item: any) => {
   modalDelete.value = true;
@@ -50,10 +54,43 @@ const deleteItem = (_item: any) => {
 
 const removeItem = () => remove(item.value.id);
 
-onMounted(async () => {
-  await getUsers();
+const getUsers = async (params?: Record<string, any>) => {
+  const { data, refresh } = all({
+    params: {
+      ...defaultParams,
+      ...params,
+    },
+  });
+
+  loading.value = true;
+  await refresh();
+  loading.value = false;
+
   items.value = data.value;
-});
+};
+
+onMounted(getUsers);
+
+watchDebounced(
+  search,
+  () => {
+    getUsers({
+      search: search.value,
+    });
+  },
+  { debounce: 500, maxWait: 1000 }
+);
+
+const pagination = computed(() => ({
+  totalItems: items.value.length,
+  perPage: 10,
+}));
+
+const onPageChange = (page: number) => {
+  getUsers({
+    page,
+  });
+};
 </script>
 
 <template>
@@ -85,8 +122,11 @@ onMounted(async () => {
         :search="search"
         must-sort
         dense
+        server-side
         class="!rounded-none !shadow-none !border-t"
-        :loading="pending"
+        :loading="loading"
+        :pagination="pagination"
+        @page:change="onPageChange"
       >
         <template #item.action="{ item }">
           <v-btn icon rounded text size="sm" :to="`/users/${item.id}/edit`">
