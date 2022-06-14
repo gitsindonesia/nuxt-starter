@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { VBreadcrumbItem } from '@gits-id/breadcrumbs';
-import { VModalEvent } from '@gits-id/modal';
 import { VDataTableHeader } from '@gits-id/ui';
 import { Icon } from '@iconify/vue';
 
@@ -50,19 +49,15 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
 const modalDelete = ref(false);
 const item = ref();
 
-const deleteItem = (_item) => {
+const { all, remove } = useUser();
+const { data, pending, refresh: getUsers } = all();
+
+const deleteItem = (_item: any) => {
   modalDelete.value = true;
   item.value = _item;
 };
 
-const removeItem = () => {
-  return useFetch(`/api/users/${item.value.id}`, {
-    method: 'DELETE',
-  });
-};
-
-const { all } = useUser();
-const { data, pending, refresh: getUsers } = all();
+const removeItem = () => remove(item.value.id);
 
 onMounted(async () => {
   await getUsers();
