@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { useForm, SubmissionContext } from 'vee-validate';
+import { useForm } from 'vee-validate';
 import { object, string } from 'yup';
+import { FormEvent } from '~~/types/form';
+
+defineProps<{
+  loading?: boolean;
+}>();
 
 const emit = defineEmits<{
-  (
-    e: 'submit',
-    payload: { values: Record<string, any>; ctx: SubmissionContext }
-  ): void;
+  (e: 'submit', payload: FormEvent): void;
   (e: 'cancel'): void;
 }>();
 
@@ -52,9 +54,11 @@ const cancel = () => {
         label="Password"
         placeholder="Password"
       />
-      <div class="space-x-2">
-        <v-btn type="submit" color="primary">Save</v-btn>
-        <v-btn type="reset" text @click="cancel">Cancel</v-btn>
+      <div class="flex items-center gap-2">
+        <v-btn type="submit" color="primary" :loading="loading"> Save </v-btn>
+        <v-btn type="reset" text @click="cancel" :disabled="loading">
+          Cancel
+        </v-btn>
       </div>
     </v-card>
   </form>
