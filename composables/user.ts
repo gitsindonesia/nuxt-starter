@@ -26,7 +26,7 @@ export const useUser = () => {
   };
 
   const find = (id: string) => {
-    return useFetch(`/users/${id}`, {
+    return useFetch<User>(`/users/${id}`, {
       baseURL,
     });
   };
