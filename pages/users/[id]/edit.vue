@@ -19,6 +19,6 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
   <div>
     <PageHeader title="Edit User" :breadcrumbs="breadcrumbs" />
 
-    <UsersForm @cancel="$router.push('/users')" />
+    <UsersForm />
   </div>
 </template>

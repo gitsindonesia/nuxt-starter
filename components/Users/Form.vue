@@ -22,9 +22,12 @@ const onSubmit = handleSubmit((values, ctx) => {
   emit('submit', { values, ctx });
 });
 
+const router = useRouter();
+
 const cancel = () => {
-  resetForm();
   emit('cancel');
+  resetForm();
+  router.push('/users');
 };
 </script>
 
