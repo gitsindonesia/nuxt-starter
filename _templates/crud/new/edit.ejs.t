@@ -24,12 +24,12 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
     to: '/users',
   },
   {
-    title: 'Create',
+    title: 'Edit',
     to: `/<%= LowerPluralName %>/${route.params.id}/edit`,
   },
 ]);
 
-const { update, find } = use<%= PascalName %>();
+const { update, find } = use<%= PascalSingularName %>();
 const router = useRouter();
 const loading = ref(false);
 
@@ -50,9 +50,9 @@ const { data: item, pending } = await find(id.value);
 
 <template>
   <div>
-    <PageHeader title="Edit <%= PascalName %>" :breadcrumbs="breadcrumbs" />
+    <PageHeader title="Edit <%= PascalSingularName %>" :breadcrumbs="breadcrumbs" />
 
-    <<%= PascalName %>Form
+    <<%= PascalSingularName %>Form
       @submit="onSubmit"
       :loading="loading || pending"
       :initial-values="item"

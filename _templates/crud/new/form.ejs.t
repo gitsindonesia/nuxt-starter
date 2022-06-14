@@ -1,5 +1,5 @@
 ---
-to: components/<%= h.changeCase.pascal(h.inflection.pluralize(name)) %>/Form.vue
+to: components/<%= h.changeCase.pascal(h.inflection.singularize(name)) %>/Form.vue
 ---
 <%
   Fields = (locals.fields || '').split(',').map(v => v.split(':'));
@@ -29,9 +29,11 @@ const emit = defineEmits<{
 
 const { handleSubmit, resetForm } = useForm({
   validationSchema: object({
-    name: string().required().label('Name'),
-    email: string().required().label('Email'),
-    password: string().required().label('Password'),
+  <% if (locals.fields) { %>
+  <% Fields.forEach(field => { %>
+    <%= field[0] %>: <%= field[1] %>().required().label('<%= h.changeCase.header(field[0]) %>'),
+  <% }) %>
+  <% } %>
   }),
   initialValues: props.initialValues,
 });
@@ -45,19 +47,23 @@ const router = useRouter();
 const cancel = () => {
   emit('cancel');
   resetForm();
-  router.push('/users');
+  router.push('/<%= LowerPluralName %>');
 };
 </script>
 
 <template>
   <form @submit="onSubmit">
     <v-card hide-header hide-footer body-class="py-4">
-      <v-input
-        name="name"
+<% if (locals.fields) { %>
+<% Fields.forEach(field => { %>
+      <<%= field[2] ?? 'v-input' %>
+        name="<%= field[0] %>"
         wrapper-class="mb-4"
-        label="Name"
-        placeholder="Username"
+        label="<%= h.changeCase.header(field[0]) %>"
+        placeholder="<%= h.changeCase.header(field[0]) %>"
       />
+<% }) %>
+<% } %>
       <div class="flex items-center gap-2">
         <v-btn type="submit" color="primary" :loading="loading"> Save </v-btn>
         <v-btn type="reset" text @click="cancel" :disabled="loading">

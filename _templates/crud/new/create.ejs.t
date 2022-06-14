@@ -27,7 +27,7 @@ const breadcrumbs = ref<VBreadcrumbItem[]>([
   },
 ]);
 
-const { create } = use<%= PascalName %>();
+const { create } = use<%= PascalSingularName %>();
 const router = useRouter();
 const loading = ref(false);
 
@@ -44,8 +44,8 @@ const onSubmit = async ({ values }: FormEvent) => {
 
 <template>
   <div>
-    <PageHeader title="Add New <%= SingularName %>" :breadcrumbs="breadcrumbs" />
+    <PageHeader title="Add New <%= PascalSingularName %>" :breadcrumbs="breadcrumbs" />
 
-    <<%= SingularName %>Form @submit="onSubmit" :loading="loading" />
+    <<%= PascalSingularName %>Form @submit="onSubmit" :loading="loading" />
   </div>
 </template>

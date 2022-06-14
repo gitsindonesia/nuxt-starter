@@ -27,14 +27,14 @@ export const use<%= PascalName %> = () => {
   const baseURL = config.public.apiUrl;
 
   const all = (options?: Record<string, any>) => {
-    return useFetch<<%= PascalName %>[]>('/<%= LowerSingularName %>', {
+    return useFetch<<%= PascalName %>[]>('/<%= LowerPluralName %>', {
       baseURL,
       ...options,
     });
   };
 
   const create = (payload: Record<string, any>) => {
-    return useFetch('/<%= LowerSingularName %>', {
+    return useFetch('/<%= LowerPluralName %>', {
       body: payload,
       method: 'POST',
       baseURL,
@@ -42,13 +42,13 @@ export const use<%= PascalName %> = () => {
   };
 
   const find = (id: string) => {
-    return useFetch<<%= PascalName %>>(`/<%= LowerSingularName %>/${id}`, {
+    return useFetch<<%= PascalName %>>(`/<%= LowerPluralName %>/${id}`, {
       baseURL,
     });
   };
 
   const update = (id: string, payload: Record<string, any>) => {
-    return useFetch(`/<%= LowerSingularName %>/${id}`, {
+    return useFetch(`/<%= LowerPluralName %>/${id}`, {
       body: payload,
       method: 'PUT',
       baseURL,
@@ -56,7 +56,7 @@ export const use<%= PascalName %> = () => {
   };
 
   const remove = (id: string) => {
-    return useFetch(`/<%= LowerSingularName %>/${id}`, {
+    return useFetch(`/<%= LowerPluralName %>/${id}`, {
       method: 'DELETE',
       baseURL,
     });

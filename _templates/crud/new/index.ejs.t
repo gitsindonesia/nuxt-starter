@@ -17,20 +17,21 @@ import { VBreadcrumbItem } from '@gits-id/breadcrumbs';
 import { VDataTableHeader } from '@gits-id/ui';
 import { Icon } from '@iconify/vue';
 import { watchDebounced } from '@vueuse/core';
+import { Post } from '~~/composables/post';
 
 const headers = ref<VDataTableHeader[]>([
   {
     text: 'ID',
     value: 'id',
   },
+  <% if (locals.fields) { %>
+  <% Fields.forEach(field => { %>
   {
-    text: 'Name',
-    value: 'name',
+    text: '<%= h.changeCase.header(field[0]) %>',
+    value: '<%= field[0] %>',
   },
-  {
-    text: 'Email',
-    value: 'email',
-  },
+  <% }) %>
+  <% } %>
   {
     text: 'Action',
     value: 'action',
@@ -51,7 +52,7 @@ const defaultParams = reactive({
 
 const breadcrumbs = ref<VBreadcrumbItem[]>([
   {
-    title: '<%= SingularName %> Management',
+    title: '<%= h.changeCase.header(SingularName) %> Management',
     to: '/<%= LowerPluralName %>',
   },
 ]);
