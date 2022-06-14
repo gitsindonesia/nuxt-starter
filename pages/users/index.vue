@@ -6,9 +6,8 @@ import { Icon } from '@iconify/vue';
 
 const headers = ref<VDataTableHeader[]>([
   {
-    text: '#',
-    value: 'index',
-    sortable: false,
+    text: 'ID',
+    value: 'id',
   },
   {
     text: 'Name',
@@ -26,14 +25,16 @@ const headers = ref<VDataTableHeader[]>([
   },
 ]);
 
-const items = ref(
-  Array.from({ length: 30 }, (v, k) => ({
-    id: k + 1,
-    name: `User ${k + 1}`,
-    email: `user-${k + 1}@mail.com`,
-    isDelete: false,
-  }))
-);
+/*
+Array.from({ length: 30 }, (v, k) => ({
+  id: k + 1,
+  name: `User ${k + 1}`,
+  email: `user-${k + 1}@mail.com`,
+  isDelete: false,
+}))
+*/
+
+const items = ref([]);
 
 const sortBy = ref('name');
 const sortDirection = ref('asc');
@@ -59,6 +60,14 @@ const removeItem = () => {
     method: 'DELETE',
   });
 };
+
+const { all } = useUser();
+const { data, pending, refresh: getUsers } = all();
+
+onMounted(async () => {
+  await getUsers();
+  items.value = data.value;
+});
 </script>
 
 <template>
@@ -91,6 +100,7 @@ const removeItem = () => {
         must-sort
         dense
         class="!rounded-none !shadow-none !border-t"
+        :loading="pending"
       >
         <template #item.action="{ item }">
           <v-btn icon rounded text size="sm" :to="`/users/${item.id}/edit`">
