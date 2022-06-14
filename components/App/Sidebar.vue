@@ -27,12 +27,13 @@ const dropdownItems = ref([
   },
   {
     text: 'Logout',
-    onClick: () => {
-      auth.logout();
-      router.push('/auth/login');
-    },
   },
 ]);
+
+function logout() {
+  auth.logout();
+  router.push('/auth/login');
+}
 </script>
 
 <template>
@@ -53,7 +54,7 @@ const dropdownItems = ref([
           isMini ? 'sm:justify-center justify-between' : 'justify-between'
         "
       >
-        <v-dropdown top :items="dropdownItems">
+        <v-dropdown top>
           <template #activator>
             <DropdownButton
               :as="VBtn"
@@ -65,6 +66,10 @@ const dropdownItems = ref([
               <span class="ml-2"> {{ auth.user.name }} </span>
             </DropdownButton>
           </template>
+
+          <v-dropdown-item>Profile</v-dropdown-item>
+          <v-dropdown-item divider />
+          <v-dropdown-item @click="logout">Logout</v-dropdown-item>
         </v-dropdown>
         <v-btn icon size="xs" @click="isMini = !isMini">
           <Icon
