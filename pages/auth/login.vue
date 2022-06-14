@@ -35,7 +35,7 @@ const onSubmit = async (values: Record<string, any>) => {
   });
 
   loading.value = true;
-  refresh();
+  await refresh();
   loading.value = false;
 
   if (err.value) {
