@@ -1,62 +1,61 @@
 ---
 to: pages/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>/[id]/edit.vue
 ---
+<%
+  Fields = (locals.fields || '').split(',').map(v => v.split(':'));
+  FieldNames = Fields.map(v => v[0]);
+  PascalName = h.changeCase.pascal(name);
+  PluralName = h.inflection.pluralize(name);
+  SingularName = h.inflection.singularize(name);
+  LowerPluralName = h.changeCase.lower(PluralName);
+  LowerSingularName = h.changeCase.lower(SingularName);
+  PascalPluralName = h.changeCase.pascal(PluralName);
+  PascalSingularName = h.changeCase.pascal(SingularName);
+%>
 <script setup lang="ts">
-import {computed, onMounted, ref, toRefs} from 'vue';
-import {useRouter} from 'vue-router';
-import Form from '../__Form.vue';
-import {use<%= h.changeCase.pascal(name) %>} from '../__index';
+import { VBreadcrumbItem } from '@gits-id/breadcrumbs';
+import { FormEvent } from '~~/types/form';
 
-type Props = {
-  id: string;
-}
+const route = useRoute();
 
-const props = withDefaults(defineProps<Props>(), {});
-
-const {id} = toRefs(props);
-
-const breadcrumbs = ref([
+const breadcrumbs = ref<VBreadcrumbItem[]>([
   {
-    title: 'Data',
-    to: '/cms/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>',
+    title: '<%= PascalName %> Management',
+    to: '/users',
   },
   {
-    title: '<%= h.changeCase.pascal(name) %>s',
-    to: '/cms/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>',
-  },
-  {
-    title: 'Add <%= h.changeCase.pascal(name) %>',
-    to: '/cms/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>/${id.value}/edit',
+    title: 'Create',
+    to: `/<%= LowerPluralName %>/${route.params.id}/edit`,
   },
 ]);
 
+const { update, find } = use<%= PascalName %>();
 const router = useRouter();
-const {loading, item, fetchItem, update} = use<%= h.changeCase.pascal(name) %>();
+const loading = ref(false);
 
-const initialValues = computed(() => item.value);
+const id = computed(() => String(route.params.id));
 
-const onSubmit = async (values: Record<string, unknown>) => {
-  const res = await update(id.value, values);
+const onSubmit = async ({ values }: FormEvent) => {
+  const { refresh } = update(id.value, values);
 
-  if (res.id) {
-    router.push('/cms/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>');
-  } else {
-    // TODO: handle errors
-  }
+  loading.value = true;
+  await refresh();
+  loading.value = false;
+
+  router.push('/<%= LowerPluralName %>');
 };
 
-onMounted(() => {
-  fetchItem(id.value);
-});
+const { data: item, pending } = await find(id.value);
 </script>
 
 <template>
-  <PageHeader title="Edit <%= h.changeCase.pascal(name) %>" :breadcrumbs="breadcrumbs" />
+  <div>
+    <PageHeader title="Edit <%= PascalName %>" :breadcrumbs="breadcrumbs" />
 
-  <<%= h.changeCase.pascal(h.inflection.singularize(name)) %>Form
-    action="edit"
-    :initial-values="initialValues"
-    :loading="loading.update"
-    @submit="onSubmit"
-  />
+    <<%= PascalName %>Form
+      @submit="onSubmit"
+      :loading="loading || pending"
+      :initial-values="item"
+    />
+  </div>
 </template>

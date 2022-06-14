@@ -1,40 +1,51 @@
 ---
 to: pages/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>/create.vue
 ---
+<%
+  Fields = (locals.fields || '').split(',').map(v => v.split(':'));
+  FieldNames = Fields.map(v => v[0]);
+  PascalName = h.changeCase.pascal(name);
+  PluralName = h.inflection.pluralize(name);
+  SingularName = h.inflection.singularize(name);
+  LowerPluralName = h.changeCase.lower(PluralName);
+  LowerSingularName = h.changeCase.lower(SingularName);
+  PascalPluralName = h.changeCase.pascal(PluralName);
+  PascalSingularName = h.changeCase.pascal(SingularName);
+%>
 <script setup lang="ts">
-import {useRouter} from 'vue-router';
+import { VBreadcrumbItem } from '@gits-id/breadcrumbs';
+import { FormEvent } from '~~/types/form';
 
-const breadcrumbs = ref([
+const breadcrumbs = ref<VBreadcrumbItem[]>([
   {
-    title: 'Data',
-    to: '/cms/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>',
+    title: '<%= PascalName %> Management',
+    to: '/<%= LowerPluralName %>',
   },
   {
-    title: '<%= h.changeCase.pascal(name) %>s',
-    to: '/cms/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>',
-  },
-  {
-    title: 'Add <%= h.changeCase.pascal(name) %>',
-    to: '/cms/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>/create',
+    title: 'Create',
+    to: '/<%= LowerPluralName %>/create',
   },
 ]);
 
+const { create } = use<%= PascalName %>();
 const router = useRouter();
-const {loading, create} = use<%= h.changeCase.pascal(name) %>();
+const loading = ref(false);
 
-const onSubmit = async (values: Record<string, unknown>) => {
-  const res = await create(values);
+const onSubmit = async ({ values }: FormEvent) => {
+  const { refresh } = create(values);
 
-  if (res.id) {
-    router.push('/cms/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>');
-  } else {
-    // TODO: handle errors
-  }
+  loading.value = true;
+  await refresh();
+  loading.value = false;
+
+  router.push('/<%= LowerPluralName %>');
 };
 </script>
 
 <template>
-  <PageHeader title="Add <%= h.changeCase.pascal(name) %>" :breadcrumbs="breadcrumbs" />
+  <div>
+    <PageHeader title="Add New <%= SingularName %>" :breadcrumbs="breadcrumbs" />
 
-  <<%= h.changeCase.pascal(h.inflection.singularize(name)) %>Form action="create" :loading="loading.create" @submit="onSubmit" />
+    <<%= SingularName %>Form @submit="onSubmit" :loading="loading" />
+  </div>
 </template>
