@@ -11,14 +11,14 @@ export type User = {
 
 export const useUser = () => {
   const all = (options?: Record<string, any>) => {
-    return useFetch<User[]>('/users', {
+    return useApi<User[]>('/users', {
       baseURL,
       ...options,
     });
   };
 
   const create = (payload: Record<string, any>) => {
-    return useFetch('/users', {
+    return useApi('/users', {
       body: payload,
       method: 'POST',
       baseURL,
@@ -26,13 +26,13 @@ export const useUser = () => {
   };
 
   const find = (id: string) => {
-    return useFetch<User>(`/users/${id}`, {
+    return useApi<User>(`/users/${id}`, {
       baseURL,
     });
   };
 
   const update = (id: string, payload: Record<string, any>) => {
-    return useFetch(`/users/${id}`, {
+    return useApi(`/users/${id}`, {
       body: payload,
       method: 'PUT',
       baseURL,
@@ -40,7 +40,7 @@ export const useUser = () => {
   };
 
   const remove = (id: string) => {
-    return useFetch(`/users/${id}`, {
+    return useApi(`/users/${id}`, {
       method: 'DELETE',
       baseURL,
     });
