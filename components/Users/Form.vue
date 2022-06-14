@@ -3,7 +3,8 @@ import { useForm } from 'vee-validate';
 import { object, string } from 'yup';
 import { FormEvent } from '~~/types/form';
 
-defineProps<{
+const props = defineProps<{
+  initialValues?: Record<string, any>;
   loading?: boolean;
 }>();
 
@@ -18,6 +19,7 @@ const { handleSubmit, resetForm } = useForm({
     email: string().required().label('Email'),
     password: string().required().label('Password'),
   }),
+  initialValues: props.initialValues,
 });
 
 const onSubmit = handleSubmit((values, ctx) => {
