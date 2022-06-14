@@ -2,6 +2,7 @@
 import { useAuthStore } from '~~/stores/auth';
 import { Icon } from '@iconify/vue';
 import { isMini } from '~~/composables/layout';
+import { VBtn, DropdownButton } from '@gits-id/ui';
 
 const menus = ref([
   {
@@ -17,6 +18,21 @@ const menus = ref([
 ]);
 
 const auth = useAuthStore();
+const router = useRouter();
+
+const dropdownItems = ref([
+  {
+    text: 'Profile',
+    to: '/profile',
+  },
+  {
+    text: 'Logout',
+    onClick: () => {
+      auth.logout();
+      router.push('/auth/login');
+    },
+  },
+]);
 </script>
 
 <template>
@@ -37,10 +53,19 @@ const auth = useAuthStore();
           isMini ? 'sm:justify-center justify-between' : 'justify-between'
         "
       >
-        <v-btn :class="{ 'sm:hidden': isMini }" size="sm" text>
-          <Icon icon="heroicons-outline:user" />
-          <span class="ml-2"> {{ auth.user.name }} </span>
-        </v-btn>
+        <v-dropdown top :items="dropdownItems">
+          <template #activator>
+            <DropdownButton
+              :as="VBtn"
+              :class="{ 'sm:hidden': isMini }"
+              size="sm"
+              text
+            >
+              <Icon icon="heroicons-outline:user" />
+              <span class="ml-2"> {{ auth.user.name }} </span>
+            </DropdownButton>
+          </template>
+        </v-dropdown>
         <v-btn icon size="xs" @click="isMini = !isMini">
           <Icon
             class="transition duration-300 transform"
