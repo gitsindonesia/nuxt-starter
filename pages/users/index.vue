@@ -24,15 +24,6 @@ const headers = ref<VDataTableHeader[]>([
   },
 ]);
 
-/*
-Array.from({ length: 30 }, (v, k) => ({
-  id: k + 1,
-  name: `User ${k + 1}`,
-  email: `user-${k + 1}@mail.com`,
-  isDelete: false,
-}))
-*/
-
 const items = ref([]);
 
 const sortBy = ref('name');
