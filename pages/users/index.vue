@@ -70,7 +70,7 @@ const removeItem = () => {
     </PageHeader>
 
     <v-card
-      header-class="!px-4 !py-4 text-gray-600"
+      header-class="!px-4 !py-4 text-gray-600 !font-normal"
       body-class="!p-0"
       hide-footer
     >
