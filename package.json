@@ -7,8 +7,11 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@nuxtjs/tailwindcss": "^5.1.2",
     "@pinia/nuxt": "^0.1.9",
+    "husky": "^8.0.1",
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
