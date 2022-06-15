@@ -12,11 +12,16 @@
     "@nuxtjs/tailwindcss": "^5.1.2",
     "@pinia/nuxt": "^0.1.9",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
     "@gits-id/ui-nuxt": "^0.4.8",
     "@vueuse/core": "^8.6.0",
     "@vueuse/nuxt": "^8.6.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,html,css,vue}": "eslint --fix",
+    "*.{js,jsx,ts,tsx,md,html,css,vue}": "prettier --write"
   }
 }
