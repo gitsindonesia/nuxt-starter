@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { useAuthStore } from '~~/stores/auth';
 import { Icon } from '@iconify/vue';
-import { useLayout } from '~~/composables/layout';
 import { VBtn, DropdownButton } from '@gits-id/ui';
+import { useLayoutStore } from '~~/stores/layout';
+import { storeToRefs } from 'pinia';
 
 const menus = ref([
   {
@@ -17,7 +18,8 @@ const menus = ref([
   },
 ]);
 
-const {isMini} = useLayout()
+const layout = useLayoutStore();
+const { isMini } = storeToRefs(layout);
 const auth = useAuthStore();
 const router = useRouter();
 

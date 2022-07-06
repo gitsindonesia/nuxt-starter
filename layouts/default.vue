@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { useLayout } from '~~/composables/layout';
 import { Icon } from '@iconify/vue';
+import { storeToRefs } from 'pinia';
+import { useLayoutStore } from '~~/stores/layout';
 
-const {isMini} = useLayout()
+const layout = useLayoutStore();
+const { isMini } = storeToRefs(layout);
 
 useHead({
   title: 'Nuxt 3 + GITS UI',
