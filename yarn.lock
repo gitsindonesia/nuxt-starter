@@ -1926,10 +1926,10 @@
     feather-icons "^4.28.0"
     vue "^3.2.31"
 
-"@gits-id/switch@^0.10.5":
-  version "0.10.5"
-  resolved "https://registry.yarnpkg.com/@gits-id/switch/-/switch-0.10.5.tgz#ca6e4edb7c8b15c88fc762b0bef2568b9a3842cf"
-  integrity sha512-kXiaqJhpnysrt0jGYC9Hwe5HYGHvShNKwNeR0oFLkTAPsWUfF7f6ThmwzmFEo1H/Fe/UlQSkrLkKbD+0kcANVA==
+"@gits-id/switch@^0.10.6":
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/@gits-id/switch/-/switch-0.10.6.tgz#614773e70b89e4cd292917514fac8648b8bf0c5f"
+  integrity sha512-Qjic0q5vaZWqV2r9wfM1Duez7H1Cxs4PPahcSyY6A8YCJw1ghVxZ8FJZAe8jpGhIjoG52B4OYCWI9gBoOdx67g==
   dependencies:
     vee-validate "^4.5.11"
     vue "^3.2.31"
@@ -2015,25 +2015,18 @@
     vee-validate "^4.5.9"
     vue "^3.2.31"
 
-"@gits-id/types@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@gits-id/types/-/types-0.10.1.tgz#48ecff2113391334da79327e06ba8d734d224912"
-  integrity sha512-EgyJuwQuw6OCMKnwxxzq8jrwkjsYs2SodCImi5orRoDvuoZn1RXs+Gg/zso4JN1qSVW0S4zou7nVGIQu/xg4fA==
+"@gits-id/ui-nuxt@^0.10.6":
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.10.6.tgz#d93c3a3932d77db4eaf4b0f1ecc59a2bb6a6f69f"
+  integrity sha512-4pbTAxsUY8TsKwt+qXIyhwZIm0z0HvIN9plQqvlqGZ9q/NPWv4Xqd2wxSoC3atcWCflDFt1Stj+jkNYdQvXRjw==
   dependencies:
-    vue "^3"
-
-"@gits-id/ui-nuxt@^0.10.5":
-  version "0.10.5"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.10.5.tgz#d93b0648c08ae2d9c58a1568bb24458c3cdc319c"
-  integrity sha512-WTeAvNTdN3o8v7FUmyWS/QT5pgMRDBl6R3pfKm3jd0V7DQBQcFA6F+bU2Zv3MQhw3vGxWgEERIL/Fstux0d3Vg==
-  dependencies:
-    "@gits-id/ui" "^0.10.5"
+    "@gits-id/ui" "^0.10.6"
     "@nuxt/kit" "^3.0.0-rc.3"
 
-"@gits-id/ui@^0.10.5":
-  version "0.10.5"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.10.5.tgz#4c349a7c11a9e88c301d286cc92dc3535a1fc3c7"
-  integrity sha512-YdDyTqFyNT3OL5pvoadUnawunlWUpWBBoRSUswbLcrJXpjICt1mGJ3QPtUtVBHnGsk8ruZicvDd65n+7EKPdAg==
+"@gits-id/ui@^0.10.6":
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.10.6.tgz#1db1c53dbf88a403d16c2b15f535fa6ff6d3e39b"
+  integrity sha512-BBhzZXIIpP9Qs0HMNY3xkG12cOxK2bgNC7/O5a5uDqgOToVYdb7nx8Wm6EliviFCsXhmkXmU9kHJ2XpewXL86g==
   dependencies:
     "@gits-id/alert" "^0.10.1"
     "@gits-id/app-bar" "^0.10.1"
@@ -2062,7 +2055,7 @@
     "@gits-id/services" "^0.10.1"
     "@gits-id/spinner" "^0.10.1"
     "@gits-id/stats" "^0.10.5"
-    "@gits-id/switch" "^0.10.5"
+    "@gits-id/switch" "^0.10.6"
     "@gits-id/table" "^0.10.5"
     "@gits-id/tabs" "^0.10.5"
     "@gits-id/tailwind-components" "^0.10.1"
@@ -2071,7 +2064,6 @@
     "@gits-id/theme" "^0.10.1"
     "@gits-id/toast" "^0.10.5"
     "@gits-id/tooltip" "^0.10.5"
-    "@gits-id/types" "^0.10.1"
     "@gits-id/utils" "^0.10.1"
     "@vue/test-utils" "^2.0.0-rc.17"
     vue "^3.2.33"
@@ -14819,7 +14811,7 @@ vue-router@^4.0.16:
   dependencies:
     "@vue/devtools-api" "^6.1.4"
 
-vue@^3, vue@^3.2.31, vue@^3.2.33:
+vue@^3.2.31, vue@^3.2.33:
   version "3.2.37"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.37.tgz#da220ccb618d78579d25b06c7c21498ca4e5452e"
   integrity sha512-bOKEZxrm8Eh+fveCqS1/NkG/n6aMidsI6hahas7pa0w/l7jkbssJVsRhVDs07IdDq7h9KHswZOgItnwJAgtVtQ==
