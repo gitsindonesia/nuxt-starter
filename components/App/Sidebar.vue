@@ -66,7 +66,7 @@ function logout() {
               text
             >
               <Icon icon="heroicons-outline:user" />
-              <span class="ml-2"> {{ auth.user.name }} </span>
+              <span v-if="auth.user" class="ml-2"> {{ auth.user.name }} </span>
             </DropdownButton>
           </template>
 
