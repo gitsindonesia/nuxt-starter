@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useAuthStore } from '~~/stores/auth';
 import { Icon } from '@iconify/vue';
-import { isMini } from '~~/composables/layout';
+import { useLayout } from '~~/composables/layout';
 import { VBtn, DropdownButton } from '@gits-id/ui';
 
 const menus = ref([
@@ -17,6 +17,7 @@ const menus = ref([
   },
 ]);
 
+const {isMini} = useLayout()
 const auth = useAuthStore();
 const router = useRouter();
 

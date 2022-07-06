@@ -2,7 +2,7 @@
 import { useForm } from 'vee-validate';
 import { object, string } from 'yup';
 import { FormEvent } from '~~/types/form';
-import {VEditor} from '@gits-id/ui/editor'
+import {VEditor} from '@gits-id/editor'
 
 const props =
   defineProps<{

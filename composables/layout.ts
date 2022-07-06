@@ -1,1 +1,5 @@
-export const isMini = useCookie<boolean>('mini');
+export const useLayout = () => {
+  const isMini = useCookie<boolean>('mini');
+
+  return { isMini };
+};

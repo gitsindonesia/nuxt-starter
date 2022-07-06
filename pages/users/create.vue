@@ -32,6 +32,8 @@ const onSubmit = async ({ values }: FormEvent) => {
   <div>
     <PageHeader title="Add New User" :breadcrumbs="breadcrumbs" />
 
-    <UsersForm @submit="onSubmit" :loading="loading" />
+    <ClientOnly>
+      <UsersForm @submit="onSubmit" :loading="loading" />
+    </ClientOnly>
   </div>
 </template>

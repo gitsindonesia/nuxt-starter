@@ -38,10 +38,12 @@ const { data: item, pending } = await find(id.value);
   <div>
     <PageHeader title="Edit User" :breadcrumbs="breadcrumbs" />
 
-    <UsersForm
-      @submit="onSubmit"
-      :loading="loading || pending"
-      :initial-values="item"
-    />
+    <ClientOnly>
+      <UsersForm
+        @submit="onSubmit"
+        :loading="loading || pending"
+        :initial-values="item"
+      />
+    </ClientOnly>
   </div>
 </template>
