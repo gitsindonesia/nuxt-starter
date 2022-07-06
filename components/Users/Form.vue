@@ -2,16 +2,19 @@
 import { useForm } from 'vee-validate';
 import { object, string } from 'yup';
 import { FormEvent } from '~~/types/form';
+import {VEditor} from '@gits-id/ui/editor'
 
-const props = defineProps<{
-  initialValues?: Record<string, any>;
-  loading?: boolean;
-}>();
+const props =
+  defineProps<{
+    initialValues?: Record<string, any>;
+    loading?: boolean;
+  }>();
 
-const emit = defineEmits<{
-  (e: 'submit', payload: FormEvent): void;
-  (e: 'cancel'): void;
-}>();
+const emit =
+  defineEmits<{
+    (e: 'submit', payload: FormEvent): void;
+    (e: 'cancel'): void;
+  }>();
 
 const { handleSubmit, resetForm } = useForm({
   validationSchema: object({
@@ -56,6 +59,7 @@ const cancel = () => {
         label="Password"
         placeholder="Password"
       />
+      <v-editor name="bio" wrapper-class="mb-4" label="Bio" placeholder="Bio" />
       <div class="flex items-center gap-2">
         <v-btn type="submit" color="primary" :loading="loading"> Save </v-btn>
         <v-btn type="reset" text @click="cancel" :disabled="loading">
