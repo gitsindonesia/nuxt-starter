@@ -9,28 +9,28 @@
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.5",
-    "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
-    "@nuxtjs/tailwindcss": "^5.1.2",
-    "@pinia/nuxt": "^0.1.9",
-    "@storybook/addon-actions": "^6.5.9",
-    "@storybook/addon-essentials": "^6.5.9",
-    "@storybook/addon-interactions": "^6.5.9",
-    "@storybook/addon-links": "^6.5.9",
-    "@storybook/builder-vite": "^0.1.36",
+    "@babel/core": "^7.18.13",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@nuxtjs/tailwindcss": "^5.3.2",
+    "@pinia/nuxt": "^0.4.1",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-vite": "^0.2.2",
     "@storybook/testing-library": "^0.0.13",
-    "@storybook/vue3": "^6.5.9",
+    "@storybook/vue3": "^6.5.10",
     "babel-loader": "^8.2.5",
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.1",
+    "lint-staged": "^13.0.3",
     "nuxt": "3.0.0-rc.3",
-    "vue-loader": "^16.8.3"
+    "vue-loader": "^17.0.0"
   },
   "dependencies": {
     "@gits-id/ui-nuxt": "^0.10.12",
-    "@vueuse/core": "^8.6.0",
-    "@vueuse/nuxt": "^8.6.0"
+    "@vueuse/core": "^9.1.1",
+    "@vueuse/nuxt": "^9.1.1"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,html,css,vue}": "eslint --fix",
