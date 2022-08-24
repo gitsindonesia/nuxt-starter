@@ -11,11 +11,9 @@ useHead({
   title: 'Login',
 });
 
-const props = withDefaults(defineProps(), {});
+withDefaults(defineProps(), {});
+defineEmits<{ (e: 'update:modelValue', value: string): void }>();
 
-const emit = defineEmits<{ (e: 'update:modelValue', value: string): void }>();
-
-const { store } = useAuthStorage();
 const auth = useAuthStore();
 const router = useRouter();
 const error = ref();
@@ -25,34 +23,22 @@ const loading = ref(false);
 const onSubmit = async (values: Record<string, any>) => {
   error.value = '';
 
-  const {
-    data,
-    error: err,
-    refresh,
-  } = useFetch('/api/auth/login', {
+  loading.value = true;
+  const res = await $fetch('/api/auth/login', {
     method: 'post',
     body: values,
   });
-
-  loading.value = true;
-  await refresh();
   loading.value = false;
 
-  if (err.value) {
-    error.value = 'Unauthenticated';
+  if (res.error) {
+    error.value = res.error.message;
     return;
   }
 
-  const token = data.value.data.token;
-  const user = data.value.data.user;
+  const data = res.data;
+  auth.login(data.user, data.token);
 
-  auth.login(user, token);
-
-  if (!err.value && !data.value.error) {
-    router.push((route.query as any).next || '/');
-  } else {
-    error.value = err.value || data.value.error?.message;
-  }
+  router.push((route.query as any).next || '/');
 };
 </script>
 
