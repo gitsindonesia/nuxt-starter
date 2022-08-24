@@ -13,4 +13,7 @@ export default defineNuxtConfig({
       gaId: '',
     },
   },
+  build: {
+    transpile: ['@gits-id/dropdown'],
+  },
 });

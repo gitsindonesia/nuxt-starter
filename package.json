@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@gits-id/quill-editor": "^0.11.0",
-    "@gits-id/ui-nuxt": "^0.11.1",
+    "@gits-id/ui-nuxt": "0.11.2-alpha.1+5e85d86",
     "@vueuse/core": "^9.1.1",
     "@vueuse/nuxt": "^9.1.1",
     "vue-gtag": "^2.0.1"
