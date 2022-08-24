@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { useAuthStore } from '~~/stores/auth';
-import { Icon } from '@iconify/vue';
-import { VBtn, DropdownButton } from '@gits-id/ui';
 import { useLayoutStore } from '~~/stores/layout';
 import { storeToRefs } from 'pinia';
 
@@ -59,15 +57,13 @@ function logout() {
       >
         <v-dropdown top>
           <template #activator>
-            <DropdownButton
-              :as="VBtn"
+            <v-dropdown-button
+              class="flex items-center gap-2 px-3 py-1"
               :class="{ 'sm:hidden': isMini }"
-              size="sm"
-              text
             >
-              <Icon icon="heroicons-outline:user" />
-              <span v-if="auth.user" class="ml-2"> {{ auth.user.name }} </span>
-            </DropdownButton>
+              <v-icon name="heroicons-outline:user"  class="w-4 h-4"/>
+              <span v-if="auth.user"> {{ auth.user.name }} </span>
+            </v-dropdown-button>
           </template>
 
           <v-dropdown-item>Profile</v-dropdown-item>
@@ -75,10 +71,10 @@ function logout() {
           <v-dropdown-item @click="logout">Logout</v-dropdown-item>
         </v-dropdown>
         <v-btn icon size="xs" @click="isMini = !isMini">
-          <Icon
+          <v-icon
             class="transition duration-300 transform"
             :class="isMini ? 'rotate-180' : ''"
-            icon="heroicons-outline:chevron-left"
+            name="heroicons-outline:chevron-left"
           />
         </v-btn>
       </div>

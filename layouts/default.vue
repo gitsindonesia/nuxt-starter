@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Icon } from '@iconify/vue';
 import { storeToRefs } from 'pinia';
 import { useLayoutStore } from '~~/stores/layout';
 
@@ -24,7 +23,7 @@ useHead({
       >
         <div class="flex">
           <v-btn @click="isMini = !isMini" icon rounded text>
-            <Icon icon="ri:menu-line" class="w-6 h-6" />
+            <v-icon name="ri:menu-line" class="w-6 h-6" />
           </v-btn>
           <div class="flex-1">
             <v-logo img-class="h-8 my-1 mx-auto" />

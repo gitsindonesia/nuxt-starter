@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { VModalEvent } from '@gits-id/modal';
 import { useVModel } from '@vueuse/core';
-import { Icon } from '@iconify/vue';
 
 type Props = {
   modelValue?: boolean;
@@ -72,8 +71,8 @@ const onConfirm = (e: VModalEvent) => {
     <div
       class="bg-warning-100 h-14 w-14 rounded-full grid place-items-center mx-auto"
     >
-      <Icon
-        icon="heroicons-outline:question-mark-circle"
+      <v-icon
+        name="heroicons-outline:question-mark-circle"
         class="w-10 h-10 text-warning-500"
       />
     </div>

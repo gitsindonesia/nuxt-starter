@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useVModel } from '@vueuse/core';
-import { Icon } from '@iconify/vue';
 
 type Props = {
   modelValue?: boolean;
@@ -32,7 +31,7 @@ const isOpen = useVModel(props, 'modelValue', emit);
     <div
       class="bg-success-100 h-14 w-14 rounded-full grid place-items-center mx-auto"
     >
-      <Icon icon="heroicons-outline:check" class="w-10 h-10 text-success-500" />
+      <v-icon name="heroicons-outline:check" class="w-10 h-10 text-success-500" />
     </div>
     <div class="mt-4">
       <h3 class="font-semibold text-lg mb-2">{{ title }}</h3>

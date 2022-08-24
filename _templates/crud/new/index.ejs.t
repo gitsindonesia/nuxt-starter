@@ -15,7 +15,6 @@ to: pages/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>/index.vue
 <script setup lang="ts">
 import { VBreadcrumbItem } from '@gits-id/breadcrumbs';
 import { VDataTableHeader } from '@gits-id/ui';
-import { Icon } from '@iconify/vue';
 import { watchDebounced } from '@vueuse/core';
 import { Post } from '~~/composables/post';
 
@@ -145,7 +144,7 @@ const onPageChange = (page: number) => {
       >
         <template #item.action="{ item }">
           <v-btn icon rounded text size="sm" :to="`/<%= LowerPluralName %>/${item.id}/edit`">
-            <Icon icon="heroicons-outline:pencil" class="w-5 h-5" />
+            <v-icon name="heroicons-outline:pencil" class="w-5 h-5" />
           </v-btn>
           <v-btn
             color="error"
@@ -156,7 +155,7 @@ const onPageChange = (page: number) => {
             s
             @click="deleteItem(item)"
           >
-            <Icon icon="heroicons-outline:trash" class="w-5 h-5" />
+            <v-icon name="heroicons-outline:trash" class="w-5 h-5" />
           </v-btn>
         </template>
       </v-data-table>
