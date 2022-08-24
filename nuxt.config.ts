@@ -8,4 +8,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@gits-id/ui-nuxt',
   ],
+  runtimeConfig: {
+    public: {
+      gaId: '',
+    },
+  },
 });
