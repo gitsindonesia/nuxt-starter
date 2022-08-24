@@ -2,7 +2,6 @@
 import { useForm } from 'vee-validate';
 import { object, string } from 'yup';
 import { FormEvent } from '~~/types/form';
-import {VEditor} from '@gits-id/editor'
 
 const props =
   defineProps<{
@@ -59,7 +58,12 @@ const cancel = () => {
         label="Password"
         placeholder="Password"
       />
-      <v-editor name="bio" wrapper-class="mb-4" label="Bio" placeholder="Bio" />
+      <v-quill-editor
+        name="bio"
+        wrapper-class="mb-4"
+        label="Bio"
+        placeholder="Bio"
+      />
       <div class="flex items-center gap-2">
         <v-btn type="submit" color="primary" :loading="loading"> Save </v-btn>
         <v-btn type="reset" text @click="cancel" :disabled="loading">
