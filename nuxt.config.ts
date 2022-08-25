@@ -13,4 +13,9 @@ export default defineNuxtConfig({
       gaId: '',
     },
   },
+  vite: {
+    optimizeDeps: {
+      include: ['lodash/has', 'yup', 'axios'],
+    },
+  },
 });

@@ -1819,10 +1819,10 @@
   dependencies:
     vue "^3.2.31"
 
-"@gits-id/menu@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@gits-id/menu/-/menu-0.11.0.tgz#d39c86f10bfe6faecf53cdf905fc399600f3f090"
-  integrity sha512-oIkgLOf+rpZ3YcZUuQaD/uThf9GZA11aEsQzvYVbnAdPA1kwE11A5aHv6ISI7YheqP54p6TM8BeJD/sLMwJLKA==
+"@gits-id/menu@^0.11.3-alpha.3+69fbd7e":
+  version "0.11.3-alpha.3"
+  resolved "https://registry.yarnpkg.com/@gits-id/menu/-/menu-0.11.3-alpha.3.tgz#50f1018976ea0eb0759a78346913207e36dcd790"
+  integrity sha512-j2x1ja4MDjNpyKte7DccJ34d1SDPgNnwPEJqnO7C7dnErKfqVXTWiICTf9LzAVXzdu3Bqx+yZpp/QS1RuV6Wgg==
   dependencies:
     "@iconify/vue" "^3.2.1"
     vue "^3.2.31"
@@ -1855,14 +1855,14 @@
     vee-validate "^4.6.1"
     vue "^3.2.31"
 
-"@gits-id/nav-drawer@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@gits-id/nav-drawer/-/nav-drawer-0.11.0.tgz#4af42df13ccbda36dde91a0c835a22aa31e98b1c"
-  integrity sha512-lqBe6yGDY0YeIqRZTiHVHkOT/uTNlsIfbt9fRONIdaYNxjhJSwXnIZKJJVxgOJnkKRZGI7nasi66WCJwUpgTOA==
+"@gits-id/nav-drawer@^0.11.3-alpha.3+69fbd7e":
+  version "0.11.3-alpha.3"
+  resolved "https://registry.yarnpkg.com/@gits-id/nav-drawer/-/nav-drawer-0.11.3-alpha.3.tgz#e0deb1e0ce77a4a63e1ae9a276ede459266c0f7c"
+  integrity sha512-kIRDtVwWX3O0L/9YtERtN/fO5GR5WVkcSVJBtNiI/2HvoqAA87pAkiBMX6JFGlKTQ/QOR/ze0td10P/mKWHBzg==
   dependencies:
     "@gits-id/button" "^0.11.0"
     "@gits-id/logo" "^0.11.0"
-    "@gits-id/menu" "^0.11.0"
+    "@gits-id/menu" "^0.11.3-alpha.3+69fbd7e"
     "@gits-id/navbar" "^0.11.0"
     "@gits-id/utils" "^0.11.0"
     vue "^3.2.31"
@@ -2042,18 +2042,18 @@
     vee-validate "^4.5.9"
     vue "^3.2.31"
 
-"@gits-id/ui-nuxt@^0.11.2":
-  version "0.11.2"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.11.2.tgz#a16c3474640722cf0096537774b210dca6be027a"
-  integrity sha512-kMc6wPFXH07ZAP31e0ghDhKWLtVgEuo+1Ck3Zhfoqu+g7WKTJKKiwkTvqLzY6XynYQFPY8L+IA75Er1iBzGZWg==
+"@gits-id/ui-nuxt@0.11.3-alpha.3+69fbd7e":
+  version "0.11.3-alpha.3"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.11.3-alpha.3.tgz#41abc4f2b4598cca5d82212b8ef7a61bfb5875f5"
+  integrity sha512-7W4+9+/OGsxrji9mc6I+HiyURtwSOmWYTlXNyU7vTuVHcrCuHInPCpvQSWaLNsoaCgEFnuWvd4JfQ0K+1djBnA==
   dependencies:
-    "@gits-id/ui" "^0.11.2"
+    "@gits-id/ui" "^0.11.3-alpha.3+69fbd7e"
     "@nuxt/kit" "^3.0.0-rc.3"
 
-"@gits-id/ui@^0.11.2":
-  version "0.11.2"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.11.2.tgz#41db3ec758d99e4930febb9e5a0249b676b088ab"
-  integrity sha512-xcANSsthJMJ2rJBpcav9masfcyOxyl1nIXmAo7/OdiPjQU1uneXtKv4kUOblMVo3bcuL8+cdhTJ3+toX9DewZg==
+"@gits-id/ui@^0.11.3-alpha.3+69fbd7e":
+  version "0.11.3-alpha.3"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.11.3-alpha.3.tgz#859ef8407af6167132c47a06fb613ad272b386c7"
+  integrity sha512-Zy3PfNquYcE2rpsyAMD3wveES0YduoPU5Ke/4QPq5BgTjGzSml2+xckDFNmS4qyirwuN9yojl9Mjd/kyCkYfbQ==
   dependencies:
     "@gits-id/alert" "^0.11.2"
     "@gits-id/app-bar" "^0.11.0"
@@ -2070,11 +2070,11 @@
     "@gits-id/layouts" "^0.11.0"
     "@gits-id/list" "^0.11.2"
     "@gits-id/logo" "^0.11.0"
-    "@gits-id/menu" "^0.11.0"
+    "@gits-id/menu" "^0.11.3-alpha.3+69fbd7e"
     "@gits-id/menus" "^0.11.0"
     "@gits-id/modal" "^0.11.0"
     "@gits-id/multi-select" "^0.11.0"
-    "@gits-id/nav-drawer" "^0.11.0"
+    "@gits-id/nav-drawer" "^0.11.3-alpha.3+69fbd7e"
     "@gits-id/navbar" "^0.11.0"
     "@gits-id/pages" "^0.11.2"
     "@gits-id/pagination" "^0.11.0"
