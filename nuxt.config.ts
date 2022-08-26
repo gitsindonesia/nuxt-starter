@@ -2,6 +2,7 @@ import { defineNuxtConfig } from 'nuxt';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  buildModules: ['@nuxtjs/web-vitals'],
   modules: [
     '@nuxtjs/tailwindcss',
     ['@pinia/nuxt', { disableVuex: true }],
@@ -35,5 +36,8 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+  googleAnalytics: {
+    id: 'G-44SPLJSV5C',
   },
 });

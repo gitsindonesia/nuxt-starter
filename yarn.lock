@@ -2576,6 +2576,15 @@
     tailwindcss "^3.1.6"
     ufo "^0.8.5"
 
+"@nuxtjs/web-vitals@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/web-vitals/-/web-vitals-0.1.10.tgz#6dcc227d712ddc626a64b87079738214657612da"
+  integrity sha512-Sf8v7BUB+Bfmao6AioPRmSpyq/MMvq0tFwFiXVe2oL9HgdDgu+6sfcSBDnvzmgcEQPfPZp1KCxc5N2vNERem0w==
+  dependencies:
+    defu "^6.0.0"
+    ufo "^0.8.5"
+    web-vitals "^2.1.4"
+
 "@pinia/nuxt@^0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@pinia/nuxt/-/nuxt-0.4.1.tgz#f32b046cef6b6663f5ce0d4cce6863e7a965873b"
@@ -14846,6 +14855,11 @@ web-streams-polyfill@^3.0.3:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/web-streams-polyfill/-/web-streams-polyfill-3.2.1.tgz#71c2718c52b45fd49dbeee88634b3a60ceab42a6"
   integrity sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==
+
+web-vitals@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-2.1.4.tgz#76563175a475a5e835264d373704f9dde718290c"
+  integrity sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
