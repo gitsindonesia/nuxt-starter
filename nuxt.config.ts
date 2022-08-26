@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     ['@pinia/nuxt', { disableVuex: true }],
     '@vueuse/nuxt',
     '@gits-id/ui-nuxt',
+    '@nuxtjs/partytown',
   ],
   runtimeConfig: {
     public: {
@@ -16,6 +17,23 @@ export default defineNuxtConfig({
   vite: {
     optimizeDeps: {
       include: ['lodash/has', 'yup', 'axios'],
+    },
+  },
+  partytown: {
+    forward: ['dataLayer.push'],
+  },
+  app: {
+    head: {
+      script: [
+        {
+          children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-44SPLJSV5C');`,
+        },
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-44SPLJSV5C',
+          async: true,
+          type: 'text/partytown',
+        },
+      ],
     },
   },
 });

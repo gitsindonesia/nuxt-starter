@@ -1149,6 +1149,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@builder.io/partytown@^0.6.0":
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.6.4.tgz#8610c9e73cc52a95b963c1878760ebe628eee048"
+  integrity sha512-W6C7O0eSg6YNujHYZozXK5iJ+V69QVLLLRv+NlmYh1vFe0PUJ3kmAhRCx7rUqI3XAA/KpdyfdxLoopBg3GlfVA==
+
 "@ckeditor/ckeditor5-adapter-ckfinder@^32.0.0":
   version "32.0.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-adapter-ckfinder/-/ckeditor5-adapter-ckfinder-32.0.0.tgz#6ffd009ccdba7f3fe8dbe8a7da5ffad1a2cb1847"
@@ -2540,6 +2545,17 @@
     vite-node "^0.21.1"
     vite-plugin-checker "^0.4.9"
     vue-bundle-renderer "^0.4.1"
+
+"@nuxtjs/partytown@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/partytown/-/partytown-1.2.1.tgz#3b0fa870934a367a01c3c42bd1186aac95fdc121"
+  integrity sha512-4kKza3idt1vRzLaeK4pnXeSg82iPG8cFhLcFNvyn7pNX7FLf8jciqdOY05xlKXeBYa7EY162euKHY2+eb0IXPg==
+  dependencies:
+    "@builder.io/partytown" "^0.6.0"
+    "@nuxt/kit" "^3.0.0-rc.3"
+    knitwork "^0.1.1"
+    serve-static "^1.15.0"
+    ufo "^0.8.4"
 
 "@nuxtjs/tailwindcss@^5.3.2":
   version "5.3.2"
@@ -9594,7 +9610,7 @@ klona@^2.0.4, klona@^2.0.5:
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.5.tgz#d166574d90076395d9963aa7a928fabb8d76afbc"
   integrity sha512-pJiBpiXMbt7dkzXe8Ghj/u4FfXOOa98fPW+bihOJ4SjnoijweJrNThJfd3ifXpXhREjpoF2mZVH1GfS9LV3kHQ==
 
-knitwork@^0.1.2:
+knitwork@^0.1.1, knitwork@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/knitwork/-/knitwork-0.1.2.tgz#5447a81d8eaede57d236f864ec29b8dc2bc192bf"
   integrity sha512-2ekmY2S/VB3YGVhrIFadyJQpkjMFSf48tsXCnA+kjs4FEQIT+5FLyOF0No/X58z/2E/VaMyeJfukRoVT4gMsfQ==
