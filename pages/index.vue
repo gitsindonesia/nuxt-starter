@@ -24,6 +24,8 @@ useHead({
       </template>
     </HeroCentered>
 
+    <HomeFeatures />
+
     <div class="container mx-auto">
       <!-- <HomeWelcome /> -->
     </div>
