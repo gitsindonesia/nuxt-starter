@@ -28,13 +28,12 @@ const menus = ref([
 </script>
 
 <template>
-  <header class="py-3 bg-white dark:bg-gray-800 dark:text-gray-300">
+  <header class="py-4 bg-white">
     <div class="container mx-auto">
       <div class="flex gap-8 items-center">
         <!-- brand logo / text -->
         <a href="#" class="text-primary font-semibold">
-          <v-logo class="block dark:hidden" img-class="h-8" />
-          <v-logo class="hidden dark:block" white img-class="h-8" />
+          <v-logo img-class="h-8" />
         </a>
         <!-- nav -->
         <nav class="flex-1">
