@@ -26,6 +26,8 @@ useHead({
 
     <HomeFeatures />
 
+    <HomeCta />
+
     <div class="container mx-auto">
       <!-- <HomeWelcome /> -->
     </div>
