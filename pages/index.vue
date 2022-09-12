@@ -1,31 +1,16 @@
 <script setup lang="ts">
 definePageMeta({
-  middleware: 'auth',
-});
-
-useHead({
-  title: 'Home',
+  layout: 'landing',
 });
 </script>
 
 <template>
-  <div>
-    <PageHeader title="Dashboard" />
-
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
-      <v-stats title="Users" value="20" icon="ri:user-line" />
-      <v-stats title="Posts" value="20" icon="ri:table-line" color="success" />
-      <v-stats
-        title="Comments"
-        value="20"
-        icon="ri:message-line"
-        color="warning"
-      />
-      <v-stats title="Pages" value="5" icon="ri:book-line" color="error" />
-    </div>
-
-    <v-card title="Welcome" hide-footer class="mt-6">
-      Welcome to your new GITS Project!
-    </v-card>
+  <div class="container mx-auto px-6 py-5 border-4 rounded-xl border-dashed">
+    <h1 class="font-semibold text-3xl">Welcome to your new project!</h1>
+    <p class="mt-4">
+      Look at the
+      <a class="font-medium underline text-primary" href="https://gits-ui.web.app"> GITS UI documentation </a> and
+      <a class="font-medium underline text-primary" href="https://v3.nuxtjs.org">nuxt 3 documentation </a> to learn more.
+    </p>
   </div>
 </template>

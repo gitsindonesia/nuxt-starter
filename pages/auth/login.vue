@@ -38,7 +38,7 @@ const onSubmit = async (values: Record<string, any>) => {
   const data = res.data;
   auth.login(data.user, data.token);
 
-  router.push((route.query as any).next || '/');
+  router.push((route.query as any).next || '/dashboard');
 };
 </script>
 
