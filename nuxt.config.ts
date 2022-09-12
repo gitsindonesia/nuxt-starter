@@ -20,23 +20,6 @@ export default defineNuxtConfig({
       include: ['lodash/has', 'yup', 'axios'],
     },
   },
-  partytown: {
-    forward: ['dataLayer.push'],
-  },
-  app: {
-    head: {
-      script: [
-        {
-          children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-44SPLJSV5C');`,
-        },
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-44SPLJSV5C',
-          async: true,
-          type: 'text/partytown',
-        },
-      ],
-    },
-  },
   googleAnalytics: {
     id: 'G-44SPLJSV5C',
   },
