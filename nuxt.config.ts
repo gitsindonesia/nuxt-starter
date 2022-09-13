@@ -23,4 +23,5 @@ export default defineNuxtConfig({
   googleAnalytics: {
     id: 'G-44SPLJSV5C',
   },
+  css: ['~/assets/css/global.css'],
 });

@@ -38,9 +38,3 @@ useHead({
     </div>
   </div>
 </template>
-
-<style scoped>
-:global(body) {
-  @apply bg-gray-100;
-}
-</style>
