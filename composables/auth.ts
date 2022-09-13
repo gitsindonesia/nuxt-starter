@@ -1,5 +1,4 @@
 import { storeToRefs } from 'pinia';
-import { useAuthStore } from '~~/stores/auth';
 
 export const useAuth = () => {
   const auth = useAuthStore();

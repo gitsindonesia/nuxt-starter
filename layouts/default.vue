@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
-import { useLayoutStore } from '~~/stores/layout';
 
 const layout = useLayoutStore();
 const { isMini } = storeToRefs(layout);

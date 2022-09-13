@@ -1,7 +1,5 @@
 import { useForm } from 'vee-validate';
 import { object, string } from 'yup';
-import { login } from '~~/api/auth';
-import { useAuthStore } from '~~/stores/auth';
 
 export const useLogin = () => {
   const auth = useAuthStore();
@@ -38,7 +36,7 @@ export const useLogin = () => {
 
       router.push((route.query as any).next || '/dashboard');
     } catch (e) {
-      error.value = e.data.message;
+      error.value = e.data?.message || e.message;
       showAlert.value = true;
     } finally {
       loading.value = false;

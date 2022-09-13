@@ -24,4 +24,7 @@ export default defineNuxtConfig({
     id: 'G-44SPLJSV5C',
   },
   css: ['~/assets/css/global.css'],
+  imports: {
+    dirs: ['./api', './composables', './stores'],
+  },
 });

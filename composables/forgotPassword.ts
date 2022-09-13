@@ -1,6 +1,5 @@
 import { useForm } from 'vee-validate';
 import { object, string } from 'yup';
-import { forgotPassword } from '~~/api/auth';
 
 export const useForgotPassword = () => {
   const error = ref();
