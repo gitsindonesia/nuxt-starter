@@ -41,7 +41,7 @@ const menus = ref([
             <li v-for="menu in menus" :key="menu.text">
               <NuxtLink
                 :to="menu.to"
-                class="hover:text-primary transition duration-300"
+                class="hover:text-primary transition duration-300 text-gray-700"
                 active-class="text-primary"
               >
                 {{ menu.text }}
