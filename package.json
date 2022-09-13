@@ -27,12 +27,12 @@
     "babel-loader": "^8.2.5",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "nuxt": "^3.0.0-rc.8",
+    "nuxt": "^3.0.0-rc.9",
     "vue-loader": "^17.0.0"
   },
   "dependencies": {
     "@gits-id/quill-editor": "^0.11.0",
-    "@gits-id/ui-nuxt": "0.11.3-alpha.3+69fbd7e",
+    "@gits-id/ui-nuxt": "^0.11.5",
     "@vueuse/core": "^9.1.1",
     "@vueuse/nuxt": "^9.1.1",
     "vue-gtag": "^2.0.1"
