@@ -1,19 +1,16 @@
-import {Story} from '@storybook/vue3';
+import { Story } from '@storybook/vue3';
 import Counter from './Counter.vue';
 
 export default {
   title: 'Components/Counter',
   component: Counter,
-  argTypes: {},
-  args: {
-    modelValue: ''
-  },
+  args: {},
 };
 
 const Template: Story<{}> = (args) => ({
-  components: {Counter},
+  components: { Counter },
   setup() {
-    return {args};
+    return { args };
   },
   template: `
     <Counter/>
