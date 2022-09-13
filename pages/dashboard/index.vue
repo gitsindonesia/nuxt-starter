@@ -10,9 +10,9 @@ useHead({
 
 <template>
   <div>
-    <PageHeader title="Dashboard" />
+    <h1 class="text-3xl font-semibold mb-6">Dashboard</h1>
 
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
       <v-stats title="Users" value="20" icon="ri:user-line" />
       <v-stats title="Posts" value="20" icon="ri:table-line" color="success" />
       <v-stats

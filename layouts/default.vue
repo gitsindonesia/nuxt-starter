@@ -6,13 +6,13 @@ const layout = useLayoutStore();
 const { isMini } = storeToRefs(layout);
 
 useHead({
-  title: 'Nuxt 3 + GITS UI',
+  title: 'Dashboard',
 });
 </script>
 
 <template>
   <div class="flex flex-col sm:flex-row">
-    <AppSidebar />
+    <Sidebar />
 
     <div
       class="sm:flex-1 transition-all duration-300"
@@ -32,7 +32,7 @@ useHead({
         </div>
       </v-app-bar>
 
-      <div class="px-4 py-6">
+      <div class="p-6">
         <slot />
       </div>
     </div>

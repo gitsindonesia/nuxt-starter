@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useAuthStore } from '~~/stores/auth';
+
 definePageMeta({
   layout: 'blank',
 });
@@ -6,6 +8,8 @@ definePageMeta({
 useHead({
   title: 'Home',
 });
+
+const { loggedIn } = useAuthStore();
 </script>
 
 <template>

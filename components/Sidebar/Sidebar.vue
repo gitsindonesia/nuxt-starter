@@ -9,27 +9,12 @@ const menus = ref([
     to: '/',
     icon: 'ri:home-line',
   },
-  {
-    text: 'User Management',
-    to: '/users',
-    icon: 'ri:user-line',
-  },
 ]);
 
 const layout = useLayoutStore();
 const { isMini } = storeToRefs(layout);
 const auth = useAuthStore();
 const router = useRouter();
-
-const dropdownItems = ref([
-  {
-    text: 'Profile',
-    to: '/profile',
-  },
-  {
-    text: 'Logout',
-  },
-]);
 
 function logout() {
   auth.logout();
@@ -61,7 +46,7 @@ function logout() {
               class="flex items-center gap-2 px-3 py-1"
               :class="{ 'sm:hidden': isMini }"
             >
-              <v-icon name="heroicons-outline:user"  class="w-4 h-4"/>
+              <v-icon name="heroicons-outline:user" class="w-4 h-4" />
               <span v-if="auth.user"> {{ auth.user.name }} </span>
             </v-dropdown-button>
           </template>
