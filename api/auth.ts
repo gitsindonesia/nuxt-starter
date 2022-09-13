@@ -13,3 +13,12 @@ export const login = ({
     },
   });
 };
+
+export const forgotPassword = ({ email }: { email: string }) => {
+  return $fetch('/api/auth/forgot-password', {
+    method: 'post',
+    body: {
+      email,
+    },
+  });
+};
