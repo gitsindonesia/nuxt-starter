@@ -2,6 +2,13 @@
 
 Look at the [GITS UI documentation](https://gits-ui.web.app) and [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
+## Features
+
+- [Nuxt 3](https://v3.nuxtjs.org/)
+- [GITS UI](https://gits-ui.web.app/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Pinia](https://pinia.vuejs.org/)
+
 ## Create New Project
 
 You can easily create new project from this template using `nuxi`:
