@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const count = ref(0);
+
+const { loggedIn, logout } = useAuth();
 </script>
 
 <template>
@@ -9,7 +11,13 @@ const count = ref(0);
     <v-btn color="primary" @click="count++">Click Me</v-btn>
     <div>
       Go to:
-      <v-btn color="primary" to="/auth/login" text>Login</v-btn>
+      <template v-if="loggedIn">
+        <v-btn color="primary" to="/dashboard" text> Dashboard </v-btn>
+        <v-btn color="primary" to="/dashboard" text @click="logout">
+          Logout
+        </v-btn>
+      </template>
+      <v-btn v-else color="primary" to="/auth/login" text> Login </v-btn>
     </div>
   </div>
 </template>
