@@ -1,11 +1,11 @@
 import {test, expect} from 'vitest'
 import { mount } from '@vue/test-utils'
-import PageHeader from './PageHeader.vue'
+import Counter from './Counter.vue'
 
 test('mount component', async() => {
-  expect(PageHeader).toBeTruthy()
+  expect(Counter).toBeTruthy()
 
-  const wrapper = mount(PageHeader, {
+  const wrapper = mount(Counter, {
     props: {
       modelValue: '',
     },

@@ -13,9 +13,5 @@ export default defineEventHandler(async (event) => {
     };
   }
 
-  return {
-    error: {
-      message: 'Unauthenticated',
-    },
-  };
+  throw new Error('Unauthenticated');
 });
