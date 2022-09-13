@@ -9,6 +9,12 @@ Look at the [GITS UI documentation](https://gits-ui.web.app) and [nuxt 3 documen
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Pinia](https://pinia.vuejs.org/)
 
+## Directory Structure
+
+Look at the [nuxt directory stucture documentation](https://v3.nuxtjs.org/guide/directory-structure/nuxt). With additional folders:
+
+- `api`: Used to store all the api mapping with its path and payload.
+
 ## Create New Project
 
 You can easily create new project from this template using `nuxi`:
