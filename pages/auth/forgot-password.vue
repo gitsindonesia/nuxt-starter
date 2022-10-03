@@ -2,13 +2,13 @@
 definePageMeta({
   layout: 'auth',
   middleware: 'guest',
-});
+})
 
 useHead({
   title: 'Forgot Password',
-});
+})
 
-const { handleSubmit, showAlert, error, loading, sent } = useForgotPassword();
+const { handleSubmit, showAlert, error, loading, sent } = useForgotPassword()
 </script>
 
 <template>
@@ -60,8 +60,12 @@ const { handleSubmit, showAlert, error, loading, sent } = useForgotPassword();
     </AuthCard>
     <div class="text-center mt-2">
       <v-btn color="primary" text to="/auth/login">
-        <template v-if="sent"> Sign in </template>
-        <template v-else> Ready to sign in? </template>
+        <template v-if="sent">
+          Sign in
+        </template>
+        <template v-else>
+          Ready to sign in?
+        </template>
       </v-btn>
     </div>
   </div>

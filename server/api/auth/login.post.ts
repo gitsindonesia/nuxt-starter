@@ -1,5 +1,5 @@
 export default defineEventHandler(async (event) => {
-  const body = await useBody(event);
+  const body = await useBody(event)
 
   if (body.email === 'admin@example.com' && body.password === 'secret') {
     return {
@@ -10,8 +10,8 @@ export default defineEventHandler(async (event) => {
         },
         token: 'TOKEN1234#',
       },
-    };
+    }
   }
 
-  throw new Error('Unauthenticated');
-});
+  throw new Error('Unauthenticated')
+})

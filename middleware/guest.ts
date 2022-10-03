@@ -1,6 +1,6 @@
 export default defineNuxtRouteMiddleware((to) => {
-  const auth = useAuthStore();
-  const router = useRouter();
+  const auth = useAuthStore()
+  const router = useRouter()
 
   if (auth.loggedIn) {
     return router.push({
@@ -8,6 +8,6 @@ export default defineNuxtRouteMiddleware((to) => {
       query: {
         from: to.path,
       },
-    });
+    })
   }
-});
+})

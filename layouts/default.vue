@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia';
+import { storeToRefs } from 'pinia'
 
-const layout = useLayoutStore();
-const { isMini } = storeToRefs(layout);
+const layout = useLayoutStore()
+const { isMini } = storeToRefs(layout)
 
 useHead({
   title: 'Dashboard',
-});
+})
 </script>
 
 <template>
@@ -21,13 +21,13 @@ useHead({
         class="px-2 py-2 shadow sm:hidden sticky top-0 w-full inset-x-0"
       >
         <div class="flex">
-          <v-btn @click="isMini = !isMini" icon rounded text>
+          <v-btn icon rounded text @click="isMini = !isMini">
             <v-icon name="ri:menu-line" class="w-6 h-6" />
           </v-btn>
           <div class="flex-1">
             <v-logo img-class="h-8 my-1 mx-auto" />
           </div>
-          <div class="w-6"></div>
+          <div class="w-6" />
         </div>
       </v-app-bar>
 

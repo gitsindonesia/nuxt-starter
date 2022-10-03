@@ -1,16 +1,18 @@
 <script setup lang="ts">
 definePageMeta({
   middleware: 'auth',
-});
+})
 
 useHead({
   title: 'Home',
-});
+})
 </script>
 
 <template>
   <div>
-    <h1 class="text-3xl font-semibold mb-6">Dashboard</h1>
+    <h1 class="text-3xl font-semibold mb-6">
+      Dashboard
+    </h1>
 
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
       <v-stats title="Users" value="20" icon="ri:user-line" />

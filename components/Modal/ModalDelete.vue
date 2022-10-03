@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { VModalEvent } from '@gits-id/modal';
-import { useVModel } from '@vueuse/core';
+import type { VModalEvent } from '@gits-id/modal'
+import { useVModel } from '@vueuse/core'
 
-type Props = {
-  modelValue?: boolean;
-  title?: string;
-  message?: string;
-  loading?: boolean;
-  api?: any;
-  successTitle?: string;
-  successMessage?: string;
-};
+interface Props {
+  modelValue?: boolean
+  title?: string
+  message?: string
+  loading?: boolean
+  api?: any
+  successTitle?: string
+  successMessage?: string
+}
 
 const props = withDefaults(defineProps<Props>(), {
   modelValue: false,
@@ -19,46 +19,46 @@ const props = withDefaults(defineProps<Props>(), {
   loading: false,
   successTitle: 'Success',
   successMessage: 'Item removed successfully!',
-});
+})
 
 const emit = defineEmits<{
-  (e: 'update:modelValue', value: string): void;
-  (e: 'update:loading', value: boolean): void;
-  (e: 'confirm'): void;
-}>();
+  (e: 'update:modelValue', value: string): void
+  (e: 'update:loading', value: boolean): void
+  (e: 'confirm'): void
+}>()
 
-const { loading } = toRefs(props);
+const { loading } = toRefs(props)
 
-const isOpen = useVModel(props, 'modelValue', emit);
-const isLoading = ref(props.loading);
-const isSuccess = ref(false);
+const isOpen = useVModel(props, 'modelValue', emit)
+const isLoading = ref(props.loading)
+const isSuccess = ref(false)
 
 watch(
   loading,
   (val) => {
-    isLoading.value = val;
+    isLoading.value = val
   },
-  { immediate: true }
-);
+  { immediate: true },
+)
 
 const onConfirm = (e: VModalEvent) => {
-  isLoading.value = true;
-  const { error } = props.api();
-  isLoading.value = false;
+  isLoading.value = true
+  const { error } = props.api()
+  isLoading.value = false
 
   if (!error.value) {
-    e.close();
+    e.close()
     setTimeout(() => {
-      isSuccess.value = true;
-    }, 500);
+      isSuccess.value = true
+    }, 500)
   }
-};
+}
 </script>
 
 <template>
   <v-modal
-    :title="title"
     v-model="isOpen"
+    :title="title"
     :close-props="{ block: true }"
     confirm
     :confirm-props="{ color: 'error', block: true }"
@@ -77,7 +77,9 @@ const onConfirm = (e: VModalEvent) => {
       />
     </div>
     <div class="mt-4">
-      <h3 class="font-semibold text-lg mb-2">{{ title }}</h3>
+      <h3 class="font-semibold text-lg mb-2">
+        {{ title }}
+      </h3>
       <p>{{ message }}</p>
     </div>
   </v-modal>

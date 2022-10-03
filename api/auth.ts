@@ -2,8 +2,8 @@ export const login = ({
   email,
   password,
 }: {
-  email: string;
-  password: string;
+  email: string
+  password: string
 }) => {
   return $fetch('/api/auth/login', {
     method: 'post',
@@ -11,8 +11,8 @@ export const login = ({
       email,
       password,
     },
-  });
-};
+  })
+}
 
 export const forgotPassword = ({ email }: { email: string }) => {
   return $fetch('/api/auth/forgot-password', {
@@ -20,5 +20,5 @@ export const forgotPassword = ({ email }: { email: string }) => {
     body: {
       email,
     },
-  });
-};
+  })
+}

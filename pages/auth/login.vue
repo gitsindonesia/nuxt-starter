@@ -2,13 +2,13 @@
 definePageMeta({
   layout: 'auth',
   middleware: 'guest',
-});
+})
 
 useHead({
   title: 'Login',
-});
+})
 
-const { handleSubmit, showAlert, showPassword, error, loading } = useLogin();
+const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
 </script>
 
 <template>
@@ -19,7 +19,9 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin();
       <h1 class="text-center text-3xl font-semibold mt-4 text-gray-800">
         Welcome back!
       </h1>
-      <p class="text-gray-500 text-center mt-2">Log in to your account</p>
+      <p class="text-gray-500 text-center mt-2">
+        Log in to your account
+      </p>
 
       <v-alert v-model="showAlert" color="error" class="mt-6">
         {{ error }}

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useAuthStore } from '~~/stores/auth';
-import { useLayoutStore } from '~~/stores/layout';
-import { storeToRefs } from 'pinia';
+import { storeToRefs } from 'pinia'
+import { useAuthStore } from '~~/stores/auth'
+import { useLayoutStore } from '~~/stores/layout'
 
 const menus = ref([
   {
@@ -9,16 +9,16 @@ const menus = ref([
     to: '/',
     icon: 'ri:home-line',
   },
-]);
+])
 
-const layout = useLayoutStore();
-const { isMini } = storeToRefs(layout);
-const auth = useAuthStore();
-const router = useRouter();
+const layout = useLayoutStore()
+const { isMini } = storeToRefs(layout)
+const auth = useAuthStore()
+const router = useRouter()
 
 function logout() {
-  auth.logout();
-  router.push('/auth/login');
+  auth.logout()
+  router.push('/auth/login')
 }
 </script>
 
@@ -31,7 +31,9 @@ function logout() {
     :logo-props="{ imgClass: 'mx-auto h-8 mt-2' }"
   >
     <template #logo.mini>
-      <div class="text-center font-semibold p-1">GITS</div>
+      <div class="text-center font-semibold p-1">
+        GITS
+      </div>
     </template>
     <template #append>
       <div
@@ -53,7 +55,9 @@ function logout() {
 
           <v-dropdown-item>Profile</v-dropdown-item>
           <v-dropdown-item divider />
-          <v-dropdown-item @click="logout">Logout</v-dropdown-item>
+          <v-dropdown-item @click="logout">
+            Logout
+          </v-dropdown-item>
         </v-dropdown>
         <v-btn icon size="xs" @click="isMini = !isMini">
           <v-icon

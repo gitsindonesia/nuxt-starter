@@ -5,4 +5,4 @@ module.exports = {
   },
   plugins: [],
   presets: [require('@gits-id/tailwind-config/preset')],
-};
+}

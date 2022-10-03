@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import { useVModel } from '@vueuse/core';
+import { useVModel } from '@vueuse/core'
 
-type Props = {
-  modelValue?: boolean;
-  title?: string;
-  message?: string;
-};
+interface Props {
+  modelValue?: boolean
+  title?: string
+  message?: string
+}
 
 const props = withDefaults(defineProps<Props>(), {
   modelValue: false,
   title: '',
   message: '',
-});
+})
 
-const emit = defineEmits(['update:modelValue', 'close']);
+const emit = defineEmits(['update:modelValue', 'close'])
 
-const isOpen = useVModel(props, 'modelValue', emit);
+const isOpen = useVModel(props, 'modelValue', emit)
 </script>
 
 <template>
@@ -34,7 +34,9 @@ const isOpen = useVModel(props, 'modelValue', emit);
       <v-icon name="heroicons-outline:check" class="w-10 h-10 text-success-500" />
     </div>
     <div class="mt-4">
-      <h3 class="font-semibold text-lg mb-2">{{ title }}</h3>
+      <h3 class="font-semibold text-lg mb-2">
+        {{ title }}
+      </h3>
       <p>{{ message }}</p>
     </div>
   </v-modal>

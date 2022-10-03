@@ -1,0 +1,7 @@
+{
+  "extends": "@antfu",
+  "rules": {
+    "vue/valid-v-slot": "off",
+    "vue/v-on-event-hyphenation": "off"
+  }
+}
