@@ -24,15 +24,18 @@ export const useLogin = () => {
     },
   })
 
-  const handleSubmit = _handleSubmit(async (formValues) => {
+  const handleSubmit = _handleSubmit(async () => {
     error.value = ''
     showAlert.value = false
     loading.value = true
 
     try {
-      const res = await login(formValues)
+      // const res = await login(formValues)
 
-      auth.login(res.data.user, res.data.token)
+      auth.login({
+        name: 'John Doe',
+        email: 'john@example.com',
+      }, 'ABC123')
 
       router.push((route.query as any).next || '/dashboard')
     }
