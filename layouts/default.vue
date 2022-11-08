@@ -37,10 +37,10 @@ const toggleMenu = () => {
         </VBtn>
         <div class="flex gap-2 items-center">
           <VBtn icon rounded text class="relative">
-            <v-icon name="ri:information-line" class="w-5 h-5" />
+            <v-icon name="ri:information-line" class="w-6 h-6" />
           </VBtn>
           <VBtn icon rounded text class="relative">
-            <v-icon name="ri:notification-line" class="w-5 h-5" />
+            <v-icon name="ri:notification-line" class="w-6 h-6" />
             <span class="bg-error-500 text-white rounded-full absolute right-0 top-0 w-4 h-4 text-xs">
               6
             </span>
@@ -60,7 +60,7 @@ const toggleMenu = () => {
                     src="https://cdn.vuetifyjs.com/images/lists/1.jpg"
                   />
                 </div>
-                <div class="text-left">
+                <div class="text-left hidden sm:block">
                   <h3 class="text-sm font-semibold">
                     Hendy Yanuar
                   </h3>
