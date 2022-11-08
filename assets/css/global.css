@@ -1,3 +1,6 @@
+@import "./transition.css";
+@import "@gits-id/avatar/dist/style.css";
+
 body {
   @apply bg-gray-100;
 }

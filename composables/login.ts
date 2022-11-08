@@ -36,7 +36,7 @@ export const useLogin = () => {
 
       router.push((route.query as any).next || '/dashboard')
     }
-    catch (e) {
+    catch (e: any) {
       error.value = e.data?.message || e.message
       showAlert.value = true
     }

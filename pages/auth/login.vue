@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'auth',
+  layout: 'blank',
   middleware: 'guest',
 })
 
@@ -12,22 +12,22 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
 </script>
 
 <template>
-  <div>
-    <AuthCard>
-      <v-logo img-class="h-10 mx-auto" />
+  <LayoutsTwoColumn>
+    <div class="rounded-lg p-6 sm:min-w-[420px]">
+      <AppLogo class="h-10" />
 
-      <h1 class="text-center text-3xl font-semibold mt-4 text-gray-800">
-        Welcome back!
+      <h1 class="text-2xl font-bold mt-6 text-gray-800">
+        Masuk Akun
       </h1>
-      <p class="text-gray-500 text-center mt-2">
-        Log in to your account
+      <p class="text-gray-500 mt-3">
+        Silahkan login untuk mengakses semua fitur!
       </p>
 
       <v-alert v-model="showAlert" color="error" class="mt-6">
         {{ error }}
       </v-alert>
 
-      <form class="mt-4" @submit="handleSubmit">
+      <form class="mt-5" @submit="handleSubmit">
         <v-input
           label="Email"
           placeholder="Email"
@@ -45,25 +45,25 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
           @clickPrependIcon="showPassword = !showPassword"
         />
         <v-checkbox
-          wrapper-class="mt-4"
+          wrapper-class="mt-5"
           name="rememberMe"
           label="Remember me"
         />
         <v-btn
           :loading="loading"
           type="submit"
-          class="mt-4"
+          class="mt-5"
           color="primary"
           block
         >
           Login
         </v-btn>
       </form>
-    </AuthCard>
-    <div class="text-center mt-2">
-      <v-btn color="primary" text to="/auth/forgot-password">
-        Forgot Password?
-      </v-btn>
+      <div class="text-center mt-2">
+        <v-btn color="primary" text to="/auth/forgot-password">
+          Forgot Password?
+        </v-btn>
+      </div>
     </div>
-  </div>
+  </LayoutsTwoColumn>
 </template>
