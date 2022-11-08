@@ -10,7 +10,7 @@ export const useLayoutStore = defineStore({
   state: (): LayoutState => {
     return {
       sidebar: true,
-      miniSidebar: true,
+      miniSidebar: false,
     }
   },
 })

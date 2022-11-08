@@ -36,17 +36,15 @@ function logout() {
   router.push('/auth/login')
 }
 
-const isMobile = computed(() => {
-  return useMediaQuery('(max-width: 768px)')
-})
+const isMobile = useMediaQuery('(max-width: 768px)')
 </script>
 
 <template>
   <NavDrawer
     v-model="sidebar"
     variant="dark"
-    :fixed="isMobile.value"
-    :overlay="isMobile.value"
+    :fixed="isMobile"
+    :overlay="isMobile"
     :mini="miniSidebar"
   >
     <div class="h-[58px] flex justify-center items-center">

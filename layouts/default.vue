@@ -10,16 +10,17 @@ useHead({
   title: 'Dashboard',
 })
 
-const isMobile = computed(() => {
-  return useMediaQuery('(max-width: 768px)')
-})
+const isMobile = useMediaQuery('(max-width: 768px)')
 
 const toggleMenu = () => {
   if (isMobile.value) {
     miniSidebar.value = false
     sidebar.value = !sidebar.value
   }
-  else { miniSidebar.value = !miniSidebar.value }
+  else {
+    sidebar.value = true
+    miniSidebar.value = !miniSidebar.value
+  }
 }
 </script>
 
@@ -36,7 +37,10 @@ const toggleMenu = () => {
         </VBtn>
         <div class="flex gap-2 items-center">
           <VBtn icon rounded text class="relative">
-            <v-icon name="ri:notification-line" class="w-6 h-6" />
+            <v-icon name="ri:information-line" class="w-5 h-5" />
+          </VBtn>
+          <VBtn icon rounded text class="relative">
+            <v-icon name="ri:notification-line" class="w-5 h-5" />
             <span class="bg-error-500 text-white rounded-full absolute right-0 top-0 w-4 h-4 text-xs">
               6
             </span>
