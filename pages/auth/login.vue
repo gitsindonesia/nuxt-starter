@@ -17,7 +17,7 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
       <AppLogo class="h-10" />
 
       <h1 class="text-2xl font-bold mt-6 text-gray-800">
-        Masuk Akun Dashboard Merchant
+        Masuk Akun
       </h1>
       <p class="text-gray-500 mt-3">
         Silahkan login untuk mengakses semua fitur!
