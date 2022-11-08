@@ -1,4 +1,6 @@
 .nav-drawer {
+  transition: all 0.3s ease-out;
+
   @apply w-[248px] flex flex-col h-screen shrink-0;
 }
 
