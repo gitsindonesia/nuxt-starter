@@ -1,5 +1,3 @@
 <template>
-  <AuthLayout>
-    <slot />
-  </AuthLayout>
+  <slot />
 </template>

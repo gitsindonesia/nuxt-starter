@@ -29,7 +29,7 @@ export const useForgotPassword = () => {
       })
       sent.value = true
     }
-    catch (e) {
+    catch (e: any) {
       error.value = e.data.message
       showAlert.value = true
     }

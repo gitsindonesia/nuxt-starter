@@ -9,7 +9,7 @@ export const useAuthStorage = (
     authUserKey: AUTH_USER_STORAGE_KEY,
   },
 ) => {
-  const user = useCookie<AuthUser>(authUserKey)
+  const user = useCookie<AuthUser | null>(authUserKey)
   const token = useCookie<string>(authTokenKey)
 
   const store = (newToken: string, newUser: Record<string, any>) => {
