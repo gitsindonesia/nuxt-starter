@@ -6,13 +6,28 @@ import { useLayoutStore } from '~~/stores/layout'
 const menus = ref([
   {
     text: 'Home',
-    to: '/',
+    to: '/dashboard',
     icon: 'ri:home-line',
+  },
+  {
+    text: 'Manage',
+    to: '/manage',
+    icon: 'ri:table-2',
+  },
+  {
+    text: 'Laporan',
+    to: '/laporan',
+    icon: 'ri:bar-chart-2-fill',
+  },
+  {
+    text: 'Bantuan',
+    to: '/help',
+    icon: 'ri:question-fill',
   },
 ])
 
 const layout = useLayoutStore()
-const { isMini } = storeToRefs(layout)
+const { sidebar, miniSidebar } = storeToRefs(layout)
 const auth = useAuthStore()
 const router = useRouter()
 
@@ -20,53 +35,37 @@ function logout() {
   auth.logout()
   router.push('/auth/login')
 }
+
+const isMobile = computed(() => {
+  return useMediaQuery('(max-width: 768px)')
+})
 </script>
 
 <template>
-  <v-nav-drawer
-    v-model:mini="isMini"
-    :menus="menus"
-    hide-toggle
-    small
-    :logo-props="{ imgClass: 'mx-auto h-8 mt-2' }"
+  <NavDrawer
+    v-model="sidebar"
+    variant="dark"
+    :fixed="isMobile.value"
+    :overlay="isMobile.value"
+    :mini="miniSidebar"
   >
-    <template #logo.mini>
-      <div class="text-center font-semibold p-1">
-        GITS
-      </div>
-    </template>
-    <template #append>
-      <div
-        class="w-full flex items-center"
-        :class="
-          isMini ? 'sm:justify-center justify-between' : 'justify-between'
-        "
+    <div class="h-[58px] flex justify-center items-center">
+      <slot name="logo">
+        <VLogo v-if="!miniSidebar" img-class="h-6" white />
+      </slot>
+    </div>
+    <VList rounded hover class="p-2 space-y-1">
+      <VListItem
+        v-for="menu in menus"
+        :key="menu.text"
+        :prepend-icon="menu.icon"
+        :to="menu.to"
+        hover
+        hover-class="hover:bg-neutral-700"
+        exact-active-class="bg-neutral-700"
       >
-        <v-dropdown top>
-          <template #activator>
-            <v-dropdown-button
-              class="flex items-center gap-2 px-3 py-1"
-              :class="{ 'sm:hidden': isMini }"
-            >
-              <v-icon name="heroicons-outline:user" class="w-4 h-4" />
-              <span v-if="auth.user"> {{ auth.user.name }} </span>
-            </v-dropdown-button>
-          </template>
-
-          <v-dropdown-item>Profile</v-dropdown-item>
-          <v-dropdown-item divider />
-          <v-dropdown-item @click="logout">
-            Logout
-          </v-dropdown-item>
-        </v-dropdown>
-        <v-btn icon size="xs" @click="isMini = !isMini">
-          <v-icon
-            class="transition duration-300 transform"
-            :class="isMini ? 'rotate-180' : ''"
-            name="heroicons-outline:chevron-left"
-          />
-        </v-btn>
-      </div>
-    </template>
-  </v-nav-drawer>
+        {{ menu.text }}
+      </VListItem>
+    </VList>
+  </NavDrawer>
 </template>
