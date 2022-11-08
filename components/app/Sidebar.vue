@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { useAuthStore } from '~~/stores/auth'
-import { useLayoutStore } from '~~/stores/layout'
 
 const menus = ref([
   {
