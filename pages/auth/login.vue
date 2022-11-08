@@ -14,7 +14,7 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
 <template>
   <LayoutsTwoColumn>
     <div class="rounded-lg p-6 sm:min-w-[420px]">
-      <v-logo img-class="h-10" />
+      <AppLogo class="h-10" />
 
       <h1 class="text-2xl font-bold mt-6 text-gray-800">
         Masuk Akun Dashboard Merchant

@@ -25,7 +25,7 @@ useHead({
             <v-icon name="ri:menu-line" class="w-6 h-6" />
           </v-btn>
           <div class="flex-1">
-            <v-logo img-class="h-8 my-1 mx-auto" />
+            <AppLogo class="h-8 my-1 mx-auto" />
           </div>
           <div class="w-6" />
         </div>

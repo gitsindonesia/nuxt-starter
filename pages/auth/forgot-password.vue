@@ -14,7 +14,7 @@ const { handleSubmit, showAlert, error, loading, sent } = useForgotPassword()
 <template>
   <LayoutsTwoColumn>
     <div class="rounded-lg p-6 sm:min-w-[420px]">
-      <v-logo :img-class="sent ? 'h-10 mx-auto' : 'h-10'" />
+      <AppLogo :class="sent ? 'h-10 mx-auto' : 'h-10'" />
 
       <div v-if="sent" class="text-center">
         <h1 class="text-3xl font-semibold mt-5 text-gray-800">

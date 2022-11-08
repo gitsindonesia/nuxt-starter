@@ -2,7 +2,7 @@
   <VAppBar shadow="xl" class="py-3">
     <div class="container flex items-center justify-between mx-auto px-4">
       <slot name="logo">
-        <v-logo img-class="h-8" />
+        <AppLogo class="h-8" />
       </slot>
       <slot name="right" />
     </div>
