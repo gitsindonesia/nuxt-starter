@@ -48,12 +48,7 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/line-clamp'),
-    require('@gits-id/tailwind-components/button'),
-    require('@gits-id/tailwind-components/alert'),
+  presets: [
+    require('@gits-id/tailwind-config/preset'),
   ],
 }

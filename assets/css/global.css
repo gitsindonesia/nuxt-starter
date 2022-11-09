@@ -1,6 +1,10 @@
 @import "./transition.css";
-@import "@gits-id/avatar/dist/style.css";
+@import "@gits-id/nav-drawer/dist/style.css";
 
 body {
   @apply bg-gray-100;
+}
+
+.nav-drawer {
+  z-index: 20;
 }

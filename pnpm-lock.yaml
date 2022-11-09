@@ -6,7 +6,8 @@ specifiers:
   '@commitlint/cli': ^17.0.3
   '@commitlint/config-conventional': ^17.0.3
   '@gits-id/quill-editor': ^0.11.0
-  '@gits-id/ui-nuxt': ^0.11.5
+  '@gits-id/ui-nuxt': ^0.12.0-alpha.3
+  '@heroicons/vue': ^2.0.13
   '@nuxtjs/partytown': ^1.2.1
   '@nuxtjs/tailwindcss': ^6.1.3
   '@nuxtjs/web-vitals': ^0.1.10
@@ -31,7 +32,8 @@ specifiers:
 
 dependencies:
   '@gits-id/quill-editor': 0.11.10
-  '@gits-id/ui-nuxt': 0.11.10
+  '@gits-id/ui-nuxt': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+  '@heroicons/vue': 2.0.13
   '@vueuse/core': 9.4.0
   '@vueuse/nuxt': 9.4.0_nuxt@3.0.0-rc.13
   vue-gtag: 2.0.1
@@ -2163,67 +2165,104 @@ packages:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
     dev: true
 
-  /@gits-id/alert/0.11.10:
-    resolution: {integrity: sha512-iG1PTxdls5rVwe/e2T+G4UYkwqBsiuWV+/bhLApid0GZcvZboXM593eKTdjSKMV5rkyI7d7OHg9s2GhGlWwxGQ==}
+  /@gits-id/alert/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-MnGMgqCl8oxm9vhaFppK5SnMTD+J83+vHKmOfvFjkmF63hIrEwvnVR5gvWk5k5h1Du20o32kJFGuvioyek+cNQ==}
     dependencies:
-      '@gits-id/utils': 0.11.10
-      '@heroicons/vue': 1.0.6_vue@3.2.41
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/icon': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/theme': 0.12.0-alpha.1
+      '@gits-id/utils': 0.12.0-alpha.1
       vue: 3.2.41
+    transitivePeerDependencies:
+      - '@heroicons/vue'
+      - '@iconify/vue'
+      - ts-node
     dev: false
 
-  /@gits-id/app-bar/0.11.10:
-    resolution: {integrity: sha512-SF0vPVPOch1QbBApd3MvTL1lSsfqg2j5NKDSTBK1HlXoVgQnPrg5jienuqguTCrZX33NZ9644l10EIrgHRkvgw==}
+  /@gits-id/alert/0.12.0-alpha.3_b73krqx4jic6cumu6m7vtmfmgq:
+    resolution: {integrity: sha512-MnGMgqCl8oxm9vhaFppK5SnMTD+J83+vHKmOfvFjkmF63hIrEwvnVR5gvWk5k5h1Du20o32kJFGuvioyek+cNQ==}
     dependencies:
-      '@heroicons/vue': 1.0.6_vue@3.2.41
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/icon': 0.12.0-alpha.3_b73krqx4jic6cumu6m7vtmfmgq
+      '@gits-id/theme': 0.12.0-alpha.1
+      '@gits-id/utils': 0.12.0-alpha.1
       vue: 3.2.41
+    transitivePeerDependencies:
+      - '@heroicons/vue'
+      - '@iconify/vue'
+      - ts-node
     dev: false
 
-  /@gits-id/avatar/0.11.10:
-    resolution: {integrity: sha512-CygVjModOQCKqcmUI24uBFf1osRc+xL8EQgazpGFmsY7RyBZCd3IMmDlaWx58HUfDN4yk8xeV9Xsj+3PIqX+cw==}
+  /@gits-id/app-bar/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-ok8e4GaCQlmidihR8/d7lAGAslZaSJe8tTHO04N0P/kUXuoHvpVeMhi4Vt3mHYSZ5j510Yu4JFFOaU3YMFfiGQ==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
-      '@gits-id/theme': 0.11.10
+      '@gits-id/theme': 0.12.0-alpha.1
+      '@heroicons/vue': 2.0.13
       vue: 3.2.41
     transitivePeerDependencies:
       - ts-node
     dev: false
 
-  /@gits-id/badge/0.11.10:
-    resolution: {integrity: sha512-2O79M7hrwq8STTr81/sJBLGpB3ErHVHBi6yb21scs6rzIeq1d/CVWsry97FSMrfZ30rEmBfbUNYigdN3H8M8pQ==}
+  /@gits-id/avatar/0.12.0-alpha.1:
+    resolution: {integrity: sha512-tuB/rku19NkvxbAxdl03CV5+TnGuXScCKClE2eTcbGBACEF82S1sZ+u0Sfcwjp+f1lk1WFnCFK3MwOwCDfFXpw==}
     dependencies:
-      '@heroicons/vue': 1.0.6_vue@3.2.41
+      '@gits-id/theme': 0.12.0-alpha.1
       vue: 3.2.41
+    transitivePeerDependencies:
+      - ts-node
     dev: false
 
-  /@gits-id/breadcrumbs/0.11.10:
-    resolution: {integrity: sha512-uUlUBHJ/NGxoyyNMDZDdKixeHOEbQ4Dudfv0RKNs4Ge4p/wl7f2C5l4Ol8XjNIUg+S2/wERCe/fD6xVpmIfwjA==}
+  /@gits-id/badge/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-mCVHGCmbLSbXzHps1aqX0LOKqYNaatoxBm5nqqAYgCyoqZnk0YL38WUgIE5e24nTvBZjd5EJxRMl4pbqOPIlgg==}
     dependencies:
-      '@gits-id/icon': 0.11.10
+      '@gits-id/icon': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      vue: 3.2.41
+    transitivePeerDependencies:
+      - '@heroicons/vue'
+      - '@iconify/vue'
+      - ts-node
+    dev: false
+
+  /@gits-id/breadcrumbs/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-K7PzYpgKTVfE2obuqmUuAGj/Kop0JqcBtvSxgMazrkv/1/XtsqOA8BdLQ7qcRglpkYS4yXvyIGjdCpUjYCrWIg==}
+    dependencies:
+      '@gits-id/icon': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      vue: 3.2.41
+      vue-router: 4.1.6_vue@3.2.41
+    transitivePeerDependencies:
+      - '@heroicons/vue'
+      - '@iconify/vue'
+      - ts-node
+    dev: false
+
+  /@gits-id/button/0.12.0-alpha.3:
+    resolution: {integrity: sha512-NJfIcxBa0KpHS3a0kP7omwwi4Ahpqg6Y94ag735ochV7S9B7qsjyfMpgmQO2RFitMqrzFqJ97RRJmGgApQG9hQ==}
+    dependencies:
+      '@gits-id/spinner': 0.12.0-alpha.3
+      '@gits-id/theme': 0.12.0-alpha.1
+      '@gits-id/utils': 0.12.0-alpha.1
       vue: 3.2.41
       vue-router: 4.1.6_vue@3.2.41
     transitivePeerDependencies:
       - ts-node
     dev: false
 
-  /@gits-id/button/0.11.10:
-    resolution: {integrity: sha512-4MLx6mnVDTaBBVvNq0CKhmc4u4mXcNCMywP1U/vbJ73Wg/K9egqGrCIx+LfHi8onSHWX3lDWjh90i1SZGQ4q8A==}
-    dependencies:
-      '@gits-id/spinner': 0.11.10
-      '@gits-id/theme': 0.11.10
-      '@gits-id/utils': 0.11.10
-      vue: 3.2.41
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/card/0.11.10:
-    resolution: {integrity: sha512-56RpP/hLiaNyQXPEp7coyDn3e4YNDhzROG/DRNorj0yntMuMWFQCr2Ryr+pZk/3c7k4ULzyqM54h3Ooo6MmFOg==}
+  /@gits-id/card/0.12.0-alpha.3:
+    resolution: {integrity: sha512-26RWUswGHJKIXxnj1epAi5EZOrAmdmfnaYzeHbPPgVtYgL3i0WTVvph4yjQrprUNJJmjvdvsB+2nRyn4efWHjQ==}
     dependencies:
       vue: 3.2.41
     dev: false
 
-  /@gits-id/collapsible/0.11.10:
-    resolution: {integrity: sha512-oOIqwUS0GZDydfgsP4IxLdFDaAxnmuVsVfX5zrSPWxbKTmuUk1JjZnRtJLHUwYpHYj3p6aMNE2pbYa9FsZj1bw==}
+  /@gits-id/collapsible/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-SYlFjA2VlVpELLBEa7lYAl+0F/8dvkrlhBNVAtVUw7NP3UXQmQsxfj4uUzGbFMQLYah1pWrS7nLM9qZEDliB/Q==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
+      '@heroicons/vue': 2.0.13
       vue: 3.2.41
     dev: false
 
@@ -2233,26 +2272,28 @@ packages:
       vue: 3.2.41
     dev: false
 
-  /@gits-id/container/0.11.10:
-    resolution: {integrity: sha512-SJCtqD6VSZwbFESubdhEdGBU9KdKHFXLdu4wjo36kcig1kepvH9zptSTbKPTeqE8hzy9CSHU393cre7RUrSUqg==}
+  /@gits-id/container/0.12.0-alpha.1:
+    resolution: {integrity: sha512-F72h9dQXd9eK9chs0Jk9z23khuzWF9pghK+WBJRjmrJ3+7WGAOV4ozKzhKK+l8LTLUQba3ifm92uauXeFL68yA==}
     dependencies:
       vue: 3.2.41
     dev: false
 
-  /@gits-id/dropdown/0.11.10:
-    resolution: {integrity: sha512-VvklUZW0ZoheOHztOA9iG17BL6EPibjUgFvvaC51Zpo2QStGT+6hvpxmDuU7WB9JPT4tlXNMsUj9XFSb51SSPg==}
+  /@gits-id/dropdown/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-PbRv/q3zHbLI/gSpkyks3fE5yD7RJ/ncYbmdUyvu9KIDDJW2Z2+Qsc0ckaInHhLiz6yt9GCNgSECZm89VY5WqQ==}
     dependencies:
-      '@gits-id/button': 0.11.10
-      '@gits-id/icon': 0.11.10
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/icon': 0.12.0-alpha.3_@heroicons+vue@2.0.13
       '@headlessui/vue': 1.7.4_vue@3.2.41
       tailwindcss: 3.2.2
       vue: 3.2.41
     transitivePeerDependencies:
+      - '@heroicons/vue'
+      - '@iconify/vue'
       - ts-node
     dev: false
 
-  /@gits-id/editor/0.11.10:
-    resolution: {integrity: sha512-GiAook7SCudkqXcAJCcLXIthbMsCBVZ9KfHWsL7uUINGkuXXvWrd7NUVsT2TNi987LrsGwY8qI8YHEbAiJ+V4g==}
+  /@gits-id/editor/0.12.0-alpha.3:
+    resolution: {integrity: sha512-MDz310Svw6PL9pE6vJafHn0bcvZVFGIBV9TtaxXrsYMmol58188mKONsCRsct8vDofAvS+nR5Bo7jfRjA77hzQ==}
     dependencies:
       '@ckeditor/ckeditor5-build-classic': 32.0.0
       '@ckeditor/ckeditor5-vue': 2.0.1
@@ -2260,12 +2301,35 @@ packages:
       vue: 3.2.41
     dev: false
 
-  /@gits-id/forms/0.11.10:
-    resolution: {integrity: sha512-eKtj5WMJj/bIrhnFJNl2Pmxo2jVw4BA5rnfdOQlW6X5KBmfK3Vne/KqEXHdpmBPeiyv6eJsPaJftm0jQXflTwQ==}
+  /@gits-id/forms/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-mCDZx45HS7OJoNfBKpBRAwTkmPGVP9vKrEXbvGaYK+Xn2jVlCzdrSae9dqdOJR4rTMpXaauZ++bY8LDa5jzwcg==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
-      '@gits-id/button': 0.11.10
-      '@gits-id/spinner': 0.11.10
-      '@gits-id/utils': 0.11.10
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/icon': 0.11.10
+      '@gits-id/spinner': 0.12.0-alpha.3
+      '@gits-id/utils': 0.12.0-alpha.1
+      '@heroicons/vue': 2.0.13
+      vee-validate: 4.7.2_vue@3.2.41
+      vue: 3.2.41
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@gits-id/forms/0.12.0-alpha.3_b73krqx4jic6cumu6m7vtmfmgq:
+    resolution: {integrity: sha512-mCDZx45HS7OJoNfBKpBRAwTkmPGVP9vKrEXbvGaYK+Xn2jVlCzdrSae9dqdOJR4rTMpXaauZ++bY8LDa5jzwcg==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
+    dependencies:
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/icon': 0.11.10
+      '@gits-id/spinner': 0.12.0-alpha.3
+      '@gits-id/utils': 0.12.0-alpha.1
+      '@heroicons/vue': 2.0.13
+      '@iconify/vue': 3.2.1_vue@3.2.41
       vee-validate: 4.7.2_vue@3.2.41
       vue: 3.2.41
     transitivePeerDependencies:
@@ -2281,95 +2345,157 @@ packages:
       - ts-node
     dev: false
 
-  /@gits-id/layouts/0.11.10:
-    resolution: {integrity: sha512-0O8aB+k2L5YUYNuIXeDfm/2OvjS8WUFTwy+6kVR0HmOmwoadYAmjpWfQ2RA/FDINyjJB7RdoOdPd6vg6Ima6LA==}
+  /@gits-id/icon/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-MRgCCeGWQW9h6SyNX4xP3O52YxNHp7kqDIz1MzrMM4+xUjoSzu4ZmqdaPd4L/MBfZS5eK1IWMbpyRLs4/YrLKA==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
+      '@gits-id/theme': 0.12.0-alpha.1
+      '@heroicons/vue': 2.0.13
+      vue: 3.2.41
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@gits-id/icon/0.12.0-alpha.3_b73krqx4jic6cumu6m7vtmfmgq:
+    resolution: {integrity: sha512-MRgCCeGWQW9h6SyNX4xP3O52YxNHp7kqDIz1MzrMM4+xUjoSzu4ZmqdaPd4L/MBfZS5eK1IWMbpyRLs4/YrLKA==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
+    dependencies:
+      '@gits-id/theme': 0.12.0-alpha.1
+      '@heroicons/vue': 2.0.13
+      '@iconify/vue': 3.2.1_vue@3.2.41
+      vue: 3.2.41
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@gits-id/layouts/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-THuES/bNpwoX4gjR/DtQIGo4YxmMWrhwMotKOKlNhclPfQuFuphzB4npYYQMEmaYUbzfku0RhVQKvnZhZcseoA==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
+    dependencies:
+      '@heroicons/vue': 2.0.13
       vue: 3.2.41
     dev: false
 
-  /@gits-id/list/0.11.10:
-    resolution: {integrity: sha512-Go0BRzoPO0CLld6AujSh0J6MDvRaOCHNdRa15VXGM3y4yinEll9UK50Ygz3efBZeurFK77HbbEVdUgB4DLKHtQ==}
+  /@gits-id/list/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-2L1J2U5E8Bk4m6RWG98uibD1gSWvxOjIGbo0Nho2tlHJ9eZFg6G+SB9sD1BRxCoSzy7PTTBhmYIiIp8Pop0xpA==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
       '@gits-id/collapsible': 0.7.3
-      '@iconify/vue': 3.2.1_vue@3.2.41
+      '@heroicons/vue': 2.0.13
       vue: 3.2.41
       vue-router: 4.1.6_vue@3.2.41
     dev: false
 
-  /@gits-id/logo/0.11.10:
-    resolution: {integrity: sha512-SNUEKawau9QfjZ68szM3QxK6E4SSKOxKIC+nGbjAvVHV/y6v7+Ano05yF3YHS77mzoxH+lJexmOtRMsinFdi0Q==}
+  /@gits-id/logo/0.12.0-alpha.3:
+    resolution: {integrity: sha512-3u3eMO/DnsshY0XAhbAjzdcArYRre8vQl6nF5Tl6b2Ao/S8+byUWU10Frza9tmjGRTi1TGnjmFzoHccSguZRUg==}
     dependencies:
       vue: 3.2.41
     dev: false
 
-  /@gits-id/menu/0.11.10:
-    resolution: {integrity: sha512-hj3TyQif2lRkCGTKTpd06znAqMlOWp/oby+AQc33oAGLnUo/gNeNFxCoScsCTvWkwdRUCKAA/uA9QaceuL42KQ==}
+  /@gits-id/menu/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-wwECKatHtRYPX7XVQKAuhxdWkTNzYRTAeP2Q90zvB3dYaHIC0yNkcHfLv8Qokp45DjgHdUIbnI6evQw6cbplGQ==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
-      '@iconify/vue': 3.2.1_vue@3.2.41
+      '@gits-id/collapsible': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@heroicons/vue': 2.0.13
       vue: 3.2.41
       vue-router: 4.1.6_vue@3.2.41
     dev: false
 
-  /@gits-id/menus/0.11.10:
-    resolution: {integrity: sha512-wu3Ucqj8Asy7ZIaFsEnktQ6MMckFIozJHU9S+S/wXY4wg0s2c7QWR+7EN6lrf2MjQV2RcB0YHxltVbcVaNsMlQ==}
+  /@gits-id/menus/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-60wVQwYF0Izh62IIHHKnbIKzmAGjkqPse9Z6qf4xTP2GM5yo3IhIdtNBUFbVNEW+RlmgSQDQFxN5/Acd3jHYBg==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
-      '@gits-id/button': 0.11.10
+      '@gits-id/button': 0.12.0-alpha.3
+      '@heroicons/vue': 2.0.13
       vue: 3.2.41
     transitivePeerDependencies:
       - ts-node
     dev: false
 
-  /@gits-id/modal/0.11.10:
-    resolution: {integrity: sha512-1Pl0STPbqVl9/QO/Dou+oVQ8UAklrQMJ24sQOpJBBLaBJ2zEng5xc953ut/EMQlh1LfG0FwMiVCciFQ1uQX5dw==}
+  /@gits-id/modal/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-xi3XqofF5txUziz0Wkxeefozhtkiq1fiEYrLu9BzGbax5FW3BlPdNdDDAr4RVPZOG1xIoABf9oVRVri1pT6qgQ==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
-      '@gits-id/button': 0.11.10
+      '@gits-id/button': 0.12.0-alpha.3
+      '@heroicons/vue': 2.0.13
       vue: 3.2.41
     transitivePeerDependencies:
       - ts-node
     dev: false
 
-  /@gits-id/multi-select/0.11.10:
-    resolution: {integrity: sha512-0mD2P3pzeKP+cOGFNUXXkxB5NAVwoITbNSi3WwD8VX3FxFxyrAH7GLpR0d38OawT984ifB/d20ukcf+3gjfNjg==}
+  /@gits-id/multi-select/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-OEFtS2QbqJYL6sKKObcNtbof70uGXTkobQ8JcmrxO2N46nJDlSqGIXlwTP9fIGs83wCzSPWK6R6P9H/jcyXTCg==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
-      '@gits-id/badge': 0.11.10
-      '@gits-id/tooltip': 0.11.10
+      '@gits-id/badge': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/tooltip': 0.12.0-alpha.3
+      '@heroicons/vue': 2.0.13
       '@vueuse/core': 7.7.1_vue@3.2.41
       vee-validate: 4.7.2_vue@3.2.41
       vue: 3.2.41
     transitivePeerDependencies:
       - '@vue/composition-api'
+      - ts-node
     dev: false
 
-  /@gits-id/nav-drawer/0.11.10:
-    resolution: {integrity: sha512-reBDKiQUtJmo4Z+aDdBy0UpjjXdyo8x4oIEsV7yNKnxrR3mKA+28EoCGUs5ldSKSqYTKXRRIh5lhRUZpVFxxRQ==}
+  /@gits-id/nav-drawer/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-/lfy+4cfSWEkRbYlGb9HL0wcQU5mXp1eLYldrCfDlDQTwiZ9YcG7PFFI8llGtp9X9bScfErhO1YliXTGF0lsuw==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
-      '@gits-id/button': 0.11.10
-      '@gits-id/logo': 0.11.10
-      '@gits-id/menu': 0.11.10
-      '@gits-id/navbar': 0.11.10
-      '@gits-id/utils': 0.11.10
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/logo': 0.12.0-alpha.3
+      '@gits-id/menu': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/navbar': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/utils': 0.12.0-alpha.1
+      '@heroicons/vue': 2.0.13
       vue: 3.2.41
     transitivePeerDependencies:
       - ts-node
     dev: false
 
-  /@gits-id/navbar/0.11.10:
-    resolution: {integrity: sha512-fEKQ1YWdLgfNWXykkZl7q1y0NVx0Hc3IhP2uR41k9PB5Vx8vSSSaUECODV4G0fgzdDgupSiNL387lUn5h+jeTw==}
+  /@gits-id/navbar/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-OmbPA+8NdEz4QUDahl00R/lt0c0TqEQQdkqCxfoKcZXOOX2J9s8moZxIjAp34HiypSThYc+oan1fqGOnEKiNNQ==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
-      '@gits-id/button': 0.11.10
-      '@gits-id/logo': 0.11.10
-      '@gits-id/menus': 0.11.10
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/logo': 0.12.0-alpha.3
+      '@gits-id/menus': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@heroicons/vue': 2.0.13
       vue: 3.2.41
     transitivePeerDependencies:
       - ts-node
     dev: false
 
-  /@gits-id/pages/0.11.10:
-    resolution: {integrity: sha512-S6WLph9GutuK0Rd89LeudpoyxRBx8FPMY83ZzZWIiR+wW7Owuw91B0SOaIihDKU5lUAdKqJKsIF2FyeX8fzLxA==}
+  /@gits-id/pages/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-zTQkGENKiDjw37XslibqXSe3b0aCDliRQpJhqlSMtyB4JBjQVP9vLYp7BgA3tsNt0Xi6bjvDEa0L1HJBgIwk8w==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
     dependencies:
-      '@gits-id/alert': 0.11.10
-      '@gits-id/button': 0.11.10
-      '@gits-id/forms': 0.11.10
+      '@gits-id/alert': 0.12.0-alpha.3_b73krqx4jic6cumu6m7vtmfmgq
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/forms': 0.12.0-alpha.3_b73krqx4jic6cumu6m7vtmfmgq
+      '@heroicons/vue': 2.0.13
       '@iconify/vue': 3.2.1_vue@3.2.41
       vue: 3.2.41
       yup: 0.32.11
@@ -2377,17 +2503,17 @@ packages:
       - ts-node
     dev: false
 
-  /@gits-id/pagination/0.11.10:
-    resolution: {integrity: sha512-N0mPm9LyXAzkEpxsMxjjF9LWx5rVZ48aF02Sle+SqP77I/suBzlFhpj6MqfvNpX1bUkSvusRsWgHWsYkuel6QA==}
+  /@gits-id/pagination/0.12.0-alpha.1:
+    resolution: {integrity: sha512-gbaKYU7T+mDMFyUrFGqjFdptq9FM87Vo5lre/2lsGCyC4E1+BldXZm+JWyAsuCHLVi0iNNq/DzWk+c0w4bcalg==}
     dependencies:
       pagino: 1.4.1
       vue: 3.2.41
     dev: false
 
-  /@gits-id/progress-bar/0.11.10:
-    resolution: {integrity: sha512-GB4YqjDi2pfF+KeKMkMZYMLQ6DFECN7UfX1ks90wo1C1DgtD9TWDM0PLwQKrUqtv3MI7Wk6m9k17BXgl6WV22g==}
+  /@gits-id/progress-bar/0.12.0-alpha.1:
+    resolution: {integrity: sha512-7Q+HLVFc0uPDclm3CylZ5OHvmu2zKtWIguAbWjkSTA+h0rdwRcu02xFJiQ3x57Rjg+iv22v3qntINkEHemh8aw==}
     dependencies:
-      '@gits-id/utils': 0.11.10
+      '@gits-id/utils': 0.12.0-alpha.1
       vue: 3.2.41
     dev: false
 
@@ -2401,21 +2527,23 @@ packages:
       yup: 0.32.11
     dev: false
 
-  /@gits-id/select/0.11.10:
-    resolution: {integrity: sha512-2K0dDAmIq0dIRz1u8WL2WVshpWFS0GyfM5Iuxosa3dbC3meWoVCxDK/yIZ2dOkGOK7+FyCZaJBOMoIoFDbqpQg==}
+  /@gits-id/select/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-cgv7mmDI8KHxfYBW2Khj44AXWWxR18Xg/Wn5wgqFltfu13HQzqHqDv4wBNOOyR05+uMPlRksKYwuzZZbl8RRVA==}
     dependencies:
-      '@gits-id/forms': 0.11.10
-      '@gits-id/tooltip': 0.11.10
-      '@gits-id/utils': 0.11.10
+      '@gits-id/forms': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/tooltip': 0.12.0-alpha.3
+      '@gits-id/utils': 0.12.0-alpha.1
       vue: 3.2.41
     transitivePeerDependencies:
+      - '@heroicons/vue'
+      - '@iconify/vue'
       - ts-node
     dev: false
 
-  /@gits-id/services/0.11.10:
-    resolution: {integrity: sha512-G+eq2z5OGcPu7wjEtXF7bPrpxzgtdL3x/SU/miF6vst+StVALMCunp79aW7IDZJA2T3ZBgkoWcwztJppa4ARdQ==}
+  /@gits-id/services/0.12.0-alpha.3:
+    resolution: {integrity: sha512-64/07ldXVotHKt5HmT7OQL76aPN0qpzVBsjPtAkHTufhqv4occkIei63LYUTnCaizb9YBWeY7/VsIyS66eOcIA==}
     dependencies:
-      '@gits-id/button': 0.11.10
+      '@gits-id/button': 0.12.0-alpha.3
       axios: 0.26.1
       vue: 3.2.41
     transitivePeerDependencies:
@@ -2423,72 +2551,95 @@ packages:
       - ts-node
     dev: false
 
-  /@gits-id/shimmer/0.11.10:
-    resolution: {integrity: sha512-U3Q00xHcQgk1OXvlJc65Ci/GcnevN+Mkrlx8g/AuxXnrxhw9wquopNBnOC7BANtMSxBX1IneiP1OgVnHKIHI+g==}
+  /@gits-id/shimmer/0.12.0-alpha.1:
+    resolution: {integrity: sha512-+YQ5kRN9cI/GboKvId5xqlemuTC+17L73giQwRy9plOiWGVMtmMaGbaADiXhHLxQ0piHBfoSNLPWOCYvmj8iWQ==}
     dependencies:
       vue: 3.2.41
     dev: false
 
-  /@gits-id/spinner/0.11.10:
-    resolution: {integrity: sha512-A3hqXzbl9cr28nvF6/uq26UfwKteBLqnrIam3Gc2jYnJa5nXWlqknIdzcPM5g+Xj0UUEnlYsMRVtK4NBJiiqaA==}
+  /@gits-id/spinner/0.12.0-alpha.3:
+    resolution: {integrity: sha512-uJiiOxuXwpigWG/csmQNb+/60/DmXuVhaPjzgZpHnU4FMgH0ScXgCFcAwvyufWZzax2d/HBJ90AubD0FhiEZQQ==}
     dependencies:
       vue: 3.2.41
     dev: false
 
-  /@gits-id/stats/0.11.10:
-    resolution: {integrity: sha512-hjVvtpwh6NBOPintE2CjRME6Zhu8frR4z8O87e4pHbPCn4PF/2KhJa9G6ZwDAhEnznemtyQ5fJLFqzrTARFdDA==}
+  /@gits-id/stats/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-KKsq/CoWHKHgu5p1N+NrfkZPeMkoIEjwKpgX/WlrdGe775aZlfdTxyk0ARdHZkluyr/AsJ+E9/Jf2wTvSxxXiA==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
+      feather-icons: ^4.28.0
     dependencies:
-      '@gits-id/badge': 0.11.10
-      '@gits-id/card': 0.11.10
-      '@iconify/vue': 3.2.1_vue@3.2.41
-      feather-icons: 4.29.0
+      '@gits-id/badge': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/card': 0.12.0-alpha.3
+      '@heroicons/vue': 2.0.13
       vue: 3.2.41
+    transitivePeerDependencies:
+      - ts-node
     dev: false
 
-  /@gits-id/switch/0.11.10:
-    resolution: {integrity: sha512-AjYgWouiZMA1H7eA6fJ14zs52eG98PNBeYt/2bg858XZsuahvx2UwzEPstW4J+pZtQ7gtlnd/vlwu04QJrfBjA==}
+  /@gits-id/switch/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-IdqdNmfikpMXFlfhn50lYrF7MyGsADoymGX9k0CxC8gUo5AVCjkxLOqZkdC+NmeSGcuAdAlETp+PP3PqgWlUEA==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
+      '@heroicons/vue': 2.0.13
       vee-validate: 4.7.2_vue@3.2.41
       vue: 3.2.41
     dev: false
 
-  /@gits-id/table/0.11.10:
-    resolution: {integrity: sha512-oLg7mWp9usXy/lXhSNn+fhZxT3rxOmFsmRUrbKMuEzkEXvKyZZoG6YAFjf9Xp9tVNnZiVYXSPTci2q33S5SV8g==}
+  /@gits-id/table/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-GIcg88LV+hsR63ZkKulUxzgMMDS2AJ6yVH0q4jkQP4tEg0sKPKSPmsi4n6JC8erUbdIBDXHbF/Q+usWd08oaXg==}
     dependencies:
-      '@gits-id/forms': 0.11.10
-      '@gits-id/pagination': 0.11.10
-      '@gits-id/select': 0.11.10
-      '@gits-id/spinner': 0.11.10
-      '@gits-id/utils': 0.11.10
-      '@heroicons/vue': 1.0.6_vue@3.2.41
+      '@gits-id/forms': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/icon': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/pagination': 0.12.0-alpha.1
+      '@gits-id/select': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/spinner': 0.12.0-alpha.3
+      '@gits-id/utils': 0.12.0-alpha.1
+      vue: 3.2.41
+    transitivePeerDependencies:
+      - '@heroicons/vue'
+      - '@iconify/vue'
+      - ts-node
+    dev: false
+
+  /@gits-id/tabs/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-9DxKoVxVZ+/4A3ayWCZ/XEIRMbT2h43nHGCVZNikHGQMsgB8coNfa5JIeMhvv4JxDaQXHreFYFQ0CfCs2XuQ/Q==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
+    dependencies:
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/card': 0.12.0-alpha.3
+      '@gits-id/icon': 0.11.10
+      '@gits-id/utils': 0.12.0-alpha.1
+      '@heroicons/vue': 2.0.13
       vue: 3.2.41
     transitivePeerDependencies:
       - ts-node
     dev: false
 
-  /@gits-id/tabs/0.11.10:
-    resolution: {integrity: sha512-nFP6akPU2nlnPRjTBB8ZfDB49+eTKPZC4O8IiDNfn/Ru2sXqDUhsPLgEJmLXGVapoO2VHXQXI+wsjNoUSyowVA==}
-    dependencies:
-      '@gits-id/button': 0.11.10
-      '@gits-id/card': 0.11.10
-      '@gits-id/utils': 0.11.10
-      vue: 3.2.41
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/tailwind-components/0.11.10:
-    resolution: {integrity: sha512-9rOWeot1U1LZt7fJ/dw9pDKV50F0CdIH4iPGEb9JJmVIeJvCD0NVqVveJcwCU32MDAn3qinmgw8e6oGIRSFnsw==}
+  /@gits-id/tailwind-components/0.12.0-alpha.1:
+    resolution: {integrity: sha512-Yd7K+gyIRdfnXezNIZ0RxPWhbHiIsByXjy5/pqS7u6sMPsIi6t5HFnndFvR4pcEBqYVbyUAf7+W3yesSPTDyyw==}
     dependencies:
       vue: 3.2.41
     dev: false
 
-  /@gits-id/tailwind-config/0.11.10:
-    resolution: {integrity: sha512-fmq8tvBZomVRMpM8//k8iNsLogcfZ15k7eIHb5QyxsocJqfAOVVvelRNvysg05KybSzy9LcNJ0svte+TfKDgWA==}
+  /@gits-id/tailwind-config/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-JpzpgubcrPWIeRbBvdPGS4YepkyqSyxmxex/TqczygJLk3trd+GbyPyV8hhoI96me1IcJAPk07Rc0h4VputlvQ==}
     dependencies:
-      '@gits-id/tailwind-components': 0.11.10
-      '@gits-id/theme': 0.11.10
-      '@gits-id/utils': 0.11.10
+      '@gits-id/alert': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/app-bar': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/badge': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/breadcrumbs': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/card': 0.12.0-alpha.3
+      '@gits-id/dropdown': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/tailwind-components': 0.12.0-alpha.1
+      '@gits-id/theme': 0.12.0-alpha.1
+      '@gits-id/utils': 0.12.0-alpha.1
       '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.2
       '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.2
       '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.2.2
@@ -2496,6 +2647,8 @@ packages:
       tailwindcss: 3.2.2
       vue: 3.2.41
     transitivePeerDependencies:
+      - '@heroicons/vue'
+      - '@iconify/vue'
       - ts-node
     dev: false
 
@@ -2516,96 +2669,122 @@ packages:
       - ts-node
     dev: false
 
-  /@gits-id/toast/0.11.10:
-    resolution: {integrity: sha512-kcHUF0sVSnQPb5fWxiT6VPKCrkYsFs2C4/NnXlsrGybMx4MjY3HmbnVsa6NmVKTLsvgNZHZOgJUi1RdITxhk7A==}
+  /@gits-id/theme/0.12.0-alpha.1:
+    resolution: {integrity: sha512-SwPFvyenDD4MSPBLYag4KdqojQ3Xe0fr5e7b1i6+MMZpx2sQTETr5xN0ZNS/P15P/dOpA5dAaYl+o42Iq26Dpw==}
     dependencies:
-      '@gits-id/button': 0.11.10
+      tailwindcss: 3.2.2
+      vue: 3.2.41
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@gits-id/toast/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-okexC5cBY8WsuI4gz6ncy2aCY1MxsdPXzRNPtb73nglMexSHCYEwosQC3qXrIh1jmlPngjAPRSYFPscuBAB9rw==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+    dependencies:
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/icon': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@heroicons/vue': 2.0.13
       pinia: 2.0.23_vue@3.2.41
       vee-validate: 4.7.2_vue@3.2.41
       vue: 3.2.41
       vuex: 4.1.0_vue@3.2.41
     transitivePeerDependencies:
+      - '@iconify/vue'
       - '@vue/composition-api'
       - ts-node
       - typescript
     dev: false
 
-  /@gits-id/tooltip/0.11.10:
-    resolution: {integrity: sha512-UAYOaCZpDRhMnQbwK+09MtTcCUNokGk3fm13Iu/Ag8Czu9ZTPd561hsAoQM2xhgg+TmCBIs2lQkcLQXpysFeWw==}
+  /@gits-id/tooltip/0.12.0-alpha.3:
+    resolution: {integrity: sha512-b+AS6AzfdXKW7LLfgivglE8oqWKm85q8kP8nolQo7Qexr8g/GtvelNUOar7paDQndC8xMk9Akik+YD5mmthVFQ==}
     dependencies:
+      '@gits-id/icon': 0.11.10
       '@popperjs/core': 2.11.6
       vee-validate: 4.7.2_vue@3.2.41
       vue: 3.2.41
+    transitivePeerDependencies:
+      - ts-node
     dev: false
 
-  /@gits-id/ui-nuxt/0.11.10:
-    resolution: {integrity: sha512-XWkUlcNLW4IEkraPHeqh9Z5nQ/pT7pvBJA2Wg2E2eaJao+p2N+O+fTRPDi+a3SJj9/twxclygr+sbdqwLIVYug==}
+  /@gits-id/ui-nuxt/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-/Lv2yOHFA6lwqgJ4d8Ih1mqW5NGxdiHgsaa3thiWBjwkeTQsVpqB8UgoQvqCrhKeaxCfItth1rEEyqyFr2tLUQ==}
     dependencies:
-      '@gits-id/ui': 0.11.10
+      '@gits-id/ui': 0.12.0-alpha.3_@heroicons+vue@2.0.13
       '@nuxt/kit': 3.0.0-rc.13
     transitivePeerDependencies:
+      - '@heroicons/vue'
+      - '@iconify/vue'
       - '@vue/composition-api'
       - debug
+      - feather-icons
       - rollup
       - supports-color
       - ts-node
       - typescript
     dev: false
 
-  /@gits-id/ui/0.11.10:
-    resolution: {integrity: sha512-owc8JDCY3iiznka5k0iPF7rg+ML0B8J9j0KZZsoa/TgNngnsXiGwD+leG6ONVngiCS1d+UuRxPo6Il8RmqDLIQ==}
+  /@gits-id/ui/0.12.0-alpha.3_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-J0MRjxAuuNwenE8t3B5NSrJEKutxvjBy6EVRbNeobveMOESzb8wYmYgTq0U8jjHKK5cnl4DF+brBntukhmPDPQ==}
+    peerDependencies:
+      '@heroicons/vue': ^1.0.6
+      '@iconify/vue': ^3.2.1
     dependencies:
-      '@gits-id/alert': 0.11.10
-      '@gits-id/app-bar': 0.11.10
-      '@gits-id/avatar': 0.11.10
-      '@gits-id/badge': 0.11.10
-      '@gits-id/breadcrumbs': 0.11.10
-      '@gits-id/button': 0.11.10
-      '@gits-id/card': 0.11.10
-      '@gits-id/collapsible': 0.11.10
-      '@gits-id/container': 0.11.10
-      '@gits-id/dropdown': 0.11.10
-      '@gits-id/editor': 0.11.10
-      '@gits-id/forms': 0.11.10
-      '@gits-id/icon': 0.11.10
-      '@gits-id/layouts': 0.11.10
-      '@gits-id/list': 0.11.10
-      '@gits-id/logo': 0.11.10
-      '@gits-id/menu': 0.11.10
-      '@gits-id/menus': 0.11.10
-      '@gits-id/modal': 0.11.10
-      '@gits-id/multi-select': 0.11.10
-      '@gits-id/nav-drawer': 0.11.10
-      '@gits-id/navbar': 0.11.10
-      '@gits-id/pages': 0.11.10
-      '@gits-id/pagination': 0.11.10
-      '@gits-id/progress-bar': 0.11.10
-      '@gits-id/select': 0.11.10
-      '@gits-id/services': 0.11.10
-      '@gits-id/shimmer': 0.11.10
-      '@gits-id/spinner': 0.11.10
-      '@gits-id/stats': 0.11.10
-      '@gits-id/switch': 0.11.10
-      '@gits-id/table': 0.11.10
-      '@gits-id/tabs': 0.11.10
-      '@gits-id/tailwind-components': 0.11.10
-      '@gits-id/tailwind-config': 0.11.10
+      '@gits-id/alert': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/app-bar': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/avatar': 0.12.0-alpha.1
+      '@gits-id/badge': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/breadcrumbs': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/button': 0.12.0-alpha.3
+      '@gits-id/card': 0.12.0-alpha.3
+      '@gits-id/collapsible': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/container': 0.12.0-alpha.1
+      '@gits-id/dropdown': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/editor': 0.12.0-alpha.3
+      '@gits-id/forms': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/icon': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/layouts': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/list': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/logo': 0.12.0-alpha.3
+      '@gits-id/menu': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/menus': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/modal': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/multi-select': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/nav-drawer': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/navbar': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/pages': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/pagination': 0.12.0-alpha.1
+      '@gits-id/progress-bar': 0.12.0-alpha.1
+      '@gits-id/select': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/services': 0.12.0-alpha.3
+      '@gits-id/shimmer': 0.12.0-alpha.1
+      '@gits-id/spinner': 0.12.0-alpha.3
+      '@gits-id/stats': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/switch': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/table': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/tabs': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/tailwind-components': 0.12.0-alpha.1
+      '@gits-id/tailwind-config': 0.12.0-alpha.3_@heroicons+vue@2.0.13
       '@gits-id/textarea': 0.3.0
-      '@gits-id/theme': 0.11.10
-      '@gits-id/toast': 0.11.10
-      '@gits-id/tooltip': 0.11.10
-      '@gits-id/utils': 0.11.10
+      '@gits-id/theme': 0.12.0-alpha.1
+      '@gits-id/toast': 0.12.0-alpha.3_@heroicons+vue@2.0.13
+      '@gits-id/tooltip': 0.12.0-alpha.3
+      '@gits-id/utils': 0.12.0-alpha.1
+      '@headlessui/vue': 1.7.4_vue@3.2.41
+      '@heroicons/vue': 2.0.13
       '@vue/test-utils': 2.2.1_vue@3.2.41
       vue: 3.2.41
     transitivePeerDependencies:
       - '@vue/composition-api'
       - debug
+      - feather-icons
       - ts-node
       - typescript
     dev: false
 
-  /@gits-id/utils/0.11.10:
-    resolution: {integrity: sha512-U5z2KdiW6rdJxj61iDkB1H4f5Z02avnifYNeVCPRzxZXT1zBF0KYJk5KrUjZ9kZfGq9pYFuPADLXXT0hmwDEiw==}
+  /@gits-id/utils/0.12.0-alpha.1:
+    resolution: {integrity: sha512-7iGxIIb0tC+pGSdsuVKu36XcybGqfSvvh5K+N6TB6wd7rc95ucjaafgkzMyF8NahCyUDqLKh18+xOk6bO5reQA==}
     dependencies:
       vue: 3.2.41
     dev: false
@@ -2625,12 +2804,10 @@ packages:
       vue: 3.2.41
     dev: false
 
-  /@heroicons/vue/1.0.6_vue@3.2.41:
-    resolution: {integrity: sha512-ng2YcCQrdoQWEFpw+ipFl2rZo8mZ56v0T5+MyfQQvNqfKChwgP6DMloZLW+rl17GEcHkE3H82UTAMKBKZr4+WA==}
+  /@heroicons/vue/2.0.13:
+    resolution: {integrity: sha512-vVCVF02+rNKXEmanVNnmktJlxCbOn0qVFP1gfZPn4bcBIwPX3h9AVHGCkwly+IWDEME8w5oooG0KRd2hhSe/HQ==}
     peerDependencies:
       vue: '>= 3'
-    dependencies:
-      vue: 3.2.41
     dev: false
 
   /@humanwhocodes/config-array/0.11.7:
@@ -7040,10 +7217,6 @@ packages:
       static-extend: 0.1.2
     dev: true
 
-  /classnames/2.3.2:
-    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
-    dev: false
-
   /clean-css/4.2.4:
     resolution: {integrity: sha512-EJUDT7nDVFDvaQgAo2G/PJvxmp1o/c6iXLbswsBbUFXi1Nr+AjA2cKmfbKDMjMvzEe75g3P6JkaDDAKk96A85A==}
     engines: {node: '>= 4.0'}
@@ -7422,6 +7595,7 @@ packages:
   /core-js/3.26.0:
     resolution: {integrity: sha512-+DkDrhoR4Y0PxDz6rurahuB+I45OsEUv8E1maPTB6OuHRohMMcznBq9TMpdpDMm/hUPob/mJJS3PqgbHpMTQgw==}
     requiresBuild: true
+    dev: true
 
   /core-util-is/1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
@@ -9153,13 +9327,6 @@ packages:
     dependencies:
       bser: 2.1.1
     dev: true
-
-  /feather-icons/4.29.0:
-    resolution: {integrity: sha512-Y7VqN9FYb8KdaSF0qD1081HCkm0v4Eq/fpfQYQnubpqi0hXx14k+gF9iqtRys1SIcTEi97xDi/fmsPFZ8xo0GQ==}
-    dependencies:
-      classnames: 2.3.2
-      core-js: 3.26.0
-    dev: false
 
   /fetch-blob/3.2.0:
     resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}

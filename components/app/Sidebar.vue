@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
+import { NavDrawer } from '@gits-id/nav-drawer'
 
 const menus = ref([
   {
@@ -40,7 +41,7 @@ const isMobile = useMediaQuery('(max-width: 768px)')
 <template>
   <NavDrawer
     v-model="sidebar"
-    variant="dark"
+    color="dark"
     :fixed="isMobile"
     :overlay="isMobile"
     :mini="miniSidebar"
@@ -57,8 +58,8 @@ const isMobile = useMediaQuery('(max-width: 768px)')
         :prepend-icon="menu.icon"
         :to="menu.to"
         hover
-        hover-class="hover:bg-neutral-700"
-        exact-active-class="bg-neutral-700"
+        hover-class="hover:bg-gray-700"
+        exact-active-class="bg-gray-700"
       >
         {{ menu.text }}
       </VListItem>
