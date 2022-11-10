@@ -13,12 +13,11 @@ const { user } = useAuthStore()
 <template>
   <LayoutsHeaderOnly>
     <template #right>
-      <VBtn v-if="!user" to="/auth/login" color="primary">
+      <VBtn v-if="!user" color="primary" @click="$router.push('/auth/login')">
         Masuk
       </VBtn>
-      <VBtn v-else to="/dashboard" color="primary">
+      <VBtn v-else color="primary" suffix-icon="mdi-arrow-right" @click="$router.push('/dashboard')">
         Back to Dashboard
-        <VIcon name="mdi-arrow-right" class="ml-2" />
       </VBtn>
     </template>
 

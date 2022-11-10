@@ -9,7 +9,9 @@ useHead({
 </script>
 
 <template>
-  <div class="container mx-auto grid place-items-center sm:h-screen">
-    Hello World
-  </div>
+  <LayoutsHeaderOnly>
+    <div class="container mx-auto grid place-items-center sm:h-screen">
+      Hello World
+    </div>
+  </LayoutsHeaderOnly>
 </template>
