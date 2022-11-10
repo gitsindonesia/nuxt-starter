@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { NavDrawer } from '@gits-id/nav-drawer'
 
 const menus = ref([
   {
@@ -27,19 +26,12 @@ const menus = ref([
 
 const layout = useLayoutStore()
 const { sidebar, miniSidebar } = storeToRefs(layout)
-const auth = useAuthStore()
-const router = useRouter()
-
-function logout() {
-  auth.logout()
-  router.push('/auth/login')
-}
 
 const isMobile = useMediaQuery('(max-width: 768px)')
 </script>
 
 <template>
-  <NavDrawer
+  <VNavDrawer
     v-model="sidebar"
     color="dark"
     :fixed="isMobile"
@@ -48,7 +40,7 @@ const isMobile = useMediaQuery('(max-width: 768px)')
   >
     <div class="h-[58px] flex justify-center items-center">
       <slot name="logo">
-        <VLogo v-if="!miniSidebar" img-class="h-6" white />
+        <VLogo v-if="!miniSidebar" white />
       </slot>
     </div>
     <VList rounded hover class="p-2 space-y-1">
@@ -64,5 +56,5 @@ const isMobile = useMediaQuery('(max-width: 768px)')
         {{ menu.text }}
       </VListItem>
     </VList>
-  </NavDrawer>
+  </VNavDrawer>
 </template>

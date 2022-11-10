@@ -4,7 +4,7 @@ export default defineNuxtRouteMiddleware((to) => {
 
   if (auth.loggedIn) {
     return router.push({
-      path: '/',
+      path: '/dashboard',
       query: {
         from: to.path,
       },

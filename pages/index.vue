@@ -10,6 +10,6 @@ useHead({
 
 <template>
   <div class="container mx-auto grid place-items-center sm:h-screen">
-    <Counter />
+    Hello World
   </div>
 </template>

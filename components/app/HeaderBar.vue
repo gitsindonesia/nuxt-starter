@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { VAppBar, VAvatar, VBtn, VDropdown, VDropdownButton, VIcon } from '@gits-id/ui'
 
 const layout = useLayoutStore()
 const { miniSidebar, sidebar } = storeToRefs(layout)
@@ -34,14 +33,14 @@ const items = ref([
 
 <template>
   <VAppBar shadow class="flex px-4 py-2 items-center justify-between">
-    <VBtn icon rounded text @click="toggleMenu">
+    <VBtn icon fab text @click="toggleMenu">
       <VIcon name="ri:menu-line" class="w-6 h-6" />
     </VBtn>
     <div class="flex gap-2 items-center">
-      <VBtn icon rounded text class="relative">
+      <VBtn icon fab text class="relative">
         <VIcon name="ri:information-line" class="w-6 h-6" />
       </VBtn>
-      <VBtn icon rounded text class="relative">
+      <VBtn icon fab text class="relative">
         <VIcon name="ri:notification-line" class="w-6 h-6" />
         <span class="bg-error-500 text-white rounded-full absolute right-0 top-0 w-4 h-4 text-xs">
           6

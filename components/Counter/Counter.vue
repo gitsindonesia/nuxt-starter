@@ -21,7 +21,7 @@ const { loggedIn, logout } = useAuth()
         <v-btn color="primary" to="/dashboard" text>
           Dashboard
         </v-btn>
-        <v-btn color="primary" to="/dashboard" text @click="logout">
+        <v-btn color="primary" text @click="logout">
           Logout
         </v-btn>
       </template>

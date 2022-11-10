@@ -67,8 +67,7 @@ const isMobile = useMediaQuery('(max-width: 768px)')
           </VBtn>
         </div>
         <div>
-          <VBtn color="primary">
-            <VIcon name="ri:add-circle-line" class="mr-3" />
+          <VBtn prefix-icon="ri:add-circle-line" color="primary">
             Tambah Penjualan
           </VBtn>
         </div>
