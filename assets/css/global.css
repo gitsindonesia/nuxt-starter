@@ -2,9 +2,27 @@
 @import "@gits-id/nav-drawer/dist/style.css";
 
 body {
-  @apply bg-gray-100;
+  background: #F4F4F4;
 }
 
 .nav-drawer {
   z-index: 20;
+}
+
+/* card stats */
+.card-stats {
+  border: var(--card-border);
+  --card-border-radius: 8px;
+}
+
+.card-stats-primary {
+  --card-bg-color: #EDF7FF;
+  --card-text-color: theme('colors.primary.blue');
+  --card-border: 1px solid theme('colors.primary.blue');
+}
+
+.card-stats-error {
+  --card-bg-color: #FDE9EB;
+  --card-text-color: theme('colors.primary.red');
+  --card-border: 1px solid theme('colors.primary.red');
 }

@@ -13,6 +13,9 @@ const primary = {
   700: '#0764A7',
   800: '#054471',
   900: '#02233B',
+  black: '#3F3F3F',
+  red: '#EB2139',
+  blue: '#1A73B5',
 }
 
 const secondary = {
@@ -45,6 +48,9 @@ module.exports = {
           'Poppins',
           ...defaultTheme.fontFamily.sans,
         ],
+      },
+      boxShadow: {
+        card: '0px 0px 30px rgba(0, 0, 0, 0.05)',
       },
     },
   },
