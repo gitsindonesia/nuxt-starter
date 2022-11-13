@@ -25,4 +25,7 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['./api', './composables', './stores'],
   },
+  build: {
+    transpile: ['floating-vue'],
+  },
 })
