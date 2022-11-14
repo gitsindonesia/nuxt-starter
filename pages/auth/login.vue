@@ -40,9 +40,9 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
           placeholder="Password"
           name="password"
           :type="showPassword ? 'text' : 'password'"
+          :append-icon="showPassword ? 'ri:eye-line' : 'ri:eye-off-line'"
           prepend-icon="ri:lock-line"
-          append-icon="ri:eye-line"
-          @clickPrependIcon="showPassword = !showPassword"
+          @click-append-icon="showPassword = !showPassword"
         />
         <v-checkbox
           wrapper-class="mt-5"
