@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
+import { Menu } from 'floating-vue'
 
 const menus = ref([
   {
@@ -48,7 +49,34 @@ const isMobile = useMediaQuery('(max-width: 768px)')
         v-for="menu in menus"
         :key="menu.text"
       >
-        <VListCollapse v-if="menu.items">
+        <!-- mini nav -->
+        <Menu
+          v-if="miniSidebar && menu.items"
+          placement="right"
+        >
+          <VListItem
+            :prepend-icon="menu.icon"
+            :to="menu.to"
+            hover
+            hover-class="hover:bg-gray-700"
+            exact-active-class="bg-gray-700"
+          >
+            {{ menu.text }}
+          </VListItem>
+          <template #popper>
+            <VList class="p-1">
+              <VListItem
+                v-for="subMenu in menu.items"
+                :key="subMenu.text"
+                :to="subMenu.to"
+              >
+                {{ subMenu.text }}
+              </VListItem>
+            </VList>
+          </template>
+        </Menu>
+        <!-- default nav -->
+        <VListCollapse v-else-if="menu.items">
           <template #activator="{ isOpen, toggle }">
             <VListItem
               :prepend-icon="menu.icon"
@@ -77,6 +105,7 @@ const isMobile = useMediaQuery('(max-width: 768px)')
         </VListCollapse>
         <VListItem
           v-else
+          v-tooltip.right="menu.text"
           :prepend-icon="menu.icon"
           :to="menu.to"
           hover
