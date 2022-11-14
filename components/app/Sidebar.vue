@@ -76,10 +76,15 @@ const isMobile = useMediaQuery('(max-width: 768px)')
           </VListItem>
           <template #popper>
             <VList class="p-1">
+              <VListItemHeader class="font-semibold">
+                {{ menu.text }}
+              </VListItemHeader>
               <VListItem
                 v-for="subMenu in menu.items"
                 :key="subMenu.text"
                 :to="subMenu.to"
+                hide-prepend
+                hide-append
               >
                 {{ subMenu.text }}
               </VListItem>
