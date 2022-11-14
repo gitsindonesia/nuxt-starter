@@ -1,7 +1,12 @@
 <script setup lang="ts">
+import { storeToRefs } from 'pinia'
+
 useHead({
   title: 'Dashboard',
 })
+
+const layout = useLayoutStore()
+const { miniSidebar } = storeToRefs(layout)
 </script>
 
 <template>
@@ -9,7 +14,8 @@ useHead({
     <AppSidebar />
 
     <div
-      class="w-full sm:w-[calc(100vw-248px)] transition-all duration-300"
+      :class="miniSidebar ? 'w-full sm:w-[calc(100vw-62px)]' : 'w-full sm:w-[calc(100vw-248px)]'"
+      class="transition-all duration-300"
     >
       <AppHeaderBar />
 

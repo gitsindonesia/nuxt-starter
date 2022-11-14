@@ -42,12 +42,15 @@ const end = computed(() => start.value + itemPerPage.value)
 
 <template>
   <AppCard>
-    <div class="flex mb-5 items-center justify-between">
+    <div class="flex flex-col md:flex-row mb-5 items-center justify-between">
       <VInput
         placeholder="Search"
         append-icon="ri:search-line"
+        wrapper-class="w-full md:w-1/3"
       />
-      <div class="sm:w-4/12 flex gap-4 justify-end items-center">
+      <div
+        class="w-full md:w-1/2 flex gap-4 justify-end items-center"
+      >
         <VSelect
           placeholder="1-10 dari 50"
           :items="perPageItems"
