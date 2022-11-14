@@ -8,14 +8,14 @@ const menus = ref([
     icon: 'ri:home-line',
   },
   {
-    text: 'Manage',
-    to: '/manage',
+    text: 'Forms',
     icon: 'ri:table-2',
-  },
-  {
-    text: 'Laporan',
-    to: '/laporan',
-    icon: 'ri:bar-chart-2-fill',
+    items: [
+      {
+        text: 'Basic Example',
+        to: '/forms',
+      },
+    ],
   },
   {
     text: 'Bantuan',
@@ -44,17 +44,48 @@ const isMobile = useMediaQuery('(max-width: 768px)')
       </slot>
     </div>
     <VList rounded hover class="p-2 space-y-1">
-      <VListItem
+      <template
         v-for="menu in menus"
         :key="menu.text"
-        :prepend-icon="menu.icon"
-        :to="menu.to"
-        hover
-        hover-class="hover:bg-gray-700"
-        exact-active-class="bg-gray-700"
       >
-        {{ menu.text }}
-      </VListItem>
+        <VListCollapse v-if="menu.items">
+          <template #activator="{ isOpen, toggle }">
+            <VListItem
+              :prepend-icon="menu.icon"
+              :to="menu.to"
+              hover
+              hover-class="hover:bg-gray-700"
+              exact-active-class="bg-gray-700"
+              append-icon="ri:arrow-down-s-line"
+              :append-icon-class="isOpen ? 'rotate-180' : ''"
+              @click="toggle"
+            >
+              {{ menu.text }}
+            </VListItem>
+          </template>
+          <VList>
+            <VListItem
+              v-for="subMenu in menu.items"
+              :key="subMenu.text"
+              :to="subMenu.to"
+              hover-class="hover:bg-gray-700"
+              exact-active-class="bg-gray-700"
+            >
+              {{ subMenu.text }}
+            </VListItem>
+          </VList>
+        </VListCollapse>
+        <VListItem
+          v-else
+          :prepend-icon="menu.icon"
+          :to="menu.to"
+          hover
+          hover-class="hover:bg-gray-700"
+          exact-active-class="bg-gray-700"
+        >
+          {{ menu.text }}
+        </VListItem>
+      </template>
     </VList>
   </VNavDrawer>
 </template>
