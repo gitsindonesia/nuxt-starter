@@ -10,10 +10,12 @@ import type { RouteLocation } from 'vue-router'
 
 type LinkProps = Omit<InstanceType<typeof RouterLink>['$props'], 'to'>
 
-withDefaults(defineProps<{
+interface Props {
   to?: RouteLocation | string
   linkAttrs?: LinkProps
-}>(), {
+}
+
+withDefaults(defineProps<Props>(), {
   linkAttrs: () => ({} as LinkProps),
   to: '/',
 })
@@ -21,6 +23,13 @@ withDefaults(defineProps<{
 
 <template>
   <RouterLink :to="to" v-bind="linkAttrs">
-    <img src="/logo.webp" alt="Logo" v-bind="$attrs">
+    <img
+      src="/logo.webp"
+      alt="Logo"
+      width="90"
+      height="40"
+      class="object-contain"
+      v-bind="$attrs"
+    >
   </RouterLink>
 </template>
