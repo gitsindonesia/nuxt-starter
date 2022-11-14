@@ -28,9 +28,9 @@ const onSubmit = handleSubmit((values) => {
   </div>
 
   <AppCard>
-    <h3 class="text-xl font-semibold mb-5">
+    <AppCardTitle>
       Form Title
-    </h3>
+    </AppCardTitle>
     <form @submit="onSubmit">
       <VInput
         wrapper-class="mb-5"

@@ -19,6 +19,16 @@ const menus = ref([
     ],
   },
   {
+    text: 'Components',
+    icon: 'ri:boxing-line',
+    items: [
+      {
+        text: 'Input',
+        to: '/components/input',
+      },
+    ],
+  },
+  {
     text: 'Bantuan',
     to: '/help',
     icon: 'ri:question-fill',
@@ -38,6 +48,7 @@ const isMobile = useMediaQuery('(max-width: 768px)')
     :fixed="isMobile"
     :overlay="isMobile"
     :mini="miniSidebar"
+    sticky
   >
     <div class="h-[58px] flex justify-center items-center">
       <slot name="logo">

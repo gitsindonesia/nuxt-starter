@@ -29,7 +29,7 @@ const logout = () => {
 </script>
 
 <template>
-  <VAppBar shadow class="flex px-4 py-2 sm:px-2 items-center justify-between">
+  <VAppBar sticky shadow class="flex px-4 py-2 sm:px-2 items-center justify-between">
     <VBtn
       icon
       fab
