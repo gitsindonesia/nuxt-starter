@@ -1,17 +1,22 @@
 <script setup lang="ts">
+import { VDataTable } from '@gits-id/table'
 import type { VDataTableHeader, VDataTableItem } from '@gits-id/table'
 import { ref, toRefs } from 'vue'
+
+type TableProps = InstanceType<typeof VDataTable>['$props']
 
 interface Props {
   items?: VDataTableItem[]
   headers?: VDataTableHeader[]
   totalItems?: number
+  tableProps?: TableProps
 }
 
 const props = withDefaults(defineProps<Props>(), {
   items: () => [],
   headers: () => [],
   totalItems: 0,
+  tableProps: () => ({}),
 })
 
 const emit = defineEmits<{
@@ -59,7 +64,8 @@ const end = computed(() => start.value + itemPerPage.value)
       :items="items"
       :search="search"
       flat
-      @update:items="emit('update:items', $event)"
+      hide-footer
+      v-bind="tableProps"
     />
   </AppCard>
 </template>

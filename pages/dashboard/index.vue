@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { VDataTableHeader } from '@gits-id/table'
+
 definePageMeta({
   middleware: 'auth',
 })
@@ -23,6 +25,38 @@ const stats = ref([
 ])
 
 const isMobile = useMediaQuery('(max-width: 768px)')
+
+const headers = ref<VDataTableHeader[]>([
+  {
+    text: 'Nomer Order',
+    value: 'no',
+  },
+  {
+    text: 'Tanggal',
+    value: 'date',
+  },
+  {
+    text: 'Pembeli',
+    value: 'buyer',
+  },
+  {
+    text: 'Produk Terjual',
+    value: 'product_sold',
+  },
+  {
+    text: 'Total Pembayaran',
+    value: 'total_payment',
+  },
+  {
+    text: 'Status',
+    value: 'Status',
+  },
+  {
+    text: 'Aksi',
+    value: 'action',
+    sortable: false,
+  },
+])
 </script>
 
 <template>
@@ -74,6 +108,10 @@ const isMobile = useMediaQuery('(max-width: 768px)')
       </div>
     </AppCard>
 
-    <AppTable class="mt-5" />
+    <AppTable
+      :headers="headers"
+      class="mt-5"
+      :table-props="{ noDataText: 'Belum ada penjualan hari ini' }"
+    />
   </div>
 </template>
