@@ -34,14 +34,29 @@ const items = ref([
 
 <template>
   <VAppBar shadow class="flex px-4 py-2 items-center justify-between">
-    <VBtn icon fab text @click="toggleMenu">
+    <VBtn
+      icon
+      fab
+      text
+      @click="toggleMenu"
+    >
       <VIcon name="ri:menu-line" class="w-6 h-6" />
     </VBtn>
     <div class="flex gap-2 items-center">
-      <VBtn icon fab text class="relative">
+      <VBtn
+        icon
+        fab
+        text
+        class="relative"
+      >
         <VIcon name="ri:information-line" class="w-6 h-6" />
       </VBtn>
-      <VBtn icon fab text class="relative">
+      <VBtn
+        icon
+        fab
+        text
+        class="relative"
+      >
         <VIcon name="ri:notification-line" class="w-6 h-6" />
         <span class="bg-error-500 text-white rounded-full absolute right-0 top-0 w-4 h-4 text-xs">
           6
@@ -52,7 +67,12 @@ const items = ref([
         right
       >
         <template #activator>
-          <VDropdownButton :as="VBtn" size="xs" text class="flex gap-3 items-center">
+          <VDropdownButton
+            :as="VBtn"
+            size="xs"
+            text
+            class="flex gap-3 items-center"
+          >
             <div>
               <VAvatar
                 src="https://cdn.vuetifyjs.com/images/lists/1.jpg"

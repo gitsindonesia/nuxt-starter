@@ -16,7 +16,12 @@ const { user } = useAuthStore()
       <VBtn v-if="!user" color="primary" @click="$router.push('/auth/login')">
         Masuk
       </VBtn>
-      <VBtn v-else color="primary" suffix-icon="mdi-arrow-right" @click="$router.push('/dashboard')">
+      <VBtn
+        v-else
+        color="primary"
+        suffix-icon="mdi-arrow-right"
+        @click="$router.push('/dashboard')"
+      >
         Back to Dashboard
       </VBtn>
     </template>

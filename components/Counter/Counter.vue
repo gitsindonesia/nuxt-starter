@@ -25,7 +25,12 @@ const { loggedIn, logout } = useAuth()
           Logout
         </v-btn>
       </template>
-      <v-btn v-else color="primary" to="/auth/login" text>
+      <v-btn
+        v-else
+        color="primary"
+        to="/auth/login"
+        text
+      >
         Login
       </v-btn>
     </div>
