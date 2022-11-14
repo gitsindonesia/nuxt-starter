@@ -9,7 +9,7 @@ useHead({
     <AppSidebar />
 
     <div
-      class="sm:flex-1 transition-all duration-300"
+      class="w-full sm:w-[calc(100vw-248px)] transition-all duration-300"
     >
       <AppHeaderBar />
 
