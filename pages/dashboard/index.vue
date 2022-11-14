@@ -73,5 +73,7 @@ const isMobile = useMediaQuery('(max-width: 768px)')
         </div>
       </div>
     </AppCard>
+
+    <AppTable class="mt-5" />
   </div>
 </template>
