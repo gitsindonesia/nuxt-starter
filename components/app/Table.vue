@@ -37,15 +37,16 @@ const end = computed(() => start.value + itemPerPage.value)
 
 <template>
   <AppCard>
-    <div class="flex">
+    <div class="flex mb-5 items-center justify-between">
       <VInput
         placeholder="Search"
-        input-class="text-xs"
-        class="h-[40px]"
         append-icon="ri:search-line"
       />
-      <div class="sm:w-6/12 flex justify-end items-center">
-        <VSelect :items="perPageItems" />
+      <div class="sm:w-4/12 flex gap-4 justify-end items-center">
+        <VSelect
+          placeholder="1-10 dari 50"
+          :items="perPageItems"
+        />
         <VPagination
           v-model="page"
           :items-per-page="itemPerPage"
@@ -57,6 +58,7 @@ const end = computed(() => start.value + itemPerPage.value)
       :headers="headers"
       :items="items"
       :search="search"
+      flat
       @update:items="emit('update:items', $event)"
     />
   </AppCard>
