@@ -105,7 +105,7 @@ const isMobile = useMediaQuery('(max-width: 768px)')
         </VListCollapse>
         <VListItem
           v-else
-          v-tooltip.right="menu.text"
+          v-tooltip.right="miniSidebar && menu.text"
           :prepend-icon="menu.icon"
           :to="menu.to"
           hover
