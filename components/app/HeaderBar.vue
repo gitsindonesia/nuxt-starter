@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 import { VBtn } from '@gits-id/ui'
+import { Dropdown } from 'floating-vue'
 
 const layout = useLayoutStore()
 const { miniSidebar, sidebar } = storeToRefs(layout)
@@ -21,15 +22,10 @@ const toggleMenu = () => {
 const auth = useAuthStore()
 const router = useRouter()
 
-const items = ref([
-  {
-    text: 'Logout',
-    onClick: () => {
-      auth.logout()
-      router.push('/auth/login')
-    },
-  },
-])
+const logout = () => {
+  auth.logout()
+  router.push('/auth/login')
+}
 </script>
 
 <template>
@@ -62,34 +58,37 @@ const items = ref([
           6
         </span>
       </VBtn>
-      <VDropdown
-        :items="items"
-        right
+      <Dropdown
+        placement="bottom-end"
       >
-        <template #activator>
-          <VDropdownButton
-            :as="VBtn"
-            size="xs"
-            text
-            class="flex gap-3 items-center"
-          >
-            <div>
-              <VAvatar
-                src="https://cdn.vuetifyjs.com/images/lists/1.jpg"
-              />
-            </div>
-            <div class="text-left hidden sm:block">
-              <h3 class="text-sm font-semibold">
-                Hendy Yanuar
-              </h3>
-              <p class="text-xs text-gray-500">
-                Pemilik Toko
-              </p>
-            </div>
-            <VIcon name="ion:chevron-down-outline" class="w-4 h-4 text-gray-500" />
-          </VDropdownButton>
+        <VBtn
+          size="xs"
+          text
+          class="flex gap-3 items-center"
+        >
+          <div>
+            <VAvatar
+              src="https://cdn.vuetifyjs.com/images/lists/1.jpg"
+            />
+          </div>
+          <div class="text-left hidden sm:block">
+            <h3 class="text-sm font-semibold">
+              Hendy Yanuar
+            </h3>
+            <p class="text-xs text-gray-500">
+              Pemilik Toko
+            </p>
+          </div>
+          <VIcon size="sm" name="ion:chevron-down-outline" class="text-gray-500" />
+        </VBtn>
+        <template #popper>
+          <VList class="w-52 p-1">
+            <VListItem prepend-icon="ri:logout-box-r-line" hover @click="logout">
+              Logout
+            </VListItem>
+          </VList>
         </template>
-      </VDropdown>
+      </Dropdown>
     </div>
   </VAppBar>
 </template>
