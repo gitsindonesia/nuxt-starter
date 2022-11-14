@@ -11,7 +11,7 @@ useHead({
 <template>
   <LayoutsHeaderOnly>
     <div class="container mx-auto grid place-items-center sm:h-screen">
-      Hello World
+      <Counter />
     </div>
   </LayoutsHeaderOnly>
 </template>
