@@ -29,7 +29,7 @@ const logout = () => {
 </script>
 
 <template>
-  <VAppBar sticky shadow class="flex px-4 py-2 sm:px-2 items-center justify-between">
+  <VAppBar sticky shadow class="flex px-4 py-2 sm:pl-2 sm:pr-6 items-center justify-between">
     <VBtn
       icon
       fab
@@ -54,16 +54,16 @@ const logout = () => {
         class="relative"
       >
         <VIcon name="ri:notification-line" class="w-6 h-6" />
-        <span class="bg-error-500 text-white rounded-full absolute right-0 top-0 w-4 h-4 text-xs">
+        <span
+          class="bg-error-500 text-white rounded-full absolute right-0 top-0 w-4 h-4 text-xs"
+        >
           6
         </span>
       </VBtn>
-      <Dropdown
-        placement="bottom-end"
-      >
-        <VBtn
-          size="xs"
-          text
+      <VMenus right>
+        <button
+          aria-label="Account Menu"
+          type="button"
           class="flex gap-3 items-center"
         >
           <div>
@@ -80,15 +80,13 @@ const logout = () => {
             </p>
           </div>
           <VIcon size="sm" name="ion:chevron-down-outline" class="text-gray-500" />
-        </VBtn>
-        <template #popper>
-          <VList class="w-52 p-1">
-            <VListItem prepend-icon="ri:logout-box-r-line" hover @click="logout">
-              Logout
-            </VListItem>
-          </VList>
+        </button>
+        <template #items>
+          <VMenusItem prepend-icon="ri:logout-box-r-line" @click="logout">
+            Logout
+          </VMenusItem>
         </template>
-      </Dropdown>
+      </VMenus>
     </div>
   </VAppBar>
 </template>
