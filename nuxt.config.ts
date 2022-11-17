@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   },
   vite: {
     optimizeDeps: {
-      include: ['lodash/has', 'yup', 'axios'],
+      // include: ['lodash/has', 'yup', 'axios'],
     },
   },
   googleAnalytics: {
