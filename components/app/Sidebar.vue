@@ -23,6 +23,10 @@ const menus = ref([
     icon: 'ri:boxing-line',
     items: [
       {
+        text: 'Buttons',
+        to: '/components/buttons',
+      },
+      {
         text: 'Input',
         to: '/components/input',
       },

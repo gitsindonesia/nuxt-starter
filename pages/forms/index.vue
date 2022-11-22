@@ -18,14 +18,7 @@ const onSubmit = handleSubmit((values) => {
 </script>
 
 <template>
-  <div class="mb-5 space-y-1">
-    <h1 class="text-2xl font-bold">
-      Forms
-    </h1>
-    <p class="text-gray-500">
-      Basic Example
-    </p>
-  </div>
+  <AppPageTitle title="Forms" subtitle="Basic Example" />
 
   <AppCard>
     <AppCardTitle>
