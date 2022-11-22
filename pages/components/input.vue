@@ -1,4 +1,6 @@
 <template>
+  <AppPageTitle title="Input" subtitle="Input Component" />
+
   <div class="space-y-5">
     <AppCard>
       <AppCardTitle>
