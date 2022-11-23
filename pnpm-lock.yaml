@@ -6,7 +6,7 @@ specifiers:
   '@commitlint/cli': ^17.0.3
   '@commitlint/config-conventional': ^17.0.3
   '@gits-id/quill-editor': ^0.11.0
-  '@gits-id/ui-nuxt': ^0.12.0-alpha.26
+  '@gits-id/ui-nuxt': ^0.12.0-alpha.28
   '@heroicons/vue': ^2.0.13
   '@nuxtjs/partytown': ^1.2.1
   '@nuxtjs/tailwindcss': ^6.1.3
@@ -31,7 +31,7 @@ specifiers:
 
 dependencies:
   '@gits-id/quill-editor': 0.11.10
-  '@gits-id/ui-nuxt': 0.12.0-alpha.26_@heroicons+vue@2.0.13
+  '@gits-id/ui-nuxt': 0.12.0-alpha.28_@heroicons+vue@2.0.13
   '@heroicons/vue': 2.0.13
   '@vueuse/core': 9.6.0
   '@vueuse/nuxt': 9.6.0_nuxt@3.0.0
@@ -2736,8 +2736,8 @@ packages:
       vue: 3.2.45
     dev: false
 
-  /@gits-id/ui-nuxt/0.12.0-alpha.26_@heroicons+vue@2.0.13:
-    resolution: {integrity: sha512-GO4BwaUaritzFiKkD1U87erjdhWpwt2NDLjTzf4l6MPBcAI4wIrphwotxauplXYBysHhJKey3hegtMGyIhUcJg==}
+  /@gits-id/ui-nuxt/0.12.0-alpha.28_@heroicons+vue@2.0.13:
+    resolution: {integrity: sha512-slB2/4hqShU1s1yin4WWxQrqRK2P/389m/AsLCcQGDncobmEXo5hV/J+ig4vsGc2oWzWOHRFKkzKyuQ+igSAZw==}
     dependencies:
       '@gits-id/ui': 0.12.0-alpha.26_@heroicons+vue@2.0.13
       '@nuxt/kit': 3.0.0
