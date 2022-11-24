@@ -3,12 +3,12 @@
 </script>
 
 <template>
-  <AppPageTitle title="Select" subtitle="Select Component" />
+  <AppPageTitle title="Alert" subtitle="Alert Component" />
 
   <div class="space-y-5">
     <AppCard>
       <AppCardTitle>
-        Select
+        Default
       </AppCardTitle>
 
       <div class="space-y-2">
@@ -32,6 +32,39 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </VAlert>
         <VAlert color="dark">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </VAlert>
+      </div>
+    </AppCard>
+
+    <AppCard>
+      <AppCardTitle>
+        Solid
+      </AppCardTitle>
+
+      <div class="space-y-2">
+        <VAlert solid>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </VAlert>
+        <VAlert solid color="primary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </VAlert>
+        <VAlert solid color="secondary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </VAlert>
+        <VAlert solid color="info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </VAlert>
+        <VAlert solid color="warning">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </VAlert>
+        <VAlert solid color="success">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </VAlert>
+        <VAlert solid color="error">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </VAlert>
+        <VAlert solid color="dark">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </VAlert>
       </div>
