@@ -2,15 +2,23 @@
 import { storeToRefs } from 'pinia'
 import { Menu } from 'floating-vue'
 
+const route = useRoute()
+
 const menus = ref([
   {
     text: 'Home',
     to: '/dashboard',
     icon: 'ri:home-line',
+    isActive() {
+      return route.path.startsWith('/dashboard')
+    },
   },
   {
     text: 'Forms',
     icon: 'ri:table-2',
+    isActive() {
+      return route.path.startsWith('/forms')
+    },
     items: [
       {
         text: 'All Fields',
@@ -25,6 +33,9 @@ const menus = ref([
   {
     text: 'Components',
     icon: 'ri:boxing-line',
+    isActive() {
+      return route.path.startsWith('/components')
+    },
     items: [
       {
         text: 'Alert',
@@ -112,7 +123,10 @@ const isMobile = useMediaQuery('(max-width: 768px)')
           </template>
         </Menu>
         <!-- default nav -->
-        <VListCollapse v-else-if="menu.items">
+        <VListCollapse
+          v-else-if="menu.items"
+          :model-value="menu.isActive()"
+        >
           <template #activator="{ isOpen, toggle }">
             <VListItem
               :prepend-icon="menu.icon"
