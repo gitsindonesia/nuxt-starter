@@ -2151,18 +2151,18 @@
     vee-validate "^4.5.9"
     vue "^3.2.31"
 
-"@gits-id/ui-nuxt@^0.13.2":
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.13.2.tgz#927612c6d158089649180e69390248d71eb7754f"
-  integrity sha512-WH26Tku1HvuHwHT6VyAgt8WNIFQbTSf+DmAvWkMx9a47TN+EhFG0pVpna5Oau/9AMixCEMedi4JJtzlxAmQ/Mw==
+"@gits-id/ui-nuxt@^0.13.3":
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.13.3.tgz#0edc01754be060343b178ffc9b682a9fbbfe9107"
+  integrity sha512-vv1rKPcCbUoSO2eu1s/ePM38S4JSpA/PSs+a8GtnvfLS6PdU5Yrz5qRKhQK8NU8g+V9Q9heS1HS8MoAqNVZcHg==
   dependencies:
-    "@gits-id/ui" "^0.13.1"
+    "@gits-id/ui" "^0.13.3"
     "@nuxt/kit" "^3.0.0"
 
-"@gits-id/ui@^0.13.1":
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.13.1.tgz#bb6d89acc24943405fb50bd2ea67214da211de23"
-  integrity sha512-927PVS5QovJqAZJORHJsOM6Q+teNoQaXT/MTzlsX4/s8htUovLhfq88sRHGfoICMz7qx+WokWBjwMNU/vx0vWw==
+"@gits-id/ui@^0.13.3":
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.13.3.tgz#f44a90eb14b1022393222584fcab494fbcdf69dc"
+  integrity sha512-wTCJq3U/htCHz5o3ajmi2LEBoWUvnxPXEH8W87tCQPRrLY+5a43iSl4/loEYAAGe4UN0GPc9AYtZXBsB1MhKFA==
   dependencies:
     "@gits-id/alert" "^0.13.0"
     "@gits-id/app-bar" "^0.13.0"
