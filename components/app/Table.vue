@@ -10,6 +10,9 @@ interface Props {
   headers?: VDataTableHeader[]
   totalItems?: number
   tableProps?: TableProps
+  itemsPerPage?: number
+  search?: string
+  page?: number
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -17,19 +20,26 @@ const props = withDefaults(defineProps<Props>(), {
   headers: () => [],
   totalItems: 0,
   tableProps: () => ({}),
+  itemsPerPage: 5,
+  page: 1,
+  search: '',
 })
 
 const emit = defineEmits<{
-  (e: 'update:items', value: string): void
+  (e: 'update:items', value: VDataTableItem[]): void
+  (e: 'update:search', value: string): void
+  (e: 'update:page', value: number): void
+  (e: 'update:itemsPerPage', value: number): void
 }>()
 
 // destructuring props
 const { items } = toRefs(props)
 
 // states
-const search = ref('')
-const page = ref(1)
-const itemPerPage = ref(5)
+const search = useVModel(props, 'search', emit)
+const page = useVModel(props, 'page', emit)
+const itemPerPage = useVModel(props, 'itemsPerPage', emit)
+
 const perPageItems = ref([5, 10, 24, 50, 100].map(item => ({
   text: item.toString(),
   value: item,
@@ -52,9 +62,14 @@ const end = computed(() => start.value + itemPerPage.value)
         class="w-full md:w-1/2 flex gap-4 justify-end items-center"
       >
         <VSelect
-          placeholder="1-10 dari 50"
+          v-model="itemPerPage"
           :items="perPageItems"
-        />
+          hide-check-icon
+        >
+          <template #selected>
+            {{ start }}-{{ end }} dari {{ totalItems }}
+          </template>
+        </VSelect>
         <VPagination
           v-model="page"
           :items-per-page="itemPerPage"

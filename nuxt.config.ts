@@ -15,4 +15,14 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['./api', './stores'],
   },
+  vite: {
+    server: {
+      proxy: {
+        '/random-users': {
+          target: 'https://randomuser.me/api',
+          ws: true,
+        },
+      },
+    },
+  },
 })

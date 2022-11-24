@@ -28,35 +28,38 @@ const isMobile = useMediaQuery('(max-width: 768px)')
 
 const headers = ref<VDataTableHeader[]>([
   {
-    text: 'Nomer Order',
-    value: 'no',
+    text: 'ID',
+    value: 'index',
   },
   {
-    text: 'Tanggal',
-    value: 'date',
+    text: 'Name',
+    value: 'name.first',
   },
   {
-    text: 'Pembeli',
-    value: 'buyer',
+    text: 'Gender',
+    value: 'gender',
   },
   {
-    text: 'Produk Terjual',
-    value: 'product_sold',
+    text: 'Email',
+    value: 'email',
   },
   {
-    text: 'Total Pembayaran',
-    value: 'total_payment',
-  },
-  {
-    text: 'Status',
-    value: 'Status',
-  },
-  {
-    text: 'Aksi',
-    value: 'action',
-    sortable: false,
+    text: 'Registered Date',
+    value: 'registered.date',
   },
 ])
+
+const page = ref(1)
+const itemsPerPage = ref(10)
+const res = await $fetch<{
+  results: Record<string, any>[]
+  info: {
+    page: number
+    results: number
+    seed: string
+    version: string
+  }
+}>(`https://randomuser.me/api/?page=${page.value}&results=${itemsPerPage.value}`)
 </script>
 
 <template>
@@ -109,8 +112,10 @@ const headers = ref<VDataTableHeader[]>([
     </AppCard>
 
     <AppTable
-      :headers="headers"
       class="mt-5"
+      :items="res.results"
+      :total-items="res.info.results"
+      :headers="headers"
       :table-props="{ noDataText: 'Belum ada penjualan hari ini' }"
     />
   </div>
