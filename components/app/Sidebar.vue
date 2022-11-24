@@ -27,7 +27,11 @@ const menus = ref([
     icon: 'ri:boxing-line',
     items: [
       {
-        text: 'Buttons',
+        text: 'Alert',
+        to: '/components/alert',
+      },
+      {
+        text: 'Button',
         to: '/components/buttons',
       },
       {
