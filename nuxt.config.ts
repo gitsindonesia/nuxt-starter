@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     ['@pinia/nuxt', { disableVuex: true }],
     '@vueuse/nuxt',
     '@gits-id/ui-nuxt',
-    '@nuxtjs/partytown',
   ],
   runtimeConfig: {
     public: {
@@ -15,8 +14,5 @@ export default defineNuxtConfig({
   css: ['~/assets/css/global.css'],
   imports: {
     dirs: ['./api', './stores'],
-  },
-  build: {
-    transpile: ['floating-vue'],
   },
 })
