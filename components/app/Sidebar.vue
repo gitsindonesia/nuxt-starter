@@ -34,6 +34,10 @@ const menus = ref([
         text: 'Input',
         to: '/components/input',
       },
+      {
+        text: 'Select',
+        to: '/components/select',
+      },
     ],
   },
   {
