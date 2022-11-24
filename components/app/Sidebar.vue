@@ -13,8 +13,12 @@ const menus = ref([
     icon: 'ri:table-2',
     items: [
       {
-        text: 'Basic Example',
+        text: 'All Fields',
         to: '/forms',
+      },
+      {
+        text: 'Validation',
+        to: '/forms/validation',
       },
     ],
   },
