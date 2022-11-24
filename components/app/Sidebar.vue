@@ -31,6 +31,10 @@ const menus = ref([
         to: '/components/buttons',
       },
       {
+        text: 'Dropdown',
+        to: '/components/dropdown',
+      },
+      {
         text: 'Input',
         to: '/components/input',
       },
