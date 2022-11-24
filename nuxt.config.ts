@@ -1,6 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: [
+    '@nuxtjs/google-fonts',
     '@nuxtjs/tailwindcss',
     ['@pinia/nuxt', { disableVuex: true }],
     '@vueuse/nuxt',
@@ -23,6 +24,14 @@ export default defineNuxtConfig({
           ws: true,
         },
       },
+    },
+  },
+  googleFonts: {
+    prefetch: true,
+    preconnect: true,
+    useStylesheet: true,
+    families: {
+      Poppins: true,
     },
   },
 })
