@@ -3,7 +3,7 @@ const colors = [
   'default', 'primary', 'secondary', 'success', 'info', 'warning', 'error',
   'dark'] as const
 
-const sizes = ['xs', 'sm', 'md', 'lg', 'xl'] as const
+const sizes = ['sm', 'md', 'lg'] as const
 </script>
 
 <template>
@@ -140,11 +140,9 @@ const sizes = ['xs', 'sm', 'md', 'lg', 'xl'] as const
       </AppCardTitle>
 
       <div class="flex flex-wrap items-end gap-2 mb-2">
-        <VBtn size="xs" fab prefix-icon="ri:add-line" />
         <VBtn size="sm" color="primary" fab prefix-icon="ri:add-line" />
         <VBtn color="secondary" fab prefix-icon="ri:add-line" />
         <VBtn size="lg" color="info" fab suffix-icon="ri:add-line" />
-        <VBtn size="xl" color="error" fab suffix-icon="ri:add-line" />
       </div>
     </AppCard>
   </div>
