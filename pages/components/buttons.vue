@@ -1,9 +1,5 @@
 <script setup lang="ts">
-const colors = [
-  'default', 'primary', 'secondary', 'success', 'info', 'warning', 'error',
-  'dark'] as const
-
-const sizes = ['sm', 'md', 'lg'] as const
+import { colors, sizes } from './constants'
 </script>
 
 <template>

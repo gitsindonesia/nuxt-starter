@@ -42,6 +42,10 @@ const menus = ref([
         to: '/components/alert',
       },
       {
+        text: 'Badge',
+        to: '/components/badge',
+      },
+      {
         text: 'Button',
         to: '/components/buttons',
       },
