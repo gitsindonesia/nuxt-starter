@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { colors, sizes } from './constants'
+import { colors, sizes } from '~~/constants'
 </script>
 
 <template>
