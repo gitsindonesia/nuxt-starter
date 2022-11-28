@@ -33,12 +33,12 @@ const emit = defineEmits<{
 }>()
 
 // destructuring props
-const { items } = toRefs(props)
+const { items, totalItems } = toRefs(props)
 
 // states
 const search = useVModel(props, 'search', emit)
 const page = useVModel(props, 'page', emit)
-const itemPerPage = useVModel(props, 'itemsPerPage', emit)
+const itemsPerPage = useVModel(props, 'itemsPerPage', emit)
 
 const perPageItems = ref([5, 10, 24, 50, 100].map(item => ({
   text: item.toString(),
@@ -46,25 +46,31 @@ const perPageItems = ref([5, 10, 24, 50, 100].map(item => ({
 })))
 
 // computed
-const start = computed(() => props.totalItems > 0 ? (page.value - 1) * itemPerPage.value : 1)
-const end = computed(() => start.value + itemPerPage.value)
+const start = computed(() =>
+  totalItems.value > 0 ? (page.value - 1) * itemsPerPage.value + 1 : 1,
+)
+const end = computed(() =>
+  totalItems.value > 0 ? start.value + itemsPerPage.value - 1 : null,
+)
 </script>
 
 <template>
   <AppCard>
-    <div class="flex flex-col md:flex-row mb-5 items-center justify-between">
+    <div class="flex flex-col sm:flex-row gap-4 mb-5 items-center justify-between">
       <VInput
         placeholder="Search"
         append-icon="ri:search-line"
-        wrapper-class="w-full md:w-1/3"
+        wrapper-class="w-full sm:w-auto"
       />
       <div
-        class="w-full md:w-1/2 flex gap-4 justify-end items-center"
+        class="w-full md:w-8/12 flex flex-col sm:flex-row gap-4 justify-end items-center"
       >
         <VSelect
-          v-model="itemPerPage"
+          v-model="itemsPerPage"
           :items="perPageItems"
           hide-check-icon
+          wrapper-class="w-full sm:w-auto"
+          btn-class="!text-sm text-gray-500"
         >
           <template #selected>
             {{ start }}-{{ end }} dari {{ totalItems }}
@@ -72,12 +78,14 @@ const end = computed(() => start.value + itemPerPage.value)
         </VSelect>
         <VPagination
           v-model="page"
-          :items-per-page="itemPerPage"
+          :items-per-page="itemsPerPage"
           :total-items="totalItems"
         />
       </div>
     </div>
     <VDataTable
+      v-model:page="page"
+      v-model:items-per-page="itemsPerPage"
       :headers="headers"
       :items="items"
       :search="search"

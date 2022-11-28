@@ -33,33 +33,34 @@ const headers = ref<VDataTableHeader[]>([
   },
   {
     text: 'Name',
-    value: 'name.first',
+    value: 'name',
   },
   {
-    text: 'Gender',
-    value: 'gender',
+    text: 'Username',
+    value: 'username',
   },
   {
     text: 'Email',
     value: 'email',
   },
-  {
-    text: 'Registered Date',
-    value: 'registered.date',
-  },
 ])
 
 const page = ref(1)
 const itemsPerPage = ref(10)
-const res = await $fetch<{
-  results: Record<string, any>[]
-  info: {
-    page: number
-    results: number
-    seed: string
-    version: string
-  }
-}>(`https://randomuser.me/api/?page=${page.value}&results=${itemsPerPage.value}`)
+const totalItems = ref(20)
+const res = ref()
+
+watchEffect(async () => {
+  res.value = await $fetch<{
+    results: Record<string, any>[]
+    info: {
+      page: number
+      results: number
+      seed: string
+      version: string
+    }
+  }>(`https://jsonplaceholder.typicode.com/users?_page=${page.value}&_limit=${totalItems.value}`)
+})
 </script>
 
 <template>
@@ -94,8 +95,11 @@ const res = await $fetch<{
       <h3 class="font-bold text-lg">
         Riwayat Penjualan <span class="text-gray-500">(Hari ini)</span>
       </h3>
-      <div class="flex flex-col sm:flex-row justify-between items-center mt-6 gap-2">
-        <div class="space-x-2">
+      <div
+        class="flex flex-col sm:flex-row items-start sm:justify-between
+      sm:items-center mt-6 gap-2"
+      >
+        <div class="flex gap-2 flex-wrap w-full sm:w-6/12">
           <VBtn outlined :block="isMobile" color="primary">
             Selesai
           </VBtn>
@@ -103,8 +107,8 @@ const res = await $fetch<{
             Batal
           </VBtn>
         </div>
-        <div>
-          <VBtn prefix-icon="ri:add-circle-line" color="primary">
+        <div class="w-full sm:w-auto">
+          <VBtn prefix-icon="ri:add-circle-line" color="primary" :block="isMobile">
             Tambah Penjualan
           </VBtn>
         </div>
@@ -112,9 +116,11 @@ const res = await $fetch<{
     </AppCard>
 
     <AppTable
+      v-model:page="page"
+      v-model:items-per-page="itemsPerPage"
       class="mt-5"
-      :items="res.results"
-      :total-items="res.info.results"
+      :items="res"
+      :total-items="totalItems"
       :headers="headers"
       :table-props="{ noDataText: 'Belum ada penjualan hari ini' }"
     />
