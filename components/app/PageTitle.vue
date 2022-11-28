@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref, toRefs } from 'vue'
-
 interface Props {
   title?: string
   subtitle?: string

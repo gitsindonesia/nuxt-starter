@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 import { VBtn } from '@gits-id/ui'
-import { Dropdown } from 'floating-vue'
 
 const layout = useLayoutStore()
 const { miniSidebar, sidebar } = storeToRefs(layout)
