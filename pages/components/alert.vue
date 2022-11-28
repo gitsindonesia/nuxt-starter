@@ -69,6 +69,18 @@
         </VAlert>
       </div>
     </AppCard>
+
+    <AppCard>
+      <AppCardTitle>
+        Dismissable
+      </AppCardTitle>
+
+      <div class="space-y-2">
+        <VAlert color="primary" dismissable>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </VAlert>
+      </div>
+    </AppCard>
   </div>
 </template>
 
