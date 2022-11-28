@@ -24,8 +24,6 @@ const stats = ref([
   },
 ])
 
-const isMobile = useMediaQuery('(max-width: 768px)')
-
 const headers = ref<VDataTableHeader[]>([
   {
     text: 'ID',

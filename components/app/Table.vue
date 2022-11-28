@@ -56,14 +56,14 @@ const end = computed(() =>
 
 <template>
   <AppCard>
-    <div class="flex flex-col sm:flex-row gap-4 mb-5 items-center justify-between">
+    <div class="flex flex-col md:flex-row gap-4 mb-5 items-center justify-between">
       <VInput
         placeholder="Search"
         append-icon="ri:search-line"
-        wrapper-class="w-full sm:w-auto"
+        wrapper-class="w-full lg:w-auto"
       />
       <div
-        class="w-full md:w-8/12 flex flex-col sm:flex-row gap-4 justify-end items-center"
+        class="w-full lg:w-auto flex flex-col sm:flex-row gap-4 justify-end items-center"
       >
         <VSelect
           v-model="itemsPerPage"
@@ -80,6 +80,7 @@ const end = computed(() =>
           v-model="page"
           :items-per-page="itemsPerPage"
           :total-items="totalItems"
+          :simple="isMobile"
         />
       </div>
     </div>

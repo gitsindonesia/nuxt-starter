@@ -72,8 +72,6 @@ const menus = ref([
 
 const layout = useLayoutStore()
 const { sidebar, miniSidebar } = storeToRefs(layout)
-
-const isMobile = useMediaQuery('(max-width: 768px)')
 </script>
 
 <template>

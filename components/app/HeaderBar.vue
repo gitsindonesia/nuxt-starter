@@ -5,8 +5,6 @@ import { VBtn } from '@gits-id/ui'
 const layout = useLayoutStore()
 const { miniSidebar, sidebar } = storeToRefs(layout)
 
-const isMobile = useMediaQuery('(max-width: 768px)')
-
 const toggleMenu = () => {
   if (isMobile.value) {
     miniSidebar.value = false
