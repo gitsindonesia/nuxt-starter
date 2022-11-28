@@ -29,9 +29,8 @@ export default defineNuxtConfig({
   googleFonts: {
     prefetch: true,
     preconnect: true,
-    useStylesheet: true,
     families: {
-      Poppins: true,
+      Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     },
   },
 })
