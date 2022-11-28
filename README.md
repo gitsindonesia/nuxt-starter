@@ -1,11 +1,11 @@
 # Nuxt 3 + GITS UI
 
-Look at the [GITS UI documentation](https://gits-ui.web.app) and [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Look at the [GITS UI documentation](https://gitsindonesia.github.io/ui-component/) and [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Features
 
 - [Nuxt 3](https://v3.nuxtjs.org/)
-- [GITS UI](https://gits-ui.web.app/)
+- [GITS UI](https://gitsindonesia.github.io/ui-component/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Pinia](https://pinia.vuejs.org/)
 
@@ -20,7 +20,7 @@ Look at the [nuxt directory stucture documentation](https://v3.nuxtjs.org/guide/
 You can easily create new project from this template using `nuxi`:
 
 ```
-npx nuxi init -t gitsindonesia/nuxt-starter my-app
+npx nuxi init -t gh:gitsindonesia/nuxt-starter my-app
 cd my-app
 yarn
 yarn dev
