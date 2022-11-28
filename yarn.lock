@@ -1930,10 +1930,10 @@
     floating-vue "^2.0.0-beta.20"
     vue "^3.2.31"
 
-"@gits-id/modal@^0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@gits-id/modal/-/modal-0.13.0.tgz#4aaea07200ab498429de58c48350d7753d3efd8b"
-  integrity sha512-GAicVj8cN6ZpFspu5LyWhnSTJmPE2unL6k8P56ZOTy4KMLYuxgWUfHCST6I+8nL8ajr6TxNVhIxYGuwlwD6q2Q==
+"@gits-id/modal@^0.13.4":
+  version "0.13.4"
+  resolved "https://registry.yarnpkg.com/@gits-id/modal/-/modal-0.13.4.tgz#985e316971e473c85ab1ccf7af9b0ab11dcd1d81"
+  integrity sha512-26QDESyg8hNlvBrtGGG+xuZkFaBBfF1T5Hy3JB6BduObI+/Rx4WPshmK9RWGksisg+aPNxKPa6bs9KdMCiiQUw==
   dependencies:
     "@gits-id/button" "^0.13.0"
     vue "^3.2.31"
@@ -2151,18 +2151,18 @@
     vee-validate "^4.5.9"
     vue "^3.2.31"
 
-"@gits-id/ui-nuxt@^0.13.3":
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.13.3.tgz#0edc01754be060343b178ffc9b682a9fbbfe9107"
-  integrity sha512-vv1rKPcCbUoSO2eu1s/ePM38S4JSpA/PSs+a8GtnvfLS6PdU5Yrz5qRKhQK8NU8g+V9Q9heS1HS8MoAqNVZcHg==
+"@gits-id/ui-nuxt@^0.13.4":
+  version "0.13.4"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.13.4.tgz#6d68a59f0e50ff4c7647882913035385ff30ae65"
+  integrity sha512-CS+IR2G2+zf7c7WSnaXUeBKQiPrXinkXusupIsWdqq6FL++05yJhmpBzjulzVGmJXCHKNiBBFr4sFeY9m8D5wA==
   dependencies:
-    "@gits-id/ui" "^0.13.3"
+    "@gits-id/ui" "^0.13.4"
     "@nuxt/kit" "^3.0.0"
 
-"@gits-id/ui@^0.13.3":
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.13.3.tgz#f44a90eb14b1022393222584fcab494fbcdf69dc"
-  integrity sha512-wTCJq3U/htCHz5o3ajmi2LEBoWUvnxPXEH8W87tCQPRrLY+5a43iSl4/loEYAAGe4UN0GPc9AYtZXBsB1MhKFA==
+"@gits-id/ui@^0.13.4":
+  version "0.13.4"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.13.4.tgz#747e1f8c2eaeeced62a8076810fc516d5917fd53"
+  integrity sha512-2NIsUFqY2suGJNmwDJnZX7O9J4I+BECKfKBqZ0KN6ZSHkqJVfhNOV7MHEoLHAqa91mnqrk7b+Ic2D/W6OUKcVA==
   dependencies:
     "@gits-id/alert" "^0.13.0"
     "@gits-id/app-bar" "^0.13.0"
@@ -2183,7 +2183,7 @@
     "@gits-id/logo" "^0.13.0"
     "@gits-id/menu" "^0.13.0"
     "@gits-id/menus" "^0.13.0"
-    "@gits-id/modal" "^0.13.0"
+    "@gits-id/modal" "^0.13.4"
     "@gits-id/multi-select" "^0.13.0"
     "@gits-id/nav-drawer" "^0.13.0"
     "@gits-id/navbar" "^0.13.0"
