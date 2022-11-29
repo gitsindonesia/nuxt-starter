@@ -61,6 +61,10 @@ const menus = ref([
         text: 'Select',
         to: '/components/select',
       },
+      {
+        text: 'MultiSelect',
+        to: '/components/multi-select',
+      },
     ],
   },
   {
