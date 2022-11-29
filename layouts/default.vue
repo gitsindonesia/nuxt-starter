@@ -14,7 +14,7 @@ const { miniSidebar } = storeToRefs(layout)
     <AppSidebar />
 
     <div
-      :class="miniSidebar ? 'w-full sm:w-[calc(100vw-62px)]' : 'w-full sm:w-[calc(100vw-248px)]'"
+      :class="miniSidebar ? 'w-full md:w-[calc(100vw-62px)]' : 'w-full md:w-[calc(100vw-248px)]'"
       class="transition-all duration-300"
     >
       <AppHeaderBar />

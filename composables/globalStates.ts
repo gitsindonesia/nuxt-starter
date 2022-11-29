@@ -1,1 +1,4 @@
-export const isMobile = useMediaQuery('(max-width: 768px)')
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
+
+export const $breakpoints = useBreakpoints(breakpointsTailwind)
+export const isMobile = $breakpoints.smaller('sm') // only smaller than lg
