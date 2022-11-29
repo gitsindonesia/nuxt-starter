@@ -81,7 +81,7 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
     :fixed="isMobile"
     :overlay="isMobile"
     :mini="miniSidebar"
-    sticky
+    :sticky="!isMobile"
   >
     <div class="h-[58px] flex justify-center items-center">
       <slot name="logo">
