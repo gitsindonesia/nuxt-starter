@@ -26,11 +26,16 @@ const logout = () => {
 </script>
 
 <template>
-  <VAppBar sticky shadow class="flex px-4 py-2 sm:pl-2 sm:pr-6 items-center justify-between">
+  <VAppBar
+    sticky
+    shadow
+    class="flex px-4 py-2 sm:pl-4 sm:pr-6 items-center justify-between"
+  >
     <VBtn
       icon
       fab
       text
+      size="sm"
       @click="toggleMenu"
     >
       <VIcon name="ri:menu-line" class="w-6 h-6" />
@@ -40,6 +45,7 @@ const logout = () => {
         icon
         fab
         text
+        size="sm"
         class="relative"
       >
         <VIcon name="ri:information-line" class="w-6 h-6" />
@@ -48,6 +54,7 @@ const logout = () => {
         icon
         fab
         text
+        size="sm"
         class="relative"
       >
         <VIcon name="ri:notification-line" class="w-6 h-6" />
@@ -76,7 +83,11 @@ const logout = () => {
               Pemilik Toko
             </p>
           </div>
-          <VIcon size="sm" name="ion:chevron-down-outline" class="text-gray-500" />
+          <VIcon
+            size="sm"
+            name="ri:arrow-down-s-line"
+            class="text-gray-500"
+          />
         </button>
         <template #items>
           <VMenusItem prepend-icon="ri:logout-box-r-line" @click="logout">
