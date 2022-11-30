@@ -1983,10 +1983,10 @@
     vue "^3.2.31"
     yup "^0.32.11"
 
-"@gits-id/pagination@^0.13.6":
-  version "0.13.6"
-  resolved "https://registry.yarnpkg.com/@gits-id/pagination/-/pagination-0.13.6.tgz#5eca70b18cb561c4ac2127d9f53f6760e7b9779c"
-  integrity sha512-SikG+LbIB2uKMpDQIxt+V8901zq0uTkvGUiIUp1VbiksgSk8U9rl9Gl32T+8WMrJOY3tK7ccnFLGFT4tdpEL3Q==
+"@gits-id/pagination@^0.13.7":
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/@gits-id/pagination/-/pagination-0.13.7.tgz#6626a2ccc93cc5746eff6e96cca2ff3677a6465d"
+  integrity sha512-5KMFgpm0VgwbDEyjgKLddmlE3gqDoAj2RdoXoJEiC6/Ys5HzzZb021XKNjI2j++T05J1f3daeVKk9Sa8APsAFQ==
   dependencies:
     pagino "^1.4.1"
     vue "^3.2.31"
@@ -2010,10 +2010,10 @@
     vue "^3.2.31"
     yup "^0.32.11"
 
-"@gits-id/select@^0.13.6":
-  version "0.13.6"
-  resolved "https://registry.yarnpkg.com/@gits-id/select/-/select-0.13.6.tgz#f143aa765efc3a22b6e5e7179dde47e0cb705fc8"
-  integrity sha512-Zcs9Xgchr/fON3AdXVBGw4oglwIJmfO6Hb4TPxS/W4Szl9tzaDVuV45Ti7WX52VlbEAzAqwNjQsJIIa8Z6JEcg==
+"@gits-id/select@^0.13.7":
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/@gits-id/select/-/select-0.13.7.tgz#0c69277dc72def546a5ac5d85c5f300419e6ef50"
+  integrity sha512-uFaPI0QWIT/XVNpwuqfyc+FMEuuavvmVm1l2uCDS/7QLdmYJ1wVub5jN49n5eCDFAkE94awewmxnFV4dcpO4Og==
   dependencies:
     "@gits-id/forms" "^0.13.6"
     "@gits-id/theme" "^0.13.0"
@@ -2030,10 +2030,10 @@
     axios "^0.26.0"
     vue "^3.2.33"
 
-"@gits-id/shimmer@^0.13.6":
-  version "0.13.6"
-  resolved "https://registry.yarnpkg.com/@gits-id/shimmer/-/shimmer-0.13.6.tgz#e456e49f57c186423f13d9a71e90f02d3ff0289b"
-  integrity sha512-mwgmw3QYykRaMivnk7gT9pasWLkN2DVdY2DgqiJsrEzh0KmGteWVM/+p5nCXKT3/5GimeDzqhNBmt/8IMiBO/g==
+"@gits-id/shimmer@^0.13.7":
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/@gits-id/shimmer/-/shimmer-0.13.7.tgz#70a7c26ce9caf06da041b6fbec56fd6d6d0c0e35"
+  integrity sha512-u4JMBQpf9AsZDiLqZFTUVjzPATgJtrBdopvC7YLLLLKxpcxQirdl97AXUPu2t8HcWYm1dM+s55+8X4sAoH9x7g==
   dependencies:
     vue "^3.2.33"
 
@@ -2062,15 +2062,15 @@
     vee-validate "^4.5.11"
     vue "^3.2.31"
 
-"@gits-id/table@^0.13.6":
-  version "0.13.6"
-  resolved "https://registry.yarnpkg.com/@gits-id/table/-/table-0.13.6.tgz#e9e3ce61179457d16240bf1693cfff211dabf3af"
-  integrity sha512-DaiwmgEeX7PD8v/6sSQ1PDpVvybabSQDgjLYl++3HhJlLzx49r0ToUF6GBMDyFj3RVIJaiCuYqYlWJQ5HwmH1w==
+"@gits-id/table@^0.13.7":
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/@gits-id/table/-/table-0.13.7.tgz#95db25a8ef6fad59484add05fb16bdf2343c278f"
+  integrity sha512-YsAzjoHQSGEzxmUYi6Dc6mlrVMcdkZESRZ4P5YUN0TsSQagpaELT47nd5np/Y0FEpUexhSGPlULP7vjmbwRzIQ==
   dependencies:
     "@gits-id/forms" "^0.13.6"
     "@gits-id/icon" "^0.13.6"
-    "@gits-id/pagination" "^0.13.6"
-    "@gits-id/select" "^0.13.6"
+    "@gits-id/pagination" "^0.13.7"
+    "@gits-id/select" "^0.13.7"
     "@gits-id/spinner" "^0.13.6"
     "@gits-id/utils" "^0.13.0"
     vue "^3.2.33"
@@ -2152,18 +2152,18 @@
     vee-validate "^4.5.9"
     vue "^3.2.31"
 
-"@gits-id/ui-nuxt@^0.13.6":
-  version "0.13.6"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.13.6.tgz#51fddd1a09554ac0edb37a6c3cf469b8a7a262be"
-  integrity sha512-k4rOm9muGjE0C37jwwvZwRVatAczBzKL4TXroAGr2dxBc9zN9a1CZZ6uutEyQ1jtGtpV6hIAzAOWYopaLqR4vw==
+"@gits-id/ui-nuxt@^0.13.7":
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.13.7.tgz#bdb755b440eb49550205efa892276374688834ca"
+  integrity sha512-mDmyWq22rwJmOdd205GDmCEcflGO9iPO4FND0H1tuHc75IfpemCh8N2Sfftmt9wszMYV2e2uXdwLI/f0wGKMkw==
   dependencies:
-    "@gits-id/ui" "^0.13.6"
+    "@gits-id/ui" "^0.13.7"
     "@nuxt/kit" "^3.0.0"
 
-"@gits-id/ui@^0.13.6":
-  version "0.13.6"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.13.6.tgz#a80f316ec5ec19779e4511b5f56f417b1b7e720b"
-  integrity sha512-eNlrGWxQftJ+Ds+OUO9R92F+BWVmdu8FfZf5qYtMZvCgn1NfxpSVNThTKZF44DTn0102HttCM6kVSdOMtDLhyA==
+"@gits-id/ui@^0.13.7":
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.13.7.tgz#376d5351942bf42cc6a3214935a7bb4a015ac43c"
+  integrity sha512-whK2mBE92lk5ovJ/kSE21Kt8SOEqE0dC77oqFrDicJ7A/Rl6jBcvQ4Wel8BoX/KbFRtsHM4g0E/IY3nwFJNONw==
   dependencies:
     "@gits-id/alert" "^0.13.6"
     "@gits-id/app-bar" "^0.13.6"
@@ -2189,15 +2189,15 @@
     "@gits-id/nav-drawer" "^0.13.6"
     "@gits-id/navbar" "^0.13.6"
     "@gits-id/pages" "^0.13.6"
-    "@gits-id/pagination" "^0.13.6"
+    "@gits-id/pagination" "^0.13.7"
     "@gits-id/progress-bar" "^0.13.6"
-    "@gits-id/select" "^0.13.6"
+    "@gits-id/select" "^0.13.7"
     "@gits-id/services" "^0.13.6"
-    "@gits-id/shimmer" "^0.13.6"
+    "@gits-id/shimmer" "^0.13.7"
     "@gits-id/spinner" "^0.13.6"
     "@gits-id/stats" "^0.13.6"
     "@gits-id/switch" "^0.13.6"
-    "@gits-id/table" "^0.13.6"
+    "@gits-id/table" "^0.13.7"
     "@gits-id/tabs" "^0.13.6"
     "@gits-id/tailwind-components" "^0.13.6"
     "@gits-id/tailwind-config" "^0.13.6"

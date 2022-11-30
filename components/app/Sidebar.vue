@@ -65,6 +65,10 @@ const menus = ref([
         text: 'MultiSelect',
         to: '/components/multi-select',
       },
+      {
+        text: 'Pagination',
+        to: '/components/pagination',
+      },
     ],
   },
   {
