@@ -69,6 +69,10 @@ const menus = ref([
         text: 'Pagination',
         to: '/components/pagination',
       },
+      {
+        text: 'Tabs',
+        to: '/components/tabs',
+      },
     ],
   },
   {

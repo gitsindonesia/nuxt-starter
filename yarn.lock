@@ -2075,10 +2075,10 @@
     "@gits-id/utils" "^0.13.0"
     vue "^3.2.33"
 
-"@gits-id/tabs@^0.13.6":
-  version "0.13.6"
-  resolved "https://registry.yarnpkg.com/@gits-id/tabs/-/tabs-0.13.6.tgz#498bbc31f9610f9181d45ffd43c2d9938d4a71d5"
-  integrity sha512-HHPYkDLrQsx5xvUSBjY6IJ5vYD/U5egS6XLV9tPT1hsIg1S9I1K0qLQxi8Xft/RqMlosU/NSpgNpYVgitcNMbg==
+"@gits-id/tabs@^0.13.8":
+  version "0.13.8"
+  resolved "https://registry.yarnpkg.com/@gits-id/tabs/-/tabs-0.13.8.tgz#1c11da47dbd34dc19cd9461a57d8c45e27e00b0f"
+  integrity sha512-8R7euf95RfgZoTYq2zIdk0VJ+kbPBUsCcCytpNbdRu7vu2jogEMVK0RMjmhZKPPMP2nLIMR/UzapDT7WOJMUOw==
   dependencies:
     "@gits-id/button" "^0.13.6"
     "@gits-id/card" "^0.13.6"
@@ -2152,18 +2152,18 @@
     vee-validate "^4.5.9"
     vue "^3.2.31"
 
-"@gits-id/ui-nuxt@^0.13.7":
-  version "0.13.7"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.13.7.tgz#bdb755b440eb49550205efa892276374688834ca"
-  integrity sha512-mDmyWq22rwJmOdd205GDmCEcflGO9iPO4FND0H1tuHc75IfpemCh8N2Sfftmt9wszMYV2e2uXdwLI/f0wGKMkw==
+"@gits-id/ui-nuxt@^0.13.8":
+  version "0.13.8"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.13.8.tgz#465f6882f2d2161bc742425b5c480773b101bca5"
+  integrity sha512-1VvPjAG9Qe7vsgycPiA3NVDcxxmAkiNvxtPzeMSpFMrkAaCzJ3dYAUBbZPG2JySJp+CfJmQ2ToiMog/Vq1IK4Q==
   dependencies:
-    "@gits-id/ui" "^0.13.7"
+    "@gits-id/ui" "^0.13.8"
     "@nuxt/kit" "^3.0.0"
 
-"@gits-id/ui@^0.13.7":
-  version "0.13.7"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.13.7.tgz#376d5351942bf42cc6a3214935a7bb4a015ac43c"
-  integrity sha512-whK2mBE92lk5ovJ/kSE21Kt8SOEqE0dC77oqFrDicJ7A/Rl6jBcvQ4Wel8BoX/KbFRtsHM4g0E/IY3nwFJNONw==
+"@gits-id/ui@^0.13.8":
+  version "0.13.8"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui/-/ui-0.13.8.tgz#1264473f9ed7e2df0e40f84416109259d78c6913"
+  integrity sha512-b6EsvvcilwiJ0pfz1D4Crqw9qCQBOcTsHZfepdLIQPeecw5TPTg3742G04K8EpA2mBEkFb3kYwQJ/6KfJ9m9cA==
   dependencies:
     "@gits-id/alert" "^0.13.6"
     "@gits-id/app-bar" "^0.13.6"
@@ -2198,7 +2198,7 @@
     "@gits-id/stats" "^0.13.6"
     "@gits-id/switch" "^0.13.6"
     "@gits-id/table" "^0.13.7"
-    "@gits-id/tabs" "^0.13.6"
+    "@gits-id/tabs" "^0.13.8"
     "@gits-id/tailwind-components" "^0.13.6"
     "@gits-id/tailwind-config" "^0.13.6"
     "@gits-id/textarea" "^0.3.0"
