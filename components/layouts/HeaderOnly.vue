@@ -1,5 +1,5 @@
 <template>
-  <VAppBar shadow="lg" class="py-3">
+  <VAppBar shadow="md" class="py-3">
     <div class="container flex items-center justify-between mx-auto px-4">
       <slot name="logo">
         <AppLogo class="h-8" />
