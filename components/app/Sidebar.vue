@@ -70,8 +70,16 @@ const menus = ref([
         to: '/components/pagination',
       },
       {
+        text: 'Switch',
+        to: '/components/switch',
+      },
+      {
         text: 'Tabs',
         to: '/components/tabs',
+      },
+      {
+        text: 'Toast',
+        to: '/components/toast',
       },
     ],
   },
