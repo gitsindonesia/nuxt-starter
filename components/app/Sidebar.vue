@@ -50,6 +50,10 @@ const menus = ref([
         to: '/components/buttons',
       },
       {
+        text: 'DataTable',
+        to: '/components/data-table',
+      },
+      {
         text: 'Dropdown',
         to: '/components/dropdown',
       },
