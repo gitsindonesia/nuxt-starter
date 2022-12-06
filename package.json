@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@gits-id/quill-editor": "^0.11.0",
-    "@gits-id/ui-nuxt": "^0.13.10",
+    "@gits-id/ui-nuxt": "^0.13.12",
     "@heroicons/vue": "^2.0.13",
     "@vueuse/core": "^9.1.1",
     "@vueuse/nuxt": "^9.1.1",
