@@ -116,7 +116,7 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
         <VLogo v-if="!miniSidebar" white />
       </slot>
     </div>
-    <VList rounded hover class="p-2 space-y-1">
+    <VList hover class="p-2 space-y-1">
       <template
         v-for="menu in menus"
         :key="menu.text"
@@ -124,20 +124,23 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
         <!-- mini nav -->
         <Menu
           v-if="miniSidebar && menu.items"
-          placement="right"
+          placement="right-start"
+          :delay="0"
         >
           <VListItem
             :prepend-icon="menu.icon"
             :to="menu.to"
             hover
             hover-class="hover:bg-gray-700"
-            exact-active-class="bg-gray-700"
+            exact-active-class="!bg-gray-700"
+            hide-append
+            hide-text
           >
             {{ menu.text }}
           </VListItem>
           <template #popper>
-            <VList class="p-1">
-              <VListItemHeader class="font-semibold">
+            <VList class="p-1" small>
+              <VListItemHeader class="font-semibold !text-xs">
                 {{ menu.text }}
               </VListItemHeader>
               <VListItem
@@ -161,9 +164,11 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
             <VListItem
               :prepend-icon="menu.icon"
               :to="menu.to"
+              as="button"
+              :aria-label="menu.text"
               hover
               hover-class="hover:bg-gray-700"
-              exact-active-class="bg-gray-700"
+              exact-active-class="!bg-gray-700"
               append-icon="ri:arrow-down-s-line"
               :append-icon-class="isOpen ? 'rotate-180' : ''"
               @click="toggle"
@@ -176,8 +181,9 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
               v-for="subMenu in menu.items"
               :key="subMenu.text"
               :to="subMenu.to"
+              hover
               hover-class="hover:bg-gray-700"
-              exact-active-class="bg-gray-700"
+              exact-active-class="!bg-gray-700"
             >
               {{ subMenu.text }}
             </VListItem>
@@ -188,9 +194,10 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
           v-tooltip.right="miniSidebar && menu.text"
           :prepend-icon="menu.icon"
           :to="menu.to"
+          :hide-text="miniSidebar"
           hover
           hover-class="hover:bg-gray-700"
-          exact-active-class="bg-gray-700"
+          exact-active-class="!bg-gray-700"
         >
           {{ menu.text }}
         </VListItem>
