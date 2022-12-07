@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { Menu } from 'floating-vue'
+import { Dropdown } from 'floating-vue'
 
 const route = useRoute()
 
@@ -122,7 +122,7 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
         :key="menu.text"
       >
         <!-- mini nav -->
-        <Menu
+        <Dropdown
           v-if="miniSidebar && menu.items"
           placement="right-start"
           :delay="0"
@@ -146,6 +146,7 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
               <VListItem
                 v-for="subMenu in menu.items"
                 :key="subMenu.text"
+                v-close-popper
                 :to="subMenu.to"
                 hide-prepend
                 hide-append
@@ -154,7 +155,7 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
               </VListItem>
             </VList>
           </template>
-        </Menu>
+        </Dropdown>
         <!-- default nav -->
         <VListCollapse
           v-else-if="menu.items"
@@ -195,6 +196,7 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
           :prepend-icon="menu.icon"
           :to="menu.to"
           :hide-text="miniSidebar"
+          :hide-append="miniSidebar"
           hover
           hover-class="hover:bg-gray-700"
           exact-active-class="!bg-gray-700"
