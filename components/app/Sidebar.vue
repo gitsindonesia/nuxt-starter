@@ -28,6 +28,10 @@ const menus = ref([
         text: 'Validation',
         to: '/forms/validation',
       },
+      {
+        text: 'In Modal',
+        to: '/forms/modal',
+      },
     ],
   },
   {
