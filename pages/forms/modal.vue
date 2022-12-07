@@ -18,6 +18,8 @@ const onSubmit = handleSubmit((values) => {
   alert(JSON.stringify(values))
 })
 
+// reset validation when modal state updates
+// @see https://github.com/logaretm/vee-validate/discussions/3646
 watch(isOpen, () => {
   resetForm()
 })
