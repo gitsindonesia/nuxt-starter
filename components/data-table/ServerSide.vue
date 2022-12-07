@@ -1,11 +1,12 @@
 <script setup lang="ts">
+import type { VDataTableHeader } from '@gits-id/ui'
+
 const API_URL = 'https://dummyjson.com/products'
 
 const page = ref(1)
 const limit = ref(10)
-const items = ref<Record<string, any>[]>([])
 
-const headers = ref([
+const headers = ref<VDataTableHeader[]>([
   {
     text: '#',
     value: 'index',
@@ -30,9 +31,17 @@ const headers = ref([
   },
 ])
 
+interface Product {
+  id: number
+  title: string
+  price: number
+  stock: number
+  category: string
+}
+
 interface ProductsResponse {
   total: number
-  products: Record<string, any>[]
+  products: Product[]
 }
 
 const { pending, data, refresh } = useLazyAsyncData('products', () => {
@@ -45,17 +54,17 @@ const { pending, data, refresh } = useLazyAsyncData('products', () => {
   })
 })
 
-watch(data, (newData) => {
-  if (newData)
-    items.value = newData.products
-})
-
 const onPageChange = (newPage: number) => {
   page.value = newPage
   refresh()
 }
 
-const refreshData = () => refresh()
+const onItemsPerPageChange = (newLimit: number) => {
+  limit.value = newLimit
+  refresh({
+    dedupe: true,
+  })
+}
 </script>
 
 <template>
@@ -71,6 +80,6 @@ const refreshData = () => refresh()
     :headers="headers"
     server-side
     @page:change="onPageChange"
-    @items-per-page:change="refreshData"
+    @items-per-page:change="onItemsPerPageChange"
   />
 </template>
