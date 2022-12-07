@@ -110,6 +110,7 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
     :overlay="isMobile"
     :mini="miniSidebar"
     :sticky="!isMobile"
+    class="p-0.5"
   >
     <div class="h-[58px] flex justify-center items-center">
       <slot name="logo">
@@ -125,11 +126,11 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
         <Dropdown
           v-if="miniSidebar && menu.items"
           placement="right-start"
-          :delay="0"
         >
           <VListItem
             :prepend-icon="menu.icon"
             :to="menu.to"
+            prepend-icon-size="lg"
             hover
             hover-class="hover:bg-gray-700"
             exact-active-class="!bg-gray-700"
@@ -165,8 +166,9 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
             <VListItem
               :prepend-icon="menu.icon"
               :to="menu.to"
-              as="button"
               :aria-label="menu.text"
+              :prepend-icon-size="miniSidebar ? 'lg' : 'md'"
+              as="button"
               hover
               hover-class="hover:bg-gray-700"
               exact-active-class="!bg-gray-700"
@@ -197,6 +199,7 @@ const { sidebar, miniSidebar } = storeToRefs(layout)
           :to="menu.to"
           :hide-text="miniSidebar"
           :hide-append="miniSidebar"
+          :prepend-icon-size="miniSidebar ? 'lg' : 'md'"
           hover
           hover-class="hover:bg-gray-700"
           exact-active-class="!bg-gray-700"
