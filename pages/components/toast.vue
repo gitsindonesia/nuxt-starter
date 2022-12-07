@@ -6,6 +6,8 @@ const isOpen = ref(false)
 const toast2 = ref(false)
 const toast3 = ref(false)
 const toastColor = ref(false)
+const toastTimeout = ref(false)
+
 const placement = ref('bottom')
 
 const placements = ref<ToastPlacement[]>([
@@ -59,6 +61,25 @@ const actionHandler = () => {
 
       <VToast v-model="isOpen">
         Toast message
+        <template #action="{ close }">
+          <VBtn text color="primary" @click="close">
+            Close
+          </VBtn>
+        </template>
+      </VToast>
+    </AppCard>
+
+    <AppCard>
+      <AppCardTitle>
+        Timeout
+      </AppCardTitle>
+
+      <VBtn @click="toastTimeout = !toastTimeout">
+        {{ toastTimeout ? 'Close' : 'Open' }} Toast
+      </VBtn>
+
+      <VToast v-model="toastTimeout" :timeout="5000">
+        Toast will close in 5 seconds
         <template #action="{ close }">
           <VBtn text color="primary" @click="close">
             Close
