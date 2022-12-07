@@ -31,7 +31,7 @@ watch(isOpen, () => {
   </VBtn>
 
   <VModal v-model="isOpen" title="Login" hide-footer>
-    <form v-if="isOpen" class="mt-5" @submit="onSubmit">
+    <form class="mt-5" @submit="onSubmit">
       <v-input
         label="Email"
         placeholder="Email"
