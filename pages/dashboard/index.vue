@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { VDataTableHeader } from '@gits-id/table'
-
 definePageMeta({
   middleware: 'auth',
 })
@@ -23,42 +21,6 @@ const stats = ref([
     icon: 'ri:price-tag-3-fill',
   },
 ])
-
-const headers = ref<VDataTableHeader[]>([
-  {
-    text: 'ID',
-    value: 'index',
-  },
-  {
-    text: 'Name',
-    value: 'name',
-  },
-  {
-    text: 'Username',
-    value: 'username',
-  },
-  {
-    text: 'Email',
-    value: 'email',
-  },
-])
-
-const page = ref(1)
-const itemsPerPage = ref(10)
-const totalItems = ref(20)
-const res = ref()
-
-watchEffect(async () => {
-  res.value = await $fetch<{
-    results: Record<string, any>[]
-    info: {
-      page: number
-      results: number
-      seed: string
-      version: string
-    }
-  }>(`https://jsonplaceholder.typicode.com/users?_page=${page.value}&_limit=${totalItems.value}`)
-})
 </script>
 
 <template>
@@ -113,14 +75,10 @@ watchEffect(async () => {
       </div>
     </AppCard>
 
-    <AppTable
-      v-model:page="page"
-      v-model:items-per-page="itemsPerPage"
-      class="mt-5"
-      :items="res"
-      :total-items="totalItems"
-      :headers="headers"
-      :table-props="{ noDataText: 'Belum ada penjualan hari ini' }"
-    />
+    <AppCard class="mt-5">
+      <AppCardTitle>Products</AppCardTitle>
+
+      <DataTableServerSide hide-title flat class="border" />
+    </AppCard>
   </div>
 </template>
