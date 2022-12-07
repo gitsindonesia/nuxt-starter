@@ -2,6 +2,8 @@
 import { ref } from 'vue'
 import type { VDataTableHeader } from '@gits-id/table'
 
+const search = ref('')
+
 const states = ['active', 'inactive']
 
 const items = [...Array(30)].map((_, index) => ({
@@ -111,6 +113,19 @@ const headers = ref<VDataTableHeader[]>([
         Disabled Sorting
       </AppCardTitle>
       <VDataTable :items="items" :headers="headers" disable-sorting />
+    </AppCard>
+
+    <AppCard>
+      <AppCardTitle>
+        Search
+      </AppCardTitle>
+      <VInput
+        v-model="search"
+        placeholder="Search..."
+        prepend-icon="ri:search-line"
+        wrapper-class="mb-4"
+      />
+      <VDataTable v-model:search="search" :items="items" :headers="headers" />
     </AppCard>
 
     <AppCard>
