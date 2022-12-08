@@ -8,7 +8,7 @@ const { data: product, error, pending } = await useLazyAsyncData(() => getProduc
 </script>
 
 <template>
-  <div class="container mx-auto min-h-screen py-10">
+  <div class="container mx-auto min-h-screen py-5 sm:py-10 px-6 sm:px-0">
     <div v-if="pending">
       Loading...
     </div>

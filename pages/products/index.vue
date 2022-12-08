@@ -7,8 +7,8 @@ const { data, error, pending } = await useLazyAsyncData(() => getProducts())
 </script>
 
 <template>
-  <div class="container mx-auto py-10">
-    <h1 class="text-2xl font-semibold mb-5">
+  <div class="container mx-auto py-5 sm:py-10 px-6 sm:px-0">
+    <h1 class="text-2xl font-semibold mb-6">
       Products ({{ data?.total }})
     </h1>
 
