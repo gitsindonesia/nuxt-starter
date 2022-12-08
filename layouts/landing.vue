@@ -81,8 +81,8 @@ const mobileMenus = ref([
 
     <slot />
 
-    <footer class="py-4">
-      <div class="container mx-auto flex flex-col sm:flex-row gap-4 justify-between items-center">
+    <footer class="">
+      <div class="container py-4 border-t mx-auto flex flex-col sm:flex-row gap-4 justify-between items-center">
         <AppLogo class="h-6" />
         <div class="text-xs text-zinc-600">
           Copyright &copy; 2022. PT GITS Indonesia. All rights reserved.

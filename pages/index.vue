@@ -182,6 +182,33 @@ const pricing = ref([
     actionColor: 'primary',
   },
 ])
+
+const faqs = ref([
+  {
+    question: 'What is the best investment strategy?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem.',
+  },
+  {
+    question: 'How do I get started?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem.',
+  },
+  {
+    question: 'How do I get started?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem.',
+  },
+  {
+    question: 'How do I get started?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem.',
+  },
+  {
+    question: 'How do I get started?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem.',
+  },
+  {
+    question: 'How do I get started?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem quis lorem.',
+  },
+])
 </script>
 
 <template>
@@ -362,7 +389,7 @@ const pricing = ref([
         </div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto mt-20 px-6 xl:px-0 items-start">
+      <div class="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto mt-20 px-6 xl:px-0 items-start">
         <div
           v-for="item in pricing"
           :key="item.name"
@@ -414,6 +441,34 @@ const pricing = ref([
               {{ feature }}
             </li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faqTitle" class="px-6 sm:px-0 py-10 sm:py-24 bg-white">
+      <div class="container mx-auto px-6 lg:px-8">
+        <div class="space-y-5">
+          <h2 id="faqTitle" class="text-3xl sm:text-4xl font-medium">
+            Frequently asked questions
+          </h2>
+          <p class="text-base sm:text-lg text-slate-700">
+            If you have anything else you want to ask, reach out to us.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          <div
+            v-for="faq in faqs"
+            :key="faq.question"
+            class="space-y-3"
+          >
+            <h3 class="font-medium text-lg">
+              {{ faq.question }}
+            </h3>
+            <p class="text-gray-600">
+              {{ faq.answer }}
+            </p>
+          </div>
         </div>
       </div>
     </section>
