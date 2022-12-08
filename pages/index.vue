@@ -263,7 +263,7 @@ const faqs = ref([
             Every feature you need to win. Try it for yourself.
           </h2>
           <p class="text-zinc-500 text-base sm:text-lg">
-            Pocket was built for investors like you who play by their own rules and aren’t going to let SEC regulations get in the way of their dreams. If other investing tools are afraid to build it, Pocket has it.
+            GITS UI was built for investors like you who play by their own rules and aren’t going to let SEC regulations get in the way of their dreams. If other investing tools are afraid to build it, GITS UI has it.
           </p>
         </div>
         <div class="mt-10 sm:mt-24 grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -297,7 +297,7 @@ const faqs = ref([
             Now is the time to build your portfolio.
           </h2>
           <p class="text-left sm:text-center text-base sm:text-lg text-slate-700">
-            With typical market returns, you have to start young to secure your future. With Pocket, it’s never too late to build your nest egg.
+            With typical market returns, you have to start young to secure your future. With GITS UI, it’s never too late to build your nest egg.
           </p>
         </div>
         <div class="mt-10 sm:mt-24">
@@ -340,7 +340,7 @@ const faqs = ref([
       <div class="container mx-auto">
         <div class="max-w-4xl mx-auto space-y-5">
           <h2 class="text-3xl sm:text-4xl font-medium text-left sm:text-center">
-            Everyone is changing their life with Pocket.
+            Everyone is changing their life with GITS UI.
           </h2>
           <p class="text-left sm:text-center text-base sm:text-lg text-slate-700">
             Thousands of people have doubled their net-worth in the last 30 days.
