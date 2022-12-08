@@ -62,6 +62,39 @@ const features2 = ref([
     icon: 'ri:paint-brush-fill',
   },
 ])
+
+const clients = ref([
+  {
+    name: 'Bukalapak',
+    image: 'https://gits.id/wp-content/uploads/2022/06/bukalapak.png',
+    url: 'https://www.bukalapak.com/',
+  },
+  {
+    name: 'Pegadaian',
+    image: 'https://gits.id/wp-content/uploads/2022/07/pegadaian.png',
+    url: 'https://www.pegadaian.co.id/',
+  },
+  {
+    name: 'Telkomsel',
+    image: 'https://gits.id/wp-content/uploads/2022/06/telkomsel.png',
+    url: 'https://www.telkomsel.com/',
+  },
+  {
+    name: 'Toyota',
+    image: 'https://gits.id/wp-content/uploads/2022/06/toyota.png',
+    url: 'https://www.toyota.co.id/',
+  },
+  {
+    name: 'PwC',
+    image: 'https://gits.id/wp-content/uploads/2022/07/pwc.png',
+    url: 'https://www.pwc.co.id/',
+  },
+  {
+    name: 'Yamaha',
+    image: 'https://gits.id/wp-content/uploads/2022/07/yamaha.png',
+    url: 'https://www.yamaha-motor.co.id/',
+  },
+])
 </script>
 
 <template>
@@ -93,8 +126,17 @@ const features2 = ref([
         <p class="text-center text-slate-700">
           Trusted by these six companies so far
         </p>
-        <div class="px-6 sm:px-0 mt-7 max-w-2xl mx-auto grid gap-4 sm:gap-6 grid-cols-3 grid-cols-6 items-center justify-center">
-          <AppLogo v-for="i in 6" :key="i" class="h-6 sm:h-8" />
+        <div class="px-6 sm:px-0 mt-7 sm:max-w-4xl mx-auto grid gap-4 sm:gap-8 grid-cols-3 sm:grid-cols-6 items-center justify-center">
+          <a
+            v-for="client in clients"
+            :key="client.name"
+            :href="client.url"
+            :title="client.name"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img :src="client.image" :alt="client.name" class="h-8 sm:h-10 object-contain">
+          </a>
         </div>
       </div>
     </section>
