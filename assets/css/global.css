@@ -1,5 +1,9 @@
+:root {
+  --body-bg-color: #F4F4F4;
+}
+
 body {
-  background: #F4F4F4;
+  background: var(--body-bg-color);
 }
 
 .nav-drawer {

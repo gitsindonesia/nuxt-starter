@@ -5,6 +5,9 @@ definePageMeta({
 
 useHead({
   title: 'Home',
+  bodyAttrs: {
+    class: 'bg-white',
+  },
 })
 
 const features = ref([
@@ -99,10 +102,10 @@ const clients = ref([
 
 <template>
   <div>
-    <section class="container mx-auto flex py-20 sm:py-10 sm:h-[calc(100vh-100px)] items-center">
+    <section class="flex sm:py-24 py-14 sm:h-[calc(100vh-100px)] items-center hero">
       <div class="mx-auto space-y-5 sm:space-y-7 px-4 sm:px-0">
-        <h1 class="text-2xl sm:text-5xl tracking-tight font-semibold text-center leading-tight text-slate-900">
-          Application <span class="text-primary">made simple</span><br>
+        <h1 class="text-4xl sm:text-5xl tracking-tight font-semibold text-center leading-tight text-slate-900">
+          Application <span class="text-primary">made simple</span><br class="hidden sm:inline">
           for your business
         </h1>
         <p class="text-slate-700 text-center max-w-2xl text-base sm:text-lg">

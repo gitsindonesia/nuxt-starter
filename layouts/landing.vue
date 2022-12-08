@@ -21,6 +21,14 @@ const menus = ref([
     to: '#faq',
   },
 ])
+
+const mobileMenus = ref([
+  ...menus.value,
+  {
+    divider: true,
+  },
+  { text: 'Sign in', to: '/auth/login' },
+])
 </script>
 
 <template>
@@ -59,10 +67,10 @@ const menus = ref([
       <div class="flex sm:hidden items-center w-full">
         <AppLogo class="h-8" />
         <div class="flex items-center gap-2 justify-end flex-1">
-          <VBtn color="primary" rounded>
-            Get started today
+          <VBtn color="primary" rounded to="/auth/register">
+            Get started
           </VBtn>
-          <VMenus :items="menus" right>
+          <VMenus :items="mobileMenus" right>
             <VBtn icon rounded fab>
               <VIcon name="ic:menu" />
             </VBtn>
