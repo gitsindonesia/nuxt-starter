@@ -131,11 +131,62 @@ const reviews = ref([
     reviewer: 'Axel Doe',
   },
 ])
+
+const pricing = ref([
+  {
+    color: 'white',
+    name: 'Starter',
+    icon: 'ic:round-star',
+    price: 0,
+    description: 'You’re new to investing but want to do it right. Get started for free.',
+    features: [
+      'Commission-free trading',
+      'Multi-layered encryption',
+      'One tip every day',
+      'Invest up to $1,500 each month',
+    ],
+    action: 'Get started for free',
+    actionColor: 'dark',
+  },
+  {
+    color: 'white',
+    name: 'Investor',
+    icon: 'ic:round-star',
+    price: 10,
+    description: 'You’ve been investing for a while. Invest more and grow your wealth faster.',
+    features: [
+      'Commission-free trading',
+      'Multi-layered encryption',
+      'One tip every day',
+      'Invest up to $1,500 each month',
+      'Basic transaction anonymization',
+    ],
+    action: 'Subscribe',
+    actionColor: 'dark',
+  },
+  {
+    color: 'dark',
+    name: 'VIP',
+    icon: 'ic:round-stars',
+    price: 199,
+    description: 'You’ve got a huge amount of assets but it’s not enough. To the moon.',
+    features: [
+      'Commission-free trading',
+      'Multi-layered encryption',
+      'One tip every day',
+      'Invest up to $1,500 each month',
+      'Basic transaction anonymization',
+      'Automated tax-loss harvesting',
+    ],
+    action: 'Subscribe',
+    actionColor: 'primary',
+  },
+])
 </script>
 
 <template>
   <div>
-    <section class="flex sm:py-24 py-14 sm:h-[calc(100vh-100px)] items-center hero">
+    <section class="flex sm:py-24 py-14 sm:h-[calc(100vh-90px)] items-center hero">
       <div class="mx-auto space-y-5 sm:space-y-7 px-4 sm:px-0">
         <h1 class="text-4xl sm:text-5xl tracking-tight font-semibold text-center leading-tight text-slate-900">
           Application <span class="text-primary">made simple</span><br class="hidden sm:inline">
@@ -157,12 +208,12 @@ const reviews = ref([
     </section>
 
     <!-- trusted section -->
-    <section class="py-10 sm:py-24">
+    <section class="py-10 sm:py-20 border-t">
       <div class="container mx-auto">
         <p class="text-center text-slate-700">
           Trusted by these six companies so far
         </p>
-        <div class="px-6 sm:px-0 mt-7 sm:max-w-4xl mx-auto grid gap-4 sm:gap-8 grid-cols-3 sm:grid-cols-6 items-center justify-center">
+        <div class="px-6 sm:px-0 mt-10 sm:max-w-4xl mx-auto grid gap-4 sm:gap-8 grid-cols-3 sm:grid-cols-6 items-center justify-center">
           <a
             v-for="client in clients"
             :key="client.name"
@@ -295,6 +346,74 @@ const reviews = ref([
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" aria-labelledby="pricingTitle" class="px-6 sm:px-0 py-10 sm:py-24 bg-gray-100">
+      <div class="container mx-auto">
+        <div class="max-w-4xl mx-auto space-y-5">
+          <h2 id="pricingTitle" class="text-3xl sm:text-4xl font-medium text-left sm:text-center">
+            Flat pricing, no management fees.
+          </h2>
+          <p class="text-left sm:text-center text-base sm:text-lg text-slate-700">
+            Whether you’re one person trying to get ahead or a big firm trying to take over the world, we’ve got a plan for you.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto mt-20 px-6 xl:px-0 items-start">
+        <div
+          v-for="item in pricing"
+          :key="item.name"
+          class="rounded-xl shadow-lg shadow-gray-900/5 p-8 space-y-5"
+          :class="{
+            'bg-white': item.color === 'white',
+            'bg-gray-900 text-white': item.color === 'dark',
+          }"
+        >
+          <div>
+            <VIcon :name="item.icon" size="lg" class="text-primary-500" />
+            {{ item.name }}
+          </div>
+          <h3
+            class=" font-semibold text-3xl"
+            :class="{
+              'text-zinc-900': item.color === 'white',
+              'text-white': item.color === 'dark',
+            }"
+          >
+            ${{ item.price }}
+          </h3>
+          <p
+            class="text-sm"
+            :class="{
+              'text-gray-700': item.color === 'white',
+              'text-gray-300': item.color === 'dark',
+            }"
+          >
+            {{ item.description }}
+          </p>
+          <VBtn :color="item.actionColor" block>
+            {{ item.action }}
+          </VBtn>
+
+          <ul
+            class="space-y-3 divide-y flex flex-col"
+            :class="{
+              '': item.color === 'white',
+              'divide-gray-800 text-gray-300': item.color === 'dark',
+            }"
+          >
+            <li
+              v-for="feature in item.features"
+              :key="feature"
+              class="flex gap-4 items-start pt-3 text-sm"
+            >
+              <VIcon name="ic:round-check-circle-outline" size="sm" class="text-primary-500" />
+              {{ feature }}
+            </li>
+          </ul>
         </div>
       </div>
     </section>
