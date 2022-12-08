@@ -40,7 +40,7 @@ const mobileMenus = ref([
       }"
     >
       <!-- desktop -->
-      <div class="hidden container mx-auto sm:px-4 sm:flex gap-8 items-center py-3">
+      <div class="hidden lg:container mx-auto sm:px-4 lg:flex gap-4 xl:gap-8 items-center py-3">
         <AppLogo class="h-8" />
 
         <nav class="flex-1">
@@ -64,7 +64,7 @@ const mobileMenus = ref([
       </div>
 
       <!-- mobile -->
-      <div class="flex sm:hidden items-center w-full">
+      <div class="flex lg:hidden items-center w-full">
         <AppLogo class="h-8" />
         <div class="flex items-center gap-2 justify-end flex-1">
           <VBtn color="primary" rounded to="/auth/register">
