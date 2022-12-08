@@ -26,11 +26,6 @@ const features = ref([
     description: 'The latest and greatest Nuxt.js version.',
     icon: 'logos:nuxt-icon',
   },
-  {
-    name: 'CSS Properties',
-    description: 'The latest and greatest CSS properties.',
-    icon: 'logos:css-3',
-  },
 ])
 
 const features2 = ref([
@@ -268,7 +263,7 @@ const faqs = ref([
         </div>
         <div class="mt-10 sm:mt-24 grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div class="hidden sm:block">
-            <div class="bg-zinc-800 rounded-xl h-[790px]" />
+            <div class="bg-zinc-800 rounded-xl h-[585px]" />
           </div>
           <div class="flex flex-col gap-8">
             <div
