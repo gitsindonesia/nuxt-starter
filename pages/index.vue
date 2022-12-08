@@ -208,7 +208,10 @@ const faqs = ref([
 
 <template>
   <div>
-    <section class="flex sm:py-24 py-14 sm:h-[calc(100vh-90px)] items-center hero">
+    <section class="flex sm:py-24 py-14 sm:h-[calc(100vh-90px)] items-center hero relative">
+      <div class="bg-primary-500/50 w-[100px] h-[100px] md:w-[400px] md:h-[400px] rounded-full blur-[50px] md:blur-[200px] absolute right-0 top-10" />
+      <div class="bg-secondary-500/50 w-[100px] h-[100px] md:w-[400px] md:h-[400px] rounded-full blur-[50px] md:blur-[200px] absolute bottom-0 left-10" />
+
       <div class="mx-auto space-y-5 sm:space-y-7 px-4 sm:px-0">
         <h1 class="text-4xl sm:text-5xl tracking-tight font-semibold text-center leading-tight text-slate-900">
           Application <span class="text-primary">made simple</span><br class="hidden sm:inline">
@@ -230,7 +233,7 @@ const faqs = ref([
     </section>
 
     <!-- trusted section -->
-    <section class="py-10 sm:py-20 border-t">
+    <section class="py-10 sm:py-20">
       <div class="container mx-auto">
         <p class="text-center text-slate-700">
           Trusted by these six companies so far
