@@ -377,7 +377,7 @@ const faqs = ref([
       </div>
     </section>
 
-    <section id="pricing" aria-labelledby="pricingTitle" class="px-6 sm:px-0 py-10 sm:py-24 bg-gray-100">
+    <section id="pricing" aria-labelledby="pricingTitle" class="px-6 sm:px-0 py-14 sm:py-24 bg-gray-100">
       <div class="container mx-auto">
         <div class="max-w-4xl mx-auto space-y-5">
           <h2 id="pricingTitle" class="text-3xl sm:text-4xl font-medium text-left sm:text-center">
@@ -389,7 +389,7 @@ const faqs = ref([
         </div>
       </div>
 
-      <div class="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto mt-20 px-6 xl:px-0 items-start">
+      <div class="container grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto mt-14 sm:mt-20 items-start">
         <div
           v-for="item in pricing"
           :key="item.name"
@@ -445,8 +445,8 @@ const faqs = ref([
       </div>
     </section>
 
-    <section id="faq" aria-labelledby="faqTitle" class="px-6 sm:px-0 py-10 sm:py-24 bg-white">
-      <div class="container mx-auto px-6 lg:px-8">
+    <section id="faq" aria-labelledby="faqTitle" class="px-6 sm:px-0 py-14 sm:py-24 bg-white">
+      <div class="container mx-auto">
         <div class="space-y-5">
           <h2 id="faqTitle" class="text-3xl sm:text-4xl font-medium">
             Frequently asked questions
