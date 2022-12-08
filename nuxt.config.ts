@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       gaId: '',
+      apiUrl: '',
     },
   },
   css: ['~/assets/css/global.css'],

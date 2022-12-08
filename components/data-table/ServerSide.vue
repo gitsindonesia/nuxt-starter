@@ -13,17 +13,10 @@ function numberToStars(num: number) {
   return '★'.repeat(fullStars) + halfStar + '☆'.repeat(emptyStars)
 }
 
-const API_URL = 'https://dummyjson.com/products'
-
 const page = ref(1)
 const limit = ref(10)
 
 const headers = ref<VDataTableHeader[]>([
-  // {
-  //   text: '#',
-  //   value: 'index',
-  //   align: 'center',
-  // },
   {
     text: 'Image',
     value: 'thumbnail',
@@ -49,26 +42,11 @@ const headers = ref<VDataTableHeader[]>([
   },
 ])
 
-interface Product {
-  id: number
-  title: string
-  price: number
-  stock: number
-  category: string
-}
-
-interface ProductsResponse {
-  total: number
-  products: Product[]
-}
-
 const { pending, data, refresh } = useLazyAsyncData('products', () => {
   const skip = (page.value - 1) * limit.value
-  return $fetch<ProductsResponse>(API_URL, {
-    params: {
-      limit: limit.value,
-      skip,
-    },
+  return getProducts({
+    limit: limit.value,
+    skip,
   })
 })
 
