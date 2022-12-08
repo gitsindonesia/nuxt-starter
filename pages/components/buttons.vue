@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { colors, sizes } from '~~/constants'
+import { defaultColors as colors, defaultSizes as sizes } from '@gits-id/theme/defaultTheme'
 </script>
 
 <template>

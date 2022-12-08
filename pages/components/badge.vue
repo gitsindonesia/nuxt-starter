@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { defaultRounded } from '@gits-id/theme/defaultTheme'
-import { colors } from '~/constants'
+import { defaultColors as colors, defaultRounded } from '@gits-id/theme/defaultTheme'
 </script>
 
 <template>
