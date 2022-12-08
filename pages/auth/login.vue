@@ -43,11 +43,22 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
         prepend-icon="ri:lock-line"
         @click-append-icon="showPassword = !showPassword"
       />
-      <v-checkbox
-        wrapper-class="mt-5"
-        name="rememberMe"
-        label="Remember me"
-      />
+      <div class="flex gap-2 justify-betweeen items-center mt-5">
+        <v-checkbox
+          name="rememberMe"
+          label="Remember me"
+          wrapper-class="flex-1"
+        />
+        <v-btn
+          color="primary"
+          text
+          to="/auth/forgot-password"
+          class="!p-0"
+          size="sm"
+        >
+          Forgot Password?
+        </v-btn>
+      </div>
       <v-btn
         :loading="loading"
         type="submit"
@@ -58,10 +69,13 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
         Login
       </v-btn>
     </form>
-    <div class="text-center mt-2">
-      <v-btn color="primary" text to="/auth/forgot-password">
-        Forgot Password?
-      </v-btn>
+    <div class="flex gap-2 justify-center text-gray-600 text-sm font-medium items-center mt-5">
+      <div class="border-b flex-1" />
+      OR
+      <div class="border-b flex-1" />
     </div>
+    <v-btn block outlined to="/auth/register" class="mt-5">
+      Create Account
+    </v-btn>
   </div>
 </template>
