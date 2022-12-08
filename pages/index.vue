@@ -98,6 +98,24 @@ const clients = ref([
     url: 'https://www.yamaha-motor.co.id/',
   },
 ])
+
+const reviews = ref([
+  {
+    title: 'Great product!',
+    description: 'This exceeded my expectations.',
+    reviewer: 'Jane Doe',
+  },
+  {
+    title: 'Disappointing',
+    description: 'The product arrived damaged and didn\'t work as advertised.',
+    reviewer: 'John Doe',
+  },
+  {
+    title: 'Okay, but not worth the price',
+    description: 'The quality is okay, but I\'m not sure it was worth the price I paid.',
+    reviewer: 'Mary Smith',
+  },
+])
 </script>
 
 <template>
@@ -148,7 +166,7 @@ const clients = ref([
     <section class="py-10 sm:py-24 bg-zinc-900 px-6 sm:px-0">
       <div class="container mx-auto">
         <div class="max-w-4xl space-y-5">
-          <h2 class="text-2xl sm:text-4xl font-semibold text-white">
+          <h2 class="text-3xl sm:text-4xl font-semibold text-white">
             Every feature you need to win. Try it for yourself.
           </h2>
           <p class="text-zinc-500 text-base sm:text-lg">
@@ -182,10 +200,10 @@ const clients = ref([
     <section class="py-10 sm:py-24 px-6 sm:px-0">
       <div class="container mx-auto">
         <div class="max-w-4xl mx-auto space-y-5">
-          <h2 class="text-2xl sm:text-4xl font-medium text-left sm:text-center">
+          <h2 class="text-3xl sm:text-4xl font-medium text-left sm:text-center">
             Now is the time to build your portfolio.
           </h2>
-          <p class="text-left sm:text-center text-base text-lg text-slate-700">
+          <p class="text-left sm:text-center text-base sm:text-lg text-slate-700">
             With typical market returns, you have to start young to secure your future. With Pocket, it’s never too late to build your nest egg.
           </p>
         </div>
@@ -221,6 +239,48 @@ const clients = ref([
         <VBtn rounded>
           Get started
         </VBtn>
+      </div>
+    </section>
+
+    <!-- review section -->
+    <section class="py-10 sm:py-24 px-6 sm:px-0 bg-gray-50">
+      <div class="container mx-auto">
+        <div class="max-w-4xl mx-auto space-y-5">
+          <h2 class="text-3xl sm:text-4xl font-medium text-left sm:text-center">
+            Everyone is changing their life with Pocket.
+          </h2>
+          <p class="text-left sm:text-center text-base sm:text-lg text-slate-700">
+            Thousands of people have doubled their net-worth in the last 30 days.
+          </p>
+        </div>
+        <div class="mt-10 sm:mt-24">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div
+              v-for="review in reviews"
+              :key="review.title"
+              class="space-y-4 rounded-xl p-8 shadow-md shadow-gray-900/5 bg-white"
+            >
+              <div class="flex gap-1 items-center">
+                <VIcon
+                  v-for="i in 5"
+                  :key="i"
+                  name="ic:round-star"
+                  size="sm"
+                  class="text-primary-500"
+                />
+              </div>
+              <h3 class="text-zinc-900 font-semibold text-lg">
+                "{{ review.title }}"
+              </h3>
+              <p class="text-base">
+                {{ review.description }}
+              </p>
+              <p class="text-sm text-gray-600">
+                - {{ review.reviewer }}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
