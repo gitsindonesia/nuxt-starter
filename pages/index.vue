@@ -212,7 +212,7 @@ const faqs = ref([
       <div class="bg-primary-500/50 w-[100px] h-[100px] md:w-[400px] md:h-[400px] rounded-full blur-[50px] md:blur-[200px] absolute right-0 top-10" />
       <div class="bg-secondary-500/50 w-[100px] h-[100px] md:w-[400px] md:h-[400px] rounded-full blur-[50px] md:blur-[200px] absolute bottom-0 left-10" />
 
-      <div class="mx-auto space-y-5 sm:space-y-7 px-4 sm:px-0">
+      <div class="mx-auto space-y-5 sm:space-y-7 px-4 sm:px-0 z-10">
         <h1 class="text-4xl sm:text-5xl tracking-tight font-semibold text-center leading-tight text-slate-900">
           Application <span class="text-primary">made simple</span><br class="hidden sm:inline">
           for your business
