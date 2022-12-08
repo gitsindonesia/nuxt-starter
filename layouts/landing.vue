@@ -20,6 +20,10 @@ const menus = ref([
     text: 'FAQs',
     to: '#faq',
   },
+  {
+    text: 'Products',
+    to: '/products',
+  },
 ])
 
 const mobileMenus = ref([
@@ -40,7 +44,7 @@ const mobileMenus = ref([
       }"
     >
       <!-- desktop -->
-      <div class="hidden lg:container mx-auto sm:px-4 lg:flex gap-4 xl:gap-8 items-center py-3">
+      <div class="hidden lg:container mx-auto px-4 sm:px-0 lg:flex gap-4 xl:gap-8 items-center py-3">
         <AppLogo class="h-8" />
 
         <nav class="flex-1">
