@@ -106,14 +106,29 @@ const reviews = ref([
     reviewer: 'Jane Doe',
   },
   {
-    title: 'Disappointing',
-    description: 'The product arrived damaged and didn\'t work as advertised.',
+    title: 'Excellent product',
+    description: 'I\'m very happy with this product.',
     reviewer: 'John Doe',
   },
   {
-    title: 'Okay, but not worth the price',
-    description: 'The quality is okay, but I\'m not sure it was worth the price I paid.',
+    title: 'The best product I\'ve ever used',
+    description: 'I\'m very happy with this product.',
     reviewer: 'Mary Smith',
+  },
+  {
+    title: 'Above and beyond',
+    description: 'I\'m very happy with this product.',
+    reviewer: 'Jade Doe',
+  },
+  {
+    title: 'Above my expectations',
+    description: 'I\'m very happy with this product.',
+    reviewer: 'Gorge Doe',
+  },
+  {
+    title: 'One of the best',
+    description: 'I\'m very happy with this product.',
+    reviewer: 'Axel Doe',
   },
 ])
 </script>
@@ -236,7 +251,7 @@ const reviews = ref([
         <p class="text-zinc-200 text-base sm:max-w-md leading-relaxed mx-auto">
           It takes 30 seconds to sign up. Download the app and create an account today and we’ll send you a tip guaranteed to double your first investment.
         </p>
-        <VBtn rounded>
+        <VBtn rounded to="/auth/register">
           Get started
         </VBtn>
       </div>
