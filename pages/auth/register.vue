@@ -114,7 +114,7 @@ const handleSubmit = _handleSubmit(async () => {
       Already have account?
       <div class="border-b flex-1" />
     </div>
-    <v-btn block outlined to="/auth/register" class="mt-5">
+    <v-btn block outlined to="/auth/login" class="mt-5">
       Login
     </v-btn>
   </div>

@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useForm } from 'vee-validate'
+import { object, string } from 'yup'
+
 definePageMeta({
   layout: 'auth',
   middleware: 'guest',
@@ -8,7 +11,53 @@ useHead({
   title: 'Login',
 })
 
-const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
+const auth = useAuthStore()
+const router = useRouter()
+const route = useRoute()
+
+const error = ref()
+const isError = ref(false)
+const loading = ref(false)
+const showPassword = ref(false)
+
+const schema = object({
+  email: string().email().required().label('Email'),
+  password: string().required().label('Password'),
+})
+
+const { handleSubmit: _handleSubmit } = useForm({
+  validationSchema: schema,
+  initialValues: {
+    email: '',
+    password: '',
+  },
+})
+
+const handleSubmit = _handleSubmit(async () => {
+  error.value = ''
+  isError.value = false
+  loading.value = true
+
+  try {
+    // login logic here
+    // const res = await login(formValues)
+
+    // replace this with your actual logic
+    auth.login({
+      name: 'John Doe',
+      email: 'john@example.com',
+    }, 'ABC123')
+
+    router.push((route.query as any).next || '/dashboard')
+  }
+  catch (e: any) {
+    error.value = e.data?.message || e.message
+    isError.value = true
+  }
+  finally {
+    loading.value = false
+  }
+})
 </script>
 
 <template>
@@ -22,18 +71,18 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
       Silahkan login untuk mengakses semua fitur!
     </p>
 
-    <v-alert v-model="showAlert" color="error" class="mt-6">
+    <VAlert v-model="isError" color="error" class="mt-6">
       {{ error }}
-    </v-alert>
+    </VAlert>
 
     <form class="mt-5" @submit="handleSubmit">
-      <v-input
+      <VInput
         label="Email"
         placeholder="Email"
         name="email"
         prepend-icon="ri:mail-line"
       />
-      <v-input
+      <VInput
         wrapper-class="mt-4"
         label="Password"
         placeholder="Password"
@@ -44,12 +93,12 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
         @click-append-icon="showPassword = !showPassword"
       />
       <div class="flex gap-2 justify-betweeen items-center mt-5">
-        <v-checkbox
+        <VCheckbox
           name="rememberMe"
           label="Remember me"
           wrapper-class="flex-1"
         />
-        <v-btn
+        <VBtn
           color="primary"
           text
           to="/auth/forgot-password"
@@ -57,9 +106,9 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
           size="sm"
         >
           Forgot Password?
-        </v-btn>
+        </VBtn>
       </div>
-      <v-btn
+      <VBtn
         :loading="loading"
         type="submit"
         class="mt-5"
@@ -67,15 +116,15 @@ const { handleSubmit, showAlert, showPassword, error, loading } = useLogin()
         block
       >
         Login
-      </v-btn>
+      </VBtn>
     </form>
     <div class="flex gap-2 justify-center text-gray-600 text-sm font-medium items-center mt-5">
       <div class="border-b flex-1" />
       OR
       <div class="border-b flex-1" />
     </div>
-    <v-btn block outlined to="/auth/register" class="mt-5">
+    <VBtn block outlined to="/auth/register" class="mt-5">
       Create Account
-    </v-btn>
+    </VBtn>
   </div>
 </template>
