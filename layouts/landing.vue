@@ -1,24 +1,43 @@
 <script setup lang="ts">
+const route = useRoute()
+
+const activeByHash = (hash: string) => route.hash === hash
+
 const menus = ref([
   {
     text: 'Home',
     to: '/',
+    isActive() {
+      return route.path === '/' && !route.hash
+    },
   },
   {
     text: 'Features',
-    href: '#features',
+    to: '/#features',
+    isActive() {
+      return activeByHash('#features')
+    },
   },
   {
     text: 'Review',
-    href: '#review',
+    to: '/#review',
+    isActive() {
+      return activeByHash('#review')
+    },
   },
   {
     text: 'Pricing',
-    href: '#pricing',
+    to: '/#pricing',
+    isActive() {
+      return activeByHash('#pricing')
+    },
   },
   {
     text: 'FAQs',
-    href: '#faq',
+    to: '/#faq',
+    isActive() {
+      return activeByHash('#faqs')
+    },
   },
   {
     text: 'Store',
@@ -51,11 +70,11 @@ const mobileMenus = ref([
           <ul class="flex gap-4">
             <li v-for="menu in menus" :key="menu.text">
               <NuxtLink
-                :to="menu.to ? menu.to : undefined"
-                :href="menu.href ? menu.href : undefined"
+                :to="menu.to"
                 class="text-sm px-3 py-2 rounded-full text-slate-700 hover:text-slate-900"
                 exact
-                exact-active-class="!text-primary font-semibold"
+                :exact-active-class="menu.isActive ? '' : '!text-primary font-semibold'"
+                :class="menu.isActive?.() ? '!text-primary font-semibold' : ''"
               >
                 {{ menu.text }}
               </NuxtLink>
