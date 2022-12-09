@@ -52,7 +52,7 @@ const mobileMenus = ref([
             <li v-for="menu in menus" :key="menu.text">
               <NuxtLink
                 :to="menu.to ? menu.to : undefined"
-                :href="menu.href"
+                :href="menu.href ? menu.href : undefined"
                 class="text-sm px-3 py-2 rounded-full text-slate-700 hover:text-slate-900"
                 exact
                 exact-active-class="!text-primary font-semibold"
