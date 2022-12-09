@@ -238,7 +238,7 @@ const faqs = ref([
         <p class="text-center text-slate-700">
           Trusted by these six companies so far
         </p>
-        <div class="px-6 sm:px-0 mt-10 sm:max-w-4xl mx-auto grid gap-4 sm:gap-8 grid-cols-3 sm:grid-cols-6 items-center justify-center">
+        <div class="px-6 2xl:px-0 mt-10 sm:max-w-4xl mx-auto grid gap-4 sm:gap-8 grid-cols-3 sm:grid-cols-6 items-center justify-center">
           <a
             v-for="client in clients"
             :key="client.name"
@@ -254,7 +254,7 @@ const faqs = ref([
     </section>
 
     <!-- feature section -->
-    <section class="py-10 sm:py-24 bg-zinc-900 px-6 sm:px-0">
+    <section class="py-10 sm:py-24 bg-zinc-900 px-6 2xl:px-0">
       <div class="container mx-auto">
         <div class="max-w-4xl space-y-5">
           <h2 class="text-3xl sm:text-4xl font-semibold text-white">
@@ -288,7 +288,7 @@ const faqs = ref([
     </section>
 
     <!-- feature 2 section -->
-    <section class="py-10 sm:py-24 px-6 sm:px-0">
+    <section class="py-10 sm:py-24 px-6 2xl:px-0">
       <div class="container mx-auto">
         <div class="max-w-4xl mx-auto space-y-5">
           <h2 class="text-3xl sm:text-4xl font-medium text-left sm:text-center">
@@ -319,7 +319,7 @@ const faqs = ref([
     </section>
 
     <!-- CTA -->
-    <section class="py-10 sm:py-24 bg-zinc-900 px-6 sm:px-0">
+    <section class="py-10 sm:py-24 bg-zinc-900 px-6 2xl:px-0">
       <div class="sm:max-w-4xl mx-auto text-center space-y-5">
         <h3 class="text-white text-3xl sm:text-4xl font-medium">
           Get your first tips today
@@ -334,7 +334,7 @@ const faqs = ref([
     </section>
 
     <!-- review section -->
-    <section class="py-10 sm:py-24 px-6 sm:px-0 bg-gray-50">
+    <section class="py-10 sm:py-24 px-6 2xl:px-0 bg-gray-50">
       <div class="container mx-auto">
         <div class="max-w-4xl mx-auto space-y-5">
           <h2 class="text-3xl sm:text-4xl font-medium text-left sm:text-center">
@@ -375,7 +375,7 @@ const faqs = ref([
       </div>
     </section>
 
-    <section id="pricing" aria-labelledby="pricingTitle" class="px-6 sm:px-0 py-14 sm:py-24 bg-gray-100">
+    <section id="pricing" aria-labelledby="pricingTitle" class="px-6 2xl:px-0 py-14 sm:py-24 bg-gray-100">
       <div class="container mx-auto">
         <div class="max-w-4xl mx-auto space-y-5">
           <h2 id="pricingTitle" class="text-3xl sm:text-4xl font-medium text-left sm:text-center">
@@ -443,7 +443,7 @@ const faqs = ref([
       </div>
     </section>
 
-    <section id="faq" aria-labelledby="faqTitle" class="px-6 sm:px-0 py-14 sm:py-24 bg-white">
+    <section id="faq" aria-labelledby="faqTitle" class="px-6 2xl:px-0 py-14 sm:py-24 bg-white">
       <div class="container mx-auto">
         <div class="space-y-5">
           <h2 id="faqTitle" class="text-3xl sm:text-4xl font-medium">
