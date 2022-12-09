@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { NuxtLink } from '#components'
+
 const menus = ref([
   {
     text: 'Home',
@@ -6,22 +8,22 @@ const menus = ref([
   },
   {
     text: 'Features',
-    to: '#features',
+    href: '#features',
   },
   {
     text: 'Review',
-    to: '#review',
+    href: '#review',
   },
   {
     text: 'Pricing',
-    to: '#pricing',
+    href: '#pricing',
   },
   {
     text: 'FAQs',
-    to: '#faq',
+    href: '#faq',
   },
   {
-    text: 'Products',
+    text: 'Store',
     to: '/products',
   },
 ])
@@ -50,9 +52,16 @@ const mobileMenus = ref([
         <nav class="flex-1">
           <ul class="flex gap-4">
             <li v-for="menu in menus" :key="menu.text">
-              <NuxtLink :to="menu.to" class="text-sm px-3 py-2 rounded-full text-slate-700 hover:text-slate-900">
+              <component
+                :is="menu.to ? NuxtLink : 'a'"
+                :to="menu.to ? menu.to : undefined"
+                :href="menu.to ? undefined : '#'"
+                class="text-sm px-3 py-2 rounded-full text-slate-700 hover:text-slate-900"
+                exact
+                exact-active-class="!text-primary font-semibold"
+              >
                 {{ menu.text }}
-              </NuxtLink>
+              </component>
             </li>
           </ul>
         </nav>

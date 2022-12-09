@@ -3,6 +3,10 @@ definePageMeta({
   layout: 'landing',
 })
 
+useHead({
+  title: 'Store',
+})
+
 const { data, error, pending } = await useLazyAsyncData(() => getProducts())
 </script>
 
