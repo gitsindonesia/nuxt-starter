@@ -221,7 +221,12 @@ const faqs = ref([
           GITS UI is full-featured UI Framework built with Vue 3 and Tailwind CSS.
         </p>
         <div class="flex gap-4 justify-center items-center">
-          <VBtn color="dark" rounded>
+          <VBtn
+            color="dark"
+            rounded
+            href="https://gitsindonesia.github.io/ui-component/"
+            new-tab
+          >
             Get started
           </VBtn>
           <VBtn
@@ -229,6 +234,8 @@ const faqs = ref([
             rounded
             text
             class="border border-slate-500 hover:border-slate-700"
+            href="https://github.com/gitsindonesia/ui-component"
+            new-tab
           >
             Github
           </VBtn>
@@ -326,7 +333,7 @@ const faqs = ref([
         <p class="text-zinc-200 text-base sm:max-w-md leading-relaxed mx-auto">
           No register is required. Our demo is open publicly to everyone.
         </p>
-        <VBtn rounded to="/auth/register">
+        <VBtn rounded to="/auth/login">
           Try demo
         </VBtn>
       </div>
