@@ -213,20 +213,24 @@ const faqs = ref([
       <div class="bg-secondary-500/50 w-[100px] h-[100px] md:w-[400px] md:h-[400px] rounded-full blur-[50px] md:blur-[200px] absolute bottom-0 left-10" />
 
       <div class="mx-auto space-y-5 sm:space-y-7 px-4 sm:px-0 z-10">
-        <h1 class="text-4xl sm:text-5xl tracking-tight font-semibold text-center leading-tight text-slate-900">
+        <h1 class="text-4xl sm:text-5xl tracking-tight font-semibold text-center leading-relaxed text-slate-900">
           Application <span class="text-primary">made simple</span><br class="hidden sm:inline">
-          for your business
+          with <span class="bg-gradient-to-r from-primary-500 to-indigo-500 bg-clip-text text-transparent">GITS UI</span>
         </h1>
-        <p class="text-slate-700 text-center max-w-2xl text-base sm:text-lg">
-          All features and tools that you need to build your application with
-          comfort and fun.
+        <p class="text-slate-700 text-center max-w-xl text-base sm:text-lg">
+          GITS UI is full-featured UI Framework built with Vue 3 and Tailwind CSS.
         </p>
         <div class="flex gap-4 justify-center items-center">
           <VBtn color="dark" rounded>
-            Get 6 months free
+            Get started
           </VBtn>
-          <VBtn prefix-icon="ri:play-fill" rounded outlined>
-            Watch video
+          <VBtn
+            prefix-icon="logos:github-icon"
+            rounded
+            text
+            class="border border-slate-500 hover:border-slate-700"
+          >
+            Github
           </VBtn>
         </div>
       </div>
@@ -257,31 +261,26 @@ const faqs = ref([
     <section class="py-10 sm:py-24 bg-zinc-900 px-6 2xl:px-0">
       <div class="container mx-auto">
         <div class="max-w-4xl space-y-5">
-          <h2 class="text-3xl sm:text-4xl font-semibold text-white">
-            Every feature you need to win. Try it for yourself.
+          <h2 class="text-3xl sm:text-5xl font-semibold text-white leading-2">
+            Every feature you need to create web apps. Try it for yourself.
           </h2>
           <p class="text-zinc-500 text-base sm:text-lg">
-            GITS UI was built for investors like you who play by their own rules and aren’t going to let SEC regulations get in the way of their dreams. If other investing tools are afraid to build it, GITS UI has it.
+            GITS UI was built Vue 3 and Nuxt 3. It is a collection of over 40 ready-to-use components.
           </p>
         </div>
-        <div class="mt-10 sm:mt-24 grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div class="hidden sm:block">
-            <div class="bg-zinc-800 rounded-xl h-[585px]" />
-          </div>
-          <div class="flex flex-col gap-8">
-            <div
-              v-for="feature in features"
-              :key="feature.name"
-              class="space-y-4 rounded-xl p-8 border border-zinc-800 hover:bg-zinc-800 transition duration-300"
-            >
-              <VIcon :name="feature.icon" size="lg" />
-              <h3 class="text-zinc-300 font-semibold">
-                {{ feature.name }}
-              </h3>
-              <p class="text-sm text-zinc-500">
-                {{ feature.description }}
-              </p>
-            </div>
+        <div class="mt-10 sm:mt-24 grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div
+            v-for="feature in features"
+            :key="feature.name"
+            class="space-y-4 rounded-xl p-8 border border-zinc-800 hover:bg-zinc-800 transition duration-300"
+          >
+            <VIcon :name="feature.icon" size="lg" />
+            <h3 class="text-zinc-300 font-semibold">
+              {{ feature.name }}
+            </h3>
+            <p class="text-sm text-zinc-500">
+              {{ feature.description }}
+            </p>
           </div>
         </div>
       </div>
@@ -290,12 +289,12 @@ const faqs = ref([
     <!-- feature 2 section -->
     <section class="py-10 sm:py-24 px-6 2xl:px-0">
       <div class="container mx-auto">
-        <div class="max-w-4xl mx-auto space-y-5">
+        <div class="max-w-3xl mx-auto space-y-5">
           <h2 class="text-3xl sm:text-4xl font-medium text-left sm:text-center">
-            Now is the time to build your portfolio.
+            Now is the time to build your application
           </h2>
           <p class="text-left sm:text-center text-base sm:text-lg text-slate-700">
-            With typical market returns, you have to start young to secure your future. With GITS UI, it’s never too late to build your nest egg.
+            GITS UI making it easy to build your application with comfort and fun.
           </p>
         </div>
         <div class="mt-10 sm:mt-24">
@@ -305,7 +304,7 @@ const faqs = ref([
               :key="feature.name"
               class="space-y-4 rounded-xl p-8 border border-slate-200"
             >
-              <VIcon :name="feature.icon" size="xl" class="shadow-sm p-2 rounded-lg" />
+              <VIcon :name="feature.icon" size="xl" class="bg-primary text-white p-2 rounded-lg" />
               <h3 class="text-zinc-900 font-medium">
                 {{ feature.name }}
               </h3>
@@ -322,13 +321,13 @@ const faqs = ref([
     <section class="py-10 sm:py-24 bg-zinc-900 px-6 2xl:px-0">
       <div class="sm:max-w-4xl mx-auto text-center space-y-5">
         <h3 class="text-white text-3xl sm:text-4xl font-medium">
-          Get your first tips today
+          Try our demo today
         </h3>
         <p class="text-zinc-200 text-base sm:max-w-md leading-relaxed mx-auto">
-          It takes 30 seconds to sign up. Download the app and create an account today and we’ll send you a tip guaranteed to double your first investment.
+          No register is required. Our demo is open publicly to everyone.
         </p>
         <VBtn rounded to="/auth/register">
-          Get started
+          Try demo
         </VBtn>
       </div>
     </section>
@@ -341,7 +340,7 @@ const faqs = ref([
             Everyone is changing their life with GITS UI.
           </h2>
           <p class="text-left sm:text-center text-base sm:text-lg text-slate-700">
-            Thousands of people have doubled their net-worth in the last 30 days.
+            Thousands of people have used the framework and enjoyed it.
           </p>
         </div>
         <div class="mt-10 sm:mt-24">
@@ -382,7 +381,7 @@ const faqs = ref([
             Flat pricing, no management fees.
           </h2>
           <p class="text-left sm:text-center text-base sm:text-lg text-slate-700">
-            Whether you’re one person trying to get ahead or a big firm trying to take over the world, we’ve got a plan for you.
+            Whether you're one person trying to get ahead or a big firm trying to take over the world, we've got a plan for you.
           </p>
         </div>
       </div>
