@@ -34,7 +34,7 @@ const { data: product, error, pending } = await useLazyAsyncData(() => getProduc
         :alt="product.title"
         width="100%"
         height="100"
-        class="w-full aspect-1 rounded-lg object-cover bg-gray-100 mt-5"
+        class="w-full aspect-1 rounded-lg  object-cover bg-gray-100 mt-5"
       >
     </div>
   </div>
