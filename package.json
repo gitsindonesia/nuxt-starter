@@ -15,11 +15,14 @@
   },
   "dependencies": {
     "@gits-id/quill-editor": "^0.13.20",
-    "@gits-id/ui-nuxt": "^0.13.20",
+    "@gits-id/ui-nuxt": "0.14.0-alpha.0+17150420",
     "@heroicons/vue": "^2.0.13",
     "@vueuse/core": "^9.1.1",
     "@vueuse/nuxt": "^9.1.1",
     "vue-gtag": "^2.0.1"
+  },
+  "resolutions": {
+    "@gits-id/ui": "0.14.0-alpha.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
@@ -41,6 +44,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "nuxt": "^3.0.0",
+    "sass": "^1.57.1",
     "vitest": "^0.23.2",
     "vue-loader": "^17.0.0"
   },

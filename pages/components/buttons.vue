@@ -106,8 +106,8 @@ import { defaultColors as colors, defaultSizes as sizes } from '@gits-id/theme/d
         Sizes
       </AppCardTitle>
 
-      <div v-for="color in colors" :key="color" class="flex flex-wrap items-end gap-2 mb-2">
-        <VBtn v-for="size in sizes" :key="size" :size="size" :color="color">
+      <div class="flex items-end gap-2">
+        <VBtn v-for="size in ['sm', 'md', 'lg']" :key="size" color="primary" :size="size">
           {{ size }}
         </VBtn>
       </div>
