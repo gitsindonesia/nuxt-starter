@@ -21,9 +21,6 @@
     "@vueuse/nuxt": "^9.1.1",
     "vue-gtag": "^2.0.1"
   },
-  "resolutions": {
-    "@gits-id/ui": "0.14.0-alpha.1"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
     "@babel/core": "^7.18.13",
@@ -47,6 +44,9 @@
     "sass": "^1.57.1",
     "vitest": "^0.23.2",
     "vue-loader": "^17.0.0"
+  },
+  "resolutions": {
+    "@gits-id/ui": "0.14.0-alpha.1"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,html,css,vue}": "npm run lint:fix"
