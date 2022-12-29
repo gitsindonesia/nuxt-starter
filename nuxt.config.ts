@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     ['@pinia/nuxt', { disableVuex: true }],
     '@vueuse/nuxt',
+    '@nuxtjs/fontaine',
     '@gits-id/ui-nuxt',
   ],
   runtimeConfig: {
@@ -16,16 +17,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/global.css'],
   imports: {
     dirs: ['./api', './stores'],
-  },
-  vite: {
-    server: {
-      proxy: {
-        '/random-users': {
-          target: 'https://randomuser.me/api',
-          ws: true,
-        },
-      },
-    },
   },
   googleFonts: {
     prefetch: true,
