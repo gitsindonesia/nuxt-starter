@@ -258,7 +258,13 @@ const faqs = ref([
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img :src="client.image" :alt="client.name" class="h-8 sm:h-10 object-contain">
+            <img
+              width="115"
+              height="40"
+              :src="client.image"
+              :alt="client.name"
+              class="h-8 sm:h-10 object-contain"
+            >
           </a>
         </div>
       </div>
