@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@gits-id/quill-editor": "^0.13.20",
-    "@gits-id/ui-nuxt": "0.14.0-alpha.0+17150420",
+    "@gits-id/ui-nuxt": "0.14.0-alpha.4",
     "@heroicons/vue": "^2.0.13",
     "@vueuse/core": "^9.1.1",
     "@vueuse/nuxt": "^9.1.1",
@@ -45,9 +45,6 @@
     "sass": "^1.57.1",
     "vitest": "^0.23.2",
     "vue-loader": "^17.0.0"
-  },
-  "resolutions": {
-    "@gits-id/ui": "0.14.0-alpha.1"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,html,css,vue}": "npm run lint:fix"
