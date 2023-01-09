@@ -1,17 +1,22 @@
-# Nuxt 3 + GITS UI
+# Nuxt and GITS UI Starter Kit
 
-Look at the [GITS UI documentation](https://gitsindonesia.github.io/ui-component/) and [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Quickly get started on your Vue.js project with this Nuxt.js and GITS UI starter kit. It includes pre-configured setup and a variety of GITS UI components. Perfect for Vue.js developers looking to create a professional web app.
 
-## Features
+## Batteries Included
 
-- [Nuxt 3](https://v3.nuxtjs.org/)
+- [Nuxt 3](https://nuxt.com/)
 - [GITS UI](https://gitsindonesia.github.io/ui-component/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Pinia](https://pinia.vuejs.org/)
+- [@vueuse/nuxt](https://vueuse.org/)
+- [@nuxtjs/google-fonts](https://github.com/nuxt-community/google-fonts-module)
+- [@nuxtjs/fontaine](https://github.com/nuxt-modules/fontaine)
+- [@nuxtjs/i18n](https://i18n.nuxtjs.org/)
+- [@nuxt/image-edge](https://v1.image.nuxtjs.org/)
 
 ## Directory Structure
 
-Look at the [nuxt directory stucture documentation](https://v3.nuxtjs.org/guide/directory-structure/nuxt). With additional folders:
+Look at the [nuxt directory stucture documentation](https://nuxt.com/guide/directory-structure/nuxt). With additional folders:
 
 - `api`: Used to store all the api mapping with its path and payload.
 
@@ -63,4 +68,4 @@ Locally preview production build:
 npm run preview
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+Checkout the [deployment documentation](https://nuxt.com/guide/deploy/presets) for more information.
