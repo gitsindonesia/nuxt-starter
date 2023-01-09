@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     public: {
       gaId: '',
       apiUrl: '',
+      appUrl: '',
     },
   },
   css: ['~/assets/css/global.css'],
