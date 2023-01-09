@@ -1,10 +1,14 @@
 <script setup lang="ts">
-const { locale, locales } = useI18n()
+const { locale, t, locales } = useI18n()
 
 const switchLocalePath = useSwitchLocalePath()
 
 const availableLocales = computed(() => {
   return locales.value as any
+})
+
+useHead({
+  title: t('welcome'),
 })
 </script>
 
