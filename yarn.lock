@@ -1195,6 +1195,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@builder.io/partytown@^0.7.2":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.7.4.tgz#7ac078bf288efc041ecec025679a58ca78ab4ab9"
+  integrity sha512-dcZBPNQiHbMhvDGmdWRFNe75Z/XYmeZ2bubYmC5BeQpF09ObbPcbSqIP2NaNOFonKlWLfsE6u1790o9ZmlfpIw==
+
 "@capsizecss/metrics@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@capsizecss/metrics/-/metrics-0.3.0.tgz#8c40262c176ee131cee64e2e3d1c6def6f9a1b87"
@@ -2877,6 +2882,17 @@
     unplugin "^1.0.0"
     vue-i18n "^9.3.0-beta.10"
     vue-i18n-routing "^0.10.1"
+
+"@nuxtjs/partytown@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/partytown/-/partytown-1.3.0.tgz#d5058bdf744fdbc976f043792e580f4f006c54c0"
+  integrity sha512-1eO7oIV8+dMswy8s7a+01lm9kqw60eml3cSuSV+RJigOqqYYfdnswbvwuCjOlwuDsH1qtH5fFbZL7VwQYnpZ7g==
+  dependencies:
+    "@builder.io/partytown" "^0.7.2"
+    "@nuxt/kit" "^3.0.0"
+    knitwork "^1.0.0"
+    serve-static "^1.15.0"
+    ufo "^1.0.1"
 
 "@nuxtjs/tailwindcss@^6.1.3":
   version "6.1.3"
@@ -15813,6 +15829,11 @@ ufo@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.0.0.tgz#eb64f4c8797d6aa6c710a836abab0bade9d11ca6"
   integrity sha512-DRty0ZBNlJ2R59y4mEupJRKLbkLQsc4qtxjpQv78AwEDuBkaUogMc2LkeqW3HddFlw6NwnXYfdThEZOiNgkmmQ==
+
+ufo@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.0.1.tgz#64ed43b530706bda2e4892f911f568cf4cf67d29"
+  integrity sha512-boAm74ubXHY7KJQZLlXrtMz52qFvpsbOxDcZOnw/Wf+LS4Mmyu7JxmzD4tDLtUQtmZECypJ0FrCz4QIe6dvKRA==
 
 uglify-js@^3.1.4:
   version "3.17.4"

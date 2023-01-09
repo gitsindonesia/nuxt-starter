@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/image-edge',
     '@nuxtjs/color-mode',
+    '@nuxtjs/partytown',
   ],
   runtimeConfig: {
     public: {
@@ -32,6 +33,7 @@ export default defineNuxtConfig({
   gitsUi: {
     sass: true,
   },
+  // https://v8.i18n.nuxtjs.org
   i18n: {
     locales: [
       {
@@ -53,7 +55,6 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: 'locales',
     defaultLocale: 'en',
-    // https://v8.i18n.nuxtjs.org/guide/browser-language-detection
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -63,5 +64,29 @@ export default defineNuxtConfig({
   // https://color-mode.nuxtjs.org
   colorMode: {
     classSuffix: '',
+  },
+  // https://github.com/nuxt-modules/partytown
+  partytown: {
+    forward: ['dataLayer.push'],
+  },
+  app: {
+    head: {
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-3LVV82VFCV',
+          async: true,
+          type: 'text/partytown',
+        },
+        {
+          children: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-3LVV82VFCV');`,
+          async: true,
+          type: 'text/partytown',
+        },
+      ],
+    },
   },
 })
