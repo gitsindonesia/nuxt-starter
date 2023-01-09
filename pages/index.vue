@@ -90,40 +90,7 @@ const clients = ref([
 
 <template>
   <div>
-    <section class="flex sm:py-24 py-14 sm:h-[calc(100vh-90px)] items-center hero relative">
-      <div class="bg-primary-500/50 w-[100px] h-[100px] md:w-[400px] md:h-[400px] rounded-full blur-[50px] md:blur-[200px] absolute right-0 top-10" />
-      <div class="bg-secondary-500/50 w-[100px] h-[100px] md:w-[400px] md:h-[400px] rounded-full blur-[50px] md:blur-[200px] absolute bottom-0 left-10" />
-
-      <div class="mx-auto space-y-5 sm:space-y-7 px-4 sm:px-0 z-10">
-        <h1 class="text-4xl sm:text-5xl tracking-tight font-semibold text-center leading-relaxed text-slate-900">
-          Application <span class="text-primary">made simple</span><br class="hidden sm:inline">
-          with <span class="bg-gradient-to-r from-primary-500 to-indigo-500 bg-clip-text text-transparent">GITS UI</span>
-        </h1>
-        <p class="text-slate-700 text-center max-w-xl text-base sm:text-lg">
-          GITS UI is full-featured UI Framework built with Vue 3 and Tailwind CSS.
-        </p>
-        <div class="flex gap-4 justify-center items-center">
-          <VBtn
-            color="dark"
-            rounded
-            href="https://gitsindonesia.github.io/ui-component/"
-            new-tab
-          >
-            Get started
-          </VBtn>
-          <VBtn
-            prefix-icon="logos:github-icon"
-            rounded
-            text
-            class="border border-slate-500 hover:border-slate-700"
-            href="https://github.com/gitsindonesia/ui-component"
-            new-tab
-          >
-            Github
-          </VBtn>
-        </div>
-      </div>
-    </section>
+    <LandingHero />
 
     <!-- trusted section -->
     <section class="py-10 sm:py-20">
