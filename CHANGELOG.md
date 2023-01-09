@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/compare/v0.0.1...v0.0.2) (2023-01-09)
+
+
+### Features
+
+* add nuxt image ([492c6bd](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/492c6bd4fe1c767661c5c438618f1e43a77d6fc0))
+* **appConfig:** add appConfig and default seo meta tags ([41bd541](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/41bd5413bb1131ed298787d9a0ba8ff7384c4342))
+* **i18n:** add nuxt i18n ([0ac1bba](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/0ac1bba6529ca8c3fe4c039e8e94244cb122ec3a))
+
 ### 0.0.1 (2023-01-09)
 
 
