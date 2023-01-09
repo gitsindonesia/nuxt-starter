@@ -10,7 +10,11 @@
       "
     >
       <div class="container py-4 mx-auto border-t dark:border-neutral-800 flex flex-col sm:flex-row gap-4 justify-between items-center">
-        <Logo size="sm" />
+        <Logo
+          size="sm"
+          width="40"
+          height="18"
+        />
         <div class="text-xs text-gray-600 dark:text-neutral-300 text-center md:text-right">
           Copyright &copy; {{ new Date().getFullYear() }}. PT GITS Indonesia.
           <br class="inline sm:hidden">
