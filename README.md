@@ -20,7 +20,7 @@ Quickly get started on your Vue.js project with this Nuxt.js and GITS UI starter
 
 ## Directory Structure
 
-Look at the [nuxt directory stucture documentation](https://nuxt.com/guide/directory-structure/nuxt). With additional folders:
+Look at the [nuxt directory stucture documentation](https://nuxt.com/docs/guide/directory-structure/nuxt). With additional folders:
 
 - `api`: Used to store all the api mapping with its path and payload.
 
@@ -83,7 +83,7 @@ Locally preview production build:
 npm run preview
 ```
 
-Checkout the [deployment documentation](https://nuxt.com/guide/deploy/presets) for more information.
+Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment#presets) for more information.
 
 ## Release Guide
 
