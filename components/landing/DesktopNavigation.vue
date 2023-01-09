@@ -8,7 +8,10 @@ defineProps<{
 
 <template>
   <div class="hidden lg:container mx-auto px-4 sm:px-0 lg:flex gap-4 xl:gap-8 items-center py-1">
-    <Logo />
+    <Logo
+      width="80"
+      height="36"
+    />
 
     <nav class="flex-1">
       <ul class="flex gap-4">

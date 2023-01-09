@@ -24,7 +24,13 @@ const translatedMenus = computed(() => {
         </VBtn>
       </VMenus>
 
-      <Logo size="md" class="flex-1" img-class="mx-auto" />
+      <Logo
+        size="md"
+        class="flex-1"
+        img-class="mx-auto"
+        width="80"
+        height="36"
+      />
 
       <div class="flex items-center">
         <ColorModeSwitcher />
