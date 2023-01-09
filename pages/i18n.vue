@@ -9,7 +9,7 @@ const availableLocales = computed(() => {
 </script>
 
 <template>
-  <div class="container mx-auto py-6">
+  <div class="container mx-auto py-6 px-6 md:px-0">
     <h1 class="font-semibold text-2xl mb-5">
       nuxt-i18n demo
     </h1>
@@ -17,7 +17,7 @@ const availableLocales = computed(() => {
       {{ $t('welcome') }}
     </VCard>
 
-    <p class="font-medium text-gray-800 text-sm mt-5 mb-2">
+    <p class="font-medium text-gray-800 dark:text-neutral-200 text-sm mt-5 mb-2">
       Try different language:
     </p>
     <div class="space-x-2">

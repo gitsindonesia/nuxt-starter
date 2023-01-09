@@ -4,18 +4,18 @@
     bg-white dark:bg-neutral-900
   "
   >
-    <div class="items-center flex gap-4 container mx-auto">
-      <div class="flex-1">
-        <h1 class="text-4xl sm:text-7xl tracking-tight font-semibold sm:leading-snug gap-3 flex items-center">
+    <div class="items-center flex flex-col sm:flex-row gap-10 md:gap-4 container mx-auto px-6 md:px-0">
+      <div class="flex-1 order-2 sm:order-1 text-center md:text-left">
+        <h1 class="text-4xl sm:text-7xl tracking-tight font-semibold sm:leading-snug gap-3 flex flex-wrap items-center justify-center md:justify-start">
           <span class="bg-gradient-to-r from-green-500 to-cyan-500 bg-clip-text text-transparent">Nuxt.js</span>
-          <span class="font-thin text-red-500 text-5xl">&hearts;</span>
+          <span class="font-thin text-red-500 md:text-5xl text-base">&hearts;</span>
           <span class="bg-gradient-to-r from-primary-500 to-indigo-500 bg-clip-text text-transparent">GITS UI</span>
         </h1>
-        <p class="text-gray-500 dark:text-neutral-300 max-w-xl text-base sm:text-xl sm:leading-8 mt-2">
+        <p class="text-gray-500 dark:text-neutral-300 max-w-xl text-base sm:text-xl sm:leading-8 mt-4">
           Quickly get started on your Vue.js project with this Nuxt.js and GITS UI starter kit. It includes pre-configured setup and a variety of GITS UI components. Perfect for Vue.js developers looking to create a professional web app.
         </p>
 
-        <div class="flex gap-4 mt-10">
+        <div class="flex justify-center md:justify-start gap-2 md:gap-4 mt-10">
           <VBtn
             class="btn-getting-started"
             color="dark"
@@ -39,8 +39,8 @@
           </VBtn>
         </div>
       </div>
-      <div class="w-full sm:w-5/12 relative">
-        <Logo size="custom" img-class="md:w-[300px] mx-auto" />
+      <div class="w-full sm:w-5/12 order-1 md:order-2">
+        <Logo size="custom" img-class="max-w-[240px] md:max-w-[300px] md:w-[300px] mx-auto" />
       </div>
     </div>
   </section>

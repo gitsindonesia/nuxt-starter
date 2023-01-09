@@ -1,6 +1,6 @@
 :root {
   --body-bg-color: theme('colors.white');
-  --body-text-color: theme('colors.white');
+  --body-text-color: theme('colors.gray.800');
 }
 
 body {
@@ -30,10 +30,17 @@ body {
     &.btn-dark:not(:disabled) {
       --btn-text-color: theme('colors.neutral.200');
       &.btn--text {
-        &:hover {
+          --btn-text-color: theme('colors.gray.200');
+
+          &:hover {
           --btn-text-color: theme('colors.white');
         }
       }
+    }
+
+    // text
+    &.btn--text {
+      --btn-text-color: theme('colors.gray.200');
     }
 
     &.btn-dark:not(:disabled) {
@@ -51,6 +58,20 @@ body {
   // icon
   .v-icon {
     color: theme('colors.gray.200') !important;
+  }
+
+  // card
+  .card {
+    --card-bg-color: theme('colors.neutral.800');
+    --card-color: theme('colors.neutral.200');
+  }
+
+  // menus
+  .v-menus-items {
+    --v-menus-bg-color: theme('colors.neutral.800');
+    --v-menus-item-text-color: theme('colors.neutral.200');
+    --v-menus-item-hover-bg-color: theme('colors.neutral.700');
+    --v-menus-item-hover-text-color: theme('colors.neutral.200');
   }
 }
 

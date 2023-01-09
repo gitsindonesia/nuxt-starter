@@ -24,39 +24,15 @@ const menus = ref([
   },
   {
     text: 'Docs',
-    to: 'https://gitsindonesia.github.io/ui-component/',
+    href: 'https://gitsindonesia.github.io/ui-component/',
+    newTab: true,
     isExternal: true,
   },
 ])
 
 const mobileMenus = ref([
   ...menus.value,
-  {
-    divider: true,
-  },
-  { text: 'Sign in', to: '/auth/login' },
 ])
-
-const colorMode = useColorMode()
-
-const colorModeIcon = computed(() => {
-  switch (colorMode.preference) {
-    case 'light':
-      return 'ri:sun-line'
-    case 'dark':
-      return 'ri:moon-line'
-    case 'system':
-    default:
-      return 'ri:computer-line'
-  }
-})
-
-const changeColorMode = () => {
-  const values = ['system', 'light', 'dark']
-  const index = values.indexOf(colorMode.preference)
-  const next = (index + 1) % values.length
-  colorMode.preference = values[next]
-}
 </script>
 
 <template>
@@ -95,29 +71,21 @@ const changeColorMode = () => {
           </ul>
         </nav>
 
-        <div class="flex gap-2">
-          <VBtn
-            aria-label="Color Mode"
-            fab
-            text
-            :prefix-icon="colorModeIcon"
-            @click="changeColorMode"
-          />
-        </div>
+        <ColorModeSwitcher />
       </div>
 
       <!-- mobile -->
       <div class="flex lg:hidden items-center w-full">
-        <v-logo size="md" />
-        <div class="flex items-center gap-2 justify-end flex-1">
-          <VBtn color="primary" rounded to="/auth/register">
-            Get started
-          </VBtn>
-          <VMenus :items="mobileMenus" right>
-            <VBtn icon rounded fab>
+        <div class="flex items-center gap-2 justify-between flex-1">
+          <VMenus :items="mobileMenus">
+            <VBtn icon rounded fab text>
               <VIcon name="ic:menu" />
             </VBtn>
           </VMenus>
+
+          <Logo size="md" class="flex-1" img-class="mx-auto" />
+
+          <ColorModeSwitcher />
         </div>
       </div>
     </VAppBar>
@@ -133,9 +101,11 @@ const changeColorMode = () => {
       "
       >
         <div class="container py-4 mx-auto border-t dark:border-neutral-800 flex flex-col sm:flex-row gap-4 justify-between items-center">
-          <Logo />
-          <div class="text-xs text-gray-600 dark:text-white">
-            Copyright &copy; {{ new Date().getFullYear() }}. PT GITS Indonesia. All rights reserved.
+          <Logo size="sm" />
+          <div class="text-xs text-gray-600 dark:text-neutral-300 text-center md:text-right">
+            Copyright &copy; {{ new Date().getFullYear() }}. PT GITS Indonesia.
+            <br class="inline sm:hidden">
+            All rights reserved.
           </div>
         </div>
       </div>

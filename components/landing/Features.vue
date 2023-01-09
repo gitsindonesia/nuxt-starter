@@ -37,10 +37,10 @@ const features = [
   <section id="features" class="py-10 sm:py-24 px-6 2xl:px-0 bg-gray-50 dark:bg-neutral-900">
     <div class="container mx-auto">
       <div class="max-w-3xl space-y-5 mx-auto text-center">
-        <h2 class="text-3xl sm:text-4xl font-medium">
+        <h2 class="text-3xl sm:text-4xl font-medium text-gray-900 dark:text-neutral-200">
           Every feature you need
         </h2>
-        <p class="text-base sm:text-lg text-gray-700 dark:text-neutral-500">
+        <p class="text-base sm:text-lg text-gray-700 dark:text-neutral-400">
           Focus on adding features and functionality to your app.
         </p>
       </div>
@@ -56,7 +56,7 @@ const features = [
             <h3 class="text-gray-900 dark:text-neutral-200 font-medium">
               {{ feature.name }}
             </h3>
-            <p class="text-sm text-gray-700 dark:text-neutral-500">
+            <p class="text-sm text-gray-700 dark:text-neutral-400">
               {{ feature.description }}
             </p>
           </div>
