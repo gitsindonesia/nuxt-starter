@@ -114,3 +114,14 @@ Then, push the tags:
 ```bash
 git push --follow-tags
 ```
+
+# Contributing
+
+To contribute, you may follow these steps:
+
+- Clone this repository.
+- Create a branch: `git checkout -b <branch_name>`.
+- Make your changes and commit them: `git commit -m '<commit_message>'`
+- Push to the original branch: `git push origin <branch_name>`
+- Create the pull request.
+
