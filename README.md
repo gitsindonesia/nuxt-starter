@@ -37,7 +37,14 @@ yarn dev
 
 ## Checklist
 
-- [ ] 
+Some tasks you should probably do in the beginning are:
+
+- [ ] replace this generic README with a more specific one
+- [ ] reset this `package.json` version to `0.0.0`
+- [ ] install the [Vue Volar extension](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [ ] enable [Volar takeover mode](https://nuxt.com/docs/getting-started/installation#prerequisites) to ensure a smooth editor setup
+- [ ] copy `.env.example` to `.env` and update the value with your own
+- [ ] remove or update `.github` workflows
 
 ## Setup
 
