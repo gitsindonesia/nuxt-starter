@@ -46,20 +46,11 @@ const features = [
       </div>
       <div class="mt-10 sm:mt-24">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
-          <div
+          <LandingFeatureItem
             v-for="feature in features"
             :key="feature.name"
-            class="space-y-4 rounded-xl p-8 shadow-card hover:shadow-xl transition duration-300
-            bg-white dark:bg-neutral-800"
-          >
-            <VIcon :name="feature.icon" size="xl" class="rounded-lg" />
-            <h3 class="text-gray-900 dark:text-neutral-200 font-medium">
-              {{ feature.name }}
-            </h3>
-            <p class="text-sm text-gray-700 dark:text-neutral-400">
-              {{ feature.description }}
-            </p>
-          </div>
+            v-bind="feature"
+          />
         </div>
       </div>
     </div>
