@@ -13,6 +13,10 @@ Quickly get started on your Vue.js project with this Nuxt.js and GITS UI starter
 - [@nuxtjs/fontaine](https://github.com/nuxt-modules/fontaine)
 - [@nuxtjs/i18n](https://i18n.nuxtjs.org/)
 - [@nuxt/image-edge](https://v1.image.nuxtjs.org/)
+- [Storybook](https://storybook.js.org/)
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [lint-staged](https://github.com/okonet/lint-staged)
+- [Hygen](https://www.hygen.io/)
 
 ## Directory Structure
 
@@ -30,6 +34,10 @@ cd my-app
 yarn
 yarn dev
 ```
+
+## Checklist
+
+- [ ] 
 
 ## Setup
 
