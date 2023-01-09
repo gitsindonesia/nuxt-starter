@@ -1,15 +1,24 @@
 <script setup lang="ts">
 import type { MenuItem } from '~~/layouts/default.vue'
 
-defineProps<{
+const props = defineProps<{
   menus: MenuItem[]
 }>()
+
+const { t } = useI18n()
+
+const translatedMenus = computed(() => {
+  return props.menus.map(item => ({
+    ...item,
+    text: t(item.text ?? ''),
+  }))
+})
 </script>
 
 <template>
   <div class="flex lg:hidden items-center w-full">
     <div class="flex items-center gap-2 justify-between flex-1">
-      <VMenus :items="menus">
+      <VMenus :items="translatedMenus">
         <VBtn icon rounded fab text>
           <VIcon name="ic:menu" />
         </VBtn>
