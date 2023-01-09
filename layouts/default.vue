@@ -101,9 +101,9 @@ const mobileMenus = ref([
 
     <footer>
       <div class="container py-4 border-t mx-auto flex flex-col sm:flex-row gap-4 justify-between items-center pr-6 2xl:px-0">
-        <AppLogo class="h-6" />
+        <v-logo />
         <div class="text-xs text-zinc-600">
-          Copyright &copy; 2022. PT GITS Indonesia. All rights reserved.
+          Copyright &copy; {{ new Date().getFullYear() }}. PT GITS Indonesia. All rights reserved.
         </div>
       </div>
     </footer>
