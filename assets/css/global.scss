@@ -73,6 +73,21 @@ body {
     --v-menus-item-hover-bg-color: theme('colors.neutral.700');
     --v-menus-item-hover-text-color: theme('colors.neutral.200');
   }
+
+  // dropdown
+  .dropdown {
+    --dropdown-item-color: theme('colors.neutral.200');
+
+    &-panel {
+      background-color: theme('colors.neutral.800');
+    }
+
+    &-item {
+      &:hover {
+        background-color: theme('colors.neutral.700');
+      }
+    }
+  }
 }
 
   

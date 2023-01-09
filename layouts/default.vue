@@ -71,7 +71,10 @@ const mobileMenus = ref([
           </ul>
         </nav>
 
-        <ColorModeSwitcher />
+        <div class="flex items-center gap-1">
+          <ColorModeSwitcher />
+          <LangSwitcher />
+        </div>
       </div>
 
       <!-- mobile -->
@@ -85,7 +88,10 @@ const mobileMenus = ref([
 
           <Logo size="md" class="flex-1" img-class="mx-auto" />
 
-          <ColorModeSwitcher />
+          <div class="flex items-center">
+            <ColorModeSwitcher />
+            <LangSwitcher />
+          </div>
         </div>
       </div>
     </VAppBar>
