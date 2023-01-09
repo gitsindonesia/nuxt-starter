@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@gits-id/ui-nuxt',
     '@nuxtjs/i18n',
+    '@nuxt/image-edge',
   ],
   runtimeConfig: {
     public: {
