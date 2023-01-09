@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/fontaine',
     '@gits-id/ui-nuxt',
+    '@nuxtjs/i18n',
   ],
   runtimeConfig: {
     public: {
@@ -27,5 +28,33 @@ export default defineNuxtConfig({
   },
   gitsUi: {
     sass: true,
+  },
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        file: 'en-US.json',
+        name: 'English',
+      },
+      {
+        code: 'id',
+        file: 'id-ID.json',
+        name: 'Indonesia',
+      },
+      {
+        code: 'fr',
+        file: 'fr-FR.json',
+        name: 'Français',
+      },
+    ],
+    lazy: true,
+    langDir: 'locales',
+    defaultLocale: 'en',
+    // https://v8.i18n.nuxtjs.org/guide/browser-language-detection
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root', // recommended
+    },
   },
 })
