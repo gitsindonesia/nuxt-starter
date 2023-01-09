@@ -9,7 +9,7 @@ const availableLocales = computed(() => {
 </script>
 
 <template>
-  <div>
+  <div class="container mx-auto py-6">
     <h1 class="font-semibold text-2xl mb-5">
       nuxt-i18n demo
     </h1>

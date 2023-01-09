@@ -1,29 +1,7 @@
 :root {
-  --body-bg-color: #F4F4F4;
+  --body-bg-color: theme('colors.white');
 }
 
 body {
   background: var(--body-bg-color);
-}
-
-.nav-drawer {
-  z-index: 20;
-}
-
-/* card stats */
-.card-stats {
-  border: var(--card-border);
-  --card-border-radius: 8px;
-}
-
-.card-stats-primary {
-  --card-bg-color: theme('colors.app.soft-blue');
-  --card-text-color: theme('colors.app.blue');
-  --card-border: 1px solid theme('colors.app.blue');
-}
-
-.card-stats-error {
-  --card-bg-color: theme('colors.app.soft-red');
-  --card-text-color: theme('colors.app.red');
-  --card-border: 1px solid theme('colors.app.red');
 }
