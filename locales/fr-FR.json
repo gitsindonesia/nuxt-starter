@@ -1,3 +1,9 @@
 {
-  "welcome": "Bienvenue"
+  "welcome": "Bienvenue",
+  "menu": {
+    "home": "Accueil",
+    "features": "Caractéristiques",
+    "internalization": "Internationalisation",
+    "docs": "Documentation"
+  }
 }

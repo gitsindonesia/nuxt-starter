@@ -1,3 +1,9 @@
 {
-  "welcome": "Welcome"
+  "welcome": "Welcome",
+  "menu": {
+    "home": "Home",
+    "features": "Features",
+    "internalization": "Internalization",
+    "docs": "Documentation"
+  }
 }

@@ -12,25 +12,25 @@ const activeByHash = (hash: string) => route.hash === hash
 
 const menus = ref<MenuItem[]>([
   {
-    text: 'Home',
+    text: 'menu.home',
     to: '/',
     isActive() {
       return route.path === '/' && !route.hash
     },
   },
   {
-    text: 'Features',
+    text: 'menu.features',
     to: '/#features',
     isActive() {
       return activeByHash('#features')
     },
   },
   {
-    text: 'Internalization',
+    text: 'menu.internalization',
     to: '/i18n',
   },
   {
-    text: 'Docs',
+    text: 'menu.docs',
     href: 'https://gitsindonesia.github.io/ui-component/',
     newTab: true,
     isExternal: true,
