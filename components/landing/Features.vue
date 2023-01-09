@@ -34,13 +34,13 @@ const features = [
 </script>
 
 <template>
-  <section class="py-10 sm:py-24 px-6 2xl:px-0 bg-gray-50">
+  <section id="features" class="py-10 sm:py-24 px-6 2xl:px-0 bg-gray-50 dark:bg-neutral-900">
     <div class="container mx-auto">
       <div class="max-w-3xl space-y-5 mx-auto text-center">
         <h2 class="text-3xl sm:text-4xl font-medium">
           Every feature you need
         </h2>
-        <p class="text-base sm:text-lg text-gray-700">
+        <p class="text-base sm:text-lg text-gray-700 dark:text-neutral-500">
           Focus on adding features and functionality to your app.
         </p>
       </div>
@@ -49,13 +49,14 @@ const features = [
           <div
             v-for="feature in features"
             :key="feature.name"
-            class="space-y-4 rounded-xl p-8 borde shadow-card hover:shadow-xl transition duration-300 bg-white"
+            class="space-y-4 rounded-xl p-8 shadow-card hover:shadow-xl transition duration-300
+            bg-white dark:bg-neutral-800"
           >
             <VIcon :name="feature.icon" size="xl" class="rounded-lg" />
-            <h3 class="text-gray-900 font-medium">
+            <h3 class="text-gray-900 dark:text-neutral-200 font-medium">
               {{ feature.name }}
             </h3>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-neutral-500">
               {{ feature.description }}
             </p>
           </div>

@@ -36,6 +36,27 @@ const mobileMenus = ref([
   },
   { text: 'Sign in', to: '/auth/login' },
 ])
+
+const colorMode = useColorMode()
+
+const colorModeIcon = computed(() => {
+  switch (colorMode.preference) {
+    case 'light':
+      return 'ri:sun-line'
+    case 'dark':
+      return 'ri:moon-line'
+    case 'system':
+    default:
+      return 'ri:computer-line'
+  }
+})
+
+const changeColorMode = () => {
+  const values = ['system', 'light', 'dark']
+  const index = values.indexOf(colorMode.preference)
+  const next = (index + 1) % values.length
+  colorMode.preference = values[next]
+}
 </script>
 
 <template>
@@ -44,20 +65,20 @@ const mobileMenus = ref([
       :style="{
         '--app-bar-height': 'auto',
       }"
-      bordered
       sticky
+      :color="$colorMode.preference === 'dark' ? 'dark' : 'light'"
       class="sticky !z-20"
     >
       <!-- desktop -->
       <div class="hidden lg:container mx-auto px-4 sm:px-0 lg:flex gap-4 xl:gap-8 items-center py-1">
-        <VLogo size="md" />
+        <Logo />
 
         <nav class="flex-1">
           <ul class="flex gap-4">
             <li v-for="menu in menus" :key="menu.text">
               <NuxtLink
                 :to="menu.to"
-                class="text-sm px-3 py-2 rounded-full text-slate-600 hover:text-slate-900 flex items-center gap-2"
+                class="text-sm px-3 py-2 rounded-full dark:text-gray-400 dark:hover:text-gray-100 text-gray-600 hover:text-gray-900 flex items-center gap-2"
                 exact
                 :exact-active-class="menu.isActive ? '' : '!text-primary font-semibold'"
                 :class="menu.isActive?.() ? '!text-primary font-semibold' : ''"
@@ -75,7 +96,13 @@ const mobileMenus = ref([
         </nav>
 
         <div class="flex gap-2">
-          <VBtn prefix-icon="ri:moon-fill" fab text />
+          <VBtn
+            aria-label="Color Mode"
+            fab
+            text
+            :prefix-icon="colorModeIcon"
+            @click="changeColorMode"
+          />
         </div>
       </div>
 
@@ -100,10 +127,16 @@ const mobileMenus = ref([
     </div>
 
     <footer>
-      <div class="container py-4 border-t mx-auto flex flex-col sm:flex-row gap-4 justify-between items-center pr-6 2xl:px-0">
-        <v-logo />
-        <div class="text-xs text-zinc-600">
-          Copyright &copy; {{ new Date().getFullYear() }}. PT GITS Indonesia. All rights reserved.
+      <div
+        class="pr-6 2xl:px-0
+        dark:bg-neutral-900
+      "
+      >
+        <div class="container py-4 mx-auto border-t dark:border-neutral-800 flex flex-col sm:flex-row gap-4 justify-between items-center">
+          <Logo />
+          <div class="text-xs text-gray-600 dark:text-white">
+            Copyright &copy; {{ new Date().getFullYear() }}. PT GITS Indonesia. All rights reserved.
+          </div>
         </div>
       </div>
     </footer>

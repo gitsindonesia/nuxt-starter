@@ -1,0 +1,57 @@
+:root {
+  --body-bg-color: theme('colors.white');
+  --body-text-color: theme('colors.white');
+}
+
+body {
+  background: var(--body-bg-color);
+  color: var(--body-text-color);
+
+  @apply transition-colors duration-300;
+}
+
+.dark {
+  body {
+    --body-bg-color: theme('colors.neutral.900');
+    --body-text-color: theme('colors.neutral.200');
+  }
+
+  // app bar
+  .app-bar {
+    @apply transition-colors duration-300;
+
+    --app-bar-bg-color: theme('colors.neutral.900');
+    --app-bar-color: theme('colors.neutral.200');
+  }
+
+  // button
+  .btn {
+    &.btn-default:not(:disabled),
+    &.btn-dark:not(:disabled) {
+      --btn-text-color: theme('colors.neutral.200');
+      &.btn--text {
+        &:hover {
+          --btn-text-color: theme('colors.white');
+        }
+      }
+    }
+
+    &.btn-dark:not(:disabled) {
+      --btn-bg-color: theme('colors.neutral.800') !important; 
+      --btn-border-color: theme('colors.neutral.800') !important; 
+    }
+
+    // dark
+    &.btn-getting-started:not(:disabled) {
+      --btn-bg-color: theme('colors.neutral.900') !important;
+      --btn-border-color: theme('colors.primary.500') !important;
+    }
+  }
+
+  // icon
+  .v-icon {
+    color: theme('colors.gray.200') !important;
+  }
+}
+
+  

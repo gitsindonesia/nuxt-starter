@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@gits-id/ui-nuxt',
     '@nuxtjs/i18n',
     '@nuxt/image-edge',
+    '@nuxtjs/color-mode',
   ],
   runtimeConfig: {
     public: {
@@ -17,7 +18,7 @@ export default defineNuxtConfig({
       appUrl: '',
     },
   },
-  css: ['~/assets/css/global.css'],
+  css: ['~/assets/css/global.scss'],
   imports: {
     dirs: ['./api', './stores'],
   },
@@ -58,5 +59,9 @@ export default defineNuxtConfig({
       cookieKey: 'i18n_redirected',
       redirectOn: 'root', // recommended
     },
+  },
+  // https://color-mode.nuxtjs.org
+  colorMode: {
+    classSuffix: '',
   },
 })

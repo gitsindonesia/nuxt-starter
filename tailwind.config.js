@@ -30,16 +30,11 @@ const secondary = {
 }
 
 module.exports = {
+  darkMode: 'class',
   content: ['./node_modules/@gits-id/**/src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        app: {
-          'blue': '#1A73B5',
-          'soft-blue': '#EDF7FF',
-          'red': '#EB2139',
-          'soft-red': '#FDE9EB',
-        },
         primary,
         secondary,
         info: colors.sky,

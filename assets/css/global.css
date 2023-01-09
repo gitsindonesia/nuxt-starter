@@ -1,7 +1,0 @@
-:root {
-  --body-bg-color: theme('colors.white');
-}
-
-body {
-  background: var(--body-bg-color);
-}
