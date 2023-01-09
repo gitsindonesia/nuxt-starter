@@ -84,3 +84,33 @@ npm run preview
 ```
 
 Checkout the [deployment documentation](https://nuxt.com/guide/deploy/presets) for more information.
+
+## Release Guide
+
+First, bump version and generate changelog with `standard-version`:
+
+```bash
+yarn release # default
+```
+
+You can also bump to spesific version using semantic version.
+
+```bash
+# Major release. E.g. from 1.0.0. to 2.0.0
+yarn release major
+
+# Minor release. E.g. from 1.1.0. to 1.2.0
+yarn release minor
+
+# Patch release. E.g. from 1.0.0. to 1.0.1
+yarn release patch
+
+# Pre-release release. E.g. from 1.0.0 to 2.0.0-alpha.1
+yarn release prelease
+```
+
+Then, push the tags:
+
+```bash
+git push --follow-tags
+```
