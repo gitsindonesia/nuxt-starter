@@ -6,6 +6,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "start": "node .output/server/index.mjs",
@@ -18,7 +19,7 @@
   },
   "dependencies": {
     "@gits-id/quill-editor": "^0.13.20",
-    "@gits-id/ui-nuxt": "0.14.0-alpha.4",
+    "@gits-id/ui-nuxt": "^0.14.0",
     "@heroicons/vue": "^2.0.13",
     "@vueuse/core": "^9.1.1",
     "@vueuse/nuxt": "^9.1.1",
