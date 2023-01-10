@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/compare/v0.0.3...v0.0.4) (2023-01-10)
+
+
+### Features
+
+* upgrade to v0.14.0 and add nuxt prepare ([8fac6ad](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/8fac6ade8d24c691ab205179c3a537aa0e07449b))
+
 ### [0.0.3](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/compare/v0.0.2...v0.0.3) (2023-01-10)
 
 
