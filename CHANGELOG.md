@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/compare/v0.0.2...v0.0.3) (2023-01-10)
+
+
+### Features
+
+* add dark mode ([4ec083d](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/4ec083d0322328397bd2049e635c6033af3a79a0))
+* add lang switcher ([377a6b5](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/377a6b58cd69a87ad5c38d963f4e395c2ad1ddab))
+* add nuxt-partytown ([9514e9a](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/9514e9ad083ae7511cea2c4df60776bb4c671387))
+* centered menu ([1c28525](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/1c2852530dd88a7fdbe764745f64763885758157))
+* i18n menus ([9db49db](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/9db49dbeb2fe804d845e139acd4887a6a2db39b5))
+* responsive and improve dark mode ([4b10961](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/4b10961b1bf215fa0c8571ed946dc3f7f6fac6e4))
+* update hero ([6907c11](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/6907c115a7b3556d1b0e8b0f5fea5066ce119086))
+
+
+### Bug Fixes
+
+* external menu ([13d7d3b](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/13d7d3b32de5d55fff40fd9b1e5fc574cb2210fb))
+* improve a11ly ([69274e6](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/69274e6bb78c342a6bc811b86d40df63e73f27c2))
+* set width & height ([5b02017](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/5b0201798398cd095694a08e1c2ed15489ea2f3c))
+* set width & height ([219cb2b](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/219cb2b08a7c1fe8d58a163956ea3455fbcf2378))
+* translated mobile nav ([fae5d57](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/fae5d571af80fe38f89c6a44234889e3f9f7c585))
+
 ### [0.0.2](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/compare/v0.0.1...v0.0.2) (2023-01-09)
 
 
