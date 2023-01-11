@@ -41,8 +41,7 @@
       </div>
       <div class="w-full sm:w-5/12 order-1 md:order-2">
         <Logo
-          size="custom"
-          img-class="max-w-[240px] md:max-w-[300px] md:w-[300px] mx-auto"
+          class="mx-auto"
           width="300"
           height="136"
         />

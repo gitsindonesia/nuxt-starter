@@ -25,9 +25,6 @@ const translatedMenus = computed(() => {
       </VMenus>
 
       <Logo
-        size="md"
-        class="flex-1"
-        img-class="mx-auto"
         width="80"
         height="36"
       />

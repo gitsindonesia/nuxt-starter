@@ -11,7 +11,6 @@
     >
       <div class="container py-4 mx-auto border-t dark:border-neutral-800 flex flex-col sm:flex-row gap-4 justify-between items-center">
         <Logo
-          size="sm"
           width="40"
           height="18"
         />
