@@ -44,6 +44,7 @@
           class="mx-auto"
           width="300"
           height="136"
+          sizes="sm:200px md:300px"
         />
       </div>
     </div>
