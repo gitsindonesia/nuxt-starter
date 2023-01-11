@@ -30,9 +30,8 @@ export default defineNuxtConfig({
       Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     },
   },
-  gitsUi: {
-    sass: true,
-  },
+  // https://gitsindonesia.github.io/ui-component/
+  gitsUi: {},
   // https://v8.i18n.nuxtjs.org
   i18n: {
     locales: [
