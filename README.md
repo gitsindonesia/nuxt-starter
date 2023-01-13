@@ -26,7 +26,19 @@ Look at the [nuxt directory stucture documentation](https://nuxt.com/docs/guide/
 
 ## Create New Project
 
-You can easily create new project from this template using `nuxi`:
+### With `create-gits-app`
+
+The best way to create new project with this template is using `create-gits-app`:
+
+```bash
+npx create-gits-app@latest
+```
+
+Then, choose `Nuxt Starter` template.
+
+### With `nuxi`
+
+You can also easily create new project from this template using `nuxi`:
 
 ```
 npx nuxi init -t gh:gitsindonesia/nuxt-starter my-app
