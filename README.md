@@ -40,7 +40,7 @@ Then, choose `Nuxt Starter` template.
 
 You can also easily create new project from this template using `nuxi`:
 
-```
+```bash
 npx nuxi init -t gh:gitsindonesia/nuxt-starter my-app
 cd my-app
 yarn
@@ -109,16 +109,16 @@ You can also bump to spesific version using semantic version.
 
 ```bash
 # Major release. E.g. from 1.0.0. to 2.0.0
-yarn release major
+yarn release --release-as=major
 
 # Minor release. E.g. from 1.1.0. to 1.2.0
-yarn release minor
+yarn release --release-as=minor
 
 # Patch release. E.g. from 1.0.0. to 1.0.1
-yarn release patch
+yarn release --release-as=patch
 
 # Pre-release release. E.g. from 1.0.0 to 2.0.0-alpha.1
-yarn release prelease
+yarn release --release-as=prelease
 ```
 
 Then, push the tags:
