@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/compare/v0.0.4...v0.1.0) (2023-01-13)
+
+
+### Bug Fixes
+
+* improve a11y ([174dd5e](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/174dd5edf2d91d2625c125fa4ccae2ffb91a6b74))
+* **improvement:** use nuxt-image to render logo ([0921de7](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/0921de7077cc102159cc43d7b1a054dcbe6aa585))
+* responsive image size ([a17a86d](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/commit/a17a86d74a49cb7c9b3727062f239058b1f51bdc))
+
 ### [0.0.4](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/compare/v0.0.3...v0.0.4) (2023-01-10)
 
 
