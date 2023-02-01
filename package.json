@@ -48,7 +48,7 @@
     "eslint": "^8.24.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "nuxt": "^3.0.0",
+    "nuxt": "^3.1.1",
     "sass": "^1.57.1",
     "standard-version": "^9.5.0",
     "vitest": "^0.23.2",
