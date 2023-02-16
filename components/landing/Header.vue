@@ -8,11 +8,9 @@ defineProps<{
 
 <template>
   <VAppBar
-    :style="{
-      '--app-bar-height': 'auto',
-    }"
+    class="sticky !z-20 !h-auto"
+    elevate-on-scroll
     sticky
-    class="sticky !z-20"
   >
     <!-- desktop -->
     <LandingDesktopNavigation :menus="menus" />
