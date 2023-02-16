@@ -13,7 +13,7 @@ useHead({
 </script>
 
 <template>
-  <div class="container mx-auto py-6 px-6 md:px-0">
+  <div class="container mx-auto py-6 px-4 2xl:px-0">
     <h1 class="font-semibold text-2xl mb-5">
       nuxt-i18n demo
     </h1>
