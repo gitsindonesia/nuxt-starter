@@ -42,9 +42,8 @@
       <div class="w-full sm:w-5/12 order-1 md:order-2">
         <Logo
           class="mx-auto"
-          width="300"
-          height="136"
-          sizes="sm:200px md:300px"
+          sizes="xs:200px md:300px"
+          placeholder
         />
       </div>
     </div>
