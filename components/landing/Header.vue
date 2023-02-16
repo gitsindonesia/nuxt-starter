@@ -12,7 +12,6 @@ defineProps<{
       '--app-bar-height': 'auto',
     }"
     sticky
-    :color="$colorMode.preference === 'dark' ? 'dark' : 'light'"
     class="sticky !z-20"
   >
     <!-- desktop -->

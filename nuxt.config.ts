@@ -31,7 +31,9 @@ export default defineNuxtConfig({
     },
   },
   // https://gitsindonesia.github.io/ui-component/
-  gitsUi: {},
+  gitsUi: {
+    darkMode: true,
+  },
   // https://v8.i18n.nuxtjs.org
   i18n: {
     locales: [
