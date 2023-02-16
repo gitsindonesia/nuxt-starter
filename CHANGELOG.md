@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/gitsindonesia/nuxt-starter/compare/v0.1.0...v0.1.1) (2023-02-16)
+
+
+### Features
+
+* header elevate on scroll ([d88d339](https://github.com/gitsindonesia/nuxt-starter/commit/d88d339159c321927db53e69549287613883858f))
+
+
+### Bug Fixes
+
+* improve dark mode ([cb5b9fc](https://github.com/gitsindonesia/nuxt-starter/commit/cb5b9fca047e18b81d0611acf436859b2336ca09))
+* improve responsive padding ([9e861a1](https://github.com/gitsindonesia/nuxt-starter/commit/9e861a195a3160516be47d57c76289b00dafc74b))
+
 ## [0.1.0](https://github.com/gitsindonesia/nuxt3-gits-ui-starter/compare/v0.0.4...v0.1.0) (2023-01-13)
 
 
