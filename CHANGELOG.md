@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/gitsindonesia/nuxt-starter/compare/v0.1.1...v0.1.2) (2023-02-16)
+
+
+### Bug Fixes
+
+* responsive image size ([311fb49](https://github.com/gitsindonesia/nuxt-starter/commit/311fb491d24df28283615f2ed410bfca60b90061))
+* responsive padding ([9962d57](https://github.com/gitsindonesia/nuxt-starter/commit/9962d5781621c2186b6185cd9a102dc190b3c789))
+
 ### [0.1.1](https://github.com/gitsindonesia/nuxt-starter/compare/v0.1.0...v0.1.1) (2023-02-16)
 
 
