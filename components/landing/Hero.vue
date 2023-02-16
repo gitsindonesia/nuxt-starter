@@ -1,7 +1,7 @@
 <template>
   <section
     class="flex sm:py-20 py-14 sm:h-[calc(100vh-90px)] items-center hero relative
-    bg-white dark:bg-neutral-900
+    bg-white dark:bg-neutral-900 px-4 2xl:px-0
   "
   >
     <div class="items-center flex flex-col sm:flex-row gap-10 md:gap-4 container mx-auto px-6 md:px-0">
