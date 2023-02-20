@@ -2436,13 +2436,12 @@
     vee-validate "^4.5.9"
     vue "^3.2.31"
 
-"@gits-id/ui-nuxt@^0.16.3":
-  version "0.16.3"
-  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-0.16.3.tgz#1cd472b4949b5c546c678b704ae933903c76bf2b"
-  integrity sha512-p8C/AhPIC4vT3CLNv1tIbYUL+KpvFnNjPDxVG0PBhWk3AGIafGWg4t685Gf6fvOilaoEVhFbIu1t7Kpx0MvjRA==
+"@gits-id/ui-nuxt@^1.0.0-beta.1":
+  version "1.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@gits-id/ui-nuxt/-/ui-nuxt-1.0.0-beta.1.tgz#f47c56b8a1d6bf605c8d020e9d8b90460d751e98"
+  integrity sha512-PH1pwnhlnQu1ckEPq2B9/cXMVcIdJILzwAKb1PsYP0h7KPXLqVRCrx9seHGUh9cv1l+9/Ak2aVpWR6tyFouteQ==
   dependencies:
     "@gits-id/ui" "^0.16.3"
-    "@nuxt/kit" "^3.1.1"
 
 "@gits-id/ui@^0.16.3":
   version "0.16.3"
