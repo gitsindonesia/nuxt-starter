@@ -1,0 +1,5 @@
+.github
+.nuxt
+node_modules
+yarn.lock
+.vscode
