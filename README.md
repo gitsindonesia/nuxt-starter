@@ -43,8 +43,7 @@ export default defineNuxtConfig({
 
 ## Directory Structure
 
-Look at the [Nuxt directory structure documentation](https://nuxt.com/docs/guide/directory-structure/nuxt). With additional folders:
-API used to store all the API mapping with its path and payload.
+Look at the [Nuxt directory structure documentation](https://nuxt.com/docs/guide/directory-structure/nuxt).
 
 ## Create New Project
 
