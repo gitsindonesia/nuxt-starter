@@ -1,6 +1,29 @@
 # Nuxt and GITS UI Starter Kit
 
-Quickly get started on your Vue.js project with this Nuxt.js and GITS UI starter kit. It includes pre-configured setup and a variety of GITS UI components. Perfect for Vue.js developers looking to create a professional web app.
+Quickly get started on a new project with this Nuxt.js and GITS UI starter kit. It includes a pre-configured setup and a variety of GITS UI components. Perfect for Vue.js developers looking to create a professional web app.
+
+## Installation
+
+```bash
+# with npm
+npm i @gits-id/nuxt-starter
+
+# with yarn
+yarn add @gits-id/nuxt-starter
+
+# with pnpm
+pnpm add @gits-id/nuxt-starter
+```
+
+## Usage
+
+```ts
+export default defineNuxtConfig({
+  extends: [
+    '@gits-id/nuxt-starter'
+  ]
+})
+```
 
 ## Batteries Included
 
@@ -20,15 +43,14 @@ Quickly get started on your Vue.js project with this Nuxt.js and GITS UI starter
 
 ## Directory Structure
 
-Look at the [nuxt directory stucture documentation](https://nuxt.com/docs/guide/directory-structure/nuxt). With additional folders:
-
-- `api`: Used to store all the api mapping with its path and payload.
+Look at the [Nuxt directory structure documentation](https://nuxt.com/docs/guide/directory-structure/nuxt). With additional folders:
+API used to store all the API mapping with its path and payload.
 
 ## Create New Project
 
 ### With `create-gits-app`
 
-The best way to create new project with this template is using `create-gits-app`:
+The best way to create a new project with this template is using `create-gits-app`:
 
 ```bash
 npx create-gits-app@latest
@@ -38,7 +60,7 @@ Then, choose `Nuxt Starter` template.
 
 ### With `nuxi`
 
-You can also easily create new project from this template using `nuxi`:
+You can also easily create a new project from this template using `nuxi`:
 
 ```bash
 npx nuxi init -t gh:gitsindonesia/nuxt-starter my-app
@@ -95,17 +117,17 @@ Locally preview production build:
 npm run preview
 ```
 
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment#presets) for more information.
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment#presets) for more information.
 
 ## Release Guide
 
-First, bump version and generate changelog with `standard-version`:
+First, bump the version and generate a changelog with `standard-version`:
 
 ```bash
 yarn release # default
 ```
 
-You can also bump to spesific version using semantic version.
+You can also bump to a specific version using the semantic version.
 
 ```bash
 # Major release. E.g. from 1.0.0. to 2.0.0
