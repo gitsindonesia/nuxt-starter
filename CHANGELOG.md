@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/gitsindonesia/nuxt-starter/compare/v0.2.4...v0.2.5) (2023-02-23)
+
+
+### Bug Fixes
+
+* hardcode GA ID ([a7745c0](https://github.com/gitsindonesia/nuxt-starter/commit/a7745c01879ce0fd494253606a758fb259f4d907))
+
 ### [0.2.4](https://github.com/gitsindonesia/nuxt-starter/compare/v0.2.3...v0.2.4) (2023-02-23)
 
 
