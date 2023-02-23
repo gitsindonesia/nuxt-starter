@@ -1,6 +1,7 @@
 {
   "version": "0.1.2",
-  "private": true,
+  "name": "@gits-id/nuxt-starter",
+  "description": "GITS Nuxt Starter",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -56,5 +57,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,html,css,vue}": "npm run lint:fix"
-  }
+  },
+  "type": "module",
+  "main": "./nuxt.config.ts"
 }
