@@ -4,11 +4,11 @@
  * @param options - Fetch options.
  * @returns - Fetch response.
  * @example
- * const { data } = await $api('https://example.com/api')
+ * const response = await $api('https://example.com/api')
  * @example
- * const { data } = await $api('/api')
+ * const response = await $api('/api')
  * @example
- * const { data } = await $api('/api', {
+ * const response = await $api('/api', {
  *  method: 'POST',
  *  body: JSON.stringify({ foo: 'bar' }),
  * })
@@ -21,4 +21,28 @@ export const $api = <T = unknown>(...options: Parameters<typeof $fetch>) => {
     baseURL,
     ...options[1],
   })
+}
+
+/**
+ * API hook.
+ * 
+ * @param options Fetch options.
+ * @returns Fetch response.
+ * @example
+ * const {data, pending} = await $useApi('https://example.com/api')
+ */
+export const useApi = <T = unknown>(...options: Parameters<typeof $api>) => {
+  return useAsyncData(() => $api<T>(...options))
+}
+
+/**
+ * API hook with lazy `true`.
+ * 
+ * @param options Fetch options.
+ * @returns Fetch response.
+ * @example
+ * const {data, pending} = await $useLazyApi('https://example.com/api')
+ */
+export const useLazyApi = <T = unknown>(...options: Parameters<typeof $api>) => {
+  return useAsyncData(() => $api<T>(...options), { lazy: true })
 }
