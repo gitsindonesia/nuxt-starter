@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/gitsindonesia/nuxt-starter/compare/v0.2.2...v0.2.3) (2023-02-23)
+
+
+### Bug Fixes
+
+* whitelist published files ([707c1dd](https://github.com/gitsindonesia/nuxt-starter/commit/707c1dd108605497a9bac725b5b29a18320e4eb0))
+
 ### [0.2.2](https://github.com/gitsindonesia/nuxt-starter/compare/v0.2.1...v0.2.2) (2023-02-23)
 
 
