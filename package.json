@@ -59,5 +59,23 @@
     "*.{js,jsx,ts,tsx,html,css,vue}": "npm run lint:fix"
   },
   "type": "module",
-  "main": "./nuxt.config.ts"
+  "main": "./nuxt.config.ts",
+  "files": [
+    "assets",
+    "components",
+    "layouts",
+    "locales",
+    "pages",
+    "plugins",
+    "public",
+    "stores",
+    "utils",
+    ".eslintignore",
+    ".eslintrc",
+    "app.config.ts",
+    "app.vue",
+    "commitlint.config.js",
+    "nuxt.config.ts",
+    "tailwind.config.js"
+  ]
 }
