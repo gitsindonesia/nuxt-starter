@@ -74,7 +74,7 @@ export default defineNuxtConfig({
     head: {
       script: [
         {
-          src: `https://www.googletagmanager.com/gtag/js?id=${process.env.NUXT_PUBLIC_GA_ID}`,
+          src: `https://www.googletagmanager.com/gtag/js?id=G-3LVV82VFCV`,
           async: true,
           type: 'text/partytown',
         },
@@ -83,7 +83,7 @@ export default defineNuxtConfig({
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
         
-          gtag('config', '${process.env.NUXT_PUBLIC_GA_ID}');`,
+          gtag('config', 'G-3LVV82VFCV');`,
           async: true,
           type: 'text/partytown',
         },
