@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/gitsindonesia/nuxt-starter/compare/v0.2.3...v0.2.4) (2023-02-23)
+
+
+### Bug Fixes
+
+* get GA ID from env ([73d99dd](https://github.com/gitsindonesia/nuxt-starter/commit/73d99dd93d7f40e7a6ec63524d79ba4111001d22))
+* move pinia as deps instead of dev dep ([d77a977](https://github.com/gitsindonesia/nuxt-starter/commit/d77a977a1067dcce85f9566102a0de3f038150e3))
+* optimize `axios` dep ([dbf4bf2](https://github.com/gitsindonesia/nuxt-starter/commit/dbf4bf26fd9c368ed2a40195ca7efc4c51b557ff))
+* optimize `yup` ([a5a7d5a](https://github.com/gitsindonesia/nuxt-starter/commit/a5a7d5abbedd007de3faacca9f07b94819d8bc28))
+
 ### [0.2.3](https://github.com/gitsindonesia/nuxt-starter/compare/v0.2.2...v0.2.3) (2023-02-23)
 
 
