@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/gitsindonesia/nuxt-starter/compare/v0.2.1...v0.2.2) (2023-02-23)
+
+
+### Features
+
+* add new utils `useApi` and `useLazyApi` ([cad779d](https://github.com/gitsindonesia/nuxt-starter/commit/cad779d771a06cc395a1f84f627ba98511da95d3))
+
+
+### Bug Fixes
+
+* **ci:** fix npm access ([712575f](https://github.com/gitsindonesia/nuxt-starter/commit/712575ff9ac28820cc3ce34292b89cfc409aebda))
+
 ### [0.2.1](https://github.com/gitsindonesia/nuxt-starter/compare/v0.2.0...v0.2.1) (2023-02-23)
 
 ### [0.1.2](https://github.com/gitsindonesia/nuxt-starter/compare/v0.1.1...v0.1.2) (2023-02-16)
