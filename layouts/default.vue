@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { VMenuItem } from '@gits-id/menus/dist/types/VMenus.vue'
+import type { VMenuItem } from '@morpheme/menus/dist/types/VMenus.vue'
 
 export interface MenuItem extends VMenuItem {
   isActive?: () => boolean

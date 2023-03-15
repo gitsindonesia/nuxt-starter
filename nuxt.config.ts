@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     ['@pinia/nuxt', { disableVuex: true }],
     '@vueuse/nuxt',
     '@nuxtjs/fontaine',
-    '@gits-id/ui-nuxt',
+    '@morpheme/nuxt',
     '@nuxtjs/i18n',
     '@nuxt/image-edge',
     '@nuxtjs/color-mode',

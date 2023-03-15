@@ -1,6 +1,6 @@
 {
   "version": "0.3.1",
-  "name": "@gits-id/nuxt-starter",
+  "name": "@morpheme/nuxt-starter",
   "description": "GITS Nuxt Starter",
   "scripts": {
     "build": "nuxt build",
@@ -19,7 +19,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
-    "@gits-id/ui-nuxt": "^1.0.0-beta.4",
+    "@morpheme/nuxt": "^1.0.0-beta.4",
     "@heroicons/vue": "^2.0.14",
     "@pinia/nuxt": "^0.4.7",
     "@vueuse/core": "^9.12.0",

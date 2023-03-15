@@ -13,8 +13,8 @@ to: pages/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>/index.vue
   PascalSingularName = h.changeCase.pascal(SingularName);
 %>
 <script setup lang="ts">
-import { VBreadcrumbItem } from '@gits-id/breadcrumbs';
-import { VDataTableHeader } from '@gits-id/ui';
+import { VBreadcrumbItem } from '@morpheme/breadcrumbs';
+import { VDataTableHeader } from '@morpheme/ui';
 import { watchDebounced } from '@vueuse/core';
 import { Post } from '~~/composables/post';
 

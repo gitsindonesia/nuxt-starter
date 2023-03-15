@@ -1,18 +1,18 @@
-# Nuxt and GITS UI Starter Kit
+# Nuxt and Morpheme UI Starter Kit
 
-Quickly get started on a new project with this Nuxt.js and GITS UI starter kit. It includes a pre-configured setup and a variety of GITS UI components. Perfect for Vue.js developers looking to create a professional web app.
+Quickly get started on a new project with this Nuxt.js and Morpheme UI starter kit. It includes a pre-configured setup and a variety of Morpheme UI components. Perfect for Vue.js developers looking to create a professional web app.
 
 ## Installation
 
 ```bash
 # with npm
-npm i @gits-id/nuxt-starter
+npm i @morpheme/nuxt-starter
 
 # with yarn
-yarn add @gits-id/nuxt-starter
+yarn add @morpheme/nuxt-starter
 
 # with pnpm
-pnpm add @gits-id/nuxt-starter
+pnpm add @morpheme/nuxt-starter
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ pnpm add @gits-id/nuxt-starter
 ```ts
 export default defineNuxtConfig({
   extends: [
-    '@gits-id/nuxt-starter'
+    '@morpheme/nuxt-starter'
   ]
 })
 ```
@@ -28,7 +28,7 @@ export default defineNuxtConfig({
 ## Batteries Included
 
 - [Nuxt 3](https://nuxt.com/)
-- [GITS UI](https://gitsindonesia.github.io/ui-component/)
+- [Morpheme UI](https://gitsindonesia.github.io/ui-component/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Pinia](https://pinia.vuejs.org/)
 - [@vueuse/nuxt](https://vueuse.org/)

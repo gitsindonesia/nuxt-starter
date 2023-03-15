@@ -13,7 +13,7 @@ to: pages/<%= h.changeCase.lower(h.inflection.pluralize(name)) %>/[id]/edit.vue
   PascalSingularName = h.changeCase.pascal(SingularName);
 %>
 <script setup lang="ts">
-import { VBreadcrumbItem } from '@gits-id/breadcrumbs';
+import { VBreadcrumbItem } from '@morpheme/breadcrumbs';
 import { FormEvent } from '~~/types/form';
 
 const route = useRoute();

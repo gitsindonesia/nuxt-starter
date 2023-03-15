@@ -9,10 +9,10 @@
         <h1 class="text-4xl sm:text-7xl tracking-tight font-semibold sm:leading-snug gap-3 flex flex-wrap items-center justify-center md:justify-start">
           <span class="bg-gradient-to-r from-green-500 to-cyan-500 bg-clip-text text-transparent">Nuxt.js</span>
           <span class="font-thin text-red-500 md:text-5xl text-base">&hearts;</span>
-          <span class="bg-gradient-to-r from-primary-500 to-indigo-500 bg-clip-text text-transparent">GITS UI</span>
+          <span class="bg-gradient-to-r from-primary-500 to-indigo-500 bg-clip-text text-transparent">Morpheme UI</span>
         </h1>
         <p class="text-gray-500 dark:text-neutral-300 max-w-xl text-base sm:text-xl sm:leading-8 mt-4">
-          Quickly get started on your Vue.js project with this Nuxt.js and GITS UI starter kit. It includes pre-configured setup and a variety of GITS UI components. Perfect for Vue.js developers looking to create a professional web app.
+          Quickly get started on your Vue.js project with this Nuxt.js and Morpheme UI starter kit. It includes pre-configured setup and a variety of Morpheme UI components. Perfect for Vue.js developers looking to create a professional web app.
         </p>
 
         <div class="flex justify-center md:justify-start gap-2 md:gap-4 mt-10">

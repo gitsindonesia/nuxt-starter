@@ -5,8 +5,8 @@ specifiers:
   '@babel/core': ^7.20.12
   '@commitlint/cli': ^17.4.2
   '@commitlint/config-conventional': ^17.4.2
-  '@gits-id/ui-nuxt': ^1.0.0-beta.4
   '@heroicons/vue': ^2.0.14
+  '@morpheme/nuxt': ^1.0.0-beta.4
   '@nuxt/image-edge': ^1.0.0-27919678.2f5b64b
   '@nuxtjs/color-mode': ^3.2.0
   '@nuxtjs/fontaine': ^0.2.4
@@ -37,8 +37,8 @@ specifiers:
   vue-loader: ^17.0.0
 
 dependencies:
-  '@gits-id/ui-nuxt': 1.0.0-beta.4
   '@heroicons/vue': 2.0.16
+  '@morpheme/nuxt': 1.0.0-beta.5
   '@pinia/nuxt': 0.4.7
   '@vueuse/core': 9.13.0
   '@vueuse/nuxt': 9.13.0_nuxt@3.3.1
@@ -2936,512 +2936,6 @@ packages:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
     dev: true
 
-  /@gits-id/alert/0.16.1:
-    resolution: {integrity: sha512-Ntyq/GIZ4mFEdVryahAnBo8E5jAvAV0KAhpnNUlDF/kLwKUROQOIuJeLf/sPicG7joC5W0jLelmR1ng7lj8Qbg==}
-    dependencies:
-      '@gits-id/button': 0.16.1
-      '@gits-id/icon': 0.16.1
-      '@gits-id/theme': 0.16.1
-      '@gits-id/utils': 0.16.1
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/app-bar/0.16.3:
-    resolution: {integrity: sha512-bopWAjOyicsfE+T1sU9fB3cjC8k6MrjVxTHH5NFMkCUyAJbjQSNSH2j7DGFjthKccGVxOhdb4yNjs6a2ZqS7GQ==}
-    dependencies:
-      '@gits-id/theme': 0.16.1
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/autocomplete/0.16.1:
-    resolution: {integrity: sha512-AZFxTHwZ5GKN0udbjUFSw6uNjZu3JUoqEkr8DM06J70XXMRXXeVM/RS89wX3ZsBqbCbS4P/GjZ+lrKpXErIzXQ==}
-    dependencies:
-      '@gits-id/button': 0.16.1
-      '@gits-id/forms': 0.16.1
-      '@gits-id/icon': 0.16.1
-      '@headlessui/vue': 1.7.12_vue@3.2.47
-      tailwindcss: 3.2.7
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/avatar/0.16.1:
-    resolution: {integrity: sha512-9aAlTRP+F584VwqLOle9VL5n3IdaHTd8j2evduX+7TbplxsKVysWN32Zp0gUjIsQNpXX1F9rla4tiFNbpgJdYg==}
-    dependencies:
-      '@gits-id/theme': 0.16.1
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/badge/0.16.1:
-    resolution: {integrity: sha512-/bQLzoUZBnPXbMkAvKrWVYLJtWxlRX6wTZmwdI5DDgl+378QkZEpBDbLefDlmuUHpq37znMSAl/6j7r5JtOG8g==}
-    dependencies:
-      '@gits-id/icon': 0.16.1
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/bottom-sheet/0.16.3:
-    resolution: {integrity: sha512-gVRDwYvw/14UxiCtmsct9vzIFL0tPAyZvOu9Wg4oq+TuIX6GWty+uwEsIvZU+QpwFTqkk8EyqoUqjV2D+aQfVQ==}
-    dependencies:
-      '@gits-id/button': 0.16.1
-      '@gits-id/icon': 0.16.1
-      '@gits-id/list': 0.16.1
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/breadcrumbs/0.16.1:
-    resolution: {integrity: sha512-5ZUqng+Dor4zgTymmnHXywCbO0QvfTWs3m85KRysaqrPDQGYr2kRsKt/oTjC/l7tFzqptqkgTum94hj+YMC4zA==}
-    dependencies:
-      '@gits-id/icon': 0.16.1
-      vue: 3.2.47
-      vue-router: 4.1.6_vue@3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/button/0.16.1:
-    resolution: {integrity: sha512-UmO8F0eYGBdaMUjV4xVTkK6JQJW2gRawl4o+Cba7ogxmzxkjoKOJky2t+pfAgX2ESiqkxe2KzPZDtD9MoXnQwQ==}
-    dependencies:
-      '@gits-id/icon': 0.16.1
-      '@gits-id/spinner': 0.16.1
-      '@gits-id/theme': 0.16.1
-      '@gits-id/utils': 0.16.1
-      vue: 3.2.47
-      vue-router: 4.1.6_vue@3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/card/0.16.1:
-    resolution: {integrity: sha512-7T8Tj5UB/KskDgC84YRA6X/h1EFYYDRJQJML+hcZg7CRqjF2d8PoK0osTT9qgOBXdOSD0FwKWSB1ac6MOWLpsQ==}
-    dependencies:
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/collapsible/0.16.1:
-    resolution: {integrity: sha512-HAX/WWgspj3w2ieYux6Zqm/d6zmY/a7n/bgrwWK/j19BKmPUub+cqDDYmg/5KuVmPQbm5txHnmEw10AVUyGmqQ==}
-    dependencies:
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/container/0.16.1:
-    resolution: {integrity: sha512-5ijORcJQEC81w1xF2RPrLUWUDdMKnXfFvx8MsZ1PNtdZMjw6AByVdQkSNSdm+QRNYElmRVdJFiU+zH1WI9Pdbw==}
-    dependencies:
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/dropdown/0.16.1:
-    resolution: {integrity: sha512-Ez/xRn+OS7EZPRPxdPHO9D6a4j1C9KryVWKJxyQKjww3uKAB2fTljzW+HwDovDZ7WdpUYKoJKPqF/p6I3JJMpw==}
-    dependencies:
-      '@gits-id/button': 0.16.1
-      '@gits-id/icon': 0.16.1
-      '@headlessui/vue': 1.7.12_vue@3.2.47
-      tailwindcss: 3.2.7
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/editor/0.16.1:
-    resolution: {integrity: sha512-aReecfoYIQYlw7avozW9tY1MlzBJTDxrD4l1w2WehubQBQKzkj5413Y2x/KyFtnNHpWGke47itq1NRMB0OdIJA==}
-    dependencies:
-      '@ckeditor/ckeditor5-build-classic': 35.4.0
-      '@ckeditor/ckeditor5-vue': 4.0.1
-      vee-validate: 4.8.2_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/forms/0.16.1:
-    resolution: {integrity: sha512-5o2KL1a3OcIoTth0qnELNNdKiAPfnXy95TRjL4B6NejLK+BdHYxLb86/HNiDWXIrVarsxlNyhjoJjJ9ycPcb1Q==}
-    dependencies:
-      '@gits-id/button': 0.16.1
-      '@gits-id/icon': 0.11.10
-      '@gits-id/spinner': 0.16.1
-      '@gits-id/utils': 0.16.1
-      vee-validate: 4.8.2_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/icon/0.11.10:
-    resolution: {integrity: sha512-V3vo61aKUpkZosMwfPQ4ujEaT0ErLjoW3KSSFyAYaCzt41MoikFznJwynqFWA5WsOqqfcwar39dwt4oHstR6yw==}
-    dependencies:
-      '@gits-id/theme': 0.11.10
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/icon/0.16.1:
-    resolution: {integrity: sha512-j2tZ5xE68TirD4RDWAllP5yhRbV6Xfg4UQZIP05qtsNCcXfrhKbjfUmMhGls5v6nnsdN5Uo0tqc/xzqrpwBfJQ==}
-    dependencies:
-      '@gits-id/theme': 0.16.1
-      '@heroicons/vue': 1.0.6_vue@3.2.47
-      '@iconify/vue': 3.2.1_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/layouts/0.16.1:
-    resolution: {integrity: sha512-f99KeU2MOruhnoK+NyZvv04MQloDLNmxYka3gzI/BAkRIveaScVQguHCLuyAASy/swBMhginx1cZ8VbKDDfkdw==}
-    dependencies:
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/list/0.16.1:
-    resolution: {integrity: sha512-JaWayNRxmdi0bVdz5WVQeFW/4gRDJxpMJBUiL1pRyRlZLIF9W6HUOChISlp0TEvxRggVbCsRFdrhr2yWwHOIaA==}
-    dependencies:
-      '@gits-id/collapsible': 0.16.1
-      vue: 3.2.47
-      vue-router: 4.1.6_vue@3.2.47
-    dev: false
-
-  /@gits-id/logo/0.16.1:
-    resolution: {integrity: sha512-+yvpZq1njTuODsc9JYuh5LaBu3lbidSPpq5N0jn5Mq25iqZrsT2hZeK2cPMdM0GZbaXuTb6ab/3k48v5M6XuBA==}
-    dependencies:
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/menu/0.16.1:
-    resolution: {integrity: sha512-EbZJl+FBCWvH05qLbWPapOtfiz8Yd4215gC808feCHFEBxvgyC1MVDKYF4jroZDr87HfLh8IokRztq3ES3gU6g==}
-    dependencies:
-      '@gits-id/collapsible': 0.16.1
-      '@iconify/vue': 3.2.1_vue@3.2.47
-      vue: 3.2.47
-      vue-router: 4.1.6_vue@3.2.47
-    dev: false
-
-  /@gits-id/menus/0.16.3:
-    resolution: {integrity: sha512-hp0A+ZfiKeGWUo0VSwzR2m7MgjKRUv9japucagcky92nF5dI5ssvs/60YACqVCtzjtcfFyIJe/uOA5PYeAYLSQ==}
-    dependencies:
-      '@gits-id/icon': 0.16.1
-      '@gits-id/list': 0.16.1
-      floating-vue: 2.0.0-beta.20_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/modal/0.16.1:
-    resolution: {integrity: sha512-BlgcxqfYCzaX1DRFF8ORCnIZcgq+GyGiF/zuFuNY8sZN320wRAOyy3M+/cq2enhtRH5Gb58KdK3vj/snh94zmQ==}
-    dependencies:
-      '@gits-id/button': 0.16.1
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/multi-select/0.16.1:
-    resolution: {integrity: sha512-p1LR2+1Lg3MaCwMe+YosOpTc/HQP0hn7AVheTsH/H0/RyYy5FAr/rrZlHyC5EDhD79PKw7fUq0whgb+si+XBaA==}
-    dependencies:
-      '@gits-id/badge': 0.16.1
-      '@gits-id/forms': 0.16.1
-      '@gits-id/icon': 0.16.1
-      '@gits-id/tooltip': 0.16.1
-      '@vueuse/core': 7.7.1_vue@3.2.47
-      vee-validate: 4.8.2_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - ts-node
-    dev: false
-
-  /@gits-id/nav-drawer/0.16.1:
-    resolution: {integrity: sha512-wjsvhSWEei6Q0mGB8MNQ9mcdhovsytoVSA1lenydKkdhj+1u5eiUl5e6z9YAthPklgk162cErqBSMy4Kx4orkg==}
-    dependencies:
-      '@gits-id/button': 0.16.1
-      '@gits-id/logo': 0.16.1
-      '@gits-id/menu': 0.16.1
-      '@gits-id/utils': 0.16.1
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/navbar/0.16.3:
-    resolution: {integrity: sha512-tD9fL0B5xi2eoBUGjfR7RI9Xx+1EoqzNFwhAwIQPZxMhGkjf2e7WLWGzuxsBB5fcn7dJzERX8TJeowneoX8Szw==}
-    dependencies:
-      '@gits-id/button': 0.16.1
-      '@gits-id/logo': 0.16.1
-      '@gits-id/menus': 0.16.3
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/pages/0.16.1:
-    resolution: {integrity: sha512-l4t/pvsVF2yLdHGgFfdxjMP9KcelsbN5rF7F+/xjduDXn+p6VzPBWXHNJrpVFBRKa9HAvo0SEb8ljC02NuTg+g==}
-    dependencies:
-      '@gits-id/alert': 0.16.1
-      '@gits-id/button': 0.16.1
-      '@gits-id/forms': 0.16.1
-      '@iconify/vue': 3.2.1_vue@3.2.47
-      vue: 3.2.47
-      yup: 0.32.11
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/pagination/0.16.1:
-    resolution: {integrity: sha512-R/wPRHSUxwzxQOWUhFhTxBDyB1NTdds1NoN/wrZIbWR++0J+hq7KNI9golmKloRGJj78UqrUvtLGKiMX3zO8og==}
-    dependencies:
-      pagino: 1.4.1
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/progress-bar/0.16.1:
-    resolution: {integrity: sha512-Qa+mIwsITOA11oo41AswqSojL08ViK1CPkSEfb8eNN3bg3hAz+xAMjFeIPnrMp2fjzpzOEVZmw3okM6fcRP6HA==}
-    dependencies:
-      '@gits-id/utils': 0.16.1
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/rating/0.16.1:
-    resolution: {integrity: sha512-1OxUjc6TWPMOVwNov8B+SXaCJsK4Lk4dP8VeBE8lnGc+n9WfgQLTZnFSpAAS4jc56ORGB/WoWkylW4whHRZ2kQ==}
-    dependencies:
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/select/0.16.1:
-    resolution: {integrity: sha512-tRC+T+35GTNOwUu9ztEPLYV9cqi6d7OLgB3CFs/+nE8K5NAUUc0IPYi2fWRgcVckqXBBDfhIDHTaKA8NAVFAvA==}
-    dependencies:
-      '@gits-id/forms': 0.16.1
-      '@gits-id/icon': 0.16.1
-      '@gits-id/theme': 0.16.1
-      '@gits-id/tooltip': 0.16.1
-      '@gits-id/utils': 0.16.1
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/services/0.16.1:
-    resolution: {integrity: sha512-BZ38l5pw1+rZnYMhHOXkzLS+MDsi5uttfQTgGuY9hD0uiIOHaGXooOy/aR1WjYhOyKVarfRt0q/l4PUzGM3JWw==}
-    dependencies:
-      '@gits-id/button': 0.16.1
-      axios: 0.26.1
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - debug
-      - ts-node
-    dev: false
-
-  /@gits-id/shimmer/0.16.1:
-    resolution: {integrity: sha512-TqGltFcfs3XmCCyh7uVFe+5hxzVeO4PDGYgwHBg3SFO7DAv+9Kn7n9Rphs8YM14aBMhqTXG9r/Y1Oo3DuodH6w==}
-    dependencies:
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/spinner/0.16.1:
-    resolution: {integrity: sha512-ECr8s+rYOAwpB3P/ZZAaVQgvmBqe+cyWzmbKd3mrTEYkQxXwl885lD9embCCF9gHSmL0oO1fFEaQHflCchOJUg==}
-    dependencies:
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/stats/0.16.1:
-    resolution: {integrity: sha512-X/VD0ET28IaIO1T75Z1Z9U9PSPqcJNyTi+8L1fE+//SyY/6JvHobnRpZqDClrjWagP87xBZ5b0Ppf1QaT8Q7tA==}
-    dependencies:
-      '@gits-id/badge': 0.16.1
-      '@gits-id/card': 0.16.1
-      '@gits-id/icon': 0.16.1
-      '@iconify/vue': 3.2.1_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/switch/0.16.1:
-    resolution: {integrity: sha512-/gslPY1Oi1+mYmCnDh+SO+nk2E3DuJI7osOqIxn8ZSXRXn+AzlgCzuJsZm5kt4Y26CihHJlSLVnT1vOa4aZ2SQ==}
-    dependencies:
-      vee-validate: 4.8.2_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/table/0.16.1:
-    resolution: {integrity: sha512-fEHx5e95JjiLt3JO3Ns9DMFMJ2ZsS04N892IWN5YSnhriBBG/jxVghgqOxMy+izAJhueVujtR/vublOyt3zR1w==}
-    dependencies:
-      '@gits-id/forms': 0.16.1
-      '@gits-id/icon': 0.16.1
-      '@gits-id/pagination': 0.16.1
-      '@gits-id/spinner': 0.16.1
-      '@gits-id/utils': 0.16.1
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/tabs/0.16.1:
-    resolution: {integrity: sha512-aGysubL5akzjTLGOoUT2h+16BTd0wMy3l+iAoHi2M7ByZc8oi7I2zn5wg1E6MaaXQsnl/Y0nmbTLrWgBw6oHSg==}
-    dependencies:
-      '@gits-id/button': 0.16.1
-      '@gits-id/card': 0.16.1
-      '@gits-id/icon': 0.11.10
-      '@gits-id/utils': 0.16.1
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/tailwind-components/0.16.1:
-    resolution: {integrity: sha512-2kysISw0eTKNANEswXqcAAG4Vjj0JjJ0Xi9Znm/67zBrDnc5rpbPTtSCcThhFuDOZsqfEWP44KkCYk287/PUuA==}
-    dev: false
-
-  /@gits-id/tailwind-config/0.16.1:
-    resolution: {integrity: sha512-uWD1+LQWXODJ3GpVhJbDrTrEZBsr0WezowJWSCbz941DgRuvJTdFGOarwXtgOxam8jm5n08bIysXouB7sSh/yA==}
-    dependencies:
-      '@gits-id/tailwind-components': 0.16.1
-      '@gits-id/theme': 0.16.1
-      '@gits-id/utils': 0.16.1
-      '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.7
-      '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
-      '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.2.7
-      '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.7
-      tailwindcss: 3.2.7
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/textarea/0.3.0:
-    resolution: {integrity: sha512-th9ZDu4MUTjXL/PURR0zhUuq4suzdZkXvR3gMIAWOq1JGMnIXor1GZSqdQMMpgdMkLoX7FIe69k+2nIa8E+ITw==}
-    dependencies:
-      '@gits-id/utils': 0.3.0
-      vee-validate: 4.8.2_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/theme/0.11.10:
-    resolution: {integrity: sha512-wC0c0Q9vPlfvxF8N+eRELHgdpd7nOxJxXi5d1C9H6nYkvEQhJV4PbwboZDlXiuUiE/HeCcx+/YWzVGXi/UEYfg==}
-    dependencies:
-      tailwindcss: 3.2.7
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/theme/0.16.1:
-    resolution: {integrity: sha512-WDLUUx6pDbOaK4gJjgoIi4RRqMn6yIdFcBJ1pu21o1fQW5BIO/DZ0RZPvDbTjIog7Rdw4v/oOAepan/XQZBmbw==}
-    dependencies:
-      tailwindcss: 3.2.7
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
-
-  /@gits-id/toast/0.16.1:
-    resolution: {integrity: sha512-X4CR630EYeiTuLVaUsZX7W4FRb14kMT9n9F2oQcL5L9zzboDhn4T6znyB2waJ4zHPLZxX8xyc8/TSBWm4HrBsg==}
-    dependencies:
-      '@gits-id/button': 0.16.1
-      '@gits-id/icon': 0.16.1
-      pinia: 2.0.33_vue@3.2.47
-      vee-validate: 4.8.2_vue@3.2.47
-      vue: 3.2.47
-      vuex: 4.1.0_vue@3.2.47
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - ts-node
-      - typescript
-    dev: false
-
-  /@gits-id/tooltip/0.16.1:
-    resolution: {integrity: sha512-PS+6Ohg1PVsFxc60onyLd5rE/QGcDUpqko8jMq0sNA2ZU5uDzalUUGEuJJAMncMF64F+XETHymIyosF1UD2yKg==}
-    dependencies:
-      floating-vue: 2.0.0-beta.20_vue@3.2.47
-      vee-validate: 4.8.2_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/ui-nuxt/1.0.0-beta.4:
-    resolution: {integrity: sha512-HyGFh9cPEB+8KAehgfB8Ib/E7XE4i9URgjW40tZNLWlryahET+r5/HsPaWZFbnyN9xGNfKjFAohwN6xaDURmDw==}
-    dependencies:
-      '@gits-id/ui': 0.16.3
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - debug
-      - ts-node
-      - typescript
-    dev: false
-
-  /@gits-id/ui/0.16.3:
-    resolution: {integrity: sha512-TQ3wLMuiHUkxuvZPIb+l2yhWhpJaZfES2Xj2/OvWDOxQQ661jFxpbEYs9C4DZhudqCypLi/TtNWRLayYaM1hbw==}
-    dependencies:
-      '@gits-id/alert': 0.16.1
-      '@gits-id/app-bar': 0.16.3
-      '@gits-id/autocomplete': 0.16.1
-      '@gits-id/avatar': 0.16.1
-      '@gits-id/badge': 0.16.1
-      '@gits-id/bottom-sheet': 0.16.3
-      '@gits-id/breadcrumbs': 0.16.1
-      '@gits-id/button': 0.16.1
-      '@gits-id/card': 0.16.1
-      '@gits-id/collapsible': 0.16.1
-      '@gits-id/container': 0.16.1
-      '@gits-id/dropdown': 0.16.1
-      '@gits-id/editor': 0.16.1
-      '@gits-id/forms': 0.16.1
-      '@gits-id/icon': 0.16.1
-      '@gits-id/layouts': 0.16.1
-      '@gits-id/list': 0.16.1
-      '@gits-id/logo': 0.16.1
-      '@gits-id/menu': 0.16.1
-      '@gits-id/menus': 0.16.3
-      '@gits-id/modal': 0.16.1
-      '@gits-id/multi-select': 0.16.1
-      '@gits-id/nav-drawer': 0.16.1
-      '@gits-id/navbar': 0.16.3
-      '@gits-id/pages': 0.16.1
-      '@gits-id/pagination': 0.16.1
-      '@gits-id/progress-bar': 0.16.1
-      '@gits-id/rating': 0.16.1
-      '@gits-id/select': 0.16.1
-      '@gits-id/services': 0.16.1
-      '@gits-id/shimmer': 0.16.1
-      '@gits-id/spinner': 0.16.1
-      '@gits-id/stats': 0.16.1
-      '@gits-id/switch': 0.16.1
-      '@gits-id/table': 0.16.1
-      '@gits-id/tabs': 0.16.1
-      '@gits-id/tailwind-components': 0.16.1
-      '@gits-id/tailwind-config': 0.16.1
-      '@gits-id/textarea': 0.3.0
-      '@gits-id/theme': 0.16.1
-      '@gits-id/toast': 0.16.1
-      '@gits-id/tooltip': 0.16.1
-      '@gits-id/utils': 0.16.1
-      '@headlessui/vue': 1.7.12_vue@3.2.47
-      '@vue/test-utils': 2.3.1_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - debug
-      - ts-node
-      - typescript
-    dev: false
-
-  /@gits-id/utils/0.16.1:
-    resolution: {integrity: sha512-Jy0LTIzwAxxoNv+DHE9ema91Cji8RsJUwEYlRlnUe50/4upCIro7fRZB3MUE3MqyC/M1w/LWNd9f6+kZBO4CxQ==}
-    dependencies:
-      vue: 3.2.47
-    dev: false
-
-  /@gits-id/utils/0.3.0:
-    resolution: {integrity: sha512-flFqCYT4A36zwyVlEaSI4EoyS5IvrwZT2lRdnpRIP54lcBNArEcJUR8ZZ1+ZmwRHxu2TeRhG/DI7pC5dJ8Qmsg==}
-    dependencies:
-      vue: 3.2.47
-    dev: false
-
   /@headlessui/vue/1.7.12_vue@3.2.47:
     resolution: {integrity: sha512-IV0k1I2I8Bj37HljFF231Y9cpldfiucf+inMCxA/VPoQT6UTxo0N/rb78CrogBxXNfsPxKmz3y/nlv+eRz6zvg==}
     engines: {node: '>=10'}
@@ -3824,6 +3318,463 @@ packages:
   /@mdx-js/util/1.6.22:
     resolution: {integrity: sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==}
     dev: true
+
+  /@morpheme/alert/1.0.0-beta.5:
+    resolution: {integrity: sha512-RGybElAVQ9eP4cHrco5wgODxug+KocDkMhclAh+lBP/ew+ztKOcFTJ7yVqz1oNcjOHDDxWbL0uMgV88vGq/kxQ==}
+    dependencies:
+      '@morpheme/button': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      '@morpheme/tailwind-config': 1.0.0-beta.5
+      '@morpheme/theme': 1.0.0-beta.5
+      '@morpheme/utils': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/app-bar/1.0.0-beta.5:
+    resolution: {integrity: sha512-I+vVrsc+lI4iqdIVtCugi1OqZp7gINGExbUojdknjjAps16pVJpHKsWM4V3Rp4tPcd7p2/EqKLTQ6tzOmQYfow==}
+    dependencies:
+      '@morpheme/theme': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/autocomplete/1.0.0-beta.5:
+    resolution: {integrity: sha512-iRyITQY4izEOgZxadm/7Hie58M9uJMP/Roe2duXhr2g/UpEf4DrktjFDNW1EKIxZSeuMQ5dt0P4VVvt8cBHezg==}
+    dependencies:
+      '@headlessui/vue': 1.7.12_vue@3.2.47
+      '@morpheme/button': 1.0.0-beta.5
+      '@morpheme/forms': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      tailwindcss: 3.2.7
+      vue: 3.2.47
+      wait-for-expect: 3.0.2
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/avatar/1.0.0-beta.5:
+    resolution: {integrity: sha512-8P9cusX10OcAjYBFM2a1HbwmLiKPQG+Kdrp1stO3j/EqWDgXLS620/l76jz5n4grdT15eRdiUlkrEefsXFmCKg==}
+    dependencies:
+      '@morpheme/theme': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/badge/1.0.0-beta.5:
+    resolution: {integrity: sha512-xvQBNPLeunskrP2wiWPnSvj6nuT6ketAE1TzvBIQXoPkzI3Wz3TWB0cysMGuo5KDnCOzgyskr1Nop5b/JC4hug==}
+    dependencies:
+      '@morpheme/icon': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/bottom-sheet/1.0.0-beta.5:
+    resolution: {integrity: sha512-4NEtmf5PxeVNOPqZ0E4t7nRe28X02dQg7cOzIv4KFWKSyqUSekEtA+6f4ARszr0IZ8mvNfTSkB/+yrCpW35/YA==}
+    dependencies:
+      '@morpheme/button': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      '@morpheme/list': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/breadcrumbs/1.0.0-beta.5:
+    resolution: {integrity: sha512-Yk139Niq3iKPENY8A+MhIY1AjwJX367zLNe+X3xeAIcwt/yqWieuwU7Mblss4WjkHm1D73pqh3Ta8eOmkj1wRA==}
+    dependencies:
+      '@morpheme/icon': 1.0.0-beta.5
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/button/1.0.0-beta.5:
+    resolution: {integrity: sha512-huSIRySGiHQNtG6VGJ/tqjJUNsw2tb7Acpb7FlSrarNjBvlTme574iP3Zg+/DwYSVZWnfW7S5uHKyw52PslClg==}
+    dependencies:
+      '@morpheme/icon': 1.0.0-beta.5
+      '@morpheme/spinner': 1.0.0-beta.5
+      '@morpheme/theme': 1.0.0-beta.5
+      '@morpheme/utils': 1.0.0-beta.5
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/card/1.0.0-beta.5:
+    resolution: {integrity: sha512-Woa+Jr5IGs1fBewI4wU3a9QKH3/D7A6PaE1/LfyulFdhU99Q1oK81F5EnjEUDsRZKwTTh221NmIEV2MAOqWZNA==}
+    dependencies:
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/collapsible/1.0.0-beta.5:
+    resolution: {integrity: sha512-e5AgydVuxxt1ZWTO2r9H598YPV02ceGuL1uoeAgUK3DOQnmLckpsjfdjYgpkJiHBEVNojAWwsXIWJcd6NRUnlg==}
+    dependencies:
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/container/1.0.0-beta.5:
+    resolution: {integrity: sha512-/XYUsaCZrEzmZjkMogndMnI8oZZ1zfp6qzG7L1w6WgUOzgDIJopycWnKF9bFRKTLr5JaIHlV+DejULrCbsXJ4A==}
+    dependencies:
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/dropdown/1.0.0-beta.5:
+    resolution: {integrity: sha512-bNCJlSKXvQlNhefDVz0KiVInob5CpTtWQ/N172tOV5doFd2hF6Vvm/KPY7nMHheuRi930yiOYPpVVBkSLpubNA==}
+    dependencies:
+      '@headlessui/vue': 1.7.12_vue@3.2.47
+      '@morpheme/button': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      tailwindcss: 3.2.7
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/editor/1.0.0-beta.5:
+    resolution: {integrity: sha512-UG1MvuCO5XPOV5P3kAkog+XuYliKnHqh2RwRPySuV9QAWyTRdg2Jh7c1g8ILy358F91d8HoFqjmA7j6jQQh4Lw==}
+    dependencies:
+      '@ckeditor/ckeditor5-build-classic': 35.4.0
+      '@ckeditor/ckeditor5-vue': 4.0.1
+      vee-validate: 4.8.2_vue@3.2.47
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/forms/1.0.0-beta.5:
+    resolution: {integrity: sha512-auPB/G+pmSM271Vse0qDqoc5mEuUjXysxZDKunedXkgd6dwA+5+W/H4hQE6RDnOfN9l36U9KAFR3IKWhc1Zgew==}
+    dependencies:
+      '@morpheme/button': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      '@morpheme/spinner': 1.0.0-beta.5
+      '@morpheme/utils': 1.0.0-beta.5
+      vee-validate: 4.8.2_vue@3.2.47
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/icon/1.0.0-beta.5:
+    resolution: {integrity: sha512-w6yo9bOznlw+nHzUdVTwWs0KkL7jWb+DsZ2XOKFSVgZ039KPIAzy2otRfP1Mnq0JKv7iqxr0BGaS4ID6UlhEWA==}
+    dependencies:
+      '@heroicons/vue': 1.0.6_vue@3.2.47
+      '@iconify/vue': 3.2.1_vue@3.2.47
+      '@morpheme/theme': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/list/1.0.0-beta.5:
+    resolution: {integrity: sha512-Y5NQe8tkchFA+sKD8BkBDrFRVvSxNxiSdAsG7W1tZHaya6sdHuFj4ZISDx6AvPj8GxcwkdHh31ZXCbrjcyVegw==}
+    dependencies:
+      '@morpheme/collapsible': 1.0.0-beta.5
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
+    dev: false
+
+  /@morpheme/logo/1.0.0-beta.5:
+    resolution: {integrity: sha512-4e+L6TQl+KrrTBpESdtKwxqZ+cw2vvjbitztrAEtxBfgXwfBatpMt+ptyZeSXEs1aM5GE0KVFEesLuXrtrQCaA==}
+    dependencies:
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/menu/1.0.0-beta.5:
+    resolution: {integrity: sha512-nzO81Tx/ibNcncY+6ijUJOkDB8A0Jpt0o5+B/zaOH6aPGa5EE6qSU+GZSbnW1SL2DRGSpaS4DrRS0ZMEEAd8Nw==}
+    dependencies:
+      '@iconify/vue': 3.2.1_vue@3.2.47
+      '@morpheme/collapsible': 1.0.0-beta.5
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
+    dev: false
+
+  /@morpheme/menus/1.0.0-beta.5:
+    resolution: {integrity: sha512-ncYawpMfYTn0oSNO7V+RGMd/ZOdj92UdUfZi1DN1jNnqsTSRm/QXUCFUpAIcZopnxdAYm6TWaLWGAP9nCxDolg==}
+    dependencies:
+      '@morpheme/icon': 1.0.0-beta.5
+      '@morpheme/list': 1.0.0-beta.5
+      floating-vue: 2.0.0-beta.20_vue@3.2.47
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/modal/1.0.0-beta.5:
+    resolution: {integrity: sha512-4a+K9oiwWX2UmD3FeIl8srpw1mQ5ph/TtJjD+8Zmg9svAnRPyk3xoFB4FlfbgEoQ9EJKRsIenW7LSUFtRIdlGQ==}
+    dependencies:
+      '@morpheme/button': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/multi-select/1.0.0-beta.5:
+    resolution: {integrity: sha512-UbPFKWxeLqJ9Xtu0YvELUqhucFwB3Ssn09SEBvdPeELueKqmWKsfBCH2C0tUcOSBF0Isvpj0poJ6B4YBI+eO9Q==}
+    dependencies:
+      '@morpheme/badge': 1.0.0-beta.5
+      '@morpheme/forms': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      '@morpheme/tooltip': 1.0.0-beta.5
+      '@vueuse/core': 7.7.1_vue@3.2.47
+      vee-validate: 4.8.2_vue@3.2.47
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - ts-node
+    dev: false
+
+  /@morpheme/nav-drawer/1.0.0-beta.5:
+    resolution: {integrity: sha512-xXPQ+NcC8Akvc/iJ2DPIiEyd2FGnw7alEc5DsChZ4+JEEUgPBjsD6r1wxK5Dsg6XQk+VpnY2p+kNpJNnAuVVFA==}
+    dependencies:
+      '@morpheme/button': 1.0.0-beta.5
+      '@morpheme/logo': 1.0.0-beta.5
+      '@morpheme/menu': 1.0.0-beta.5
+      '@morpheme/utils': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/navbar/1.0.0-beta.5:
+    resolution: {integrity: sha512-nEGURAuNgxfacILu2c4DxPBgfQwNnfbpT+GvV2qTo+Pe6dEzdC3QrmcHxqeIMFgXSN+UJw5exlX8/BNUFb7wpg==}
+    dependencies:
+      '@morpheme/button': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      '@morpheme/logo': 1.0.0-beta.5
+      '@morpheme/menus': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/nuxt/1.0.0-beta.5:
+    resolution: {integrity: sha512-gzqAZgwPqDicSA1Y6YZd9s1bHD5tykHJM9TAPVqWgrN+5MdJacIVXKhGS2RbL5itb2b7ESaE9JF1ezF7mnYKxQ==}
+    dependencies:
+      '@morpheme/ui': 1.0.0-beta.5
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - ts-node
+    dev: false
+
+  /@morpheme/pagination/1.0.0-beta.5:
+    resolution: {integrity: sha512-/3CllCDPyZMbgYd8uzqHw9B6FAzbMMxq9ccJOws7mlk5MurWG0Sodm4inyhUo9LvAUzkKz5MmtkMa1e1PH5M9w==}
+    dependencies:
+      pagino: 1.4.1
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/progress-bar/1.0.0-beta.5:
+    resolution: {integrity: sha512-hSPoG1OhiXIVZ1tAHOSMstrEH5bVk00DOVP7vrwTfP3nj7rsIDYnVG3CWRnS+R9/D0A35otwiXF8q5DqadsXAw==}
+    dependencies:
+      '@morpheme/utils': 1.0.0-beta.5
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/quill-editor/1.0.0-beta.5:
+    resolution: {integrity: sha512-SP76QkwubiYf9oaOlPy89fERf+HzXgxAAEb2U2GN9X4umTzOJj+wMFqiSFwfsOhf8njO2AMq6YoyPz1pbhQuAg==}
+    dependencies:
+      '@vueup/vue-quill': 1.1.1_vue@3.2.47
+      quill: 1.3.7
+      vee-validate: 4.8.2_vue@3.2.47
+      vue: 3.2.47
+      yup: 0.32.11
+    dev: false
+
+  /@morpheme/rating/1.0.0-beta.5:
+    resolution: {integrity: sha512-ouL3+QaoUHH+8EsSeUPz6bsemSRl0uQeEps1AQ1Mg2Y3HvZbdW2aEwfDICRsrbWjLz/APFc6YK8FKC/v5Po6wA==}
+    dependencies:
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/select/1.0.0-beta.5:
+    resolution: {integrity: sha512-Bf7E39VmxtjOcfs97GjWjVT+GeAnbwbVci9PU5IoWjsKPx3OFlcGRkiHndaUWNv4fKskdZcv1/1kTFEWW2NtRw==}
+    dependencies:
+      '@morpheme/forms': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      '@morpheme/theme': 1.0.0-beta.5
+      '@morpheme/tooltip': 1.0.0-beta.5
+      '@morpheme/utils': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/shimmer/1.0.0-beta.5:
+    resolution: {integrity: sha512-qwWuxSRK+TM2VcAOCvLzi7U5VCxoxHfxEHbyToTm5mlU5wWZpwZjEndCHxyV5fC+/5H9qMoVtW4Xw51LP6qrkw==}
+    dependencies:
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/spinner/1.0.0-beta.5:
+    resolution: {integrity: sha512-4FvU3Joj6orXWxHIJ5pD60jRLxed2wMm0vfl+EZfI4mEw1VJ8CQFeotxxD2LE0M1wLeDLTprNKDMzywxYp5uLg==}
+    dependencies:
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/stats/1.0.0-beta.5:
+    resolution: {integrity: sha512-6Z5CxQ/Wer5XJP8GHODPAJb0Tv1M42KVHO6CbdwQ+kiS4O2ckLFXOZti9fNU8wfIsAsd67F7HnksYhqBjSY6Sw==}
+    dependencies:
+      '@iconify/vue': 3.2.1_vue@3.2.47
+      '@morpheme/badge': 1.0.0-beta.5
+      '@morpheme/card': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/stepper/1.0.0-beta.5:
+    resolution: {integrity: sha512-VcjXjrB0626NVbUtxYvWLMCApM5Ok/IWNhjkwjclmIBcqxhlyZPy6dA8FBZSK4/Tm7wjpMKlWglCHp6OYHyKTg==}
+    dependencies:
+      tailwindcss: 3.2.7
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/switch/1.0.0-beta.5:
+    resolution: {integrity: sha512-pzbpM9cXFk+v+rBerqpwfnY9Ka9ARiOGP3jpEX/ADOoDI62OVXh8bwu5o6mYRZsvvqnL9IbDXE/uJPPtyq/u+w==}
+    dependencies:
+      vee-validate: 4.8.2_vue@3.2.47
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/table/1.0.0-beta.5:
+    resolution: {integrity: sha512-jUBArSj9FO3WdeQ1lWT9q1bODM5tTQTqCRqxUACdroNYZ8uKQngO56VXc2FehQg04eR1EriJHmdUZgUMtVI9ag==}
+    dependencies:
+      '@morpheme/forms': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      '@morpheme/pagination': 1.0.0-beta.5
+      '@morpheme/spinner': 1.0.0-beta.5
+      '@morpheme/utils': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/tabs/1.0.0-beta.5:
+    resolution: {integrity: sha512-Pb+H+wxrwwJyKR9h/izs81rGdvQjp+p8h1xqM0meJJ9W6dYzBwxXGoVLuFGJGZXNVTrmeJnHnp1NSXtoWCpIUg==}
+    dependencies:
+      '@morpheme/button': 1.0.0-beta.5
+      '@morpheme/card': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      '@morpheme/utils': 1.0.0-beta.5
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/tailwind-components/1.0.0-beta.5:
+    resolution: {integrity: sha512-Tf9U4qGgrXX5huZC06RYUU1s5mxm+BVlXM9p6/Hbpm7vXD+1siXw1kTIWZTDXDg1rZnWCt30Bpmxmzi/ZcBBGw==}
+    dev: false
+
+  /@morpheme/tailwind-config/1.0.0-beta.5:
+    resolution: {integrity: sha512-2edVp8q1ApGYeAW3VJ3SbEOxpKBl+6u62Nh6f/Ocbs62T4TxDRk3oU/qiLhNYuRwIg8helk/l+kctmxlvYBNrQ==}
+    dependencies:
+      '@morpheme/tailwind-components': 1.0.0-beta.5
+      '@morpheme/theme': 1.0.0-beta.5
+      '@morpheme/utils': 1.0.0-beta.5
+      '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.7
+      '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
+      '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.2.7
+      '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.7
+      tailwindcss: 3.2.7
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/theme/1.0.0-beta.5:
+    resolution: {integrity: sha512-TcYoNH5VMcbTdHP91T9WT3X35+1z4ZUckMBoAVvajLICAxneYYZUg7KCSSb2sF92inljV6HnAHHbpjrBZ+pxsw==}
+    dependencies:
+      tailwindcss: 3.2.7
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/toast/1.0.0-beta.5:
+    resolution: {integrity: sha512-g1AuEvkeJmbQ1Yb4iOc3FDi9OIZEfLu/87+xSqmHsR3wawIj/ypsu3uWvgP0fYR/zq04Lh1RPCMvXM6/7UUq1g==}
+    dependencies:
+      '@morpheme/button': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      vee-validate: 4.8.2_vue@3.2.47
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - ts-node
+    dev: false
+
+  /@morpheme/tooltip/1.0.0-beta.5:
+    resolution: {integrity: sha512-B3kpNQYXGzR+zAmCtCUccD3xg6VG/rt9nN/RCvfZeM9+iygiBcjXSYL3KRiL2iXHjMbc3RIMUmkdSFZDZZpX7Q==}
+    dependencies:
+      floating-vue: 2.0.0-beta.20_vue@3.2.47
+      vee-validate: 4.8.2_vue@3.2.47
+      vue: 3.2.47
+    dev: false
+
+  /@morpheme/ui/1.0.0-beta.5:
+    resolution: {integrity: sha512-7k9FkzSvrRyBzO2FQcMtBDg+19e+V5NQlcsLU+lwo5Locq5zq0zXJZB3MwZzGn3bGfYSr9k3tQozr4UXKg2iDQ==}
+    dependencies:
+      '@headlessui/vue': 1.7.12_vue@3.2.47
+      '@morpheme/alert': 1.0.0-beta.5
+      '@morpheme/app-bar': 1.0.0-beta.5
+      '@morpheme/autocomplete': 1.0.0-beta.5
+      '@morpheme/avatar': 1.0.0-beta.5
+      '@morpheme/badge': 1.0.0-beta.5
+      '@morpheme/bottom-sheet': 1.0.0-beta.5
+      '@morpheme/breadcrumbs': 1.0.0-beta.5
+      '@morpheme/button': 1.0.0-beta.5
+      '@morpheme/card': 1.0.0-beta.5
+      '@morpheme/collapsible': 1.0.0-beta.5
+      '@morpheme/container': 1.0.0-beta.5
+      '@morpheme/dropdown': 1.0.0-beta.5
+      '@morpheme/editor': 1.0.0-beta.5
+      '@morpheme/forms': 1.0.0-beta.5
+      '@morpheme/icon': 1.0.0-beta.5
+      '@morpheme/list': 1.0.0-beta.5
+      '@morpheme/logo': 1.0.0-beta.5
+      '@morpheme/menu': 1.0.0-beta.5
+      '@morpheme/menus': 1.0.0-beta.5
+      '@morpheme/modal': 1.0.0-beta.5
+      '@morpheme/multi-select': 1.0.0-beta.5
+      '@morpheme/nav-drawer': 1.0.0-beta.5
+      '@morpheme/navbar': 1.0.0-beta.5
+      '@morpheme/pagination': 1.0.0-beta.5
+      '@morpheme/progress-bar': 1.0.0-beta.5
+      '@morpheme/quill-editor': 1.0.0-beta.5
+      '@morpheme/rating': 1.0.0-beta.5
+      '@morpheme/select': 1.0.0-beta.5
+      '@morpheme/shimmer': 1.0.0-beta.5
+      '@morpheme/spinner': 1.0.0-beta.5
+      '@morpheme/stats': 1.0.0-beta.5
+      '@morpheme/stepper': 1.0.0-beta.5
+      '@morpheme/switch': 1.0.0-beta.5
+      '@morpheme/table': 1.0.0-beta.5
+      '@morpheme/tabs': 1.0.0-beta.5
+      '@morpheme/tailwind-components': 1.0.0-beta.5
+      '@morpheme/tailwind-config': 1.0.0-beta.5
+      '@morpheme/theme': 1.0.0-beta.5
+      '@morpheme/toast': 1.0.0-beta.5
+      '@morpheme/tooltip': 1.0.0-beta.5
+      '@morpheme/utils': 1.0.0-beta.5
+      '@vue/test-utils': 2.3.1_vue@3.2.47
+      sass: 1.59.3
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - ts-node
+    dev: false
+
+  /@morpheme/utils/1.0.0-beta.5:
+    resolution: {integrity: sha512-b1qlj5How7pf3Dw+i9k8q0grp9/q0YLa5hc4Lc+vtqHPXp4ya1944ZWIYOgsq/oY2RQ/zs1tG93npTon3KcOYw==}
+    dependencies:
+      vue: 3.2.47
+    dev: false
 
   /@mrmlnc/readdir-enhanced/2.2.1:
     resolution: {integrity: sha512-bPHp6Ji8b41szTOcaP63VlnbbO5Ny6dwAATtY6JTjh5N2OLrb5Qk/Th5cRkRQhkWCt+EJsYrNB0MiL+Gpn6e3g==}
@@ -6591,6 +6542,16 @@ packages:
       '@vue/server-renderer': 3.2.47_vue@3.2.47
     dev: false
 
+  /@vueup/vue-quill/1.1.1_vue@3.2.47:
+    resolution: {integrity: sha512-1INx+pr+AK/5SrfFwJIojO+VhYrv6ZHwaYCxO5Irp+vjpm/z4v8zLpUIA86ideX7cNA8Tai+nkrGlWKnAeM0RQ==}
+    peerDependencies:
+      vue: ^3.2.41
+    dependencies:
+      quill: 1.3.7
+      quill-delta: 4.2.2
+      vue: 3.2.47
+    dev: false
+
   /@vueuse/core/7.7.1_vue@3.2.47:
     resolution: {integrity: sha512-PRRgbATMpoeUmkCEBtUeJgOwtew8s+4UsEd+Pm7MhkjL2ihCNrSqxNVtM6NFE4uP2sWnkGcZpCjPuNSxowJ1Ow==}
     peerDependencies:
@@ -7485,14 +7446,6 @@ packages:
     resolution: {integrity: sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==}
     engines: {node: '>= 0.4'}
     dev: true
-
-  /axios/0.26.1:
-    resolution: {integrity: sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==}
-    dependencies:
-      follow-redirects: 1.15.2
-    transitivePeerDependencies:
-      - debug
-    dev: false
 
   /babel-core/7.0.0-bridge.0_@babel+core@7.21.3:
     resolution: {integrity: sha512-poPX9mZH/5CSanm50Q+1toVci6pv5KSRv/5TWCwtzQS5XEwn40BcCrgIeMFWP9CKKIniKXNxoIOnOq4VVlGXhg==}
@@ -8401,7 +8354,6 @@ packages:
   /clone/2.1.2:
     resolution: {integrity: sha512-3Pe/CF1Nn94hyhIYpjtiLhdCoEoz0DqQ+988E9gmeEdQZlojxnOb74wctFyuwWQHzqyf9X7C7MG8juUpqBJT8w==}
     engines: {node: '>=0.8'}
-    dev: true
 
   /clsx/1.1.0:
     resolution: {integrity: sha512-3avwM37fSK5oP6M5rQ9CNe99lwxhXDOeSWVPAOYF6OazUTgZCMb0yWlJpmdD74REy1gkEaFiub2ULv4fq9GUhA==}
@@ -9254,7 +9206,6 @@ packages:
 
   /deep-equal/1.0.1:
     resolution: {integrity: sha512-bHtC0iYvWhyaTzvV3CZgPeZQqCOBGyGsVV7v4eevpdkLHfiSrXUdBG+qAuSz4RI70sszvjQ1QSZ98An1yNwpSw==}
-    dev: true
 
   /deep-equal/2.2.0:
     resolution: {integrity: sha512-RdpzE0Hv4lhowpIUKKMJfeH6C1pXdtT1/it80ubgWqwI3qpuxUBpC1S4hnHg+zjnuOoDkzUtUCEEkG+XG5l3Mw==}
@@ -10393,6 +10344,10 @@ packages:
     resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
     engines: {node: '>= 0.6'}
 
+  /eventemitter3/2.0.3:
+    resolution: {integrity: sha512-jLN68Dx5kyFHaePoXWPsCGW5qdyZQtLYHkxkg02/Mz6g0kYpDx4FyP6XfArhQdlOC4b8Mv+EMxPo/8La7Tzghg==}
+    dev: false
+
   /eventemitter3/4.0.7:
     resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
 
@@ -10530,7 +10485,6 @@ packages:
 
   /extend/3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
-    dev: true
 
   /external-editor/3.1.0:
     resolution: {integrity: sha512-hMQ4CX1p1izmuLYyZqLMO/qGNw10wSv9QDCPfzXfyFrOaCSSoRfqE1Kf1s5an66J5JZC62NewG+mK49jOCtQew==}
@@ -10566,6 +10520,14 @@ packages:
 
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+
+  /fast-diff/1.1.2:
+    resolution: {integrity: sha512-KaJUt+M9t1qaIteSvjc6P3RbMdXsNhK61GRftR6SNxqmhthcd9MGIi4T+o0jD8LUSpSnSKXE20nLtJ3fOHxQig==}
+    dev: false
+
+  /fast-diff/1.2.0:
+    resolution: {integrity: sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==}
+    dev: false
 
   /fast-glob/2.2.7:
     resolution: {integrity: sha512-g1KuQwHOZAmOZMuBtHdxDtju+T2RT8jgCC9aANsbpdiDDTSnjgfuVsIBNKbUeJI3oKMRExcfNDtJl4OhbffMsw==}
@@ -13075,6 +13037,10 @@ packages:
     resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
     dev: false
 
+  /lodash.clonedeep/4.5.0:
+    resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
+    dev: false
+
   /lodash.debounce/4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
 
@@ -13089,6 +13055,10 @@ packages:
 
   /lodash.isarguments/3.1.0:
     resolution: {integrity: sha512-chi4NHZlZqZD18a0imDHnZPrDeBbTtVN7GXMwuGdRH9qotxAjYs3aVLKc7zNOG9eddR5Ksd8rvFEBc9SsggPpg==}
+
+  /lodash.isequal/4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    dev: false
 
   /lodash.isfunction/3.0.9:
     resolution: {integrity: sha512-AirXNj15uRIMMPihnkInB4i3NHeb4iBtNg9WRWuK2o31S+ePwwNmDPaTL3o7dTJ+VXNZim7rFs4rxN4YU1oUJw==}
@@ -14470,6 +14440,10 @@ packages:
       tslib: 2.5.0
     dev: true
 
+  /parchment/1.1.4:
+    resolution: {integrity: sha512-J5FBQt/pM2inLzg4hEWmzQx/8h8D0CiDxaG3vyp9rKrQRSDgBlhjdP5jQGgosEajXPSQouXGHOmVdgo7QmJuOg==}
+    dev: false
+
   /parent-module/1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
@@ -14712,23 +14686,6 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.5.0
       vue-demi: 0.13.11
-    dev: false
-
-  /pinia/2.0.33_vue@3.2.47:
-    resolution: {integrity: sha512-HOj1yVV2itw6rNIrR2f7+MirGNxhORjrULL8GWgRwXsGSvEqIQ+SE0MYt6cwtpegzCda3i+rVTZM+AM7CG+kRg==}
-    peerDependencies:
-      '@vue/composition-api': ^1.4.0
-      typescript: '>=4.4.4'
-      vue: ^2.6.14 || ^3.2.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-      typescript:
-        optional: true
-    dependencies:
-      '@vue/devtools-api': 6.5.0
-      vue: 3.2.47
-      vue-demi: 0.13.11_vue@3.2.47
     dev: false
 
   /pinkie-promise/2.0.1:
@@ -15679,6 +15636,34 @@ packages:
   /quick-lru/5.1.1:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
+
+  /quill-delta/3.6.3:
+    resolution: {integrity: sha512-wdIGBlcX13tCHOXGMVnnTVFtGRLoP0imqxM696fIPwIf5ODIYUHIvHbZcyvGlZFiFhK5XzDC2lpjbxRhnM05Tg==}
+    engines: {node: '>=0.10'}
+    dependencies:
+      deep-equal: 1.0.1
+      extend: 3.0.2
+      fast-diff: 1.1.2
+    dev: false
+
+  /quill-delta/4.2.2:
+    resolution: {integrity: sha512-qjbn82b/yJzOjstBgkhtBjN2TNK+ZHP/BgUQO+j6bRhWQQdmj2lH6hXG7+nwwLF41Xgn//7/83lxs9n2BkTtTg==}
+    dependencies:
+      fast-diff: 1.2.0
+      lodash.clonedeep: 4.5.0
+      lodash.isequal: 4.5.0
+    dev: false
+
+  /quill/1.3.7:
+    resolution: {integrity: sha512-hG/DVzh/TiknWtE6QmWAF/pxoZKYxfe3J/d/+ShUWkDvvkZQVTPeVmUJVu1uE6DDooC4fWTiCLh84ul89oNz5g==}
+    dependencies:
+      clone: 2.1.2
+      deep-equal: 1.0.1
+      eventemitter3: 2.0.3
+      extend: 3.0.2
+      parchment: 1.1.4
+      quill-delta: 3.6.3
+    dev: false
 
   /radix3/1.0.0:
     resolution: {integrity: sha512-6n3AEXth91ASapMVKiEh2wrbFJmI+NBilrWE0AbiGgfm0xet0QXC8+a3K19r1UVYjUjctUgB053c3V/J6V0kCQ==}
@@ -18676,13 +18661,8 @@ packages:
       '@vue/server-renderer': 3.2.47_vue@3.2.47
       '@vue/shared': 3.2.47
 
-  /vuex/4.1.0_vue@3.2.47:
-    resolution: {integrity: sha512-hmV6UerDrPcgbSy9ORAtNXDr9M4wlNP4pEFKye4ujJF8oqgFFuxDCdOLS3eNoRTtq5O3hoBDh9Doj1bQMYHRbQ==}
-    peerDependencies:
-      vue: ^3.2.0
-    dependencies:
-      '@vue/devtools-api': 6.5.0
-      vue: 3.2.47
+  /wait-for-expect/3.0.2:
+    resolution: {integrity: sha512-cfS1+DZxuav1aBYbaO/kE06EOS8yRw7qOFoD3XtjTkYvCvh3zUvNST8DXK/nPaeqIzIv3P3kL3lRJn8iwOiSag==}
     dev: false
 
   /walker/1.0.8:
