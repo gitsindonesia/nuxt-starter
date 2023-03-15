@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/gitsindonesia/nuxt-starter/compare/v0.3.0...v0.3.1) (2023-03-15)
+
+
+### Features
+
+* change font to Inter ([a3be105](https://github.com/gitsindonesia/nuxt-starter/commit/a3be1053c20745e602f05c2d50cf1db238e0ab68))
+
 ## [0.3.0](https://github.com/gitsindonesia/nuxt-starter/compare/v0.2.5...v0.3.0) (2023-03-15)
 
 
