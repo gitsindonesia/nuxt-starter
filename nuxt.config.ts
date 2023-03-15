@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     prefetch: true,
     preconnect: true,
     families: {
-      Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     },
   },
   // https://gitsindonesia.github.io/ui-component/
@@ -74,7 +74,7 @@ export default defineNuxtConfig({
     head: {
       script: [
         {
-          src: `https://www.googletagmanager.com/gtag/js?id=G-3LVV82VFCV`,
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-3LVV82VFCV',
           async: true,
           type: 'text/partytown',
         },
@@ -93,6 +93,6 @@ export default defineNuxtConfig({
   vite: {
     optimizeDeps: {
       include: ['yup', 'axios'],
-    }
-  }
+    },
+  },
 })
