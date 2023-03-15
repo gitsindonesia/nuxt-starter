@@ -30,7 +30,7 @@ useHead({
         :key="lang.code"
         text
         flush
-        :color="locale === lang.code ? 'primary' : ''"
+        :color="locale === lang.code ? 'primary' : 'default'"
         :to="switchLocalePath(lang.code)"
       >
         {{ lang.name }}
