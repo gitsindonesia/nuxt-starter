@@ -43,8 +43,8 @@
         <Logo
           class="mx-auto"
           sizes="xs:200px md:300px"
-          width="300"
-          height="136"
+          width="450"
+          height="200"
           placeholder
         />
       </div>
