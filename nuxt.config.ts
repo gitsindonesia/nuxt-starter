@@ -92,7 +92,7 @@ export default defineNuxtConfig({
   },
   vite: {
     optimizeDeps: {
-      include: ['yup', 'axios'],
+      include: ['yup'],
     },
   },
 })
