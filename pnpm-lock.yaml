@@ -6,7 +6,7 @@ specifiers:
   '@commitlint/cli': ^17.4.2
   '@commitlint/config-conventional': ^17.4.2
   '@heroicons/vue': ^2.0.14
-  '@morpheme/nuxt': ^1.0.0-beta.5
+  '@morpheme/nuxt': 1.0.0-alpha.18+70873786
   '@nuxt/image-edge': ^1.0.0-27919678.2f5b64b
   '@nuxtjs/color-mode': ^3.2.0
   '@nuxtjs/fontaine': ^0.2.4
@@ -38,7 +38,7 @@ specifiers:
 
 dependencies:
   '@heroicons/vue': 2.0.16
-  '@morpheme/nuxt': 1.0.0-beta.5
+  '@morpheme/nuxt': 1.0.0-alpha.18
   '@pinia/nuxt': 0.4.7
   '@vueuse/core': 9.13.0
   '@vueuse/nuxt': 9.13.0_nuxt@3.3.1
@@ -3552,8 +3552,8 @@ packages:
       - ts-node
     dev: false
 
-  /@morpheme/nuxt/1.0.0-beta.5:
-    resolution: {integrity: sha512-gzqAZgwPqDicSA1Y6YZd9s1bHD5tykHJM9TAPVqWgrN+5MdJacIVXKhGS2RbL5itb2b7ESaE9JF1ezF7mnYKxQ==}
+  /@morpheme/nuxt/1.0.0-alpha.18:
+    resolution: {integrity: sha512-PL/FrliaXEpZV4H0eoxvqUUip+dH9DNNRhiFfZw0qzq+rNxzRx387tWJdf3DfXAxYMtS1R79I2DBOQzyrgkEaQ==}
     dependencies:
       '@morpheme/ui': 1.0.0-beta.5
     transitivePeerDependencies:

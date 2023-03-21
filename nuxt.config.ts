@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     },
   },
   // https://gitsindonesia.github.io/ui-component/
-  gitsUi: {
+  morpheme: {
     darkMode: true,
   },
   // https://v8.i18n.nuxtjs.org
