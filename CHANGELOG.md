@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/gitsindonesia/nuxt-starter/compare/v0.3.1...v0.4.0) (2023-03-27)
+
+
+### Features
+
+* add GitHub PR template ([e81a05c](https://github.com/gitsindonesia/nuxt-starter/commit/e81a05c17766cff830bf374e8b1e9b84a36e963d))
+* add gitlab MR template ([8687357](https://github.com/gitsindonesia/nuxt-starter/commit/86873574ecfb91206bf08a9c614cfb42795acaef))
+* migrate to Morpheme UI ([616a27a](https://github.com/gitsindonesia/nuxt-starter/commit/616a27a00d5af068f58e2ec4bf8195100236f06b))
+
 ### [0.3.1](https://github.com/gitsindonesia/nuxt-starter/compare/v0.3.0...v0.3.1) (2023-03-15)
 
 
