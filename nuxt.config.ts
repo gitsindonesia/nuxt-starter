@@ -97,6 +97,7 @@ export default defineNuxtConfig({
   },
   // nuxt layer
   extends: [
+    // comment this line to disable the default nuxt layer
     './_landing',
   ],
 })

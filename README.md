@@ -1,29 +1,6 @@
-# Nuxt and Morpheme UI Starter Kit
+# Nuxt and Morpheme UI Starter
 
-Quickly get started on a new project with this Nuxt.js and Morpheme UI starter kit. It includes a pre-configured setup and a variety of Morpheme UI components. Perfect for Vue.js developers looking to create a professional web app.
-
-## Installation
-
-```bash
-# with npm
-npm i @morpheme/nuxt-starter
-
-# with yarn
-yarn add @morpheme/nuxt-starter
-
-# with pnpm
-pnpm add @morpheme/nuxt-starter
-```
-
-## Usage
-
-```ts
-export default defineNuxtConfig({
-  extends: [
-    '@morpheme/nuxt-starter'
-  ]
-})
-```
+Quickly get started on a new project with this Nuxt.js and Morpheme UI UI components.
 
 ## Batteries Included
 
@@ -47,12 +24,12 @@ Look at the [Nuxt directory structure documentation](https://nuxt.com/docs/guide
 
 ## Create New Project
 
-### With `create-gits-app`
+### With Morpheme CLI
 
-The best way to create a new project with this template is using `create-gits-app`:
+The best way to create a new project with this template is using `create-morpheme-app`:
 
 ```bash
-npx create-gits-app@latest
+npx create-morpheme-app@latest
 ```
 
 Then, choose `Nuxt Starter` template.
@@ -68,6 +45,32 @@ yarn
 yarn dev
 ```
 
+
+### Usage as Nuxt Layer
+
+First, install the package:
+
+```bash
+# with npm
+npm i @morpheme/nuxt-starter
+
+# with yarn
+yarn add @morpheme/nuxt-starter
+
+# with pnpm
+pnpm add @morpheme/nuxt-starter
+```
+
+Then, add `@morpheme/nuxt-starter` to the `extends` block.
+
+```ts
+export default defineNuxtConfig({
+  extends: [
+    '@morpheme/nuxt-starter'
+  ]
+})
+```
+
 ## Checklist
 
 Some tasks you should probably do in the beginning are:
@@ -78,6 +81,9 @@ Some tasks you should probably do in the beginning are:
 - [ ] enable [Volar takeover mode](https://nuxt.com/docs/getting-started/installation#prerequisites) to ensure a smooth editor setup
 - [ ] copy `.env.example` to `.env` and update the value with your own
 - [ ] remove or update `.github` workflows
+- [ ] remove default landing page app
+  - [ ] remove `_landing` folder
+  - [ ] remove `./_landing` from `extends` block in `nuxt.config.ts`
 
 ## Setup
 
@@ -91,7 +97,7 @@ yarn install
 npm install
 
 # pnpm
-pnpm install --shamefully-hoist
+pnpm install
 ```
 
 ## Development Server
@@ -123,7 +129,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 First, bump the version and generate a changelog with `standard-version`:
 
 ```bash
-yarn release # default
+yarn release
 ```
 
 You can also bump to a specific version using the semantic version.
