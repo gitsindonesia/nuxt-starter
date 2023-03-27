@@ -95,4 +95,8 @@ export default defineNuxtConfig({
       include: ['yup'],
     },
   },
+  // nuxt layer
+  extends: [
+    './_landing',
+  ],
 })
