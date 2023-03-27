@@ -4,8 +4,8 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app/
 COPY . .
 
-RUN yarn install
-RUN yarn build
+RUN pnpm install
+RUN pnpm build
 
 ENV NUXT_HOST=0.0.0.0
 ENV NUXT_PORT=3000
