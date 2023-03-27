@@ -1,6 +1,6 @@
 # Nuxt and Morpheme UI Starter
 
-Quickly get started on a new project with this Nuxt.js and Morpheme UI UI components.
+Quickly get started on a new project with this Nuxt.js and Morpheme UI.
 
 ## Batteries Included
 
