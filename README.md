@@ -1,5 +1,8 @@
 # Nuxt and Morpheme UI Starter
 
+[![Quality Gate Status](https://sonar.gits.id/api/project_badges/measure?project=nuxt-starter&metric=alert_status&token=sqb_1e0de59e286dc2678fdc8e0f67ad6c2f99e20aac)](https://sonar.gits.id/dashboard?id=nuxt-starter)
+[![Coverage](https://sonar.gits.id/api/project_badges/measure?project=nuxt-starter&metric=coverage&token=sqb_1e0de59e286dc2678fdc8e0f67ad6c2f99e20aac)](https://sonar.gits.id/dashboard?id=nuxt-starter)
+
 Quickly get started on a new project with this Nuxt.js and Morpheme UI.
 
 ## Batteries Included
