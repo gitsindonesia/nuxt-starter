@@ -13,7 +13,7 @@ analyze:unit:
     - npm install -g pnpm
     - pnpm config set store-dir .pnpm-store
   script:
-    - pnpm install
+    - pnpm install --no-frozen-lockfile
     - pnpm coverage
   allow_failure: true
   interruptible: true
