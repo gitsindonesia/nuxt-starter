@@ -6,11 +6,12 @@ export default defineNuxtConfig({
     ['@pinia/nuxt', { disableVuex: true }],
     '@vueuse/nuxt',
     '@nuxtjs/fontaine',
-    '@morpheme/nuxt',
+    // '@morpheme/nuxt',
     '@nuxtjs/i18n',
     '@nuxt/image-edge',
     '@nuxtjs/color-mode',
     '@nuxtjs/partytown',
+    'nuxt-vitest'
   ],
   runtimeConfig: {
     public: {
