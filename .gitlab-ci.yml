@@ -40,7 +40,7 @@ analyze:sonar:
     paths:
       - .sonar/cache
   script:
-    - sonar-scanner -Dsonar.projectKey=$SERVICE_NAME -Dsonar.host.url=https://sonar.gits.id -Dsonar.login=$SONAR_USER -Dsonar.password=$SONAR_PASSWORD
+    - sonar-scanner -Dsonar.host.url=https://sonar.gits.id -Dsonar.login=$SONAR_USER -Dsonar.password=$SONAR_PASSWORD
   interruptible: true
   allow_failure: true
   dependencies:
