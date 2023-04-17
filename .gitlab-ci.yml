@@ -5,6 +5,9 @@ analyze:unit:
   stage: analyze
   image:
     name: node:18-alpine3.16
+  before_script:
+    - npm install -g pnpm
+    - pnpm config set store-dir .pnpm-store
   script:
     - pnpm install
     - pnpm coverage
