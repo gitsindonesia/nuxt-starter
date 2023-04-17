@@ -1,3 +1,5 @@
+const GA_ID = process.env.NUXT_PUBLIC_GA_ID
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: [
@@ -75,7 +77,7 @@ export default defineNuxtConfig({
     head: {
       script: [
         {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-3LVV82VFCV',
+          src: `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`,
           async: true,
           type: 'text/partytown',
         },
@@ -84,7 +86,7 @@ export default defineNuxtConfig({
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
         
-          gtag('config', 'G-3LVV82VFCV');`,
+          gtag('config', '${GA_ID}');`,
           async: true,
           type: 'text/partytown',
         },
