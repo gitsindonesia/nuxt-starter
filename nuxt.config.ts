@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@nuxtjs/color-mode',
     '@nuxtjs/partytown',
-    'nuxt-vitest'
+    'nuxt-vitest',
   ],
   runtimeConfig: {
     public: {
@@ -36,6 +36,7 @@ export default defineNuxtConfig({
   // https://gitsindonesia.github.io/ui-component/
   morpheme: {
     darkMode: true,
+    transpileDeps: false,
   },
   // https://v8.i18n.nuxtjs.org
   i18n: {

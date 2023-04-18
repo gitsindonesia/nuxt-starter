@@ -1,20 +1,20 @@
 import { defineVitestConfig } from 'nuxt-vitest/config'
+import vuePlugin from '@vitejs/plugin-vue'
 
 export default defineVitestConfig({
+  plugins: [vuePlugin()],
   test: {
     dir: 'tests',
     coverage: {
-      provider: "c8",
+      provider: 'c8',
       reportsDirectory: 'coverage',
-      reporter: ["text", "html", "lcov", "json"],
+      reporter: ['text', 'html', 'lcov', 'json'],
     },
     globals: true,
-    environment: "happy-dom",
-    // setupFiles: "./test/unit/setup-test.ts",
-    reporters: ["json", "vitest-sonar-reporter"],
+    reporters: ['verbose', 'json', 'vitest-sonar-reporter'],
     outputFile: {
-      json: "coverage/test-report.json",
-      "vitest-sonar-reporter": "coverage/test-report.xml",
+      'json': 'coverage/test-report.json',
+      'vitest-sonar-reporter': 'coverage/test-report.xml',
     },
   },
 })
