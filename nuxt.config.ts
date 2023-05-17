@@ -1,5 +1,3 @@
-const GA_ID = process.env.NUXT_PUBLIC_GA_ID
-
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: [
@@ -14,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'nuxt-vitest',
   ],
+
   runtimeConfig: {
     public: {
       gaId: '',
@@ -21,10 +20,13 @@ export default defineNuxtConfig({
       appUrl: '',
     },
   },
+
   css: ['~/assets/css/global.scss'],
+
   imports: {
     dirs: ['./api', './stores'],
   },
+
   googleFonts: {
     prefetch: true,
     preconnect: true,
@@ -32,11 +34,13 @@ export default defineNuxtConfig({
       Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     },
   },
+
   // https://gitsindonesia.github.io/ui-component/
   morpheme: {
     darkMode: true,
     transpileDeps: false,
   },
+
   // https://v8.i18n.nuxtjs.org
   i18n: {
     locales: [
@@ -65,18 +69,25 @@ export default defineNuxtConfig({
       redirectOn: 'root', // recommended
     },
   },
+
   // https://color-mode.nuxtjs.org
   colorMode: {
     classSuffix: '',
   },
+
   vite: {
     optimizeDeps: {
       include: ['yup'],
     },
   },
+
   // nuxt layer
   extends: [
     // comment this line to disable the default nuxt layer
     './_landing',
   ],
+
+  devtools: {
+    enabled: true,
+  },
 })
