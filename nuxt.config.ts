@@ -12,7 +12,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/image-edge',
     '@nuxtjs/color-mode',
-    '@nuxtjs/partytown',
     'nuxt-vitest',
   ],
   runtimeConfig: {
@@ -69,30 +68,6 @@ export default defineNuxtConfig({
   // https://color-mode.nuxtjs.org
   colorMode: {
     classSuffix: '',
-  },
-  // https://github.com/nuxt-modules/partytown
-  partytown: {
-    forward: ['dataLayer.push'],
-  },
-  app: {
-    head: {
-      script: [
-        {
-          src: `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`,
-          async: true,
-          type: 'text/partytown',
-        },
-        {
-          children: `window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', '${GA_ID}');`,
-          async: true,
-          type: 'text/partytown',
-        },
-      ],
-    },
   },
   vite: {
     optimizeDeps: {
