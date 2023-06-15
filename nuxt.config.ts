@@ -38,7 +38,9 @@ export default defineNuxtConfig({
   // https://gitsindonesia.github.io/ui-component/
   morpheme: {
     darkMode: true,
-    transpileDeps: false,
+    css: false,
+    sass: true,
+    theme: 'morpheme',
   },
 
   // https://v8.i18n.nuxtjs.org
