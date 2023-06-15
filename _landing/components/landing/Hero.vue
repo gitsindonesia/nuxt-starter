@@ -17,8 +17,7 @@
 
         <div class="flex justify-center md:justify-start gap-2 md:gap-4 mt-10">
           <VBtn
-            class="btn-getting-started"
-            color="dark"
+            color="primary"
             rounded
             href="https://gitsindonesia.github.io/ui-component/"
             new-tab
@@ -33,7 +32,6 @@
             new-tab
             size="lg"
             suffix-icon="ri:arrow-right-s-line"
-            class="btn-open-github"
           >
             Open on GitHub
           </VBtn>

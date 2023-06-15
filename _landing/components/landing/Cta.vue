@@ -13,7 +13,7 @@
         rounded
         href="https://gits-nuxt-starter.vercel.app/"
         new-tab
-        color="dark"
+        color="primary"
         size="lg"
       >
         Try demo
