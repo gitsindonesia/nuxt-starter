@@ -1,8 +1,6 @@
 import { defineVitestConfig } from 'nuxt-vitest/config'
-import vuePlugin from '@vitejs/plugin-vue'
 
 export default defineVitestConfig({
-  plugins: [vuePlugin()],
   test: {
     dir: 'tests',
     coverage: {
