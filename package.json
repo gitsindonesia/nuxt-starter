@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.17",
-    "@morpheme/nuxt": "1.0.0-beta.9",
+    "@morpheme/nuxt": "1.0.0-beta.10",
     "@pinia/nuxt": "^0.4.8",
     "@vueuse/core": "^10.0.2",
     "@vueuse/nuxt": "^10.0.2",

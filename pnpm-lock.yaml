@@ -8,8 +8,8 @@ dependencies:
     specifier: ^2.0.17
     version: 2.0.18(vue@3.3.4)
   '@morpheme/nuxt':
-    specifier: 1.0.0-beta.9
-    version: 1.0.0-beta.9(nuxt@3.6.0)(ts-node@10.9.1)(vite@4.3.9)
+    specifier: 1.0.0-beta.10
+    version: 1.0.0-beta.10(nuxt@3.6.0)(ts-node@10.9.1)(vite@4.3.9)
   '@pinia/nuxt':
     specifier: ^0.4.8
     version: 0.4.11(typescript@5.1.3)(vue@3.3.4)
@@ -4153,8 +4153,8 @@ packages:
       - ts-node
     dev: false
 
-  /@morpheme/nuxt@1.0.0-beta.9(nuxt@3.6.0)(ts-node@10.9.1)(vite@4.3.9):
-    resolution: {integrity: sha512-H+y/CH5YL6APYzf5NPH8783rlhVkYbdSTyO0e1XMrhqSEYsYvn26S6cTo+LbRfla8UwamM2BnugqDluLB5LQ+Q==}
+  /@morpheme/nuxt@1.0.0-beta.10(nuxt@3.6.0)(ts-node@10.9.1)(vite@4.3.9):
+    resolution: {integrity: sha512-427Pucs158qP5xSfqi8x1qrFWKgt3xUjrnJTo0kpcix657RlCpwCRYBMQH2pBM83wKWuzeJo274j7dqsw8cJMw==}
     dependencies:
       '@morpheme/ui': 1.0.0-beta.10(ts-node@10.9.1)
       '@nuxt/devtools-kit': 0.5.5(nuxt@3.6.0)(vite@4.3.9)
