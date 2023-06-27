@@ -1,7 +1,27 @@
 {
-  "version": "0.4.1",
   "name": "@morpheme/nuxt-starter",
+  "type": "module",
+  "version": "0.4.1",
   "description": "GITS Nuxt Starter",
+  "main": "./nuxt.config.ts",
+  "files": [
+    "assets",
+    "components",
+    "layouts",
+    "locales",
+    "pages",
+    "plugins",
+    "public",
+    "stores",
+    "utils",
+    ".eslintignore",
+    ".eslintrc",
+    "app.config.ts",
+    "app.vue",
+    "commitlint.config.js",
+    "nuxt.config.ts",
+    "tailwind.config.js"
+  ],
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -66,35 +86,15 @@
     "vitest-sonar-reporter": "^0.4.1",
     "vue-loader": "^17.0.1"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,html,css,vue}": "npm run lint:fix"
-  },
-  "type": "module",
-  "main": "./nuxt.config.ts",
-  "files": [
-    "assets",
-    "components",
-    "layouts",
-    "locales",
-    "pages",
-    "plugins",
-    "public",
-    "stores",
-    "utils",
-    ".eslintignore",
-    ".eslintrc",
-    "app.config.ts",
-    "app.vue",
-    "commitlint.config.js",
-    "nuxt.config.ts",
-    "tailwind.config.js"
-  ],
-  "overrides": {
-    "consola": "3.0.1"
-  },
   "pnpm": {
     "overrides": {
       "consola": "3.0.1"
     }
+  },
+  "overrides": {
+    "consola": "3.0.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,html,css,vue}": "npm run lint:fix"
   }
 }

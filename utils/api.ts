@@ -1,6 +1,6 @@
 /**
  * API helper.
- * 
+ *
  * @param options - Fetch options.
  * @returns - Fetch response.
  * @example
@@ -13,7 +13,7 @@
  *  body: JSON.stringify({ foo: 'bar' }),
  * })
  */
-export const $api = <T = unknown>(...options: Parameters<typeof $fetch>) => {
+export function $api<T = unknown>(...options: Parameters<typeof $fetch>) {
   const config = useRuntimeConfig()
   const baseURL = config.public.apiUrl
 
@@ -25,24 +25,24 @@ export const $api = <T = unknown>(...options: Parameters<typeof $fetch>) => {
 
 /**
  * API hook.
- * 
+ *
  * @param options Fetch options.
  * @returns Fetch response.
  * @example
  * const {data, pending} = await $useApi('https://example.com/api')
  */
-export const useApi = <T = unknown>(...options: Parameters<typeof $api>) => {
+export function useApi<T = unknown>(...options: Parameters<typeof $api>) {
   return useAsyncData(() => $api<T>(...options))
 }
 
 /**
  * API hook with lazy `true`.
- * 
+ *
  * @param options Fetch options.
  * @returns Fetch response.
  * @example
  * const {data, pending} = await $useLazyApi('https://example.com/api')
  */
-export const useLazyApi = <T = unknown>(...options: Parameters<typeof $api>) => {
+export function useLazyApi<T = unknown>(...options: Parameters<typeof $api>) {
   return useAsyncData(() => $api<T>(...options), { lazy: true })
 }
