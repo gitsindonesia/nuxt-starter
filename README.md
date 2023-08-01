@@ -7,18 +7,17 @@ Quickly get started on a new project with Nuxt and Morpheme UI.
 
 ## What's Included?
 
-- [Morpheme UI](https://gitsindonesia.github.io/ui-component/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Pinia](https://pinia.vuejs.org/)
-- [VueUse](https://vueuse.org/)
-- [Storybook](https://storybook.js.org/)
-- [@nuxtjs/google-fonts](https://github.com/nuxt-community/google-fonts-module)
-- [@nuxtjs/fontaine](https://github.com/nuxt-modules/fontaine)
-- [@nuxtjs/i18n](https://i18n.nuxtjs.org/)
-- [@nuxt/image-edge](https://v1.image.nuxtjs.org/)
-- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- [lint-staged](https://github.com/okonet/lint-staged)
-- [Hygen](https://www.hygen.io/)
+- ✅ UI Library with [Morpheme UI](https://gitsindonesia.github.io/ui-component/)
+- ✅ CSS Utilities by [Tailwind CSS](https://tailwindcss.com/)
+- ✅ State Management with [Pinia](https://pinia.vuejs.org/)
+- ✅ Vue Composables with [VueUse](https://vueuse.org/)
+- ✅ Component Workshop with [Storybook](https://storybook.js.org/)
+- ✅ Google Font with [@nuxtjs/google-fonts](https://github.com/nuxt-community/google-fonts-module)
+- ✅ Font metric overrides to reduce CLS [@nuxtjs/fontaine](https://github.com/nuxt-modules/fontaine)
+- Internalization with [@nuxtjs/i18n](https://i18n.nuxtjs.org/)
+- ✅ Image optimization with [@nuxt/image-edge](https://v1.image.nuxtjs.org/)
+- ✅ Coding style with [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) and [lint-staged](https://github.com/okonet/lint-staged)
+- ✅ Component generator with [Hygen](https://www.hygen.io/)
 
 ## Directory Structure
 
