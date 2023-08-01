@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/gitsindonesia/nuxt-starter/compare/v0.4.1...v0.5.0) (2023-08-01)
+
 ### [0.4.1](https://github.com/gitsindonesia/nuxt-starter/compare/v0.4.0...v0.4.1) (2023-04-04)
 
 ## [0.4.0](https://github.com/gitsindonesia/nuxt-starter/compare/v0.3.1...v0.4.0) (2023-03-27)
