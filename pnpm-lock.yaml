@@ -4,16 +4,13 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  consola: 3.0.1
-
 dependencies:
   '@heroicons/vue':
     specifier: ^2.0.17
     version: 2.0.18(vue@3.3.4)
   '@morpheme/nuxt':
-    specifier: 1.0.0-beta.10
-    version: 1.0.0-beta.10(nuxt@3.6.5)(ts-node@10.9.1)(vite@4.4.7)
+    specifier: 1.0.0-beta.11
+    version: 1.0.0-beta.11(nuxt@3.6.5)(ts-node@10.9.1)(vite@4.4.7)
   '@pinia/nuxt':
     specifier: ^0.4.8
     version: 0.4.11(typescript@5.1.6)(vue@3.3.4)
@@ -3199,8 +3196,8 @@ packages:
       - ts-node
     dev: false
 
-  /@morpheme/nuxt@1.0.0-beta.10(nuxt@3.6.5)(ts-node@10.9.1)(vite@4.4.7):
-    resolution: {integrity: sha512-427Pucs158qP5xSfqi8x1qrFWKgt3xUjrnJTo0kpcix657RlCpwCRYBMQH2pBM83wKWuzeJo274j7dqsw8cJMw==}
+  /@morpheme/nuxt@1.0.0-beta.11(nuxt@3.6.5)(ts-node@10.9.1)(vite@4.4.7):
+    resolution: {integrity: sha512-ojHEL6g2jDKUCpkdjBkzNbCvavcS04WUyO+JQk0AQzipQimNT8I3OKbAs5YRBx/GLzqeeCdGhX9hHJEun6ToKw==}
     dependencies:
       '@morpheme/ui': 1.0.0-beta.11(@nuxt/kit@3.6.5)(ts-node@10.9.1)
       '@nuxt/devtools-kit': 0.5.5(nuxt@3.6.5)(vite@4.4.7)
@@ -3630,7 +3627,7 @@ packages:
     resolution: {integrity: sha512-dN+3UVxsGk3Vx0T6tN+UQ1b7FjWHk3N4WWmnKOACa4pHt77RYHFzndk60KDlKq9I/bn905pghsqwvXmPfbSpJA==}
     hasBin: true
     dependencies:
-      consola: 3.0.1
+      consola: 3.2.3
       diff: 5.1.0
       execa: 7.2.0
       global-dirs: 3.0.1
@@ -3655,7 +3652,7 @@ packages:
       '@nuxt/kit': 3.6.5
       birpc: 0.2.12
       boxen: 7.1.1
-      consola: 3.0.1
+      consola: 3.2.3
       execa: 7.2.0
       fast-folder-size: 2.1.0
       fast-glob: 3.3.1
@@ -3747,7 +3744,7 @@ packages:
     dependencies:
       '@nuxt/schema': 3.6.5
       c12: 1.4.2
-      consola: 3.0.1
+      consola: 3.2.3
       defu: 6.1.2
       globby: 13.2.2
       hash-sum: 2.0.0
@@ -3827,7 +3824,7 @@ packages:
       '@nuxt/kit': 3.6.5
       chalk: 5.3.0
       ci-info: 3.8.0
-      consola: 3.0.1
+      consola: 3.2.3
       create-require: 1.1.1
       defu: 6.1.2
       destr: 2.0.0
@@ -3862,7 +3859,7 @@ packages:
       '@vitejs/plugin-vue-jsx': 3.0.1(vite@4.3.9)(vue@3.3.4)
       autoprefixer: 10.4.14(postcss@8.4.27)
       clear: 0.1.0
-      consola: 3.0.1
+      consola: 3.2.3
       cssnano: 6.0.1(postcss@8.4.27)
       defu: 6.1.2
       esbuild: 0.18.17
@@ -6301,6 +6298,7 @@ packages:
 
   /arch@2.2.0:
     resolution: {integrity: sha512-Of/R0wqp83cgHozfIYLbBMnej79U/SVGOOyuB3VVFv1NRM/PSFMK12x9KVtiYzJqmnU5WR2qp0Z5rHb7sWGnFQ==}
+    requiresBuild: true
 
   /archiver-utils@2.1.0:
     resolution: {integrity: sha512-bEL/yUb/fNNiNTuUz979Z0Yg5L+LzLxGJz8x79lYmR54fmTIb6ob/hNQgkQnIUDWIFjZVQwl9Xs356I6BAMHfw==}
@@ -7067,7 +7065,7 @@ packages:
   /citty@0.1.2:
     resolution: {integrity: sha512-Me9nf0/BEmMOnuQzMOVXgpzkMUNbd0Am8lTl/13p0aRGAoLGk5T5sdet/42CrIGmWdG67BgHUhcKK1my1ujUEg==}
     dependencies:
-      consola: 3.0.1
+      consola: 3.2.3
 
   /ckeditor5@35.4.0:
     resolution: {integrity: sha512-vBEQVkFCbjYmEPVkyWsOqU44DOovUio6xBuCwroe4TuJLplqeRasCjFwB0DPknXQU8U0iM3Lh/QSKRyN92pw3Q==}
@@ -7155,6 +7153,7 @@ packages:
   /clipboardy@3.0.0:
     resolution: {integrity: sha512-Su+uU5sr1jkUy1sGRpLKjKrvEOVXgSgiSInwa/qeID6aJ07yh+5NWc3h2QfjHjBnfX4LhtFcuAWKUsJ3r+fjbg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    requiresBuild: true
     dependencies:
       arch: 2.2.0
       execa: 5.1.1
@@ -7368,8 +7367,19 @@ packages:
       ini: 1.3.8
       proto-list: 1.2.4
 
+  /consola@2.15.3:
+    resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==}
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /consola@3.0.1:
     resolution: {integrity: sha512-08E7bC2N6gaFdzPU/qtBi4ulVvJitYnfrDdxEiwElC3jSNICbOvkcE+8N56EfIrBoxp37O9Qnn5ZZPElov83UQ==}
+    dev: true
+
+  /consola@3.2.3:
+    resolution: {integrity: sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==}
+    engines: {node: ^14.18.0 || >=16.10.0}
 
   /console-control-strings@1.1.0:
     resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==}
@@ -10018,6 +10028,7 @@ packages:
   /http-shutdown@1.2.2:
     resolution: {integrity: sha512-S9wWkJ/VSY9/k4qcjG318bqJNruzE4HySUhFYknwmu6LBP97KLLfwNf+n4V1BHurvFNkSKLFnK/RsuUnRTf9Vw==}
     engines: {iojs: '>= 1.0.0', node: '>= 0.12.0'}
+    requiresBuild: true
 
   /https-proxy-agent@4.0.0:
     resolution: {integrity: sha512-zoDhWrkR3of1l9QAL8/scJZyLu8j/gBkcwcaQOZh7Gyh/+uJQzGVETdgT30akuwkpL8HTRfssqI3BZuV18teDg==}
@@ -10189,7 +10200,7 @@ packages:
     hasBin: true
     requiresBuild: true
     dependencies:
-      consola: 3.0.1
+      consola: 2.15.3
       defu: 6.1.2
       destr: 1.2.2
       etag: 1.8.1
@@ -11039,7 +11050,7 @@ packages:
     dependencies:
       citty: 0.1.2
       clipboardy: 3.0.0
-      consola: 3.0.1
+      consola: 3.2.3
       defu: 6.1.2
       get-port-please: 3.0.1
       http-shutdown: 1.2.2
@@ -12176,7 +12187,7 @@ packages:
       chalk: 5.3.0
       chokidar: 3.5.3
       citty: 0.1.2
-      consola: 3.0.1
+      consola: 3.2.3
       cookie-es: 1.0.0
       defu: 6.1.2
       destr: 2.0.0
@@ -12287,6 +12298,7 @@ packages:
   /node-forge@1.3.1:
     resolution: {integrity: sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA==}
     engines: {node: '>= 6.13.0'}
+    requiresBuild: true
 
   /node-gyp-build@4.6.0:
     resolution: {integrity: sha512-NTZVKn9IylLwUzaKjkas1e4u2DLNcV4rdYagA4PWdPwW87Bi7z+BznyKSRwS/761tV/lzCGXplWsiaMjLqP2zQ==}
@@ -15660,7 +15672,7 @@ packages:
   /unenv@1.5.2:
     resolution: {integrity: sha512-fpQW0nx3hGx0q0wq/35+ng9Dm4m1/2V00UmU5Jxdr1woyrMbT4RydQn5eh/hZyM81HKAPzaf50TKX0XfYpBaqg==}
     dependencies:
-      consola: 3.0.1
+      consola: 3.2.3
       defu: 6.1.2
       mime: 3.0.0
       node-fetch-native: 1.2.0

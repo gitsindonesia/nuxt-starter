@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.17",
-    "@morpheme/nuxt": "1.0.0-beta.10",
+    "@morpheme/nuxt": "1.0.0-beta.11",
     "@pinia/nuxt": "^0.4.8",
     "@vueuse/core": "^10.0.2",
     "@vueuse/nuxt": "^10.0.2",
@@ -85,14 +85,6 @@
     "vitest-environment-nuxt": "^0.8.5",
     "vitest-sonar-reporter": "^0.4.1",
     "vue-loader": "^17.0.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "consola": "3.0.1"
-    }
-  },
-  "overrides": {
-    "consola": "3.0.1"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,html,css,vue}": "npm run lint:fix"
