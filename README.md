@@ -3,11 +3,10 @@
 [![Quality Gate Status](https://sonar.gits.id/api/project_badges/measure?project=nuxt-starter&metric=alert_status&token=sqb_1e0de59e286dc2678fdc8e0f67ad6c2f99e20aac)](https://sonar.gits.id/dashboard?id=nuxt-starter)
 [![Coverage](https://sonar.gits.id/api/project_badges/measure?project=nuxt-starter&metric=coverage&token=sqb_1e0de59e286dc2678fdc8e0f67ad6c2f99e20aac)](https://sonar.gits.id/dashboard?id=nuxt-starter)
 
-Quickly get started on a new project with this Nuxt.js and Morpheme UI.
+Quickly get started on a new project with Nuxt and Morpheme UI.
 
-## Batteries Included
+## What's Included?
 
-- [Nuxt 3](https://nuxt.com/)
 - [Morpheme UI](https://gitsindonesia.github.io/ui-component/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Pinia](https://pinia.vuejs.org/)
@@ -157,7 +156,7 @@ Then, push the tags:
 git push --follow-tags
 ```
 
-# Contributing
+## Contributing
 
 To contribute, you may follow these steps:
 
@@ -167,3 +166,6 @@ To contribute, you may follow these steps:
 - Push to the original branch: `git push origin <branch_name>`
 - Create the pull request.
 
+## License
+
+MIT
