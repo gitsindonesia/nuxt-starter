@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.1](https://github.com/gitsindonesia/nuxt-starter/compare/v0.5.0...v0.5.1) (2023-08-01)
+
+
+### Features
+
+* add `@vueuse/nuxt` ([7262856](https://github.com/gitsindonesia/nuxt-starter/commit/72628566d8e041da1cc081615608500d6c48907a))
+
 ## [0.5.0](https://github.com/gitsindonesia/nuxt-starter/compare/v0.4.1...v0.5.0) (2023-08-01)
 
 ### [0.4.1](https://github.com/gitsindonesia/nuxt-starter/compare/v0.4.0...v0.4.1) (2023-04-04)
