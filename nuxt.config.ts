@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@nuxtjs/color-mode',
     'nuxt-vitest',
+    '@vueuse/nuxt',
   ],
 
   runtimeConfig: {
