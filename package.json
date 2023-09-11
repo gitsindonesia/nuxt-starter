@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.18",
-    "@morpheme/nuxt": "1.0.0-beta.11",
+    "@morpheme/nuxt": "^1.0.0-rc.0",
     "@pinia/nuxt": "^0.4.11",
     "@vueuse/core": "^10.3.0",
     "@vueuse/nuxt": "^10.3.0",
@@ -74,7 +74,7 @@
     "eslint": "^8.47.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.3.0",
-    "nuxt": "^3.6.5",
+    "nuxt": "^3.7.1",
     "nuxt-vitest": "^0.8.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
