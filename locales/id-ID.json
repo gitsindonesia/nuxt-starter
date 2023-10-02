@@ -1,9 +1,5 @@
 {
-  "welcome": "Selamat datang",
-  "menu": {
-    "home": "Beranda",
-    "features": "Fitur",
-    "internalization": "Internalisasi",
-    "docs": "Dokumentasi"
-  }
+  "welcome": "Selamat datang di Morpheme!",
+  "get_started": "Memulai",
+  "start_editing": "Mulailah dengan mengedit halaman ini di"
 }

@@ -22,8 +22,6 @@ export default defineNuxtConfig({
     },
   },
 
-  css: ['~/assets/css/global.scss'],
-
   imports: {
     dirs: ['./api', './stores'],
   },

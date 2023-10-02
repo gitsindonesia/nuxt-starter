@@ -1,9 +1,5 @@
 {
-  "welcome": "Welcome",
-  "menu": {
-    "home": "Home",
-    "features": "Features",
-    "internalization": "Internalization",
-    "docs": "Documentation"
-  }
+  "welcome": "Welcome to Morpheme!",
+  "get_started": "Get started",
+  "start_editing": "Start by editing this page in"
 }

@@ -14,10 +14,15 @@ const lang = computed(() => locales.value.map(item => ({
   <VDropdown :items="lang" right panel-class="top-10">
     <template #activator>
       <VDropdownButton
+        v-tooltip="{
+          content: 'Switch Language',
+          placement: 'top',
+        }"
         :as="VBtn"
         icon
         rounded
         fab
+
         text
       >
         <VIcon name="ic:round-translate" />

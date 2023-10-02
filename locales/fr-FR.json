@@ -1,9 +1,5 @@
 {
-  "welcome": "Bienvenue",
-  "menu": {
-    "home": "Accueil",
-    "features": "Caractéristiques",
-    "internalization": "Internationalisation",
-    "docs": "Documentation"
-  }
+  "welcome": "Bienvenue chez Morpheme !",
+  "get_started": "Commencer",
+  "start_editing": "Commencez par éditer cette page dans"
 }

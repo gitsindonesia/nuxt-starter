@@ -23,10 +23,18 @@ function changeColorMode() {
 
 <template>
   <VBtn
+    v-tooltip="{
+      content: 'Switch color mode',
+      placement: 'top',
+    }"
     aria-label="Color Mode"
     fab
     text
     :prefix-icon="colorModeIcon"
     @click="changeColorMode"
-  />
+  >
+    <div class="sr-only">
+      Switch color mode
+    </div>
+  </VBtn>
 </template>
