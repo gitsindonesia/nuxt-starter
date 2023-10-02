@@ -78,18 +78,6 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
-  vite: {
-    optimizeDeps: {
-      include: ['yup'],
-    },
-  },
-
-  // nuxt layer
-  extends: [
-    // comment this line to disable the default nuxt layer
-    './_landing',
-  ],
-
   devtools: {
     enabled: true,
   },
