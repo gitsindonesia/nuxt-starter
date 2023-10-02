@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@morpheme/nuxt',
     '@nuxtjs/i18n',
-    '@nuxt/image-edge',
+    '@nuxt/image',
     '@nuxtjs/color-mode',
     'nuxt-vitest',
     '@vueuse/nuxt',
@@ -42,6 +42,8 @@ export default defineNuxtConfig({
     css: false,
     sass: true,
     theme: 'morpheme',
+    transpileDeps: false,
+    optimizeDeps: false,
   },
 
   // https://v8.i18n.nuxtjs.org
