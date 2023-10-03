@@ -1,4 +1,7 @@
+image: node:18-alpine3.16
+
 stages:
+  - lint
   - analyze
 
 analyze:unit:
@@ -49,3 +52,16 @@ analyze:sonar:
     - main
   tags:
     - gits-docker
+
+lint:
+  stage: lint
+  before_script:
+    - npm install -g pnpm
+    - pnpm config set store-dir .pnpm-store
+  script:
+    - pnpm install --no-frozen-lockfile
+    - pnpm lint
+  only:
+    - main
+    - merge_requests
+
