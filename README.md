@@ -17,7 +17,8 @@ Quickly get started on a new project with Nuxt and Morpheme UI.
 - ✅ Internalization with [@nuxtjs/i18n](https://i18n.nuxtjs.org/)
 - ✅ Image optimization with [@nuxt/image-edge](https://v1.image.nuxtjs.org/)
 - ✅ Coding style with [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) and [lint-staged](https://github.com/okonet/lint-staged)
-- ✅ Component generator with [Hygen](https://www.hygen.io/)
+- ✅ Data Fetching with [Vue Query](https://tanstack.com/query/latest/docs/vue/overview)
+- ✅ Form Validation with [vee-validate](https://vee-validate.logaretm.com/v4/)
 
 ## Directory Structure
 
@@ -82,9 +83,6 @@ Some tasks you should probably do in the beginning are:
 - [ ] enable [Volar takeover mode](https://nuxt.com/docs/getting-started/installation#prerequisites) to ensure a smooth editor setup
 - [ ] copy `.env.example` to `.env` and update the value with your own
 - [ ] remove or update `.github` workflows
-- [ ] remove default landing page app
-  - [ ] remove `_landing` folder
-  - [ ] remove `./_landing` from `extends` block in `nuxt.config.ts`
 
 ## Setup
 
