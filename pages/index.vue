@@ -1,9 +1,5 @@
 <script setup lang="ts">
-useHead({
-  bodyAttrs: {
-    class: 'bg-white dark:bg-slate-950',
-  },
-})
+//
 </script>
 
 <template>

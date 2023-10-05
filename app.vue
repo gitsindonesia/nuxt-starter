@@ -14,6 +14,12 @@ useSeoMeta({
   ogImage: appImage,
   twitterCard: 'summary_large_image',
 })
+
+useHead({
+  bodyAttrs: {
+    class: 'bg-white dark:bg-slate-950',
+  },
+})
 </script>
 
 <template>

@@ -14,7 +14,7 @@ const { isLoading, isError, data, error } = useQuery({
 <template>
   <div class="container mx-auto py-6">
     <header class="flex items-center gap-4 mb-6 justify-between">
-      <h1 class="text-3xl font-semibold">
+      <h1 class="text-3xl font-semibold dark:text-neutral-200">
         Products
       </h1>
       <VButton
