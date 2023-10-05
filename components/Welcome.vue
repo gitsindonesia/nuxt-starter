@@ -18,6 +18,12 @@
       </div>
       <footer class="flex justify-center">
         <VButton
+          to="/products"
+          text
+        >
+          View Product Page
+        </VButton>
+        <VButton
           suffix-icon="ri:external-link-line"
           href="https://ui.morpheme.design"
           new-tab

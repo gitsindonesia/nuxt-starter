@@ -12,11 +12,11 @@ const { isLoading, isError, data, error } = useQuery({
 </script>
 
 <template>
-  <div class="container mx-auto py-6">
-    <header class="flex items-center gap-4 mb-6 justify-between">
-      <h1 class="text-3xl font-semibold dark:text-neutral-200">
-        Products
-      </h1>
+  <VAppBar shadow="md" size="auto" class="py-4">
+    <VContainer centered class="flex justify-between">
+      <NuxtLink to="/" class="text-lg font-semibold dark:text-neutral-200">
+        Morpheme
+      </NuxtLink>
       <VButton
         to="/"
         text
@@ -26,8 +26,10 @@ const { isLoading, isError, data, error } = useQuery({
       >
         Back to Home
       </VButton>
-    </header>
+    </VContainer>
+  </VAppBar>
 
+  <div class="container mx-auto py-6">
     <div v-if="isLoading" class="grid grid-cols-1 lg:grid-cols-4 gap-6">
       <VShimmer :lines="12" class="!rounded-lg" width="100%" height="300px" />
     </div>
