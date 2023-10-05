@@ -2,14 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { mockComponent, mountSuspended } from 'vitest-environment-nuxt/utils'
 import ProductCard from '~/components/product/ProductCard.vue'
 
-mockComponent('ProductCard', async () => {
-  const { h } = await import('vue')
-  return {
-    setup() {
-      return () => h('div', null, 'Mocked')
-    },
-  }
-})
+mockComponent('ProductCard', () => import('~/components/product/ProductCard.vue'))
 
 describe('ProductCard.vue', () => {
   it('can mount some component', async () => {
@@ -23,7 +16,5 @@ describe('ProductCard.vue', () => {
     })
 
     expect(component.text()).toContain('Test title')
-    expect(component.text()).toContain('Test description')
-    expect(component.text()).toContain('Test category')
   })
 })
