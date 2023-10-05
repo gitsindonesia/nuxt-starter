@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { mockComponent, mountSuspended } from 'vitest-environment-nuxt/utils'
-import Welcome from '~/components/Welcome.vue'
+import Welcome from '~/components/Welcome/Welcome.vue'
 
-mockComponent('Welcome', () => import('~/components/Welcome.vue'))
+mockComponent('Welcome', () => import('~/components/Welcome/Welcome.vue'))
 
 describe('Welcome.vue', () => {
   it('can mount some component', async () => {
