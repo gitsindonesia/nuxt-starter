@@ -4,19 +4,17 @@ on:
   push:
     branches:
       - main # or the name of your main branch
-
+      
 jobs:
   sonarqube:
-    name: SonarQube Trigger
     runs-on: ubuntu-latest
     steps:
-    - name: Checking out
-      uses: actions/checkout@master
+    - uses: actions/checkout@v3
       with:
         # Disabling shallow clone is recommended for improving relevancy of reporting
         fetch-depth: 0
     - name: SonarQube Scan
-      uses: kitabisa/sonarqube-action@v1.2.0
-      with:
-        host: ${{ secrets.SONAR_HOST_URL }}
-        login: ${{ secrets.SONAR_TOKEN }}
+      uses: sonarsource/sonarqube-scan-action@master
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
