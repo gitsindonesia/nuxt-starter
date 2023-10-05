@@ -12,22 +12,7 @@ const { isLoading, isError, data, error } = useQuery({
 </script>
 
 <template>
-  <VAppBar shadow="md" size="auto" class="py-4">
-    <VContainer centered class="flex justify-between">
-      <NuxtLink to="/" class="text-lg font-semibold dark:text-neutral-200">
-        Morpheme
-      </NuxtLink>
-      <VButton
-        to="/"
-        text
-        flush
-        color="primary"
-        prefix-icon="ph:arrow-left"
-      >
-        Back to Home
-      </VButton>
-    </VContainer>
-  </VAppBar>
+  <ProductHeader />
 
   <div class="container mx-auto py-6">
     <div v-if="isLoading" class="grid grid-cols-1 lg:grid-cols-4 gap-6">
