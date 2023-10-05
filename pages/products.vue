@@ -35,22 +35,14 @@ const { isLoading, isError, data, error } = useQuery({
       Error: {{ (error as any).message }}
     </VAlert>
     <div v-else-if="data" class="grid grid-cols-1 lg:grid-cols-4 gap-6">
-      <VCard
+      <ProductCard
         v-for="product in data.products"
         :key="product.id"
         :title="product.title"
         :image="product.thumbnail"
-        image-class="h-48 w-full object-cover"
-      >
-        <p clas="text-sm !text-gray-500 line-clamp-2">
-          {{ product.description }}
-        </p>
-        <div class="mt-4">
-          <VBadge color="primary">
-            {{ product.category }}
-          </VBadge>
-        </div>
-      </VCard>
+        :description="product.description"
+        :category="product.category"
+      />
     </div>
   </div>
 </template>
