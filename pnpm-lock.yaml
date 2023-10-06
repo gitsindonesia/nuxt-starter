@@ -73,6 +73,9 @@ devDependencies:
   '@storybook/addon-mdx-gfm':
     specifier: ^7.4.6
     version: 7.4.6
+  '@storybook/blocks':
+    specifier: ^7.4.6
+    version: 7.4.6(react-dom@18.2.0)(react@18.2.0)
   '@storybook/testing-library':
     specifier: ^0.2.2
     version: 0.2.2
@@ -97,6 +100,9 @@ devDependencies:
   eslint:
     specifier: ^8.47.0
     version: 8.49.0
+  eslint-plugin-storybook:
+    specifier: ^0.6.14
+    version: 0.6.14(eslint@8.49.0)(typescript@5.2.2)
   happy-dom:
     specifier: ^12.8.0
     version: 12.8.0
@@ -5496,6 +5502,12 @@ packages:
       - supports-color
     dev: true
 
+  /@storybook/csf@0.0.1:
+    resolution: {integrity: sha512-USTLkZze5gkel8MYCujSRBVIrUQ3YPBrLOx7GNk/0wttvVtlzWXAq9eLbQ4p/NicGxP+3T7KPEMVV//g+yubpw==}
+    dependencies:
+      lodash: 4.17.21
+    dev: true
+
   /@storybook/csf@0.1.1:
     resolution: {integrity: sha512-4hE3AlNVxR60Wc5KSC68ASYzUobjPqtSKyhV6G+ge0FIXU55N5nTY7dXGRZHQGDBPq+XqchMkIdlkHPRs8nTHg==}
     dependencies:
@@ -9352,6 +9364,22 @@ packages:
       eslint: ^7.0.0 || ^8.0.0
     dependencies:
       eslint: 8.49.0
+    dev: true
+
+  /eslint-plugin-storybook@0.6.14(eslint@8.49.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-IeYigPur/MvESNDo43Z+Z5UvlcEVnt0dDZmnw1odi9X2Th1R3bpGyOZsHXb9bp1pFecOpRUuoMG5xdID2TwwOg==}
+    engines: {node: 12.x || 14.x || >= 16}
+    peerDependencies:
+      eslint: '>=6'
+    dependencies:
+      '@storybook/csf': 0.0.1
+      '@typescript-eslint/utils': 5.62.0(eslint@8.49.0)(typescript@5.2.2)
+      eslint: 8.49.0
+      requireindex: 1.2.0
+      ts-dedent: 2.2.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
     dev: true
 
   /eslint-plugin-unicorn@46.0.1(eslint@8.49.0):
@@ -14937,6 +14965,11 @@ packages:
   /require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /requireindex@1.2.0:
+    resolution: {integrity: sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==}
+    engines: {node: '>=0.10.5'}
     dev: true
 
   /requires-port@1.0.0:

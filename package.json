@@ -65,6 +65,7 @@
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",
     "@storybook/addon-mdx-gfm": "^7.4.6",
+    "@storybook/blocks": "^7.4.6",
     "@storybook/testing-library": "^0.2.2",
     "@storybook/vue3": "^7.4.6",
     "@storybook/vue3-vite": "^7.4.6",
@@ -73,6 +74,7 @@
     "babel-loader": "^9.1.3",
     "conventional-changelog-cli": "^2.2.2",
     "eslint": "^8.47.0",
+    "eslint-plugin-storybook": "^0.6.14",
     "happy-dom": "^12.8.0",
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
@@ -91,5 +93,10 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,html,css,vue}": "npm run lint:fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   }
 }
