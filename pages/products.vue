@@ -3,11 +3,15 @@ import { useQuery } from '@tanstack/vue-query'
 
 const url = 'https://dummyjson.com/products'
 
-const { isLoading, isError, data, error } = useQuery({
+const { isLoading, isError, data, error, suspense } = useQuery({
   queryKey: ['products'],
   queryFn: () => {
     return fetch(url).then(res => res.json())
   },
+})
+
+onServerPrefetch(async () => {
+  await suspense()
 })
 </script>
 
