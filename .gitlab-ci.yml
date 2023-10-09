@@ -23,6 +23,7 @@ analyze:unit:
     expire_in: 3 hrs
     paths:
       - /coverage
+      - .pnpm-store
   only:
     - main
   tags:
