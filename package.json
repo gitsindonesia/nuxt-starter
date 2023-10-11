@@ -55,19 +55,12 @@
     "@babel/core": "^7.22.10",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
-    "@nuxt/devtools": "^1.0.0-beta.0",
     "@nuxt/test-utils": "^3.7.4",
     "@nuxtjs/fontaine": "^0.2.5",
     "@nuxtjs/google-fonts": "^3.0.2",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@storybook/addon-actions": "^7.4.6",
-    "@storybook/addon-essentials": "^7.4.6",
-    "@storybook/addon-interactions": "^7.4.6",
-    "@storybook/addon-links": "^7.4.6",
     "@storybook/addon-mdx-gfm": "^7.4.6",
-    "@storybook/blocks": "^7.4.6",
-    "@storybook/testing-library": "^0.2.2",
-    "@storybook/vue3": "^7.4.6",
     "@storybook/vue3-vite": "^7.4.6",
     "@testing-library/vue": "^7.0.0",
     "@vitest/coverage-v8": "^0.34.6",
@@ -79,17 +72,28 @@
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
     "lint-staged": "^13.3.0",
-    "nuxt": "^3.7.4",
     "nuxt-vitest": "0.11.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "sass": "^1.65.1",
     "standard-version": "^9.5.0",
-    "storybook": "^7.4.6",
     "vitest": "^0.33.0",
     "vitest-environment-nuxt": "^0.11.0",
     "vitest-sonar-reporter": "^0.4.1",
-    "vue-loader": "^17.2.2"
+    "vue-loader": "^17.2.2",
+    "@nuxt/devtools": "^0.7.2",
+    "@nuxtjs/storybook": "7.0.0",
+    "nuxt": "3.6.5",
+    "storybook": "7.5.0-alpha.3",
+    "@storybook-vue/nuxt": "0.1.7",
+    "@storybook/addon-essentials": "7.5.0-alpha.3",
+    "@storybook/addon-interactions": "7.5.0-alpha.3",
+    "@storybook/addon-links": "7.5.0-alpha.3",
+    "@storybook/blocks": "7.5.0-alpha.3",
+    "@storybook/builder-vite": "7.5.0-alpha.3",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/vue3": "7.5.0-alpha.3",
+    "@types/node": "^18.17.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,html,css,vue}": "npm run lint:fix"
@@ -98,5 +102,12 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
+  },
+  "pnpm": {
+    "overrides": {
+      "@babel/plugin-proposal-class-properties": "npm:@babel/plugin-transform-class-properties",
+      "@babel/plugin-proposal-optional-chaining": "npm:@babel/plugin-transform-optional-chaining",
+      "@babel/plugin-proposal-nullish-coalescing-operator": "npm:@babel/plugin-transform-nullish-coalescing-operator"
+    }
   }
 }

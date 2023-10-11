@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-vitest',
     '@vueuse/nuxt',
+    '@nuxtjs/storybook',
   ],
 
   runtimeConfig: {

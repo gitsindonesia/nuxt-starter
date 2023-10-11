@@ -1,4 +1,5 @@
-import type { StorybookConfig } from '@storybook/vue3-vite';
+import type { StorybookConfig } from "@storybook-vue/nuxt";
+
 
 const config: StorybookConfig = {
   stories: [
@@ -12,12 +13,12 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
   ],
   framework: {
-    name: "@storybook/vue3-vite",
+    name: "@storybook-vue/nuxt",
     options: {},
   },
   docs: {
     autodocs: "tag",
   },
 };
-
 export default config;
+
