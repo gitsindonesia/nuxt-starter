@@ -8,8 +8,8 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@morpheme/nuxt',
     '@nuxt/image',
-    'nuxt-vitest',
     '@vueuse/nuxt',
+    '@nuxt/test-utils/module',
     // uncomment to enable storybook
     // '@nuxtjs/storybook',
   ],
