@@ -18,7 +18,7 @@ onServerPrefetch(async () => {
 <template>
   <ProductHeader />
 
-  <div class="container mx-auto py-6">
+  <div class="container mx-auto p-6">
     <div v-if="isLoading" class="grid grid-cols-1 lg:grid-cols-4 gap-6">
       <VShimmer :lines="12" class="!rounded-lg" width="100%" height="300px" />
     </div>
