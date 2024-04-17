@@ -5,6 +5,9 @@ import { configDefaults } from 'vitest/dist/config'
 export default defineVitestConfig({
   test: {
     coverage: {
+      provider: 'v8',
+      reportsDirectory: 'coverage',
+      reporter: ['text', 'html', 'lcov', 'json'],
       exclude: [
         ...(configDefaults.coverage.exclude ?? []),
         'layouts/**',
@@ -12,6 +15,12 @@ export default defineVitestConfig({
         '**/*.stories.ts',
         '**/*.config.{js,ts,mts,mjs}',
       ],
+    },
+    globals: true,
+    reporters: ['verbose', 'json', 'vitest-sonar-reporter'],
+    outputFile: {
+      'json': 'coverage/test-report.json',
+      'vitest-sonar-reporter': 'coverage/test-report.xml',
     },
   },
   // test: {
