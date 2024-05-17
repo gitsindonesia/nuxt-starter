@@ -24,6 +24,9 @@ useHead({
 
 <template>
   <Html lang="en" />
+  <Head>
+    <Link rel="icon" href="/logo.png" type="image/png" />
+  </Head>
   <NuxtLayout>
     <NuxtLoadingIndicator />
     <NuxtPage />
