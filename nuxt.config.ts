@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     // uncomment to enable storybook
     // '@nuxtjs/storybook',
     '@nuxt/test-utils/module',
-    "@nuxt/fonts"
+    '@nuxt/fonts',
   ],
 
   runtimeConfig: {
@@ -38,4 +38,6 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+
+  css: ['~/assets/css/themes.css'],
 })

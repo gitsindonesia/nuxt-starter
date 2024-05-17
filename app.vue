@@ -17,7 +17,7 @@ useSeoMeta({
 
 useHead({
   bodyAttrs: {
-    class: 'bg-white dark:bg-slate-950',
+    'data-theme': 'morpheme',
   },
 })
 </script>

@@ -24,6 +24,12 @@
           View Product Page
         </VButton>
         <VButton
+          to="/themes"
+          text
+        >
+          View Themes Page
+        </VButton>
+        <VButton
           suffix-icon="ri:external-link-line"
           href="https://ui.morpheme.design"
           new-tab
