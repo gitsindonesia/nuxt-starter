@@ -2,20 +2,21 @@
  * Here you can define your custom CSS variables
  */
 
- :root {
+:root {
   --v-app-background: var(--color-gray-100);
   --v-app-foreground: var(--color-gray-900);
   --v-app-font-family: 'Inter', sans-serif;
   --v-app-font-size: 1rem;
- }
+}
 
- body {
+body {
   color: var(--v-app-foreground);
   background-color: var(--v-app-background);
   font-family: var(--v-app-font-family);
   font-size: var(--v-app-font-size);
- }
+}
 
+/* default theme */
 [data-theme="morpheme"] {
   /* primary colors */
   /* --color-primary-50: #f3f1ff;
