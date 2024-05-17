@@ -42,7 +42,7 @@ function changeTheme(theme: string) {
         Theming
       </h1>
       <p class="text-gray-500 mb-4">
-        This page is for demonstration only. You can customize the theme by changing the values in <code>/assets/css/variables.css</code>
+        This page is for demonstration only. You can customize the theme by changing the values in <code>/assets/css/themes.css</code>
       </p>
     </div>
 
