@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.2](https://github.com/gitsindonesia/nuxt-starter/compare/v0.5.1...v0.5.2) (2024-06-11)
+
+
+### Features
+
+* add @nuxt/fonts ([67f00d9](https://github.com/gitsindonesia/nuxt-starter/commit/67f00d9abde0c21b5a0c71ed56c07116217eb6d4))
+* add `@pinia-plugin-persistedstate/nuxt` ([17ad890](https://github.com/gitsindonesia/nuxt-starter/commit/17ad890c8125f89f0406f3643d7c03cb68c17871))
+* add authentication sample ([3d5b92a](https://github.com/gitsindonesia/nuxt-starter/commit/3d5b92a58326beddf569c83e848f04cfda6fc86b))
+* add robots.txt ([daa89c8](https://github.com/gitsindonesia/nuxt-starter/commit/daa89c8d913d76226d7d6cd68829cb32d8efcb75))
+* add theming and customization example ([d2b126e](https://github.com/gitsindonesia/nuxt-starter/commit/d2b126e30ec7e5a73f045bb4b9fd7ab729664aba))
+* implement Vue Query SSR ([fe503aa](https://github.com/gitsindonesia/nuxt-starter/commit/fe503aa1b9153a9385617e4bccb9ea996423021f))
+* **tests:** migrate from nuxt-vitest to @nuxt/test-utils ([4283352](https://github.com/gitsindonesia/nuxt-starter/commit/4283352795842a0c2ac3c2952e6d94f8614d54ce))
+* update storybook integration ([feb0a5d](https://github.com/gitsindonesia/nuxt-starter/commit/feb0a5d651f01ed1edb1f53a2fa69b03c21619ba))
+
 ### [0.5.1](https://github.com/gitsindonesia/nuxt-starter/compare/v0.5.0...v0.5.1) (2023-08-01)
 
 
