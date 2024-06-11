@@ -48,6 +48,8 @@
     "@tanstack/vue-query": "^5.29.0",
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
+    "axios": "^1.7.2",
+    "jwt-decode": "^4.0.0",
     "pinia": "^2.1.7"
   },
   "devDependencies": {

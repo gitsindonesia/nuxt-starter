@@ -31,4 +31,5 @@ useHead({
     <NuxtLoadingIndicator />
     <NuxtPage />
   </NuxtLayout>
+  <GlobalToast />
 </template>

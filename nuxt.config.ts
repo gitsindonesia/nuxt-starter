@@ -41,4 +41,16 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/app.css'],
+  
+  components: [
+    { path: '~/components/app', pathPrefix: false },
+    { path: '~/components/ui', pathPrefix: false },
+
+    // It's important that this comes last if you have overrides you wish to apply
+    // to sub-directories of `~/components`.
+    //
+    // ~/components/Btn.vue => <Btn />
+    // ~/components/base/Btn.vue => <BaseBtn />
+    '~/components',
+  ],
 })
