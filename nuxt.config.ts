@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     // '@nuxtjs/storybook',
     '@nuxt/test-utils/module',
     '@nuxt/fonts',
+    '@pinia-plugin-persistedstate/nuxt',
   ],
 
   runtimeConfig: {
