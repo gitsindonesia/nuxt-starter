@@ -40,5 +40,5 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  css: ['~/assets/css/themes.css'],
+  css: ['~/assets/css/app.css'],
 })
